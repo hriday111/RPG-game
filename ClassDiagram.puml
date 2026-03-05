@@ -1,0 +1,53 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+interface IItem
+interface IEquippable
+
+class Inventory
+
+class Coin
+class Gold
+abstract class Weapon
+class Sword
+class Greatsword
+
+abstract class Tile
+class FloorTile
+class WallTile
+
+abstract class Character
+class Player
+
+struct Position
+class Level
+class ConsoleRenderer
+
+interface IMapGenerator
+class SimpleRoomGenerator
+
+' Inheritance
+IItem <|.. IEquippable
+IEquippable <|-- Weapon
+Weapon <|-- Greatsword 
+Weapon <|-- Sword
+IItem <|-- Coin
+IItem <|-- Gold
+
+Tile <|-- FloorTile
+Tile <|-- WallTile
+
+Character <|-- Player
+
+IMapGenerator <|-- SimpleRoomGenerator
+
+' Associations
+Level --> Tile
+Level --> IItem
+Player --> IItem
+Player --> Inventory
+ConsoleRenderer --> Level
+ConsoleRenderer --> Player
+ConsoleRenderer --> Inventory
+
+@enduml

@@ -42,6 +42,7 @@ public class SimpleRoomGenerator : IMapGenerator
         SpawnCoins(level, 5);
         SpawnSword(level, 4);
         SpawnDoubleSword(level, 1);
+        SpawnGold(level, 2);
     }
 
     /// <summary>
@@ -175,6 +176,24 @@ public class SimpleRoomGenerator : IMapGenerator
             } while (!level.GetTile(pos.X, pos.Y).IsWalkable);
 
             level.AddItem(pos, new DoubleSword());
+        }
+    }
+
+    private void SpawnGold(Level level, int count)
+    {
+        for (int i = 0; i < count; i++)
+        {
+            Position pos;
+
+            do
+            {
+                int x = random.Next(1, level.Width - 1);
+                int y = random.Next(1, level.Height - 1);
+                pos = new Position(x, y);
+
+            } while (!level.GetTile(pos.X, pos.Y).IsWalkable);
+
+            level.AddItem(pos, new Gold());
         }
     }
 }

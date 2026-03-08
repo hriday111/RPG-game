@@ -3,7 +3,7 @@ using RpgGame.Core;
 using RpgGame.Generation;
 using RpgGame.Rendering;
 using RpgGame.Character;
-
+using RpgGame.Input;
 namespace RpgGame;
 
 /// <summary>
@@ -18,6 +18,11 @@ class Program
     /// <summary>
     /// Initializes the game state and starts the game loop.
     /// </summary>
+    /// <remarks>
+    /// Sets up the level, generator, player character, renderer,
+    /// inventory and <see cref="InputHandler"/> before entering the
+    /// main loop via <see cref="RunGameLoop"/>.
+    /// </remarks>
     static void Main()
     {
         Console.CursorVisible = false;
@@ -31,8 +36,9 @@ class Program
 
         var renderer = new ConsoleRenderer();
         var inventory = new Inventory(player, 20);
+        var inputHandler = new InputHandler();
         Console.Clear();
-        RunGameLoop(level, player, renderer,inventory, Config.TargetFPS);
+        RunGameLoop(level, player, renderer,inventory, inputHandler, Config.TargetFPS);
     }
 
     /// <summary>
@@ -41,12 +47,16 @@ class Program
     /// <param name="level">The active level.</param>
     /// <param name="player">The player instance.</param>
     /// <param name="renderer">The console renderer.</param>
+    /// <param name="inventory">The player's inventory.</param>
+    /// <param name="inputHandler">Handler responsible for converting console
+    /// keystrokes into game commands.</param>
     /// <param name="TargetFPS">Target frames per second.</param>
     /// <remarks>
     /// The loop repeatedly:
     /// <list type="number">
     /// <item><description>Renders the current game state.</description></item>
-    /// <item><description>Processes player input.</description></item>
+    /// <item><description>Processes player input using
+    /// <see cref="InputHandler"/> and associated commands.</description></item>
     /// <item><description>Maintains frame timing.</description></item>
     /// </list>
     /// </remarks>
@@ -55,6 +65,7 @@ class Program
         Player player,
         ConsoleRenderer renderer,
         Inventory inventory,
+        InputHandler inputHandler,
         int TargetFPS)
     {
         var isRunning = true;
@@ -62,94 +73,14 @@ class Program
         while (isRunning)
         {
             renderer.Render(level, player, inventory);
-
-            if (HandleInput(level, player, inventory) == -1)
+            var key = Console.ReadKey(true);
+            if (inputHandler.HandleInput(key, level, player, inventory) == -1)
                 isRunning = false;
 
             Thread.Sleep(Decimal.ToInt32(1000 / TargetFPS));
         }
     }
 
-    /// <summary>
-    /// Handles user input and applies corresponding game actions.
-    /// </summary>
-    /// <param name="level">The current level.</param>
-    /// <param name="player">The player instance.</param>
-    /// <returns>
-    /// -1 if the game should terminate; otherwise 0.
-    /// </returns>
-    /// <remarks>
-    /// Supported controls:
-    /// <list type="bullet">
-    /// <item><description>W/A/S/D — Movement</description></item>
-    /// <item><description>Q/E — Pickup or equip items</description></item>
-    /// <item><description>Shift + Q/E — Drop equipped items</description></item>
-    /// <item><description>Escape — Exit game</description></item>
-    /// </list>
-    /// 
-    /// Movement validation is delegated to the <see cref="Level"/> class.
-    /// Item behavior is handled polymorphically via <see cref="IItem"/>.
-    /// </remarks>
-    private static int HandleInput(Level level, Player player, Inventory inventory)
-    {
-        Position movement = new(0, 0);
 
-        var key = Console.ReadKey(true);
-
-        switch (key.Key)
-        {
-            case ConsoleKey.W:
-                movement += Directions.Up;
-                break;
-
-            case ConsoleKey.S:
-                movement += Directions.Down;
-                break;
-
-            case ConsoleKey.A:
-                movement += Directions.Left;
-                break;
-
-            case ConsoleKey.D:
-                movement += Directions.Right;
-                break;
-
-            
-            case ConsoleKey.Q when key.Modifiers.HasFlag(ConsoleModifiers.Shift):
-                player.DropLeft(level);
-                break;
-
-            case ConsoleKey.E when key.Modifiers.HasFlag(ConsoleModifiers.Shift):
-                player.DropRight(level);
-                break;
-            case ConsoleKey.F:
-                var item = level.GetTopItem(player.Pos);
-                if (item != null)
-                {
-                    if(item.OnPickup(player, inventory)){level.TakeTopItem(player.Pos);}
-                    
-                }
-                break;
-            case ConsoleKey.E:
-                inventory.TakeToRight();
-                break;
-            case ConsoleKey.Q:
-                inventory.TakeToLeft();
-                break;
-
-            case ConsoleKey.Escape:
-                return -1;
-        }
-
-        if (movement.X != 0 || movement.Y != 0)
-        {
-            var nPos = player.Pos + movement;
-
-            level.GetTile(player.Pos.X, player.Pos.Y).IsOccupied = false;
-            level.TryMoveCharacter(player, nPos);
-            level.GetTile(nPos.X, nPos.Y).IsOccupied = true;
-        }
-
-        return 0;
-    }
+    
 }

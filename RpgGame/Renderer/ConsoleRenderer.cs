@@ -91,7 +91,7 @@ public class ConsoleRenderer
             $"AGG: {player.Aggression} \tWIS: {player.Wisdom}",
             "",
             "=== EQUIPMENT ===",
-            $"Left : {(player.LeftHand?.Name ?? "Empty").PadRight(15)}\tRight: {(player.RightHand?.Name ?? "Empty").PadRight(15)}",
+            $"Left : {(player.LeftHand?.Name ?? "Empty").PadRight(5)}\tRight: {(player.RightHand?.Name ?? "Empty").PadRight(5)}",
             "",
             "=== CURRENCY ===",
             $"Coins: {player.Coins} \tGold: {player.Gold}",

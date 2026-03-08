@@ -29,7 +29,7 @@ class SimpleRoomGenerator
 ' Inheritance
 IItem <|.. IEquippable
 IEquippable <|-- Weapon
-Weapon <|-- Greatsword 
+Weapon <|-- Greate sword 
 Weapon <|-- Sword
 IItem <|-- Coin
 IItem <|-- Gold

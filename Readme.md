@@ -18,7 +18,7 @@ This project implements a procedurally generated RPG world with:
 
 ## How to Play
 
-The game is a console-based RPG where you explore a procedurally generated dungeon. Your goal is to navigate the level, collect items, manage your inventory, and equip gear to improve your character's stats.
+The game is a console-based RPG where you explore a randomly generated room. You can collect items to inventory or currency. Items can also be equipped from the inventory.
 
 ### Controls
 - **WASD**: Move up, down, left, right

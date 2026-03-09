@@ -1,0 +1,6 @@
+<map id="RpgGame.Character.Player.Player" name="RpgGame.Character.Player.Player">
+<area shape="rect" id="Node000001" title="Initializes a new instance of the Player class." alt="" coords="5,22,192,61"/>
+<area shape="rect" id="Node000002" href="$namespaceRpgGame_1_1Character.html#ab2e6f640f8bfc682c50e3c19e0d417f1" title="A record for tracking the position of Characters, Items, and Tiles if needed." alt="" coords="240,29,433,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,39,224,39,224,44,192,44"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="298,31,289,21,294,11,310,5,336,3,367,6,381,13,379,18,365,11,336,8,311,10,297,15,295,20,302,27"/>
+</map>

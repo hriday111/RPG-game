@@ -1,0 +1,5 @@
+<map id="RpgGame.Input.MoveLeftCommand" name="RpgGame.Input.MoveLeftCommand">
+<area shape="rect" id="Node000001" title="Moves the player one tile left (west) on the level." alt="" coords="5,145,225,236"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Input_1_1IInputCommand.html" title="Represents a user input command that manipulates the game state (level, player, inventory) and return..." alt="" coords="15,5,215,97"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,111,118,145,112,145,112,111"/>
+</map>

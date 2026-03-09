@@ -1,0 +1,5 @@
+<map id="RpgGame.Core.Inventory.TakeToRight" name="RpgGame.Core.Inventory.TakeToRight">
+<area shape="rect" id="Node000001" title="Equips the top item in the inventory to the player&#39;s right hand and removes it from inventory." alt="" coords="248,5,449,44"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Input_1_1InventoryToRightHandCommand.html#a5698b568c4eded3ff5d687f0d66afdcb" title="Executes the command using provided game objects.Typically 1 to indicate the game should continue,..." alt="" coords="5,5,200,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,27,200,27,200,22,232,22"/>
+</map>

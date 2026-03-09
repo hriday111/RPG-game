@@ -1,0 +1,5 @@
+<map id="RpgGame.Items.Coin" name="RpgGame.Items.Coin">
+<area shape="rect" id="Node000001" title="Represents a coin item that increases the player&#39;s currency when picked up." alt="" coords="5,203,190,352"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Items_1_1IItem.html" title="Defines the contract for all items that can exist within the game world." alt="" coords="5,5,190,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,170,100,203,95,203,95,170"/>
+</map>

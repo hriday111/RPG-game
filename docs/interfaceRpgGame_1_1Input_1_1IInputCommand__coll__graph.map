@@ -1,0 +1,3 @@
+<map id="RpgGame.Input.IInputCommand" name="RpgGame.Input.IInputCommand">
+<area shape="rect" id="Node000001" title="Represents a user input command that manipulates the game state (level, player, inventory) and return..." alt="" coords="5,5,205,97"/>
+</map>

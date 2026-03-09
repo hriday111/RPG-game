@@ -2,6 +2,8 @@
 
 Console-based RPG game developed for the Object-Oriented Design course.
 
+# Documentation
+[`RpgGame`](https://hriday111.github.io/RPG-game/)
 ---
 
 ## Overview
@@ -47,21 +49,25 @@ The game is a console-based RPG where you explore a randomly generated room. You
 
 ## Level Generation
 
-The level is generated using a room-based procedural generator:
-- Full floor initialization
-- Border wall creation
-- Random obstacle clusters
-- Random item spawning
+The level generation system uses the **Strategy Pattern** combined with a **Builder Pattern** to create flexible, composable dungeon layouts:
+
+- **Procedures**: Each `IDungeonProcedure` implementation handles a specific dungeon feature (e.g., carving rooms, creating corridors, spawning items).
+- **DungeonBuilder**: Composes multiple procedures into a sequence that executes in order.
+- **Strategies**: `IDungeonStrategy` implementations define complete generation pipelines. For example, `DungeonGroundsStrategy` creates a typical dungeon with a central room, additional chambers, connecting corridors, and treasure.
+
+All generation work is performed **asynchronously** using `Task.Run()`, ensuring the game remains responsive during map creation. This allows complex procedural generation without blocking the UI.
+
+For detailed API documentation, see the [RpgGame.Generation namespace documentation](https://hriday111.github.io/RPG-game/namespaceRpgGame_1_1Generation.html).
 
 ---
 
 ## Project Structure
 
-- `RpgGame/Core/` – Game state & configuration
-- `RpgGame/Generation/` – Map generation logic
-- `RpgGame/Items/` – Item and equipment system
-- `RpgGame/Character/` – Player & character logic
-- `RpgGame/Renderer/` – Console renderer
+- [`RpgGame/Core/`](https://hriday111.github.io/RPG-game/namespaceRpgGame_1_1Core.html) – Game state & configuration
+- [`RpgGame/Generation/`](https://hriday111.github.io/RPG-game/namespaceRpgGame_1_1Generation.html) – Map generation logic
+- [`RpgGame/Items/`](https://hriday111.github.io/RPG-game/namespaceRpgGame_1_1Items.html) – Item and equipment system
+- [`RpgGame/Character/`](https://hriday111.github.io/RPG-game/namespaceRpgGame_1_1Character.html) – Player & character logic
+- [`RpgGame/Renderer/`](https://hriday111.github.io/RPG-game/namespaceRpgGame_1_1Rendering.html) – Console renderer
 
 ---
 

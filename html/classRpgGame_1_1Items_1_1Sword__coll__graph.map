@@ -1,0 +1,9 @@
+<map id="RpgGame.Items.Sword" name="RpgGame.Items.Sword">
+<area shape="rect" id="Node000001" title="Represents a standard one&#45;handed sword weapon." alt="" coords="29,678,177,780"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Items_1_1Weapon.html" title="Represents an abstract base class for all equippable weapons." alt="" coords="5,361,200,630"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,645,106,678,100,678,100,645"/>
+<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Items_1_1IEquippable.html" title="Represents an item that can be equipped by the player." alt="" coords="13,203,193,313"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="106,329,106,361,100,361,100,329"/>
+<area shape="rect" id="Node000004" href="$interfaceRpgGame_1_1Items_1_1IItem.html" title="Defines the contract for all items that can exist within the game world." alt="" coords="10,5,195,155"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="106,169,106,203,100,203,100,169"/>
+</map>

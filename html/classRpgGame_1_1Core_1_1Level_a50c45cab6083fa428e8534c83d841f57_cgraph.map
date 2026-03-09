@@ -1,0 +1,6 @@
+<map id="RpgGame.Core.Level.GetTopItem" name="RpgGame.Core.Level.GetTopItem">
+<area shape="rect" id="Node000001" title="Retrieves the top item at a position without removing it." alt="" coords="5,29,225,54"/>
+<area shape="rect" id="Node000002" href="$namespaceRpgGame_1_1Character.html#ab2e6f640f8bfc682c50e3c19e0d417f1" title="A record for tracking the position of Characters, Items, and Tiles if needed." alt="" coords="273,29,466,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,39,257,39,257,44,225,44"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="328,31,319,21,324,11,341,5,369,3,402,6,417,13,415,18,400,11,369,8,342,10,327,15,324,20,332,27"/>
+</map>

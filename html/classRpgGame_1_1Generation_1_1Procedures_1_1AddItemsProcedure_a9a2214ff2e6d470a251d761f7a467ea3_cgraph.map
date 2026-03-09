@@ -1,0 +1,7 @@
+<map id="RpgGame.Generation.Procedures.AddItemsProcedure.ApplyAsync" name="RpgGame.Generation.Procedures.AddItemsProcedure.ApplyAsync">
+<area shape="rect" id="Node000001" title="Applies the item spawning to the level." alt="" coords="5,37,228,76"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1MapSpawnHelper.html#aef5f182d21ac6ed160d15450118a6032" title="Convenience wrapper that spawns coins." alt="" coords="276,5,493,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,41,260,37,261,42,228,46"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1MapSpawnHelper.html#a3d4f8e59572c78841b18c605691225b8" title="Convenience wrapper that spawns gold piles." alt="" coords="276,68,493,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="228,67,261,70,260,76,228,72"/>
+</map>

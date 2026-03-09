@@ -17,6 +17,8 @@ html*
 ## Get latest from https://github.com/github/gitignore/blob/main/Dotnet.gitignore
 
 Doxyfile
+docs/*
+publish-docs.sh
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/

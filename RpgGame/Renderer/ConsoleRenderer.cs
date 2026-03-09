@@ -14,7 +14,6 @@ namespace RpgGame.Rendering;
 /// - Items on the ground
 /// - The sidebar with character and inventory information
 /// 
-/// Rendering prioritizes player → item → terrain.
 /// </remarks>
 public class ConsoleRenderer
 {
@@ -104,13 +103,7 @@ public class ConsoleRenderer
             //$"Item Description: {inventory.GetTopItem()?.Name ?? "null"}",
         };
 
-        /// <summary>
-        /// Adds up to 5 inventory items to the sidebar content.
-        /// </summary>
-        /// <remarks>
-        /// This loop iterates through the player's inventory and adds
-        /// the name of each item to the sidebar content, up to a maximum of 5 items.
-        /// </remarks>
+        // Add up to 5 inventory items to the sidebar content
         for(int i=0; i<Math.Min(5, inventory.GetCount()); i++)
         {
             var item = inventory.GetNItem(i);

@@ -1,0 +1,5 @@
+<map id="RpgGame.Tiles.FloorTile" name="RpgGame.Tiles.FloorTile">
+<area shape="rect" id="Node000001" title="Represents a walkable floor tile where players and items can exist." alt="" coords="5,175,170,257"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Tiles_1_1Tile.html" title="Base abstract class representing a tile in the game world." alt="" coords="19,5,157,127"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,142,90,175,85,175,85,142"/>
+</map>

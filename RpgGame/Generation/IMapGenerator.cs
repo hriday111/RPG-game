@@ -17,10 +17,13 @@ namespace RpgGame.Generation;
 public interface IMapGenerator
 {
     /// <summary>
-    /// Generates the terrain layout for the specified level.
+    /// Asynchronously generates the terrain layout for the specified level.
     /// </summary>
-    /// <param name="level">
-    /// The level instance to populate with tiles and structures.
-    /// </param>
-    void Generate(Level level);
+    /// <param name="level">The level instance to populate.</param>
+    /// <returns>A task that completes when generation is finished.</returns>
+    /// <remarks>
+    /// Implementations should perform all work asynchronously; callers may
+    /// await the returned task to remain responsive during map creation.
+    /// </remarks>
+    Task GenerateAsync(Level level);
 }

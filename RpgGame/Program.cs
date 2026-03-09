@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading;
+using System.Threading.Tasks;
 using RpgGame.Core;
 using RpgGame.Generation;
 using RpgGame.Rendering;
@@ -23,16 +25,16 @@ class Program
     /// inventory and <see cref="InputHandler"/> before entering the
     /// main loop via <see cref="RunGameLoop"/>.
     /// </remarks>
-    static void Main()
+    static async Task Main()
     {
         Console.CursorVisible = false;
 
         var level = new Level(Config.WindowWidth, Config.WindowHeight);
-        IMapGenerator generator = new SimpleRoomGenerator();
+        IMapGenerator generator = new DungeonGenerator();
         var player = new Character.Player(
             new Position(Config.DefaultSpawnX, Config.DefaultSpawnY));
 
-        generator.Generate(level);
+        await generator.GenerateAsync(level);
 
         var renderer = new ConsoleRenderer();
         var inventory = new Inventory(player, 20);

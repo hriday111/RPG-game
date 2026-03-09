@@ -2,6 +2,7 @@ using RpgGame.Core;
 using RpgGame.Tiles;
 using RpgGame.Items;
 using RpgGame.Character;
+using System.Threading.Tasks;
 
 namespace RpgGame.Generation;
 
@@ -29,20 +30,22 @@ public class SimpleRoomGenerator : IMapGenerator
     /// </summary>
     private readonly Random random = new();
 
+
     /// <summary>
-    /// Generates the full level layout.
+    /// Asynchronously generates the level; uses the new async spawn helpers
+    /// to perform item placement without blocking the caller.
     /// </summary>
-    /// <param name="level">The level instance to populate.</param>
-    public void Generate(Level level)
+    /// <param name="level">Level instance to populate.</param>
+    public async Task GenerateAsync(Level level)
     {
         MakeFloor(level);
         MakeBorders(level);
         CreateRandomWallClusters(level);
 
-        SpawnCoins(level, 5);
-        SpawnSword(level, 4);
-        SpawnDoubleSword(level, 1);
-        SpawnGold(level, 2);
+        await MapSpawnHelper.SpawnCoinsAsync(level, 5);
+        await MapSpawnHelper.SpawnSwordAsync(level, 4);
+        await MapSpawnHelper.SpawnDoubleSwordAsync(level, 1);
+        await MapSpawnHelper.SpawnGoldAsync(level, 2);
     }
 
     /// <summary>
@@ -116,84 +119,4 @@ public class SimpleRoomGenerator : IMapGenerator
         }
     }
 
-    /// <summary>
-    /// Spawns a specified number of coins at random walkable positions.
-    /// </summary>
-    private void SpawnCoins(Level level, int count)
-    {
-        for (int i = 0; i < count; i++)
-        {
-            Position pos;
-
-            do
-            {
-                int x = random.Next(1, level.Width - 1);
-                int y = random.Next(1, level.Height - 1);
-                pos = new Position(x, y);
-
-            } while (!level.GetTile(pos.X, pos.Y).IsWalkable);
-
-            level.AddItem(pos, new Coin());
-        }
-    }
-
-    /// <summary>
-    /// Spawns a specified number of one-handed swords.
-    /// </summary>
-    private void SpawnSword(Level level, int count)
-    {
-        for (int i = 0; i < count; i++)
-        {
-            Position pos;
-
-            do
-            {
-                int x = random.Next(1, level.Width - 1);
-                int y = random.Next(1, level.Height - 1);
-                pos = new Position(x, y);
-
-            } while (!level.GetTile(pos.X, pos.Y).IsWalkable);
-
-            level.AddItem(pos, new Sword());
-        }
-    }
-
-    /// <summary>
-    /// Spawns a specified number of two-handed swords.
-    /// </summary>
-    private void SpawnDoubleSword(Level level, int count)
-    {
-        for (int i = 0; i < count; i++)
-        {
-            Position pos;
-
-            do
-            {
-                int x = random.Next(1, level.Width - 1);
-                int y = random.Next(1, level.Height - 1);
-                pos = new Position(x, y);
-
-            } while (!level.GetTile(pos.X, pos.Y).IsWalkable);
-
-            level.AddItem(pos, new DoubleSword());
-        }
-    }
-
-    private void SpawnGold(Level level, int count)
-    {
-        for (int i = 0; i < count; i++)
-        {
-            Position pos;
-
-            do
-            {
-                int x = random.Next(1, level.Width - 1);
-                int y = random.Next(1, level.Height - 1);
-                pos = new Position(x, y);
-
-            } while (!level.GetTile(pos.X, pos.Y).IsWalkable);
-
-            level.AddItem(pos, new Gold());
-        }
-    }
 }

@@ -40,7 +40,7 @@ public class InputHandler
     /// <param name="inventory">The player's inventory.</param>
     /// <returns>
     /// Command execution result (see individual commands). Returns
-    /// <c>0</c> if no command was registered for the key.
+    /// <c>-1</c> when esc is pressed.
     /// </returns>
     public int HandleInput(ConsoleKeyInfo key, Level level, Player player, Inventory inventory)
     {

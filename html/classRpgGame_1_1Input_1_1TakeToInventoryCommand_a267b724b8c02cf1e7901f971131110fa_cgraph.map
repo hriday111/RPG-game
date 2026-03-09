@@ -1,0 +1,11 @@
+<map id="RpgGame.Input.TakeToInventoryCommand.Execute" name="RpgGame.Input.TakeToInventoryCommand.Execute">
+<area shape="rect" id="Node000001" title="Executes the command using provided game objects.Typically 1 to indicate the game should continue,..." alt="" coords="5,24,218,62"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Level.html#a50c45cab6083fa428e8534c83d841f57" title="Retrieves the top item at a position without removing it." alt="" coords="269,5,488,30"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,30,253,27,254,32,218,36"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Core_1_1Level.html#a0755988cf7c365fe2e38416a4f62272f" title="Removes and returns the top item at a given position." alt="" coords="266,55,491,79"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="218,50,250,53,250,58,218,55"/>
+<area shape="rect" id="Node000003" href="$namespaceRpgGame_1_1Character.html#ab2e6f640f8bfc682c50e3c19e0d417f1" title="A record for tracking the position of Characters, Items, and Tiles if needed." alt="" coords="539,31,732,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="489,26,524,29,523,35,488,31"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="594,32,585,22,590,12,607,6,636,4,669,7,684,15,682,20,668,12,636,9,608,11,593,16,590,21,598,28"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="491,54,523,51,524,56,492,59"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classRpgGame_1_1Character_1_1Character.html" title="Base abstract class for both playable and non&#45;playable characters." alt="" coords="5,5,209,30"/>
+<area shape="rect" id="Node000001" href="$classRpgGame_1_1Character_1_1Player.html" title="Represents the player&#45;controlled character in the game." alt="" coords="257,5,439,30"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="224,15,256,15,256,20,224,20"/>
+</map>

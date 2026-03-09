@@ -1,0 +1,5 @@
+<map id="RpgGame.Items.IEquippable.TryEquipToLeft" name="RpgGame.Items.IEquippable.TryEquipToLeft">
+<area shape="rect" id="Node000001" title="Attempts to equip the item in the player&#39;s left hand." alt="" coords="240,5,434,44"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Player.html#a8fbd9664d432e62eaba416e06ea76d3f" title="Attempts to equip an item into the left hand." alt="" coords="5,5,192,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,27,192,27,192,22,224,22"/>
+</map>

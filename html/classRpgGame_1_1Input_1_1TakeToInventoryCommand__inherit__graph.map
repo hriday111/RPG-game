@@ -1,0 +1,5 @@
+<map id="RpgGame.Input.TakeToInventoryCommand" name="RpgGame.Input.TakeToInventoryCommand">
+<area shape="rect" id="Node000001" title="Picks up the item resting on the player&#39;s current tile and places it into the inventory if possible." alt="" coords="5,145,207,250"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Input_1_1IInputCommand.html" title="Represents a user input command that manipulates the game state (level, player, inventory) and return..." alt="" coords="6,5,206,97"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,112,109,145,104,145,104,112"/>
+</map>

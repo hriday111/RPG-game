@@ -1,0 +1,5 @@
+<map id="RpgGame.Character.Player" name="RpgGame.Character.Player">
+<area shape="rect" id="Node000001" title="Represents the player&#45;controlled character in the game." alt="" coords="5,183,198,712"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Character.html" title="Base abstract class for both playable and non&#45;playable characters." alt="" coords="6,5,198,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,150,104,183,99,183,99,150"/>
+</map>

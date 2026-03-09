@@ -16,6 +16,11 @@ This project implements a procedurally generated RPG world with:
 
 ---
 
+## How to Compile
+
+Using `dotnet run` in the `RpgGame` directory.
+
+---
 ## How to Play
 
 The game is a console-based RPG where you explore a randomly generated room. You can collect items to inventory or currency. Items can also be equipped from the inventory.

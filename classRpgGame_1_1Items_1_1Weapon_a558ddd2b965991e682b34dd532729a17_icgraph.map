@@ -1,5 +1,0 @@
-<map id="RpgGame.Items.Weapon.TryEquipToLeft" name="RpgGame.Items.Weapon.TryEquipToLeft">
-<area shape="rect" id="Node000001" title="Attempts to equip the weapon in the player&#39;s left hand." alt="" coords="284,5,476,44"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Items_1_1Weapon.html#a13a3e54f1d8711eafb20bf30a4e42813" title="Handles pickup interaction for the weapon." alt="" coords="5,12,236,37"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,27,236,27,236,22,268,22"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="RpgGame.Core.Level.GetTopItem" name="RpgGame.Core.Level.GetTopItem">
-<area shape="rect" id="Node000001" title="Retrieves the top item at a position without removing it." alt="" coords="266,44,485,69"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Input_1_1TakeToInventoryCommand.html#a267b724b8c02cf1e7901f971131110fa" title="Executes the command using provided game objects.Typically 1 to indicate the game should continue,..." alt="" coords="5,5,218,44"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,45,218,40,218,35,254,39"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Rendering_1_1ConsoleRenderer.html#afd4c01a8b201247cb07a678d9b849101" title="Renders the current level state and player information to the console." alt="" coords="14,68,209,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,74,210,79,209,73,250,69"/>
-</map>

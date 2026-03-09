@@ -1,7 +1,0 @@
-<map id="RpgGame.Generation.IMapGenerator" name="RpgGame.Generation.IMapGenerator">
-<area shape="rect" id="Node000001" title="Defines the contract for procedural level generation strategies." alt="" coords="105,5,332,83"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1DungeonBuilder.html" title="Implements the Builder Pattern to compose multiple dungeon generation procedures." alt="" coords="5,131,213,255"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,96,157,133,152,130,180,93"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1SimpleRoomGenerator.html" title="Generates a simple room&#45;based level layout with borders, random wall clusters, and predefined item sp..." alt="" coords="238,147,421,239"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="258,93,298,146,294,149,254,96"/>
-</map>

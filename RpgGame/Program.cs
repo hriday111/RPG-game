@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 using RpgGame.Core;
-using RpgGame.Generation;
+using RpgGame.Generation.Strategies;
 using RpgGame.Rendering;
 using RpgGame.Character;
 using RpgGame.Input;
@@ -30,9 +30,11 @@ class Program
         Console.CursorVisible = false;
 
         var level = new Level(Config.WindowWidth, Config.WindowHeight);
-        IMapGenerator generator = new DungeonGenerator();
         var player = new Character.Player(
             new Position(Config.DefaultSpawnX, Config.DefaultSpawnY));
+
+        var strategy = new DungeonGroundsStrategy();
+        var generator = strategy.Create();
 
         await generator.GenerateAsync(level);
 

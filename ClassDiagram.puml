@@ -1,53 +1,228 @@
-@startuml
+@startuml ClassDiagram
 skinparam classAttributeIconSize 0
 
-interface IItem
-interface IEquippable
+' ==================== ITEMS ====================
+interface IItem {
+  +Name: string
+  +Symbol: char
+  GetDescription(): string
+  PickUp(player: Player, pickUpLeft: bool): bool
+}
 
-class Inventory
+interface IEquippable {
+  TryEquipToLeft(player: Player): bool
+  TryEquipToRight(player: Player): bool
+}
+
+abstract class Weapon {
+  #occupation: HandOccupation
+  +Name: string
+  +Symbol: char
+  +Damage: int
+}
 
 class Coin
 class Gold
-abstract class Weapon
-class Sword
-class Greatsword
 
-abstract class Tile
+class Sword
+class DoubleSword
+
+abstract class HandOccupation {
+  CanEquip(player: Player): bool
+}
+
+class OneHandOccupation
+class TwoHandOccupation
+
+' ==================== TILES ====================
+abstract class Tile {
+  +IsWalkable: bool
+  +Symbol: char
+}
+
 class FloorTile
 class WallTile
 
-abstract class Character
-class Player
+' ==================== CHARACTER ====================
+class Position {
+  +X: int
+  +Y: int
+  Offset(dx: int, dy: int): Position
+}
 
-struct Position
-class Level
-class ConsoleRenderer
+abstract class Character {
+  +Name: string
+  +Position: Position
+  +Symbol: char
+}
 
-interface IMapGenerator
-class SimpleRoomGenerator
+class Player {
+  +Strength: int
+  +Dexterity: int
+  +Health: int
+  +Luck: int
+  +Aggression: int
+  +Wisdom: int
+  +LeftHand: IEquippable?
+  +RightHand: IEquippable?
+  +Coins: int
+  +Gold: int
+}
 
-' Inheritance
+' ==================== CORE ====================
+class Level {
+  +Width: int
+  +Height: int
+  GetTile(x: int, y: int): Tile
+  SetTile(x: int, y: int, tile: Tile): void
+  CanWalk(x: int, y: int): bool
+  AddItem(pos: Position, item: IItem): void
+  RemoveItem(pos: Position, item: IItem): bool
+}
+
+class Inventory {
+  +Size: int
+  +Count: int
+  Add(item: IEquippable): bool
+  Pop(): IEquippable?
+  GetItems(): IReadOnlyList<IEquippable>
+}
+
+class Config {
+  {static} +WindowWidth: int = 40
+  {static} +WindowHeight: int = 20
+  {static} +TargetFPS: int = 60
+}
+
+class Directions {
+  {static} +Up: Position
+  {static} +Down: Position
+  {static} +Left: Position
+  {static} +Right: Position
+}
+
+' ==================== GENERATION ====================
+interface IMapGenerator {
+  GenerateAsync(level: Level): Task
+}
+
+interface IDungeonProcedure {
+  ApplyAsync(level: Level, context: DungeonContext): Task
+}
+
+class DungeonBuilder {
+  Add(procedure: IDungeonProcedure): DungeonBuilder
+  GenerateAsync(level: Level): Task
+}
+
+class DungeonContext {
+  +Rooms: List<RectRoom>
+}
+
+class RectRoom {
+  +X: int
+  +Y: int
+  +Width: int
+  +Height: int
+  +Center: Position
+  Intersects(other: RectRoom): bool
+}
+
+class FilledDungeonProcedure
+class EmptyDungeonProcedure
+class CentralRoomProcedure
+class ChambersProcedure
+class PathsProcedure
+class AddItemsProcedure
+class AddWeaponsProcedure
+
+interface IDungeonStrategy {
+  Create(): DungeonBuilder
+}
+
+class DungeonGroundsStrategy
+
+' ==================== RENDERING ====================
+class ConsoleRenderer {
+  Render(level: Level, player: Player, inventory: Inventory): void
+}
+
+' ==================== INPUT ====================
+interface IInputCommand {
+  Execute(player: Player, level: Level): void
+}
+
+class InputHandler {
+  ProcessInput(player: Player, level: Level): void
+}
+
+class MoveUpCommand
+class MoveDownCommand
+class MoveLeftCommand
+class MoveRightCommand
+class InventoryToLeftHandCommand
+class InventoryToRightHandCommand
+class DropLeftCommand
+class DropRightCommand
+class TakeToInventoryCommand
+class QuitGameCommand
+
+' ==================== INHERITANCE ====================
 IItem <|.. IEquippable
-IEquippable <|-- Weapon
-Weapon <|-- Greate sword 
+IEquippable <|.. Weapon
 Weapon <|-- Sword
-IItem <|-- Coin
-IItem <|-- Gold
+Weapon <|-- DoubleSword
+IItem <|.. Coin
+IItem <|.. Gold
 
 Tile <|-- FloorTile
 Tile <|-- WallTile
 
 Character <|-- Player
 
-IMapGenerator <|-- SimpleRoomGenerator
+HandOccupation <|-- OneHandOccupation
+HandOccupation <|-- TwoHandOccupation
 
-' Associations
+IMapGenerator <|.. DungeonBuilder
+IDungeonProcedure <|.. FilledDungeonProcedure
+IDungeonProcedure <|.. EmptyDungeonProcedure
+IDungeonProcedure <|.. CentralRoomProcedure
+IDungeonProcedure <|.. ChambersProcedure
+IDungeonProcedure <|.. PathsProcedure
+IDungeonProcedure <|.. AddItemsProcedure
+IDungeonProcedure <|.. AddWeaponsProcedure
+
+IDungeonStrategy <|.. DungeonGroundsStrategy
+
+IInputCommand <|.. MoveUpCommand
+IInputCommand <|.. MoveDownCommand
+IInputCommand <|.. MoveLeftCommand
+IInputCommand <|.. MoveRightCommand
+IInputCommand <|.. InventoryToLeftHandCommand
+IInputCommand <|.. InventoryToRightHandCommand
+IInputCommand <|.. DropLeftCommand
+IInputCommand <|.. DropRightCommand
+IInputCommand <|.. TakeToInventoryCommand
+IInputCommand <|.. QuitGameCommand
+
+' ==================== ASSOCIATIONS ====================
 Level --> Tile
 Level --> IItem
 Player --> IItem
 Player --> Inventory
+Player --> IEquippable
+Player --> Character
+
 ConsoleRenderer --> Level
 ConsoleRenderer --> Player
 ConsoleRenderer --> Inventory
+
+Weapon --> HandOccupation
+
+DungeonBuilder --> IDungeonProcedure
+DungeonBuilder --> DungeonContext
+DungeonContext --> RectRoom
+
+InputHandler --> IInputCommand
 
 @enduml

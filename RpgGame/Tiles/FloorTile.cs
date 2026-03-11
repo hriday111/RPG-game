@@ -15,6 +15,10 @@ public sealed class FloorTile : Tile
     public override char Symbol => ' ';
 
     /// <summary>
+    /// Gets the console color used to render the floor tile on the map.
+    /// </summary>
+    public override ConsoleColor color => ConsoleColor.DarkGray;
+    /// <summary>
     /// Gets a value indicating whether the floor is walkable.
     /// </summary>
     /// <remarks>

@@ -32,6 +32,11 @@ public interface IItem
     char Symbol { get; }
 
     /// <summary>
+    /// Gets the console color used to render the Items on the map.
+    /// </summary>
+    ConsoleColor color {get;}
+
+    /// <summary>
     /// Returns a short textual description of the item.
     /// </summary>
     /// <returns>A human-readable description of the item.</returns>

@@ -26,7 +26,10 @@ public class DoubleSword : Weapon
     /// Gets the display name of the weapon.
     /// </summary>
     public override string Name => "Double Sword";
-
+    /// <summary>
+    /// Gets the console color used to render the Double Sword on the map.
+    /// </summary>
+    public override ConsoleColor color => ConsoleColor.DarkRed;
     /// <summary>
     /// Gets the character symbol used to render the weapon on the map.
     /// </summary>

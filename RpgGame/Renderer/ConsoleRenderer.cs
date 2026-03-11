@@ -71,9 +71,15 @@ public class ConsoleRenderer
                     var item = level.GetTopItem(currentPos);
 
                     if (item != null)
+                    {
+                        Console.ForegroundColor = item.color;
                         Console.Write(item.Symbol);
+                    }
                     else
+                    {
+                        Console.ForegroundColor = level.GetTile(x,y).color;
                         Console.Write(level.GetTile(x, y).Symbol);
+                    }
                 }
             }
 
@@ -98,18 +104,22 @@ public class ConsoleRenderer
     }
 
     /// <summary>
-    /// Builds the sidebar content displaying character stats,
-    /// equipment, currency, and inventory.
+    /// Generates the content for the sidebar based on the player's current state,
+    /// inventory, and other relevant information.  The content is returned as a
+    /// list of strings, where each string represents a line in the sidebar.  The caller is responsible for aligning these lines with the map rendering.
     /// </summary>
-    /// <returns>A list of formatted sidebar lines.</returns>
+    /// <param name="player"></param>
+    /// <param name="level"></param>
+    /// <param name="inventory"></param>
     /// <remarks>
-    /// There is one very stupid bug that I can't figure out how to fix. Because this rendering logic 
-    /// updates only what params change, when a Double sword is equipped, then dropped. The data on the menu
-    /// doesn't update properly and shows a weird mix of Sword and Empty. So for now I added a padding of 15 to the right
-    /// so the whole line gets cleared and rewritten. This is a band-aid solution. A maybe better solution would be to 
-    /// redraw the whole sidebar every frame, and I can change it to an async method to avoid performance issues. But for now I leave this as is and will figure out the 
-    /// ideal solution based on the future requirements of the game
-    /// </remarks>
+    /// There is a slight visual glitch that the last line closing the menu box is not rendered as it is more than the Console Lenght defined in the <cref="Config"/> file.
+    /// <returns>
+    /// Returns a list of strings representing the lines to be displayed in the sidebar.  The content includes: 
+    /// - Character stats (HP, Luck, Strength, etc.)
+    /// - Equipped items (left and right hand)
+    /// - Currency (coins, gold)
+    /// - Inventory slots (with indicators for selected item)
+    /// </returns>
     private List<string> GetSidebarContent(Player player, Level level, Inventory inventory)
     {
         int innerWidth = Config.SidebarWidth - 2; 

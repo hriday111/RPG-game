@@ -20,6 +20,7 @@ public abstract class Tile
     /// </summary>
     public abstract char Symbol { get; }
 
+    public abstract ConsoleColor color {get;}
     /// <summary>
     /// Gets a value indicating whether characters can walk on this tile.
     /// </summary>

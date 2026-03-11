@@ -14,6 +14,7 @@ public sealed class WallTile : Tile
     /// </summary>
     public override char Symbol => '█';
 
+    public override ConsoleColor color => ConsoleColor.Gray;
     /// <summary>
     /// Gets a value indicating whether the wall is walkable.
     /// </summary>

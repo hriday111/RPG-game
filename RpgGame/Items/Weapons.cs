@@ -40,7 +40,10 @@ public abstract class Weapon : IEquippable
     /// Gets the display name of the weapon.
     /// </summary>
     public abstract string Name { get; }
-
+    /// <summary>
+    /// Gets the console color used to render the weapon on the map.
+    /// </summary>
+    public abstract ConsoleColor color {get;}
     /// <summary>
     /// Gets the character symbol used to render the weapon on the map.
     /// </summary>

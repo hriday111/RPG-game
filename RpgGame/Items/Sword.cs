@@ -25,7 +25,10 @@ public class Sword : Weapon
     /// Gets the display name of the weapon.
     /// </summary>
     public override string Name => "Sword";
-
+    /// <summary>
+    /// Gets the console color used to render the sword on the map.
+    /// </summary>
+    public override ConsoleColor color => ConsoleColor.Red;
     /// <summary>
     /// Gets the character symbol used to render the sword on the map.
     /// </summary>

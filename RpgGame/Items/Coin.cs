@@ -25,6 +25,10 @@ public class Coin : IItem
     public char Symbol => 'c';
 
     /// <summary>
+    /// Gets the console color used to render the Coin on the map.
+    /// </summary>
+    public ConsoleColor color => ConsoleColor.Yellow;
+    /// <summary>
     /// Returns a short description of the coin.
     /// </summary>
     /// <returns>A textual description of the item.</returns>

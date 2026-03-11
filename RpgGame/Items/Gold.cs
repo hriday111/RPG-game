@@ -23,7 +23,10 @@ public class Gold : IItem
     /// Gets the character symbol used to render the coin on the map.
     /// </summary>
     public char Symbol => '☉';
-
+    /// <summary>
+    /// Gets the console color used to render the gold item on the map.
+    /// </summary>
+    public ConsoleColor color => ConsoleColor.DarkYellow;
     /// <summary>
     /// Returns a short description of the coin.
     /// </summary>

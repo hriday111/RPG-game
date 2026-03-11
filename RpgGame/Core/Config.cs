@@ -53,7 +53,7 @@ public static class Config
     /// <summary>
     /// Width of the sidebar displaying player information and inventory.
     /// </summary>
-    public const int SidebarWidth = 30;
+    public const int SidebarWidth = 35;
 
     #endregion
 }

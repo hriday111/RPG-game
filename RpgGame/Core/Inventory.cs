@@ -12,19 +12,19 @@ namespace RpgGame.Core;
 public class Inventory
 {
     /// <summary>
-    /// The backing list of equippable items.
+    /// The backing array of equippable items, representing fixed slots.
     /// </summary>
-    private List<IEquippable> inventory = new List<IEquippable>();
+    private IEquippable?[] inventory;
 
     /// <summary>
     /// The maximum number of items the inventory can hold.
     /// </summary>
-    private int _size =0;
+    private int _size = 10;
 
     /// <summary>
-    /// The current number of items in the inventory.
+    /// The currently selected inventory slot index (0-9).
     /// </summary>
-    private int _count=0;
+    public int SelectedIndex { get; set; } = 0;
 
     /// <summary>
     /// Reference to the player who owns this inventory.
@@ -35,42 +35,60 @@ public class Inventory
     /// Initializes a new instance of the <see cref="Inventory"/> class.
     /// </summary>
     /// <param name="player">The player who owns the inventory.</param>
-    /// <param name="size">The maximum capacity of the inventory.</param>
+    /// <param name="size">The maximum capacity of the inventory (ignored, forced to 10).</param>
     public Inventory(Player player, int size)
     {
-        _size = size;
+        _size = 10;
         _player = player;
-        inventory = new List<IEquippable>(_size);
+        inventory = new IEquippable?[_size];
     }
+
     /// <summary>
-    /// Adds an item to the inventory.
+    /// Adds an item to the inventory at the selected index if empty, 
+    /// otherwise finds the nearest empty slot.
     /// </summary>
     /// <param name="item">The equippable item to add.</param>
     /// <returns>True if the item was successfully added; false if the inventory is full.</returns>
     public bool AddToInventory(IEquippable item)
     {
-        if(_count==_size) {return false;}
-        else {_count++; inventory.Add(item); return true;}
+        // Try to add to selected index first
+        if (inventory[SelectedIndex] == null)
+        {
+            inventory[SelectedIndex] = item;
+            return true;
+        }
+
+        // Otherwise find nearest empty slot
+        for (int i = 0; i < _size; i++)
+        {
+            if (inventory[i] == null)
+            {
+                inventory[i] = item;
+                return true;
+            }
+        }
+
+        return false;
     }
 
     /// <summary>
-    /// Gets the top (most recently added) item in the inventory without removing it.
+    /// Gets the currently selected item without removing it.
     /// </summary>
-    /// <returns>The top item in the inventory, or null if the inventory is empty.</returns>
-    public IEquippable?  GetTopItem()
+    /// <returns>The selected item, or null if the slot is empty.</returns>
+    public IEquippable? GetSelectedItem()
     {
-        if(_count==0){return null;}
-        else{return inventory[0];}
+        return inventory[SelectedIndex];
     }
+
     /// <summary>
     /// Gets the nth item in the inventory without removing it.
     /// </summary>
     /// <param name="n">The 0-based index of the item to retrieve.</param>
-    /// <returns>The nth item in the inventory, or null if n is out of bounds.</returns>
-    public IEquippable?  GetNItem(int n)
+    /// <returns>The nth item in the inventory, or null if n is out of bounds or slot is empty.</returns>
+    public IEquippable? GetNItem(int n)
     {
-        if(_count==0 || n>_count){return null;}
-        else{return inventory[n];}
+        if (n < 0 || n >= _size) return null;
+        return inventory[n];
     }
 
     /// <summary>
@@ -79,38 +97,50 @@ public class Inventory
     /// <returns>The number of items currently stored in the inventory.</returns>
     public int GetCount()
     {
-        return _count;
-    }
-    /// <summary>
-    /// Equips the top item in the inventory to the player's right hand and removes it from inventory.
-    /// </summary>
-    /// <returns>True if an item was successfully equipped; false if the inventory is empty.</returns>
-    public bool TakeToRight()
-    {
-        if(_count==0) {return  false;}
-        else {
-            if(_player.EquipRight(inventory[0]))
-            {
-                inventory.RemoveAt(0); _count--;  return true;
-            }
-            return false;
+        int count = 0;
+        for (int i = 0; i < _size; i++)
+        {
+            if (inventory[i] != null) count++;
         }
+        return count;
     }
 
     /// <summary>
-    /// Equips the top item in the inventory to the player's left hand and removes it from inventory.
+    /// Equips the selected item in the inventory to the player's right hand and removes it from inventory.
     /// </summary>
-    /// <returns>True if an item was successfully equipped; false if the inventory is empty.</returns>
+    /// <returns>True if an item was successfully equipped; false if the slot is empty or equip failed.</returns>
+    public bool TakeToRight()
+    {
+        var item = inventory[SelectedIndex];
+        if (item == null) return false;
+
+        if (_player.EquipRight(item))
+        {
+            inventory[SelectedIndex] = null;
+            return true;
+        }
+        return false;
+    }
+
+    /// <summary>
+    /// Equips the selected item in the inventory to the player's left hand and removes it from inventory.
+    /// </summary>
+    /// <returns>True if an item was successfully equipped; false if the slot is empty or equip failed.</returns>
     public bool TakeToLeft()
     {
-        if(_count==0) {return  false;}
-        else 
+        var item = inventory[SelectedIndex];
+        if (item == null) return false;
+
+        if (_player.EquipLeft(item))
         {
-            if(_player.EquipLeft(inventory[0]))
-            {
-                inventory.RemoveAt(0); _count--;  return true;
-            }
-            return false;
+            inventory[SelectedIndex] = null;
+            return true;
         }
+        return false;
     }
+
+    /// <summary>
+    /// Gets the maximum size of the inventory.
+    /// </summary>
+    public int Size => _size;
 }

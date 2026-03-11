@@ -58,9 +58,9 @@ public class RectRoom
     /// <returns>True if the rooms intersect with a 2-tile buffer; otherwise, false.</returns>
     public bool Intersects(RectRoom other)
     {
-        return !(X + Width + 2 < other.X ||
-                 other.X + other.Width + 2 < X ||
-                 Y + Height + 2 < other.Y ||
-                 other.Y + other.Height + 2 < Y);
+        return !(X + Width  < other.X ||
+                 other.X + other.Width  < X ||
+                 Y + Height  < other.Y ||
+                 other.Y + other.Height  < Y);
     }
 }

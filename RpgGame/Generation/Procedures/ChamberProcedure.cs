@@ -34,25 +34,35 @@ public class ChambersProcedure : IDungeonProcedure
     {
         for (int i = 0; i < roomCount; i++)
         {
-            int width = random.Next(4, 8);
-            int height = random.Next(3, 6);
+            int tries = 0;
+            bool roomPlaced = false;
 
-            int x = random.Next(2, level.Width - width - 2);
-            int y = random.Next(2, level.Height - height - 2);
-
-            var newRoom = new RectRoom(x, y, width, height);
-
-            if (context.Rooms.Any(r => r.Intersects(newRoom)))
-                continue;
-
-            context.Rooms.Add(newRoom);
-
-            for (int yy = y; yy < y + height; yy++)
+            while (tries < 100000 && !roomPlaced)
             {
-                for (int xx = x; xx < x + width; xx++)
+                int width = random.Next(4, 8);
+                int height = random.Next(3, 6);
+
+                int x = random.Next(2, level.Width - width - 2);
+                int y = random.Next(2, level.Height - height - 2);
+
+                var newRoom = new RectRoom(x, y, width, height);
+
+                if (context.Rooms.Any(r => r.Intersects(newRoom)))
                 {
-                    level.SetTile(xx, yy, new FloorTile());
+                    tries++;
+                    continue;
                 }
+
+                context.Rooms.Add(newRoom);
+
+                for (int yy = y; yy < y + height; yy++)
+                {
+                    for (int xx = x; xx < x + width; xx++)
+                    {
+                        level.SetTile(xx, yy, new FloorTile());
+                    }
+                }
+                roomPlaced = true;
             }
         }
 

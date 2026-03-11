@@ -1,5 +1,0 @@
-<map id="RpgGame.Character.Player.DropRight" name="RpgGame.Character.Player.DropRight">
-<area shape="rect" id="Node000001" title="Drops the currently equipped right&#45;hand item onto the level." alt="" coords="294,5,480,44"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Input_1_1DropRightCommand.html#a9c276b3f89036aeec18cc97116d13007" title="Executes the command using provided game objects.Typically 1 to indicate the game should continue,..." alt="" coords="5,5,246,44"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="278,27,246,27,246,22,278,22"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="RpgGame.Character.Player.EquipRight" name="RpgGame.Character.Player.EquipRight">
-<area shape="rect" id="Node000001" title="Attempts to equip an item into the right hand." alt="" coords="5,5,192,44"/>
-<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Items_1_1IEquippable.html#af848669fb642e88ff29ad90b4fda0892" title="Attempts to equip the item in the player&#39;s right hand." alt="" coords="240,5,434,44"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,22,224,22,224,27,192,27"/>
-</map>

@@ -1,0 +1,5 @@
+<map id="RpgGame.Generation.Strategies.DungeonSandboxStrategy" name="RpgGame.Generation.Strategies.DungeonSandboxStrategy">
+<area shape="rect" id="Node000001" title="A concrete dungeon generation strategy that creates an empty dungeon with on central room,..." alt="" coords="5,131,210,208"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Generation_1_1Strategies_1_1IDungeonStrategy.html" title="Defines the contract for dungeon generation strategies." alt="" coords="5,5,210,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,97,110,131,105,131,105,97"/>
+</map>

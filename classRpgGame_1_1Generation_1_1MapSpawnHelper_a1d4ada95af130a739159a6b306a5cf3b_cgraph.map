@@ -1,0 +1,6 @@
+<map id="RpgGame.Generation.MapSpawnHelper.SpawnItemsAsync&lt; TItem &gt;" name="RpgGame.Generation.MapSpawnHelper.SpawnItemsAsync&lt; TItem &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,15,223,68"/>
+<area shape="rect" id="Node000002" href="$namespaceRpgGame_1_1Character.html#ab2e6f640f8bfc682c50e3c19e0d417f1" title="A record for tracking the position of Characters, Items, and Tiles if needed." alt="" coords="271,29,464,54"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,39,255,39,255,44,223,44"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="326,31,317,21,322,11,339,5,367,3,400,6,415,13,412,18,398,11,367,8,340,10,326,15,323,20,330,27"/>
+</map>

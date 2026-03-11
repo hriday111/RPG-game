@@ -1,0 +1,5 @@
+<map id="RpgGame.Core.Level.AddItem" name="RpgGame.Core.Level.AddItem">
+<area shape="rect" id="Node000001" title="Adds an item to the specified position in the level." alt="" coords="272,5,472,30"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Items_1_1Weapon.html#a339e37ae4e04120d793116e8ab6b48d7" title="Drops the weapon onto the current level at the player&#39;s position." alt="" coords="5,5,224,30"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,20,224,20,224,15,256,15"/>
+</map>

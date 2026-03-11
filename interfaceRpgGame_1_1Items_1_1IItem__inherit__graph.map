@@ -1,0 +1,15 @@
+<map id="RpgGame.Items.IItem" name="RpgGame.Items.IItem">
+<area shape="rect" id="Node000001" title="Defines the contract for all items that can exist within the game world." alt="" coords="215,5,400,174"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Items_1_1Coin.html" title="Represents a coin item that increases the player&#39;s currency when picked up." alt="" coords="5,222,190,391"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,186,181,224,177,220,214,183"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Items_1_1Gold.html" title="Represents a gold item that increases the player&#39;s gold currency when picked up." alt="" coords="215,222,400,391"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="310,189,310,222,304,222,304,189"/>
+<area shape="rect" id="Node000004" href="$interfaceRpgGame_1_1Items_1_1IEquippable.html" title="Represents an item that can be equipped by the player." alt="" coords="424,251,604,362"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="399,182,464,250,460,253,395,186"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Items_1_1Weapon.html" title="Represents an abstract base class for all equippable weapons." alt="" coords="416,439,611,727"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="516,376,516,439,511,439,511,376"/>
+<area shape="rect" id="Node000006" href="$classRpgGame_1_1Items_1_1DoubleSword.html" title="Represents a powerful two&#45;handed sword weapon." alt="" coords="322,775,511,910"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="457,742,444,776,439,774,452,740"/>
+<area shape="rect" id="Node000007" href="$classRpgGame_1_1Items_1_1Sword.html" title="Represents a standard one&#45;handed sword weapon." alt="" coords="535,775,687,910"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="576,740,589,774,584,776,571,742"/>
+</map>

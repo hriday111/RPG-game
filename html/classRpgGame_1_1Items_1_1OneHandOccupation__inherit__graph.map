@@ -1,5 +1,0 @@
-<map id="RpgGame.Items.OneHandOccupation" name="RpgGame.Items.OneHandOccupation">
-<area shape="rect" id="Node000001" title="Represents a hand occupation strategy for one&#45;handed equipment." alt="" coords="5,164,238,275"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Items_1_1HandOccupation.html" title="Defines the strategy for how an equippable item occupies the player&#39;s hands." alt="" coords="17,5,226,116"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,131,124,164,119,164,119,131"/>
-</map>

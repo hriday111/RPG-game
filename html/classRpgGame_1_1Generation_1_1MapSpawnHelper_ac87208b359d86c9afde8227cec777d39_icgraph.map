@@ -1,5 +1,0 @@
-<map id="RpgGame.Generation.MapSpawnHelper.SpawnThornsAsync" name="RpgGame.Generation.MapSpawnHelper.SpawnThornsAsync">
-<area shape="rect" id="Node000001" title="Conveniece wrapper that spawns Thorns." alt="" coords="276,5,493,44"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1Procedures_1_1AddItemsProcedure.html#a9a2214ff2e6d470a251d761f7a467ea3" title="Applies the item spawning to the level." alt="" coords="5,5,228,44"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,27,228,27,228,22,260,22"/>
-</map>

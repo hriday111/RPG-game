@@ -1,5 +1,0 @@
-<map id="RpgGame.Input.MoveUpCommand" name="RpgGame.Input.MoveUpCommand">
-<area shape="rect" id="Node000001" title="Moves the player one tile up (north) on the level." alt="" coords="5,145,220,236"/>
-<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Input_1_1IInputCommand.html" title="Represents a user input command that manipulates the game state (level, player, inventory) and return..." alt="" coords="13,5,212,97"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,111,115,145,110,145,110,111"/>
-</map>

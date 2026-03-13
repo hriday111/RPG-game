@@ -1,5 +1,0 @@
-<map id="RpgGame.Input.SelectInventoryCommand" name="RpgGame.Input.SelectInventoryCommand">
-<area shape="rect" id="Node000001" title="Selects a specific inventory slot." alt="" coords="6,145,204,283"/>
-<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Input_1_1IInputCommand.html" title="Represents a user input command that manipulates the game state (level, player, inventory) and return..." alt="" coords="5,5,205,97"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,112,108,145,102,145,102,112"/>
-</map>

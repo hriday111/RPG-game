@@ -1,5 +1,0 @@
-<map id="RpgGame.Input.DropLeftCommand" name="RpgGame.Input.DropLeftCommand">
-<area shape="rect" id="Node000001" title="Instructs the player to drop the item in their left hand onto the level." alt="" coords="5,145,222,236"/>
-<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Input_1_1IInputCommand.html" title="Represents a user input command that manipulates the game state (level, player, inventory) and return..." alt="" coords="14,5,214,97"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,111,116,145,111,145,111,111"/>
-</map>

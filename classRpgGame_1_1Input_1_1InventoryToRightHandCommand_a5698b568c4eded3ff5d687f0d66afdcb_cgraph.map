@@ -1,5 +1,0 @@
-<map id="RpgGame.Input.InventoryToRightHandCommand.Execute" name="RpgGame.Input.InventoryToRightHandCommand.Execute">
-<area shape="rect" id="Node000001" title="Executes the command using provided game objects.Typically 1 to indicate the game should continue,..." alt="" coords="5,5,200,44"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Inventory.html#ac6f47b993f9088ebe1c950f9d26cbe1d" title="Equips the selected item in the inventory to the player&#39;s right hand and removes it from inventory." alt="" coords="248,5,449,44"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,22,232,22,232,27,200,27"/>
-</map>

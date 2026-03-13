@@ -1,5 +1,0 @@
-<map id="RpgGame.Core.Inventory.TakeToLeft" name="RpgGame.Core.Inventory.TakeToLeft">
-<area shape="rect" id="Node000001" title="Equips the selected item in the inventory to the player&#39;s left hand and removes it from inventory." alt="" coords="239,5,440,44"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Input_1_1InventoryToLeftHandCommand.html#aaac59bc026f4203bb5f3f909c216beed" title="Executes the command using provided game objects.Typically 1 to indicate the game should continue,..." alt="" coords="5,5,191,44"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,27,191,27,191,22,223,22"/>
-</map>

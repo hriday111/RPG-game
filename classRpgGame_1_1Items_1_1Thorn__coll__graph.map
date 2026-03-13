@@ -1,0 +1,5 @@
+<map id="RpgGame.Items.Thorn" name="RpgGame.Items.Thorn">
+<area shape="rect" id="Node000001" title="Represents a Thorn on that map, and walking over it causes damange." alt="" coords="5,222,190,391"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Items_1_1IItem.html" title="Defines the contract for all items that can exist within the game world." alt="" coords="5,5,190,174"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,189,100,222,95,222,95,189"/>
+</map>

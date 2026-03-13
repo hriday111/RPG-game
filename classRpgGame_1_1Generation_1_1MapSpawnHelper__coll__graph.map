@@ -1,0 +1,3 @@
+<map id="RpgGame.Generation.MapSpawnHelper" name="RpgGame.Generation.MapSpawnHelper">
+<area shape="rect" id="Node000001" title="Provides common item&#45;spawning routines that can be shared among multiple IMapGenerator implementation..." alt="" coords="5,5,214,325"/>
+</map>

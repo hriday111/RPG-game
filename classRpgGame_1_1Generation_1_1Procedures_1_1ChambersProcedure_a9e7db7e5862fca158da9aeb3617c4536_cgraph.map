@@ -1,0 +1,5 @@
+<map id="RpgGame.Generation.Procedures.ChambersProcedure.ApplyAsync" name="RpgGame.Generation.Procedures.ChambersProcedure.ApplyAsync">
+<area shape="rect" id="Node000001" title="Applies the chambers generation to the level." alt="" coords="5,5,228,44"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Level.html#a15d9a500574d9e3fe241911cd88d93bb" title="Sets the tile at the specified coordinates." alt="" coords="276,12,468,37"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,22,260,22,260,27,228,27"/>
+</map>

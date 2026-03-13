@@ -4,6 +4,13 @@ Console-based RPG game developed for the Object-Oriented Design course.
 
 # Documentation
 [`RpgGame`](https://hriday111.github.io/RPG-game/)
+
+---
+
+## New Additions:
+
+New Potions and Thorns have been added. Trying to pick up Thorns causes 50 damage, and picking up potions result in increase of health by 20 points. 
+
 ---
 
 ## Overview
@@ -23,6 +30,7 @@ This project implements a procedurally generated RPG world with:
 Using `dotnet run` in the `RpgGame` directory.
 
 ---
+
 ## How to Play
 
 The game is a console-based RPG where you explore a randomly generated room. You can collect items to inventory or currency. Items can also be equipped from the inventory.
@@ -72,5 +80,7 @@ For detailed API documentation, see the [RpgGame.Generation namespace documentat
 ---
 
 ## TODO
+- Sucks that you have to pick up thorns to get damage, Ideally it would be great such that if a player steps on a tile with harmful items he gets the damage. I tried to implement it but got really lazy so thats another problem for future me. 
 
-- `RpgGame/Renderer/ConsoleRenderer.cs/` - There is a god awful bug to which a bandaid fix for now with ideas for further improvements. For further details check the remarks for the method `GetSidebarContent`.
+This feature could be adapted to coins and golds also.
+- In Player.cs I don't really have a game over screen. So you could just get your health down to 0 and continue playing like nothings wrong. Gotta fix that but let that just be a future me problem for now.

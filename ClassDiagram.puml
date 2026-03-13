@@ -1,7 +1,7 @@
 @startuml ClassDiagram
 skinparam classAttributeIconSize 0
 
-' ==================== ITEMS ====================
+'  ITEMS 
 interface IItem {
   +Name: string
   +Symbol: char
@@ -23,6 +23,8 @@ abstract class Weapon {
 
 class Coin
 class Gold
+class Potion
+class Thorn
 
 class Sword
 class DoubleSword
@@ -34,7 +36,7 @@ abstract class HandOccupation {
 class OneHandOccupation
 class TwoHandOccupation
 
-' ==================== TILES ====================
+'  TILES 
 abstract class Tile {
   +IsWalkable: bool
   +Symbol: char
@@ -43,7 +45,7 @@ abstract class Tile {
 class FloorTile
 class WallTile
 
-' ==================== CHARACTER ====================
+'  CHARACTER 
 class Position {
   +X: int
   +Y: int
@@ -69,7 +71,7 @@ class Player {
   +Gold: int
 }
 
-' ==================== CORE ====================
+'  CORE 
 class Level {
   +Width: int
   +Height: int
@@ -101,7 +103,7 @@ class Directions {
   {static} +Right: Position
 }
 
-' ==================== GENERATION ====================
+'  GENERATION 
 interface IMapGenerator {
   GenerateAsync(level: Level): Task
 }
@@ -142,12 +144,12 @@ interface IDungeonStrategy {
 
 class DungeonGroundsStrategy
 
-' ==================== RENDERING ====================
+'  RENDERING 
 class ConsoleRenderer {
   Render(level: Level, player: Player, inventory: Inventory): void
 }
 
-' ==================== INPUT ====================
+'  INPUT 
 interface IInputCommand {
   Execute(player: Player, level: Level): void
 }
@@ -167,13 +169,14 @@ class DropRightCommand
 class TakeToInventoryCommand
 class QuitGameCommand
 
-' ==================== INHERITANCE ====================
+'  INHERITANCE 
 IItem <|.. IEquippable
 IEquippable <|.. Weapon
 Weapon <|-- Sword
 Weapon <|-- DoubleSword
 IItem <|.. Coin
 IItem <|.. Gold
+IItem <|.. Potion
 
 Tile <|-- FloorTile
 Tile <|-- WallTile
@@ -205,7 +208,7 @@ IInputCommand <|.. DropRightCommand
 IInputCommand <|.. TakeToInventoryCommand
 IInputCommand <|.. QuitGameCommand
 
-' ==================== ASSOCIATIONS ====================
+'  ASSOCIATIONS 
 Level --> Tile
 Level --> IItem
 Player --> IItem

@@ -66,25 +66,52 @@ namespace RpgGame.Generation
         /// <summary>
         /// Convenience wrapper that spawns coins.
         /// </summary>
+        /// <param name="level"></param>
+        /// <param name="count"></param>
         public static Task SpawnCoinsAsync(Level level, int count) =>
             SpawnItemsAsync(level, count, () => new Coin());
 
         /// <summary>
         /// Convenience wrapper that spawns one-handed swords.
         /// </summary>
+        /// <param name="level"></param>
+        /// <param name="count"></param>
         public static Task SpawnSwordAsync(Level level, int count) =>
             SpawnItemsAsync(level, count, () => new Sword());
 
         /// <summary>
         /// Convenience wrapper that spawns two-handed swords.
         /// </summary>
+        /// <param name="level"></param>
+        /// <param name="count"></param>
         public static Task SpawnDoubleSwordAsync(Level level, int count) =>
             SpawnItemsAsync(level, count, () => new DoubleSword());
 
         /// <summary>
         /// Convenience wrapper that spawns gold piles.
         /// </summary>
+        /// <param name="level"></param>
+        /// <param name="count"></param>
+        /// <returns></returns>
         public static Task SpawnGoldAsync(Level level, int count) =>
             SpawnItemsAsync(level, count, () => new Gold());
+        
+        /// <summary>
+        /// Convenience wrapper that spawns potions.
+        /// </summary>
+        /// <param name="level"></param>
+        /// <param name="count"></param>
+        /// <returns></returns>
+        public static Task SpawnPotionsAsync(Level level, int count) =>
+            SpawnItemsAsync(level, count, () => new Potion());
+        
+        /// <summary>
+        /// Conveniece wrapper that spawns Thorns
+        /// </summary>
+        /// <param name="level"></param>
+        /// <param name="count"></param>
+        /// <returns></returns>
+        public static Task SpawnThornsAsync(Level level, int count) =>
+            SpawnItemsAsync(level, count, () => new Thorn());
     }
 }

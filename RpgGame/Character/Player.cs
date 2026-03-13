@@ -37,7 +37,8 @@ public class Player : Character
     /// <summary>Gets the player's Wisdom attribute.</summary>
     public int Wisdom { get; private set; }
 
-    #endregion    public IEquippable? LeftHand { get; private set; }
+    #endregion
+
     #region Equipment
 
     /// <summary>
@@ -51,8 +52,32 @@ public class Player : Character
     public IEquippable? RightHand { get; private set; }
 
     #endregion
+    #region Stat Logic
 
-    
+    /// <summary>
+    /// Restores the player's health by the specified amount, capped at 100.
+    /// </summary>
+    /// <param name="amount">The amount of health to restore.</param>
+    public void RestoreHealth(int amount)
+    {
+        Health += amount;
+        if (Health > 100)
+            Health = 100;
+    }
+
+    /// <summary>
+    /// Reduces the player's health by the specified amount.
+    /// </summary>
+    /// <param name="amount">The amount of damage to take.</param>
+    public void TakeDamage(int amount)
+    {
+        Health -= amount;
+        if (Health < 0)
+            Health = 0;
+    }
+
+    #endregion
+   
     #region Currency
 
     /// <summary>

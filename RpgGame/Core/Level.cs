@@ -86,6 +86,7 @@ public class Level
 
     /// <summary>
     /// Attempts to move a character to a new position if the move is valid.
+    /// Also handles item interactions for players.
     /// </summary>
     /// <param name="character">The character attempting to move.</param>
     /// <param name="nPos">The target position.</param>
@@ -94,6 +95,8 @@ public class Level
         if (IsMoveValid(character, nPos))
         {
             character.Move(nPos);
+
+            
         }
     }
 

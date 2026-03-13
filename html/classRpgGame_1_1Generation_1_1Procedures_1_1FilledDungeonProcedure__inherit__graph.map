@@ -1,0 +1,5 @@
+<map id="RpgGame.Generation.Procedures.FilledDungeonProcedure" name="RpgGame.Generation.Procedures.FilledDungeonProcedure">
+<area shape="rect" id="Node000001" title="Fills the entire dungeon with wall tiles, creating a solid base for carving." alt="" coords="5,159,217,264"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Generation_1_1IDungeonProcedure.html" title="Defines a procedural step in dungeon generation." alt="" coords="12,5,210,111"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,125,114,159,108,159,108,125"/>
+</map>

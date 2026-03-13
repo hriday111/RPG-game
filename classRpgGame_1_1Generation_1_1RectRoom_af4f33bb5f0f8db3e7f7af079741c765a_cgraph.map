@@ -1,0 +1,5 @@
+<map id="RpgGame.Generation.RectRoom.Intersects" name="RpgGame.Generation.RectRoom.Intersects">
+<area shape="rect" id="Node000001" title="Determines whether this room intersects with another room." alt="" coords="5,5,224,44"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1RectRoom.html#a03b9dcb1df03f309eae206e2871a5223" title="Initializes a new rectangular room." alt="" coords="272,5,490,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,22,256,22,256,27,224,27"/>
+</map>

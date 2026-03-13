@@ -1,0 +1,7 @@
+<map id="RpgGame.Generation.Procedures.AddWeaponsProcedure.ApplyAsync" name="RpgGame.Generation.Procedures.AddWeaponsProcedure.ApplyAsync">
+<area shape="rect" id="Node000001" title="Applies the weapon spawning to the level." alt="" coords="5,37,236,76"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1MapSpawnHelper.html#ac40bb8e43fb5b06d21638ff12bde806b" title="Convenience wrapper that spawns two&#45;handed swords." alt="" coords="284,5,501,44"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,40,268,37,268,42,236,46"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1MapSpawnHelper.html#a67946efaa42f2f00637a21cd4be3ee74" title="Convenience wrapper that spawns one&#45;handed swords." alt="" coords="284,68,501,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,67,268,71,268,76,236,72"/>
+</map>

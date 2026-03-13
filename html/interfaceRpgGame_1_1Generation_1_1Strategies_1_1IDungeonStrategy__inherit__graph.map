@@ -1,0 +1,7 @@
+<map id="RpgGame.Generation.Strategies.IDungeonStrategy" name="RpgGame.Generation.Strategies.IDungeonStrategy">
+<area shape="rect" id="Node000001" title="Defines the contract for dungeon generation strategies." alt="" coords="120,5,325,83"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1Strategies_1_1DungeonGroundsStrategy.html" title="A concrete dungeon generation strategy that creates a complex dungeon with rooms, corridors,..." alt="" coords="5,131,210,208"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,95,144,133,140,129,176,91"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1Strategies_1_1DungeonSandboxStrategy.html" title="A concrete dungeon generation strategy that creates an empty dungeon with on central room,..." alt="" coords="235,131,439,208"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="269,91,304,129,300,133,265,95"/>
+</map>

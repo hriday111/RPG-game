@@ -1,6 +1,0 @@
-<map id="RpgGame.Character.Character.Move" name="RpgGame.Character.Character.Move">
-<area shape="rect" id="Node000001" title="Moves the character to a new position." alt="" coords="5,29,244,54"/>
-<area shape="rect" id="Node000002" href="$namespaceRpgGame_1_1Character.html#ab2e6f640f8bfc682c50e3c19e0d417f1" title="A record for tracking the position of Characters, Items, and Tiles if needed." alt="" coords="292,29,485,54"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,39,276,39,276,44,244,44"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="346,31,336,21,341,11,359,5,388,3,423,6,438,14,436,18,421,11,388,8,360,10,345,15,342,20,350,27"/>
-</map>

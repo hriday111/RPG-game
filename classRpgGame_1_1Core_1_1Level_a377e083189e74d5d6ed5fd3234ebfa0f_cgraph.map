@@ -1,6 +1,0 @@
-<map id="RpgGame.Core.Level.AddItem" name="RpgGame.Core.Level.AddItem">
-<area shape="rect" id="Node000001" title="Adds an item to the specified position in the level." alt="" coords="5,29,206,54"/>
-<area shape="rect" id="Node000002" href="$namespaceRpgGame_1_1Character.html#ab2e6f640f8bfc682c50e3c19e0d417f1" title="A record for tracking the position of Characters, Items, and Tiles if needed." alt="" coords="254,29,447,54"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,39,238,39,238,44,206,44"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="311,31,302,21,306,11,323,5,350,3,382,6,396,13,394,18,380,11,350,8,324,10,310,15,307,20,315,27"/>
-</map>

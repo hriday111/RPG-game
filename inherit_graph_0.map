@@ -1,7 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classRpgGame_1_1Character_1_1Character.html" title="Base abstract class for both playable and non&#45;playable characters." alt="" coords="5,31,209,55"/>
-<area shape="rect" id="Node000001" href="$classRpgGame_1_1Character_1_1Golem.html" title="Represents a Golem character in the game. Golems are typically non&#45;player characters (NPCs) that may ..." alt="" coords="257,5,441,30"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="224,28,256,25,256,30,224,33"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Player.html" title="Represents the player&#45;controlled character in the game." alt="" coords="258,55,440,79"/>
-<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="224,52,257,55,257,61,224,57"/>
-</map>

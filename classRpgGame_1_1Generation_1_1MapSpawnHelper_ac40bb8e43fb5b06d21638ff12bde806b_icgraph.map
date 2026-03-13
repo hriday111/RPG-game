@@ -1,7 +1,0 @@
-<map id="RpgGame.Generation.MapSpawnHelper.SpawnDoubleSwordAsync" name="RpgGame.Generation.MapSpawnHelper.SpawnDoubleSwordAsync">
-<area shape="rect" id="Node000001" title="Convenience wrapper that spawns two&#45;handed swords." alt="" coords="284,37,501,76"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1Procedures_1_1AddWeaponsProcedure.html#a54e6c7a681a868a88538a89f75f6f01f" title="Applies the weapon spawning to the level." alt="" coords="5,5,236,44"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,45,236,41,236,36,268,39"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1SimpleRoomGenerator.html#a8caf609eb1559582bff3d5f1f4c28f64" title="Asynchronously generates the level; uses the new async spawn helpers to perform item placement withou..." alt="" coords="17,68,224,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="268,73,224,78,224,73,268,68"/>
-</map>

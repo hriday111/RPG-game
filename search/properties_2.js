@@ -1,6 +1,0 @@
-var searchData=
-[
-  ['center_0',['Center',['../classRpgGame_1_1Generation_1_1RectRoom.html#a60c598e83cc84314bf3f86248b87d01a',1,'RpgGame::Generation::RectRoom']]],
-  ['coins_1',['Coins',['../classRpgGame_1_1Character_1_1Player.html#af3a2bcf0fc02d07355a4907adb421d35',1,'RpgGame::Character::Player']]],
-  ['color_2',['color',['../classRpgGame_1_1Items_1_1Coin.html#af808afb487adde6fdc2d7591f8011dea',1,'RpgGame.Items.Coin.color'],['../classRpgGame_1_1Items_1_1DoubleSword.html#a1ce72d8b114aae012f78881dd598282b',1,'RpgGame.Items.DoubleSword.color'],['../classRpgGame_1_1Items_1_1Gold.html#a3ebae7508974d2169fd572fd11a69048',1,'RpgGame.Items.Gold.color'],['../interfaceRpgGame_1_1Items_1_1IItem.html#a3c8c7341109c346086a8bddd9d4a1731',1,'RpgGame.Items.IItem.color'],['../classRpgGame_1_1Items_1_1Potion.html#aa958229c36a45ad2867bbfd94d96bde7',1,'RpgGame.Items.Potion.color'],['../classRpgGame_1_1Items_1_1Sword.html#acd38ad10ab17a19c4711aa912bb5fde7',1,'RpgGame.Items.Sword.color'],['../classRpgGame_1_1Items_1_1Thorn.html#a928e8a105c45f182753197fd791e8c63',1,'RpgGame.Items.Thorn.color'],['../classRpgGame_1_1Items_1_1Weapon.html#a1a73d7bfdf34b5e3165508a162adbf47',1,'RpgGame.Items.Weapon.color'],['../classRpgGame_1_1Tiles_1_1FloorTile.html#a9aa48024a41afaf4b1718ea817f5f811',1,'RpgGame.Tiles.FloorTile.color']]]
-];

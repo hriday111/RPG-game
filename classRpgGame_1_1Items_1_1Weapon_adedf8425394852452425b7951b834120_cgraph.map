@@ -1,5 +1,0 @@
-<map id="RpgGame.Items.Weapon.OnPickup" name="RpgGame.Items.Weapon.OnPickup">
-<area shape="rect" id="Node000001" title="Handles pickup interaction for the weapon." alt="" coords="5,12,236,37"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Inventory.html#a8d70ac0ba92f102933444e8de840b983" title="Adds an item to the inventory at the selected index if empty, otherwise finds the nearest empty slot." alt="" coords="284,5,481,44"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,22,268,22,268,27,236,27"/>
-</map>

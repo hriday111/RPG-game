@@ -1,7 +1,0 @@
-<map id="RpgGame.Character.Character" name="RpgGame.Character.Character">
-<area shape="rect" id="Node000001" title="Base abstract class for both playable and non&#45;playable characters." alt="" coords="116,5,308,135"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Golem.html" title="Represents a Golem character in the game. Golems are typically non&#45;player characters (NPCs) that may ..." alt="" coords="5,440,200,522"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,150,116,440,111,439,189,149"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Character_1_1Player.html" title="Represents the player&#45;controlled character in the game." alt="" coords="225,183,418,779"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,149,245,183,240,184,230,150"/>
-</map>

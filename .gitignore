@@ -4,7 +4,7 @@
 *.vsix
 
 # Ignore doxygen generated file:
-html*
+html/*
 out/*
 
 ## A streamlined .gitignore for modern .NET projects

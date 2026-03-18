@@ -7,7 +7,7 @@ using RpgGame.Generation.Strategies;
 using RpgGame.Input;
 using RpgGame.Renderer;
 namespace RpgGame;
-
+///////////////////
 /// <summary>
 /// Entry point of the RPG game application.
 /// </summary>

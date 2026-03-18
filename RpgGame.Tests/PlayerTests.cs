@@ -11,7 +11,7 @@ public class PlayerTests
     {
         // Arrange
         var player = new Player(new Position(0, 0));
-        player.TakeDamage(10); 
+        player.TakeDamage(10);
 
         // Act
         player.RestoreHealth(150);

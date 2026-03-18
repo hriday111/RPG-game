@@ -16,7 +16,7 @@ public class Player : Character
     /// Character used to represent the player on the map.
     /// </summary>
     public override char Symbol => '¶';
-    
+
     #region Attributes
 
     /// <summary>Gets the player's Strength attribute.</summary>
@@ -77,7 +77,7 @@ public class Player : Character
     }
 
     #endregion
-   
+
     #region Currency
 
     /// <summary>
@@ -92,7 +92,7 @@ public class Player : Character
     public void AddCoins(int amount) => Coins += amount;
     public void AddGold(int amount) => Gold += amount;
     #endregion
-    
+
 
     #region Equipment Logic (Internal)
 

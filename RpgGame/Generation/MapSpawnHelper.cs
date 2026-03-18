@@ -1,8 +1,8 @@
 using System;
 using System.Threading.Tasks;
+using RpgGame.Character;
 using RpgGame.Core;
 using RpgGame.Items;
-using RpgGame.Character;
 
 namespace RpgGame.Generation
 {
@@ -23,46 +23,46 @@ namespace RpgGame.Generation
         private static readonly Random random = new();
 
         /// <summary>
-    /// Asynchronously places a number of items at random walkable locations
-    /// on the given level.
-    /// </summary>
-    /// <typeparam name="TItem">The concrete <see cref="Item"/> type.</typeparam>
-    /// <param name="level">Level instance to populate.</param>
-    /// <param name="count">Total number of items to spawn.</param>
-    /// <param name="factory">Function that returns a fresh item instance.</param>
-    /// <returns>A task that completes when all items have been placed.</returns>
-    /// <remarks>
-    /// The placement logic executes on the thread pool because the work is
-    /// CPU-bound; callers can await the returned task without blocking the
-    /// caller thread.
-    /// </remarks>
-    public static Task SpawnItemsAsync<TItem>(Level level, int count, Func<TItem> factory)
-        where TItem : IItem
-    {
-        return Task.Run(() =>
+        /// Asynchronously places a number of items at random walkable locations
+        /// on the given level.
+        /// </summary>
+        /// <typeparam name="TItem">The concrete <see cref="Item"/> type.</typeparam>
+        /// <param name="level">Level instance to populate.</param>
+        /// <param name="count">Total number of items to spawn.</param>
+        /// <param name="factory">Function that returns a fresh item instance.</param>
+        /// <returns>A task that completes when all items have been placed.</returns>
+        /// <remarks>
+        /// The placement logic executes on the thread pool because the work is
+        /// CPU-bound; callers can await the returned task without blocking the
+        /// caller thread.
+        /// </remarks>
+        public static Task SpawnItemsAsync<TItem>(Level level, int count, Func<TItem> factory)
+            where TItem : IItem
         {
-            for (int i = 0; i < count; i++)
+            return Task.Run(() =>
             {
-                Position pos;
-                do
+                for (int i = 0; i < count; i++)
                 {
-                    int x = random.Next(1, level.Width - 1);
-                    int y = random.Next(1, level.Height - 1);
-                    pos = new Position(x, y);
+                    Position pos;
+                    do
+                    {
+                        int x = random.Next(1, level.Width - 1);
+                        int y = random.Next(1, level.Height - 1);
+                        pos = new Position(x, y);
+                    }
+                    while (!level.GetTile(pos.X, pos.Y).IsWalkable);
+
+                    level.AddItem(pos, factory());
                 }
-                while (!level.GetTile(pos.X, pos.Y).IsWalkable);
+            });
+        }
 
-                level.AddItem(pos, factory());
-            }
-        });
-    }
 
-        
 
-        
 
-        
-        
+
+
+
         /// <summary>
         /// Convenience wrapper that spawns coins.
         /// </summary>
@@ -95,7 +95,7 @@ namespace RpgGame.Generation
         /// <returns></returns>
         public static Task SpawnGoldAsync(Level level, int count) =>
             SpawnItemsAsync(level, count, () => new Gold());
-        
+
         /// <summary>
         /// Convenience wrapper that spawns potions.
         /// </summary>
@@ -104,7 +104,7 @@ namespace RpgGame.Generation
         /// <returns></returns>
         public static Task SpawnPotionsAsync(Level level, int count) =>
             SpawnItemsAsync(level, count, () => new Potion());
-        
+
         /// <summary>
         /// Conveniece wrapper that spawns Thorns
         /// </summary>

@@ -35,13 +35,13 @@ public readonly record struct Position(int X, int Y)
     /// </summary>
     public static Position operator -(Position left, Position right)
         => new Position(left.X - right.X, left.Y - right.Y);
-    
+
     /// <summary>
     /// Multiplies a position by a scalar value.
     /// </summary>
     public static Position operator *(Position pos, int scalar)
         => new Position(pos.X * scalar, pos.Y * scalar);
-}   
+}
 
 /// <summary>
 /// Base abstract class for both playable and non-playable characters.
@@ -83,6 +83,6 @@ public abstract class Character
     public void Move(Position newPos)
     {
         Pos = newPos;
-        
+
     }
 }

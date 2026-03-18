@@ -1,5 +1,5 @@
-using RpgGame.Core;
 using RpgGame.Character;
+using RpgGame.Core;
 
 namespace RpgGame.Input;
 

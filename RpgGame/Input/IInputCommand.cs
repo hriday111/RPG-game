@@ -1,7 +1,7 @@
 namespace RpgGame.Input;
 
-using RpgGame.Core;
 using RpgGame.Character;
+using RpgGame.Core;
 
 /// <summary>
 /// Represents a user input command that manipulates the game

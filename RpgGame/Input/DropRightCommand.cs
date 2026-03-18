@@ -1,7 +1,7 @@
 namespace RpgGame.Input;
 
-using RpgGame.Core;
 using RpgGame.Character;
+using RpgGame.Core;
 
 /// <summary>
 /// Instructs the player to drop the item in their right hand onto the level.

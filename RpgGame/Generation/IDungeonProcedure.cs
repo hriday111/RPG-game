@@ -1,6 +1,6 @@
+using RpgGame.Character;
 using RpgGame.Core;
 using RpgGame.Tiles;
-using RpgGame.Character;
 
 namespace RpgGame.Generation;
 

@@ -10,7 +10,7 @@ namespace RpgGame.Generation.Procedures;
 /// allowing the player to upgrade their combat capabilities.
 /// </remarks>
 public class AddWeaponsProcedure : IDungeonProcedure
-{   
+{
     private readonly int SwordCount;
     private readonly int DoubleSwordCount;
 
@@ -31,7 +31,7 @@ public class AddWeaponsProcedure : IDungeonProcedure
     /// <param name="level">The level being generated.</param>
     /// <param name="context">Shared generation state.</param>
     /// <returns>A task that completes when all weapons have been placed.</returns>
-    public async Task ApplyAsync(Level level,  DungeonContext context)
+    public async Task ApplyAsync(Level level, DungeonContext context)
     {
         await MapSpawnHelper.SpawnSwordAsync(level, SwordCount);
         await MapSpawnHelper.SpawnDoubleSwordAsync(level, DoubleSwordCount);

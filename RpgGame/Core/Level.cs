@@ -1,6 +1,6 @@
-using RpgGame.Tiles;
 using RpgGame.Character;
 using RpgGame.Items;
+using RpgGame.Tiles;
 
 namespace RpgGame.Core;
 
@@ -96,7 +96,7 @@ public class Level
         {
             character.Move(nPos);
 
-            
+
         }
     }
 

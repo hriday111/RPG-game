@@ -23,7 +23,7 @@ public class AddItemsProcedure : IDungeonProcedure
     /// <param name="GoldCount">The number of gold piles to spawn. Defaults to 2.</param>
     /// <param name="PotionCount">The number of potions to spawn. Defaults to 2.</param>
     /// <param name="ThornCount">The number of thorns to spawn. Defaults to 1.</param>
-    public AddItemsProcedure(int CoinCount= 5, int GoldCount= 2, int PotionCount= 2, int ThornCount = 1)
+    public AddItemsProcedure(int CoinCount = 5, int GoldCount = 2, int PotionCount = 2, int ThornCount = 1)
     {
         this.CoinCount = CoinCount;
         this.GoldCount = GoldCount;
@@ -37,11 +37,11 @@ public class AddItemsProcedure : IDungeonProcedure
     /// <param name="level">The level being generated.</param>
     /// <param name="context">Shared generation state.</param>
     /// <returns>A task that completes when all items have been placed.</returns>
-    public async Task ApplyAsync(Level level,  DungeonContext context)
+    public async Task ApplyAsync(Level level, DungeonContext context)
     {
         await MapSpawnHelper.SpawnCoinsAsync(level, CoinCount);
         await MapSpawnHelper.SpawnGoldAsync(level, GoldCount);
-        await MapSpawnHelper.SpawnPotionsAsync(level, PotionCount); 
+        await MapSpawnHelper.SpawnPotionsAsync(level, PotionCount);
         await MapSpawnHelper.SpawnThornsAsync(level, ThornCount);
     }
 }

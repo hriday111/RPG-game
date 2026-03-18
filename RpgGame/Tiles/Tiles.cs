@@ -20,7 +20,7 @@ public abstract class Tile
     /// </summary>
     public abstract char Symbol { get; }
 
-    public abstract ConsoleColor color {get;}
+    public abstract ConsoleColor color { get; }
     /// <summary>
     /// Gets a value indicating whether characters can walk on this tile.
     /// </summary>
@@ -29,11 +29,11 @@ public abstract class Tile
     /// <summary>
     /// Gets or sets a value indicating whether the tile is currently occupied by a character or entity.
     /// </summary>
-    public bool IsOccupied{get; set;}
+    public bool IsOccupied { get; set; }
 
     /// <summary>
     /// Internal list used for position tracking. Reserved for future tile-related operations.
     /// </summary>
-    public   List<Tile> PosList = new List<Tile>((Config.WindowHeight-1)*(Config.WindowHeight-1));
+    public List<Tile> PosList = new List<Tile>((Config.WindowHeight - 1) * (Config.WindowHeight - 1));
 
 }

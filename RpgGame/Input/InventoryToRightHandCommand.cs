@@ -1,7 +1,7 @@
 namespace RpgGame.Input;
 
-using RpgGame.Core;
 using RpgGame.Character;
+using RpgGame.Core;
 
 /// <summary>
 /// Transfers the currently selected inventory item to the player's right hand.

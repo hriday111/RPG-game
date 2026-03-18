@@ -1,6 +1,6 @@
-using Xunit;
 using RpgGame.Character;
 using RpgGame.Core;
+using Xunit;
 
 namespace RpgGame.Tests;
 
@@ -12,7 +12,7 @@ public class PlayerTests
         // Arrange
         var player = new Player(new Position(0, 0));
         player.TakeDamage(10); // Assume it starts at some value, let's check Player ctor or just use it.
-        
+
         // Act
         player.RestoreHealth(150);
 

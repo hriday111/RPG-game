@@ -1,6 +1,6 @@
-using RpgGame.Core;
-using RpgGame.Character;
 using System.ComponentModel.DataAnnotations;
+using RpgGame.Character;
+using RpgGame.Core;
 
 namespace RpgGame.Renderer;
 
@@ -77,7 +77,7 @@ public class ConsoleRenderer
                     }
                     else
                     {
-                        Console.ForegroundColor = level.GetTile(x,y).color;
+                        Console.ForegroundColor = level.GetTile(x, y).color;
                         Console.Write(level.GetTile(x, y).Symbol);
                     }
                 }
@@ -122,8 +122,8 @@ public class ConsoleRenderer
     /// </returns>
     private List<string> GetSidebarContent(Player player, Level level, Inventory inventory)
     {
-        int innerWidth = Config.SidebarWidth - 2; 
-        
+        int innerWidth = Config.SidebarWidth - 2;
+
         string PadLine(string content)
         {
             if (content.Length > innerWidth) content = content.Substring(0, innerWidth);
@@ -131,7 +131,7 @@ public class ConsoleRenderer
         }
 
         var lines = new List<string>
-        {   
+        {
             "┌" + new string('─', innerWidth) + "┐",
             PadLine("      RPG GAME"),
             "├" + new string('─', innerWidth) + "┤",

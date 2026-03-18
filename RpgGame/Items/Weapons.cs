@@ -43,7 +43,7 @@ public abstract class Weapon : IEquippable
     /// <summary>
     /// Gets the console color used to render the weapon on the map.
     /// </summary>
-    public abstract ConsoleColor color {get;}
+    public abstract ConsoleColor color { get; }
     /// <summary>
     /// Gets the character symbol used to render the weapon on the map.
     /// </summary>
@@ -108,10 +108,10 @@ public abstract class Weapon : IEquippable
 
     public bool OnPickup(Player player, Inventory inventory)
     {
-        return  inventory.AddToInventory(this);
+        return inventory.AddToInventory(this);
     }
 
-    
+
     /// <summary>
     /// Drops the weapon onto the current level at the player's position.
     /// </summary>

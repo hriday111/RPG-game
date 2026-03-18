@@ -48,6 +48,6 @@ public class Thorn : IItem
     /// <param name="player">The player dropping the potion.</param>
     public void OnDrop(Level level, Player player)
     {
-            // Thorns are not items that can be dropped, so this method does nothing.
+        // Thorns are not items that can be dropped, so this method does nothing.
     }
 }

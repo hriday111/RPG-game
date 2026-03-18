@@ -1,5 +1,5 @@
-using RpgGame.Core;
 using RpgGame.Character;
+using RpgGame.Core;
 namespace RpgGame.Generation;
 
 /// <summary>
@@ -58,9 +58,9 @@ public class RectRoom
     /// <returns>True if the rooms intersect with a 2-tile buffer; otherwise, false.</returns>
     public bool Intersects(RectRoom other)
     {
-        return !(X + Width  < other.X ||
-                 other.X + other.Width  < X ||
-                 Y + Height  < other.Y ||
-                 other.Y + other.Height  < Y);
+        return !(X + Width < other.X ||
+                 other.X + other.Width < X ||
+                 Y + Height < other.Y ||
+                 other.Y + other.Height < Y);
     }
 }

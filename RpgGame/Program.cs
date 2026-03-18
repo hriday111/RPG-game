@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using RpgGame.Character;
 using RpgGame.Core;
 using RpgGame.Generation.Strategies;
-using RpgGame.Renderer;
-using RpgGame.Character;
 using RpgGame.Input;
+using RpgGame.Renderer;
 namespace RpgGame;
 
 /// <summary>
@@ -110,5 +110,5 @@ class Program
     }
 
 
-    
+
 }

@@ -1,7 +1,7 @@
 namespace RpgGame.Input;
 
-using RpgGame.Core;
 using RpgGame.Character;
+using RpgGame.Core;
 
 /// <summary>
 /// Moves the player one tile up (north) on the level.

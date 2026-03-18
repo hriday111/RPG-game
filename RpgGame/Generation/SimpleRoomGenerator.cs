@@ -1,8 +1,8 @@
-using RpgGame.Core;
-using RpgGame.Tiles;
-using RpgGame.Items;
-using RpgGame.Character;
 using System.Threading.Tasks;
+using RpgGame.Character;
+using RpgGame.Core;
+using RpgGame.Items;
+using RpgGame.Tiles;
 
 namespace RpgGame.Generation;
 

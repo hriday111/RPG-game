@@ -2,8 +2,8 @@ using System.Reflection.Metadata.Ecma335;
 
 namespace RpgGame.Input;
 
-using RpgGame.Core;
 using RpgGame.Character;
+using RpgGame.Core;
 
 /// <summary>
 /// Picks up the item resting on the player's current tile and
@@ -17,10 +17,10 @@ public class TakeToInventoryCommand : IInputCommand
         var item = level.GetTopItem(player.Pos);
         if (item != null)
         {
-            if(item.OnPickup(player, inventory)){level.TakeTopItem(player.Pos);}
-            
+            if (item.OnPickup(player, inventory)) { level.TakeTopItem(player.Pos); }
+
         }
         return 1;
     }
-    
+
 }

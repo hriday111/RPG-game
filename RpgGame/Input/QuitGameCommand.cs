@@ -1,7 +1,7 @@
 namespace RpgGame.Input;
 
-using RpgGame.Core;
 using RpgGame.Character;
+using RpgGame.Core;
 
 /// <summary>
 /// Command that causes the game loop to exit.

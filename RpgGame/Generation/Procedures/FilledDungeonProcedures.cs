@@ -18,7 +18,7 @@ public class FilledDungeonProcedure : IDungeonProcedure
     /// <param name="level">The level being generated.</param>
     /// <param name="context">Shared generation state.</param>
     /// <returns>A completed task.</returns>
-    public Task ApplyAsync(Level level,  DungeonContext context)
+    public Task ApplyAsync(Level level, DungeonContext context)
     {
         for (int y = 0; y < level.Height; y++)
         {

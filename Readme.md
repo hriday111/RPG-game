@@ -1,9 +1,30 @@
 # RpgGame
 
+![.NET CI](https://github.com/hriday111/RPG-game/actions/workflows/dotnet-ci.yml/badge.svg)
+![CodeQL Analysis](https://github.com/hriday111/RPG-game/actions/workflows/codeql.yml/badge.svg)
+![Docs](https://github.com/hriday111/RPG-game/actions/workflows/docs.yml/badge.svg)
+
 Console-based RPG game developed for the Object-Oriented Design course.
 
 # Documentation
 [`RpgGame`](https://hriday111.github.io/RPG-game/)
+
+---
+
+## CI/CD Pipeline
+This project includes a fully automated CI/CD pipeline:
+- **Continuous Integration**: Every push builds the code, runs unit tests, and enforces coding standards (`dotnet format`).
+- **Security Analysis**: GitHub CodeQL scans the codebase for potential vulnerabilities.
+- **Automated Documentation**: Doxygen documentation is automatically generated and deployed to `gh-pages` on every update to `main`.
+
+## Testing
+We use **xUnit** for unit testing. To run tests locally:
+```bash
+dotnet test
+```
+Current tests cover:
+- Player health mechanics (damage, healing, and capping).
+- Currency and inventory logic.
 
 ---
 

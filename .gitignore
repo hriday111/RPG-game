@@ -18,7 +18,13 @@ uml/*
 
 Doxyfile
 docs*
+!docs.yml
+dotnet-ci.yml
 publish-docs.sh
+
+ClassDiagram.puml
+puml/*
+out/*
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/

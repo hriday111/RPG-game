@@ -16,10 +16,9 @@ uml/*
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/Dotnet.gitignore
 
-Doxyfile
 docs*
 !docs.yml
-dotnet-ci.yml
+dotnet-ci.yml   
 publish-docs.sh
 
 ClassDiagram.puml

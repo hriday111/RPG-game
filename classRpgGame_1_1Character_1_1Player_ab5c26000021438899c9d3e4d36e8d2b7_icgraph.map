@@ -1,0 +1,7 @@
+<map id="RpgGame.Character.Player.EquipRight" name="RpgGame.Character.Player.EquipRight">
+<area shape="rect" id="Node000001" title="Attempts to equip an item into the right hand." alt="" coords="531,5,731,45"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Inventory.html#ac6f47b993f9088ebe1c950f9d26cbe1d" title="Equips the selected item in the inventory to the player&#39;s right hand and removes it from inventory." alt="" coords="265,5,483,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="517,28,483,28,483,23,517,23"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Input_1_1InventoryToRightHandCommand.html#a5698b568c4eded3ff5d687f0d66afdcb" title="Executes the command using provided game objects.Typically 1 to indicate the game should continue,..." alt="" coords="5,5,217,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="251,28,218,28,218,23,251,23"/>
+</map>

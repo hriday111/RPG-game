@@ -1,3 +1,3 @@
 <map id="RpgGame.Tiles.Tile" name="RpgGame.Tiles.Tile">
-<area shape="rect" id="Node000001" title="Base abstract class representing a tile in the game world." alt="" coords="5,5,143,146"/>
+<area shape="rect" id="Node000001" title="Base abstract class representing a tile in the game world." alt="" coords="5,5,161,151"/>
 </map>

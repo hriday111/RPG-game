@@ -1,14 +1,9 @@
 <map id="RpgGame.Core.Level.TryMoveCharacter" name="RpgGame.Core.Level.TryMoveCharacter">
-<area shape="rect" id="Node000001" title="Attempts to move a character to a new position if the move is valid. Also handles item interactions f..." alt="" coords="5,120,207,158"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Level.html#af9e6a4b820c77f9390aed74bdc0f1c8a" title="Determines whether a character can move to the specified position." alt="" coords="255,69,448,108"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,116,239,109,240,114,203,122"/>
-<area shape="rect" id="Node000005" href="$namespaceRpgGame_1_1Character.html#ab2e6f640f8bfc682c50e3c19e0d417f1" title="A record for tracking the position of Characters, Items, and Tiles if needed." alt="" coords="761,104,955,129"/>
-<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="207,133,746,117,746,122,207,139"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Core_1_1Level.html#ad48a7c23cc285da72a157194198e553a" title="Retrieves the tile at the specified coordinates." alt="" coords="508,5,701,30"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="412,66,495,40,530,32,531,37,497,46,413,71"/>
-<area shape="rect" id="Node000004" href="$classRpgGame_1_1Core_1_1Level.html#a29d79bf5cda2e96ca6e823f9d5772db0" title="Checks whether the specified position lies within the level boundaries." alt="" coords="496,55,713,79"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="448,78,480,75,481,80,449,83"/>
-<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="449,91,746,108,746,113,449,96"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="672,77,776,98,775,103,671,83"/>
-<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="817,106,808,96,813,86,830,79,858,77,890,80,906,88,903,93,889,85,858,83,831,85,816,90,813,95,821,102"/>
+<area shape="rect" id="Node000001" title="Attempts to move a character to a new position if the move is valid. Also handles item interactions f..." alt="" coords="5,23,224,63"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Level.html#af9e6a4b820c77f9390aed74bdc0f1c8a" title="Determines whether a character can move to the specified position." alt="" coords="272,23,483,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,41,258,41,258,46,224,46"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Core_1_1Level.html#ad48a7c23cc285da72a157194198e553a" title="Retrieves the tile at the specified coordinates." alt="" coords="543,5,753,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="483,31,529,26,529,32,483,36"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Core_1_1Level.html#a29d79bf5cda2e96ca6e823f9d5772db0" title="Checks whether the specified position lies within the level boundaries." alt="" coords="531,55,765,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="483,50,517,53,517,58,483,55"/>
 </map>

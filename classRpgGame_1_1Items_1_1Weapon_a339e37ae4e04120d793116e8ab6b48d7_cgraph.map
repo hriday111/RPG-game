@@ -1,8 +1,5 @@
 <map id="RpgGame.Items.Weapon.OnDrop" name="RpgGame.Items.Weapon.OnDrop">
-<area shape="rect" id="Node000001" title="Drops the weapon onto the current level at the player&#39;s position." alt="" coords="5,29,224,54"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Level.html#a377e083189e74d5d6ed5fd3234ebfa0f" title="Adds an item to the specified position in the level." alt="" coords="272,29,472,54"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,39,256,39,256,44,224,44"/>
-<area shape="rect" id="Node000003" href="$namespaceRpgGame_1_1Character.html#ab2e6f640f8bfc682c50e3c19e0d417f1" title="A record for tracking the position of Characters, Items, and Tiles if needed." alt="" coords="520,29,713,54"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="472,39,504,39,504,44,472,44"/>
-<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="577,31,568,21,573,11,589,5,617,3,648,6,663,13,660,18,646,11,617,8,590,10,576,15,574,20,581,27"/>
+<area shape="rect" id="Node000001" title="Drops the weapon onto the current level at the player&#39;s position." alt="" coords="5,5,241,31"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Level.html#a377e083189e74d5d6ed5fd3234ebfa0f" title="Adds an item to the specified position in the level." alt="" coords="289,5,508,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,15,275,15,275,21,241,21"/>
 </map>

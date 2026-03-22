@@ -1,3 +1,3 @@
 <map id="RpgGame.Items.IItem" name="RpgGame.Items.IItem">
-<area shape="rect" id="Node000001" title="Defines the contract for all items that can exist within the game world." alt="" coords="5,5,190,174"/>
+<area shape="rect" id="Node000001" title="Defines the contract for all items that can exist within the game world." alt="" coords="5,5,220,180"/>
 </map>

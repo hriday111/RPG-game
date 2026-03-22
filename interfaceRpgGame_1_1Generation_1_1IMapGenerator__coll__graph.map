@@ -1,3 +1,3 @@
 <map id="RpgGame.Generation.IMapGenerator" name="RpgGame.Generation.IMapGenerator">
-<area shape="rect" id="Node000001" title="Defines the contract for procedural level generation strategies." alt="" coords="5,5,233,83"/>
+<area shape="rect" id="Node000001" title="Defines the contract for procedural level generation strategies." alt="" coords="5,5,260,85"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="RpgGame.Core.Level.TakeTopItem" name="RpgGame.Core.Level.TakeTopItem">
-<area shape="rect" id="Node000001" title="Removes and returns the top item at a given position." alt="" coords="266,12,491,37"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Input_1_1TakeToInventoryCommand.html#a267b724b8c02cf1e7901f971131110fa" title="Executes the command using provided game objects.Typically 1 to indicate the game should continue,..." alt="" coords="5,5,218,44"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,27,218,27,218,22,250,22"/>
+<area shape="rect" id="Node000001" title="Removes and returns the top item at a given position." alt="" coords="285,13,529,38"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Input_1_1TakeToInventoryCommand.html#a267b724b8c02cf1e7901f971131110fa" title="Executes the command using provided game objects.Typically 1 to indicate the game should continue,..." alt="" coords="5,5,237,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="272,28,237,28,237,23,272,23"/>
 </map>

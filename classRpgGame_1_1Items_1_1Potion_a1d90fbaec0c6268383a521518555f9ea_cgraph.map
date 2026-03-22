@@ -1,5 +1,5 @@
 <map id="RpgGame.Items.Potion.OnPickup" name="RpgGame.Items.Potion.OnPickup">
-<area shape="rect" id="Node000001" title="Called when the player picks up the potion. Restores health immediately." alt="" coords="5,12,226,37"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Player.html#acbe997c5dad36a3935dc909b1b971644" title="Restores the player&#39;s health by the specified amount, capped at 100." alt="" coords="274,5,460,44"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,22,258,22,258,27,226,27"/>
+<area shape="rect" id="Node000001" title="Called when the player picks up the potion. Restores health immediately." alt="" coords="5,13,241,38"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Player.html#acbe997c5dad36a3935dc909b1b971644" title="Restores the player&#39;s health by the specified amount, capped at 100." alt="" coords="289,5,489,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,23,275,23,275,28,242,28"/>
 </map>

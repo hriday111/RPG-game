@@ -1,4 +1,4 @@
 <map id="RpgGame.Generation.DungeonBuilder.Add" name="RpgGame.Generation.DungeonBuilder.Add">
-<area shape="rect" id="Node000001" title="Adds a generation procedure to the sequence." alt="" coords="5,29,210,68"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="69,30,67,20,73,11,86,5,108,3,130,5,143,12,141,16,129,10,107,8,88,10,76,15,72,21,74,28"/>
+<area shape="rect" id="Node000001" title="Adds a generation procedure to the sequence." alt="" coords="5,29,229,69"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="76,30,73,20,80,10,95,5,117,3,143,6,157,13,155,18,142,11,117,8,96,10,83,15,79,21,81,28"/>
 </map>

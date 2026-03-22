@@ -1,7 +1,7 @@
 <map id="RpgGame.Tiles.Tile" name="RpgGame.Tiles.Tile">
-<area shape="rect" id="Node000001" title="Base abstract class representing a tile in the game world." alt="" coords="114,5,252,146"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Tiles_1_1FloorTile.html" title="Represents a walkable floor tile where players and items can exist." alt="" coords="5,194,170,310"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,160,121,196,116,193,135,158"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Tiles_1_1WallTile.html" title="Represents a solid wall tile that blocks player movement." alt="" coords="195,194,360,310"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,158,249,193,244,196,225,160"/>
+<area shape="rect" id="Node000001" title="Base abstract class representing a tile in the game world." alt="" coords="129,5,285,151"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Tiles_1_1FloorTile.html" title="Represents a walkable floor tile where players and items can exist." alt="" coords="5,199,195,319"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,164,138,200,133,197,155,161"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Tiles_1_1WallTile.html" title="Represents a solid wall tile that blocks player movement." alt="" coords="219,199,408,319"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="259,161,280,197,276,200,254,164"/>
 </map>

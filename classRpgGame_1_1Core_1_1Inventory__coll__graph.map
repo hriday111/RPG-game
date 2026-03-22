@@ -1,3 +1,3 @@
 <map id="RpgGame.Core.Inventory" name="RpgGame.Core.Inventory">
-<area shape="rect" id="Node000001" title="Manages the player&#39;s inventory system, storing and organizing equippable items." alt="" coords="5,5,180,260"/>
+<area shape="rect" id="Node000001" title="Manages the player&#39;s inventory system, storing and organizing equippable items." alt="" coords="5,5,200,269"/>
 </map>

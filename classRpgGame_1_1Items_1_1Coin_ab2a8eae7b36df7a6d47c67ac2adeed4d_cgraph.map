@@ -1,5 +1,5 @@
 <map id="RpgGame.Items.Coin.OnPickup" name="RpgGame.Items.Coin.OnPickup">
-<area shape="rect" id="Node000001" title="Handles the pickup interaction for the coin." alt="" coords="5,12,216,37"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Player.html#aa47d1c0db0303c5d8b23139e9742ca50" title="Adds the specified amount of coins to the player." alt="" coords="264,5,450,44"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,22,248,22,248,27,216,27"/>
+<area shape="rect" id="Node000001" title="Handles the pickup interaction for the coin." alt="" coords="5,13,229,38"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Player.html#aa47d1c0db0303c5d8b23139e9742ca50" title="Adds the specified amount of coins to the player." alt="" coords="277,5,477,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,23,264,23,264,28,230,28"/>
 </map>

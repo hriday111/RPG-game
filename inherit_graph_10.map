@@ -1,7 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$interfaceRpgGame_1_1Generation_1_1Strategies_1_1IDungeonStrategy.html" title="Defines the contract for dungeon generation strategies." alt="" coords="5,37,221,76"/>
-<area shape="rect" id="Node000001" href="$classRpgGame_1_1Generation_1_1Strategies_1_1DungeonGroundsStrategy.html" title="A concrete dungeon generation strategy that creates a complex dungeon with rooms, corridors,..." alt="" coords="269,5,484,44"/>
-<area shape="poly" id="edge12_Node000000_Node000001" title=" " alt="" coords="236,39,268,35,269,40,237,44"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1Strategies_1_1DungeonSandboxStrategy.html" title="A concrete dungeon generation strategy that creates an empty dungeon with on central room,..." alt="" coords="269,68,484,107"/>
-<area shape="poly" id="edge13_Node000000_Node000002" title=" " alt="" coords="237,68,269,72,268,77,236,74"/>
+<area shape="rect" id="Node000000" href="$interfaceRpgGame_1_1Generation_1_1Strategies_1_1IDungeonStrategy.html" title="Defines the contract for dungeon generation strategies." alt="" coords="5,37,241,77"/>
+<area shape="rect" id="Node000001" href="$classRpgGame_1_1Generation_1_1Strategies_1_1DungeonGroundsStrategy.html" title="A concrete dungeon generation strategy that creates a complex dungeon with rooms, corridors,..." alt="" coords="289,5,525,45"/>
+<area shape="poly" id="edge12_Node000000_Node000001" title=" " alt="" coords="255,40,289,36,289,41,255,45"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1Strategies_1_1DungeonSandboxStrategy.html" title="A concrete dungeon generation strategy that creates an empty dungeon with on central room,..." alt="" coords="289,69,525,109"/>
+<area shape="poly" id="edge13_Node000000_Node000002" title=" " alt="" coords="255,69,289,73,289,79,255,75"/>
 </map>

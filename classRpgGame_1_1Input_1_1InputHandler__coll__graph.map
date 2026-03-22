@@ -1,3 +1,3 @@
 <map id="RpgGame.Input.InputHandler" name="RpgGame.Input.InputHandler">
-<area shape="rect" id="Node000001" title="Maps console key combinations to their corresponding IInputCommand implementations and invokes them w..." alt="" coords="5,5,225,144"/>
+<area shape="rect" id="Node000001" title="Maps console key combinations to their corresponding IInputCommand implementations and invokes them w..." alt="" coords="5,5,253,149"/>
 </map>

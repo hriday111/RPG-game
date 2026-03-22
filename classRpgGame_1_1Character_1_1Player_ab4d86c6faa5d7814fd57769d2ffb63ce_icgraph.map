@@ -1,5 +1,5 @@
 <map id="RpgGame.Character.Player.TakeDamage" name="RpgGame.Character.Player.TakeDamage">
-<area shape="rect" id="Node000001" title="Reduces the player&#39;s health by the specified amount." alt="" coords="270,5,456,44"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Items_1_1Thorn.html#a2976052765d686a38aaf8bc808a3bddc" title="Applies damage to the player when they step on the thorn." alt="" coords="5,12,222,37"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,27,222,27,222,22,254,22"/>
+<area shape="rect" id="Node000001" title="Reduces the player&#39;s health by the specified amount." alt="" coords="285,5,485,45"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Items_1_1Thorn.html#a2976052765d686a38aaf8bc808a3bddc" title="Applies damage to the player when they step on the thorn." alt="" coords="5,13,237,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="272,28,237,28,237,23,272,23"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="RpgGame.Input.InventoryToLeftHandCommand" name="RpgGame.Input.InventoryToLeftHandCommand">
-<area shape="rect" id="Node000001" title="Transfers the currently selected inventory item to the player&#39;s left hand." alt="" coords="18,145,192,250"/>
-<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Input_1_1IInputCommand.html" title="Represents a user input command that manipulates the game state (level, player, inventory) and return..." alt="" coords="5,5,205,97"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,112,108,145,102,145,102,112"/>
+<area shape="rect" id="Node000001" title="Transfers the currently selected inventory item to the player&#39;s left hand." alt="" coords="5,148,200,257"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Input_1_1IInputCommand.html" title="Represents a user input command that manipulates the game state (level, player, inventory) and return..." alt="" coords="8,5,197,100"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,114,105,148,100,148,100,114"/>
 </map>

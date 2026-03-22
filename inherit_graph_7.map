@@ -1,7 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$interfaceRpgGame_1_1Generation_1_1IMapGenerator.html" title="Defines the contract for procedural level generation strategies." alt="" coords="5,44,244,69"/>
-<area shape="rect" id="Node000001" href="$classRpgGame_1_1Generation_1_1DungeonBuilder.html" title="Implements the Builder Pattern to compose multiple dungeon generation procedures." alt="" coords="292,5,496,44"/>
-<area shape="poly" id="edge10_Node000000_Node000001" title=" " alt="" coords="249,39,291,34,291,39,249,45"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1SimpleRoomGenerator.html" title="Generates a simple room&#45;based level layout with borders, random wall clusters, and predefined item sp..." alt="" coords="298,68,490,107"/>
-<area shape="poly" id="edge11_Node000000_Node000002" title=" " alt="" coords="254,69,297,74,297,79,253,74"/>
+<area shape="rect" id="Node000000" href="$interfaceRpgGame_1_1Generation_1_1IMapGenerator.html" title="Defines the contract for procedural level generation strategies." alt="" coords="5,45,268,70"/>
+<area shape="rect" id="Node000001" href="$classRpgGame_1_1Generation_1_1DungeonBuilder.html" title="Implements the Builder Pattern to compose multiple dungeon generation procedures." alt="" coords="316,5,540,45"/>
+<area shape="poly" id="edge10_Node000000_Node000001" title=" " alt="" coords="266,40,315,35,316,40,267,46"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1SimpleRoomGenerator.html" title="Generates a simple room&#45;based level layout with borders, random wall clusters, and predefined item sp..." alt="" coords="323,69,533,109"/>
+<area shape="poly" id="edge11_Node000000_Node000002" title=" " alt="" coords="266,69,323,75,322,80,266,74"/>
 </map>

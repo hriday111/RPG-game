@@ -1,3 +1,3 @@
 <map id="RpgGame.Core.Level" name="RpgGame.Core.Level">
-<area shape="rect" id="Node000001" title="Represents a single game level containing terrain tiles, item placements, and movement validation log..." alt="" coords="5,5,237,427"/>
+<area shape="rect" id="Node000001" title="Represents a single game level containing terrain tiles, item placements, and movement validation log..." alt="" coords="5,5,263,443"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="RpgGame.Generation.SimpleRoomGenerator" name="RpgGame.Generation.SimpleRoomGenerator">
-<area shape="rect" id="Node000001" title="Generates a simple room&#45;based level layout with borders, random wall clusters, and predefined item sp..." alt="" coords="28,131,211,222"/>
-<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Generation_1_1IMapGenerator.html" title="Defines the contract for procedural level generation strategies." alt="" coords="5,5,233,83"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,98,122,131,116,131,116,98"/>
+<area shape="rect" id="Node000001" title="Generates a simple room&#45;based level layout with borders, random wall clusters, and predefined item sp..." alt="" coords="5,133,208,228"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Generation_1_1IMapGenerator.html" title="Defines the contract for procedural level generation strategies." alt="" coords="26,5,187,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,99,109,133,104,133,104,99"/>
 </map>

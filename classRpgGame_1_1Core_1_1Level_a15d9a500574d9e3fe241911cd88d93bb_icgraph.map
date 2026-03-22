@@ -1,11 +1,11 @@
 <map id="RpgGame.Core.Level.SetTile" name="RpgGame.Core.Level.SetTile">
-<area shape="rect" id="Node000001" title="Sets the tile at the specified coordinates." alt="" coords="297,107,489,132"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1Procedures_1_1CentralRoomProcedure.html#afb7f92a179dab4685e6dfb1930615c41" title="Applies the central room generation to the level." alt="" coords="12,5,242,44"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="351,102,248,58,214,47,215,42,250,53,354,97"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1Procedures_1_1ChambersProcedure.html#a9e7db7e5862fca158da9aeb3617c4536" title="Applies the chambers generation to the level." alt="" coords="16,68,238,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="281,109,238,103,239,98,281,103"/>
-<area shape="rect" id="Node000004" href="$classRpgGame_1_1Generation_1_1Procedures_1_1EmptyDungeonProcedure.html#a41e008e6607a4c86ddf54ca7095f10c2" title="Applies the empty dungeon generation to the level." alt="" coords="5,131,249,169"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="282,135,249,139,249,133,281,130"/>
-<area shape="rect" id="Node000005" href="$classRpgGame_1_1Generation_1_1Procedures_1_1FilledDungeonProcedure.html#aea4afc1be959e1bd38494d48cd626674" title="Applies the filled dungeon generation to the level." alt="" coords="9,193,245,232"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="352,141,250,183,211,195,209,190,248,178,350,136"/>
+<area shape="rect" id="Node000001" title="Sets the tile at the specified coordinates." alt="" coords="320,109,528,134"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1Procedures_1_1CentralRoomProcedure.html#afb7f92a179dab4685e6dfb1930615c41" title="Applies the central room generation to the level." alt="" coords="13,5,265,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="383,105,330,82,271,60,230,48,232,43,273,55,332,77,385,100"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1Procedures_1_1ChambersProcedure.html#a9e7db7e5862fca158da9aeb3617c4536" title="Applies the chambers generation to the level." alt="" coords="17,69,260,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="306,111,260,106,260,100,307,106"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Generation_1_1Procedures_1_1EmptyDungeonProcedure.html#a41e008e6607a4c86ddf54ca7095f10c2" title="Applies the empty dungeon generation to the level." alt="" coords="5,133,272,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="307,137,273,141,272,136,306,132"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Generation_1_1Procedures_1_1FilledDungeonProcedure.html#aea4afc1be959e1bd38494d48cd626674" title="Applies the filled dungeon generation to the level." alt="" coords="9,197,269,237"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="385,142,332,165,273,188,232,200,230,195,271,183,330,160,383,137"/>
 </map>

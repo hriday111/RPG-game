@@ -18,8 +18,9 @@ uml/*
 
 docs*
 !docs.yml
+dotnet-ci.yml   
 publish-docs.sh
-Rpg_Game/*
+
 ClassDiagram.puml
 puml/*
 out/*

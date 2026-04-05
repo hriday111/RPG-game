@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using RpgGame.Character;
 using RpgGame.Core;
 using RpgGame.Items;
+using RpgGame.Items.Modifiers;
 
 namespace RpgGame.Generation
 {
@@ -21,6 +22,21 @@ namespace RpgGame.Generation
         /// Random number generator used internally by the helper methods.
         /// </summary>
         private static readonly Random random = new();
+
+        /// <summary>
+        /// Wraps a weapon with zero or more stacked decorators at level generation time.
+        /// </summary>
+        private static IEquippable WrapWeaponWithRandomModifiers(Weapon weapon)
+        {
+            IEquippable item = weapon;
+            if (random.Next(3) == 0)
+                item = new StrongWeaponModifier(item);
+            if (random.Next(3) == 0)
+                item = new UnluckyWeaponModifier(item);
+            if (random.Next(4) == 0)
+                item = new ProtectiveWeaponModifier(item);
+            return item;
+        }
 
         /// <summary>
         /// Asynchronously places a number of items at random walkable locations
@@ -77,7 +93,7 @@ namespace RpgGame.Generation
         /// <param name="level"></param>
         /// <param name="count"></param>
         public static Task SpawnSwordAsync(Level level, int count) =>
-            SpawnItemsAsync(level, count, () => new Sword());
+            SpawnItemsAsync(level, count, () => WrapWeaponWithRandomModifiers(new Sword()));
 
         /// <summary>
         /// Convenience wrapper that spawns two-handed swords.
@@ -85,7 +101,7 @@ namespace RpgGame.Generation
         /// <param name="level"></param>
         /// <param name="count"></param>
         public static Task SpawnDoubleSwordAsync(Level level, int count) =>
-            SpawnItemsAsync(level, count, () => new DoubleSword());
+            SpawnItemsAsync(level, count, () => WrapWeaponWithRandomModifiers(new DoubleSword()));
 
         /// <summary>
         /// Convenience wrapper that spawns gold piles.
@@ -113,5 +129,42 @@ namespace RpgGame.Generation
         /// <returns></returns>
         public static Task SpawnThornsAsync(Level level, int count) =>
             SpawnItemsAsync(level, count, () => new Thorn());
+
+        /// <summary>
+        /// Spawns golems at random walkable, unoccupied positions, avoiding the default player spawn.
+        /// </summary>
+        public static Task SpawnGolemAsync(Level level, int count)
+        {
+            return Task.Run(() =>
+            {
+                var used = new HashSet<(int X, int Y)>();
+                foreach (var g in level.Golems)
+                    used.Add((g.Pos.X, g.Pos.Y));
+
+                int spawned = 0;
+                int attempts = 0;
+                const int maxAttemptsPerGolem = 500;
+
+                while (spawned < count && attempts < count * maxAttemptsPerGolem)
+                {
+                    attempts++;
+                    int x = random.Next(1, level.Width - 1);
+                    int y = random.Next(1, level.Height - 1);
+
+                    if (x == Config.DefaultSpawnX && y == Config.DefaultSpawnY)
+                        continue;
+
+                    var tile = level.GetTile(x, y);
+                    if (!tile.IsWalkable || tile.IsOccupied)
+                        continue;
+
+                    if (!used.Add((x, y)))
+                        continue;
+
+                    level.AddGolem(new Golem(new Position(x, y)));
+                    spawned++;
+                }
+            });
+        }
     }
 }

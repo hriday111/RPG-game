@@ -42,6 +42,16 @@ public class Level
     private readonly Dictionary<Position, List<IItem>> items = new();
 
     /// <summary>
+    /// Non-player characters placed on this level (e.g. golems).
+    /// </summary>
+    private readonly List<Golem> golems = new();
+
+    /// <summary>
+    /// Gets the golems currently on the level.
+    /// </summary>
+    public IReadOnlyList<Golem> Golems => golems;
+
+    /// <summary>
     /// Initializes a new instance of the <see cref="Level"/> class.
     /// </summary>
     /// <param name="width">Width of the level grid.</param>
@@ -124,6 +134,20 @@ public class Level
     {
         return pos.X >= 0 && pos.X < Width &&
                pos.Y >= 0 && pos.Y < Height;
+    }
+
+    /// <summary>
+    /// Places a golem on the level and marks its tile occupied for movement checks.
+    /// </summary>
+    public void AddGolem(Golem golem)
+    {
+        ArgumentNullException.ThrowIfNull(golem);
+        var tile = GetTile(golem.Pos.X, golem.Pos.Y);
+        if (!tile.IsWalkable)
+            throw new InvalidOperationException("Cannot place a golem on a non-walkable tile.");
+
+        tile.IsOccupied = true;
+        golems.Add(golem);
     }
 
     #endregion

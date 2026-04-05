@@ -13,6 +13,7 @@ namespace RpgGame.Generation.Strategies;
 /// 4. Creates corridors connecting all rooms
 /// 5. Spawns coins and gold for the player to collect
 /// 6. Spawns weapons for the player to find
+/// 7. Spawns golem enemies on walkable floor
 /// </remarks>
 public class DungeonGroundsStrategy : IDungeonStrategy
 {
@@ -28,6 +29,7 @@ public class DungeonGroundsStrategy : IDungeonStrategy
             .Add(new ChambersProcedure(8))
             .Add(new PathsProcedure())
             .Add(new AddItemsProcedure(5, 2))
-            .Add(new AddWeaponsProcedure());
+            .Add(new AddWeaponsProcedure())
+            .Add(new AddEnemiesProcedure());
     }
 }

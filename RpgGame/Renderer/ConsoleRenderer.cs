@@ -66,6 +66,11 @@ public class ConsoleRenderer
                 {
                     Console.Write(player.Symbol);
                 }
+                else if (level.Golems.FirstOrDefault(g => g.Pos == currentPos) is { } golem)
+                {
+                    Console.ResetColor();
+                    Console.Write(golem.Symbol);
+                }
                 else
                 {
                     var item = level.GetTopItem(currentPos);
@@ -96,7 +101,7 @@ public class ConsoleRenderer
         Console.Write("  "); // spacing
 
         var sidebarContent = GetSidebarContent(player, level, inventory);
-
+        //int longest = sidebarContent.Max(s => s.Length);
         if (line < sidebarContent.Count)
             Console.Write(sidebarContent[line].PadRight(Config.SidebarWidth));
         else

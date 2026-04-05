@@ -16,7 +16,7 @@ namespace RpgGame.Items;
 /// Concrete weapon types must provide their own name, symbol,
 /// and damage value.
 /// </remarks>
-public abstract class Weapon : IEquippable
+public abstract class Weapon : IWeapon
 {
     /// <summary>
     /// Defines how this weapon occupies the player's hands when equipped.
@@ -62,7 +62,7 @@ public abstract class Weapon : IEquippable
     /// True if the weapon was successfully equipped; otherwise false.
     /// </returns>
     public bool TryEquipToLeft(Player player)
-        => occupation.EquipLeft(player, this);
+        => ApplyEquipLeft(player, this);
 
     /// <summary>
     /// Attempts to equip the weapon in the player's right hand.
@@ -72,7 +72,17 @@ public abstract class Weapon : IEquippable
     /// True if the weapon was successfully equipped; otherwise false.
     /// </returns>
     public bool TryEquipToRight(Player player)
-        => occupation.EquipRight(player, this);
+        => ApplyEquipRight(player, this);
+
+    /// <summary>
+    /// Equips using this weapon's hand-occupation rules, but stores
+    /// <paramref name="equippedSurface"/> on the player (the outer decorator stack).
+    /// </summary>
+    internal bool ApplyEquipLeft(Player player, IEquippable equippedSurface)
+        => occupation.EquipLeft(player, equippedSurface);
+
+    internal bool ApplyEquipRight(Player player, IEquippable equippedSurface)
+        => occupation.EquipRight(player, equippedSurface);
 
     /// <summary>
     /// Returns a short textual description of the weapon.

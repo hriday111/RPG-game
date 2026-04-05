@@ -228,4 +228,14 @@ public class Player : Character
         Aggression = 4;
         Wisdom = 6;
     }
+
+    /// <summary>
+    /// Applies a temporary luck change from equipped item modifiers (e.g. decorators).
+    /// </summary>
+    internal void ApplyLuckDelta(int delta) => Luck += delta;
+
+    /// <summary>
+    /// Applies a temporary wisdom change from equipped item modifiers (e.g. decorators).
+    /// </summary>
+    internal void ApplyWisdomDelta(int delta) => Wisdom += delta;
 }

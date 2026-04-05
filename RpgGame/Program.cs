@@ -37,6 +37,8 @@ class Program
 
         await generator.GenerateAsync(level);
 
+        level.GetTile(player.Pos.X, player.Pos.Y).IsOccupied = true;
+
         var renderer = new ConsoleRenderer();
         var inventory = new Inventory(player, 20);
         var inputHandler = new InputHandler();

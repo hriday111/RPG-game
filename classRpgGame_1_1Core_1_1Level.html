@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('classRpgGame_1_1Core_1_1Level.html',''
 <div class="dynheader">
 Collaboration diagram for RpgGame.Core.Level:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Core_1_1Level__coll__graph.svg" width="268" height="448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Core_1_1Level__coll__graph.svg" width="268" height="518"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -126,6 +126,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a29d79bf5cda2e96ca6e823f9d5772db0" id="r_a29d79bf5cda2e96ca6e823f9d5772db0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Core_1_1Level.html#a29d79bf5cda2e96ca6e823f9d5772db0">IsInBounds</a> (Position pos)</td></tr>
 <tr class="memdesc:a29d79bf5cda2e96ca6e823f9d5772db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the specified position lies within the level boundaries.  <br /></td></tr>
 <tr class="separator:a29d79bf5cda2e96ca6e823f9d5772db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9b38d60705bf37c00badde28990a22" id="r_a2d9b38d60705bf37c00badde28990a22"><td class="memItemLeft" align="right" valign="top"><a id="a2d9b38d60705bf37c00badde28990a22" name="a2d9b38d60705bf37c00badde28990a22"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddGolem</b> (<a class="el" href="classRpgGame_1_1Character_1_1Golem.html">Golem</a> golem)</td></tr>
+<tr class="memdesc:a2d9b38d60705bf37c00badde28990a22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Places a golem on the level and marks its tile occupied for movement checks. <br /></td></tr>
+<tr class="separator:a2d9b38d60705bf37c00badde28990a22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a377e083189e74d5d6ed5fd3234ebfa0f" id="r_a377e083189e74d5d6ed5fd3234ebfa0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Core_1_1Level.html#a377e083189e74d5d6ed5fd3234ebfa0f">AddItem</a> (Position pos, <a class="el" href="interfaceRpgGame_1_1Items_1_1IItem.html">IItem</a> item)</td></tr>
 <tr class="memdesc:a377e083189e74d5d6ed5fd3234ebfa0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an item to the specified position in the level.  <br /></td></tr>
 <tr class="separator:a377e083189e74d5d6ed5fd3234ebfa0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +159,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>Width</b><code> [get]<
 int&#160;</td><td class="memItemRight" valign="bottom"><b>Height</b><code> [get]</code></td></tr>
 <tr class="memdesc:a1e2d9bf345eef7a0f789b855d3ed1e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height of the level in tiles. <br /></td></tr>
 <tr class="separator:a1e2d9bf345eef7a0f789b855d3ed1e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb08cce1ea4d39ce5c4e30d16256dadf" id="r_acb08cce1ea4d39ce5c4e30d16256dadf"><td class="memItemLeft" align="right" valign="top"><a id="acb08cce1ea4d39ce5c4e30d16256dadf" name="acb08cce1ea4d39ce5c4e30d16256dadf"></a>
+IReadOnlyList&lt; <a class="el" href="classRpgGame_1_1Character_1_1Golem.html">Golem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Golems</b><code> [get]</code></td></tr>
+<tr class="memdesc:acb08cce1ea4d39ce5c4e30d16256dadf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the golems currently on the level. <br /></td></tr>
+<tr class="separator:acb08cce1ea4d39ce5c4e30d16256dadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a single game level containing terrain tiles, item placements, and movement validation logic. </p>
@@ -256,7 +264,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>Height</b><code> [get]
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Core_1_1Level_a377e083189e74d5d6ed5fd3234ebfa0f_icgraph.svg" width="514" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Core_1_1Level_a377e083189e74d5d6ed5fd3234ebfa0f_icgraph.svg" width="520" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -342,7 +350,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Core_1_1Level_ad48a7c23cc285da72a157194198e553a_icgraph.svg" width="100%" height="541"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Core_1_1Level_ad48a7c23cc285da72a157194198e553a_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>

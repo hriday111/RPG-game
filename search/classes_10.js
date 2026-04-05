@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['walltile_0',['WallTile',['../classRpgGame_1_1Tiles_1_1WallTile.html',1,'RpgGame::Tiles']]],
-  ['weapon_1',['Weapon',['../classRpgGame_1_1Items_1_1Weapon.html',1,'RpgGame::Items']]]
+  ['unluckyweaponmodifier_0',['UnluckyWeaponModifier',['../classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html',1,'RpgGame::Items::Modifiers']]]
 ];

@@ -1,0 +1,8 @@
+<map id="RpgGame.Items.Modifiers.WeaponModifierDecorator.TryEquipToRight" name="RpgGame.Items.Modifiers.WeaponModifierDecorator.TryEquipToRight">
+<area shape="rect" id="Node000001" title="Attempts to equip the item in the player&#39;s right hand.True if the item was successfully equipped in t..." alt="" coords="5,57,255,112"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a112daa17197d38d6d8f487e0e7ce41f2" title="Invoked after this stack has been stored in the player&#39;s hands." alt="" coords="305,5,547,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,60,291,54,292,59,255,65"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a20d5be6d04a54ed896cd9374138d3f7e" title="Walks the decorator chain to the concrete Weapon that owns hand rules." alt="" coords="303,108,549,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="255,103,289,109,288,115,254,109"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="369,108,370,98,380,89,399,83,426,81,459,84,478,92,475,97,458,90,426,87,400,89,382,94,375,100,375,108"/>
+</map>

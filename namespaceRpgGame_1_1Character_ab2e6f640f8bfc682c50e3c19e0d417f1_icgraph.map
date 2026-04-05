@@ -1,8 +1,12 @@
 <map id="RpgGame.Character.Position" name="RpgGame.Character.Position">
-<area shape="rect" id="Node000001" title="A record for tracking the position of Characters, Items, and Tiles if needed." alt="" coords="291,49,499,74"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="443,40,440,35,432,31,395,27,366,29,350,34,347,40,355,47,351,50,342,40,347,30,365,24,395,22,433,26,444,31,447,37"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Renderer_1_1ConsoleRenderer.html#a8165e28216b39fd3fbd460f3541ddcf3" title="Renders the current level state and player information to the console. If the help flag is set,..." alt="" coords="22,5,226,45"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="285,49,226,42,227,36,286,44"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1MapSpawnHelper.html#a1d4ada95af130a739159a6b306a5cf3b" title="Asynchronously places a number of items at random walkable locations on the given level." alt="" coords="5,70,243,125"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="286,78,243,84,243,79,285,73"/>
+<area shape="rect" id="Node000001" title="A record for tracking the position of Characters, Items, and Tiles if needed." alt="" coords="587,77,795,102"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="739,68,736,63,728,59,691,55,662,57,646,62,643,68,651,75,647,78,638,68,643,58,661,52,691,50,729,54,740,59,743,65"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Renderer_1_1ConsoleRenderer.html#a8165e28216b39fd3fbd460f3541ddcf3" title="Renders the current level state and player information to the console. If the help flag is set,..." alt="" coords="318,5,522,45"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="622,76,505,48,506,43,623,71"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1MapSpawnHelper.html#a709966f4f9718bc81310b4e4f3d6f5dd" title="Spawns golems at random walkable, unoccupied positions, avoiding the default player spawn." alt="" coords="301,69,539,109"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="573,92,539,92,539,87,573,87"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Generation_1_1MapSpawnHelper.html#a1d4ada95af130a739159a6b306a5cf3b" title="Asynchronously places a number of items at random walkable locations on the given level." alt="" coords="301,134,539,189"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="630,108,524,137,522,131,628,103"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure.html#a3d12247ff2444089f35771a96d5ca050" title="Asynchronously applies this generation step to the level." alt="" coords="5,69,253,109"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="288,92,253,92,253,87,288,87"/>
 </map>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['isoccupied_0',['IsOccupied',['../classRpgGame_1_1Tiles_1_1Tile.html#ae83e61307de90ae200f0e6552cf50074',1,'RpgGame::Tiles::Tile']]],
-  ['iswalkable_1',['iswalkable',['../classRpgGame_1_1Tiles_1_1FloorTile.html#a2567537091313d83b5eeeb4dd080dbeb',1,'RpgGame.Tiles.FloorTile.IsWalkable'],['../classRpgGame_1_1Tiles_1_1Tile.html#a5444da57bc269ecbb312d26c4d0f09da',1,'RpgGame.Tiles.Tile.IsWalkable'],['../classRpgGame_1_1Tiles_1_1WallTile.html#a26505d0bb696b8a11e0f8f7f1ea857ee',1,'RpgGame.Tiles.WallTile.IsWalkable']]]
+  ['health_0',['Health',['../classRpgGame_1_1Character_1_1Player.html#a98bba10ba8a85637371b9cb2ba26e59b',1,'RpgGame::Character::Player']]],
+  ['height_1',['height',['../classRpgGame_1_1Core_1_1Level.html#a1e2d9bf345eef7a0f789b855d3ed1e34',1,'RpgGame.Core.Level.Height'],['../classRpgGame_1_1Generation_1_1RectRoom.html#a111091789b70ecefb934bf22cd5731b5',1,'RpgGame.Generation.RectRoom.Height']]]
 ];

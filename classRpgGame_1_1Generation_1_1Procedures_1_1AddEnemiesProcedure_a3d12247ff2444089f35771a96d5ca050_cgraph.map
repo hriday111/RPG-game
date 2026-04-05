@@ -1,0 +1,13 @@
+<map id="RpgGame.Generation.Procedures.AddEnemiesProcedure.ApplyAsync" name="RpgGame.Generation.Procedures.AddEnemiesProcedure.ApplyAsync">
+<area shape="rect" id="Node000001" title="Asynchronously applies this generation step to the level." alt="" coords="5,49,253,89"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1MapSpawnHelper.html#a709966f4f9718bc81310b4e4f3d6f5dd" title="Spawns golems at random walkable, unoccupied positions, avoiding the default player spawn." alt="" coords="301,49,539,89"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,66,287,66,287,71,254,71"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Core_1_1Level.html#a2d9b38d60705bf37c00badde28990a22" title="Places a golem on the level and marks its tile occupied for movement checks." alt="" coords="587,5,817,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="531,46,617,30,618,36,532,51"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Core_1_1Level.html#ad48a7c23cc285da72a157194198e553a" title="Retrieves the tile at the specified coordinates." alt="" coords="865,31,1076,56"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="539,61,851,46,852,51,539,66"/>
+<area shape="rect" id="Node000005" href="$namespaceRpgGame_1_1Character.html#ab2e6f640f8bfc682c50e3c19e0d417f1" title="A record for tracking the position of Characters, Items, and Tiles if needed." alt="" coords="598,131,806,156"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="497,86,641,125,639,130,496,91"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="818,26,852,29,851,35,817,32"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="659,132,650,122,654,112,672,106,702,104,740,108,751,113,754,119,750,122,747,117,739,113,702,109,673,111,658,116,655,122,663,129"/>
+</map>

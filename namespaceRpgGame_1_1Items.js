@@ -1,11 +1,13 @@
 var namespaceRpgGame_1_1Items =
 [
+    [ "Modifiers", "namespaceRpgGame_1_1Items_1_1Modifiers.html", "namespaceRpgGame_1_1Items_1_1Modifiers" ],
     [ "Coin", "classRpgGame_1_1Items_1_1Coin.html", "classRpgGame_1_1Items_1_1Coin" ],
     [ "DoubleSword", "classRpgGame_1_1Items_1_1DoubleSword.html", "classRpgGame_1_1Items_1_1DoubleSword" ],
     [ "Gold", "classRpgGame_1_1Items_1_1Gold.html", "classRpgGame_1_1Items_1_1Gold" ],
     [ "HandOccupation", "classRpgGame_1_1Items_1_1HandOccupation.html", "classRpgGame_1_1Items_1_1HandOccupation" ],
     [ "IEquippable", "interfaceRpgGame_1_1Items_1_1IEquippable.html", "interfaceRpgGame_1_1Items_1_1IEquippable" ],
     [ "IItem", "interfaceRpgGame_1_1Items_1_1IItem.html", "interfaceRpgGame_1_1Items_1_1IItem" ],
+    [ "IWeapon", "interfaceRpgGame_1_1Items_1_1IWeapon.html", "interfaceRpgGame_1_1Items_1_1IWeapon" ],
     [ "OneHandOccupation", "classRpgGame_1_1Items_1_1OneHandOccupation.html", "classRpgGame_1_1Items_1_1OneHandOccupation" ],
     [ "Potion", "classRpgGame_1_1Items_1_1Potion.html", "classRpgGame_1_1Items_1_1Potion" ],
     [ "Sword", "classRpgGame_1_1Items_1_1Sword.html", "classRpgGame_1_1Items_1_1Sword" ],

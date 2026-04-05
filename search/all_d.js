@@ -6,5 +6,6 @@ var searchData=
   ['position_3',['Position',['../namespaceRpgGame_1_1Character.html#ab2e6f640f8bfc682c50e3c19e0d417f1',1,'RpgGame::Character']]],
   ['poslist_4',['PosList',['../classRpgGame_1_1Tiles_1_1Tile.html#ad8402eba86a958530722bf1eed51c237',1,'RpgGame::Tiles::Tile']]],
   ['potion_5',['Potion',['../classRpgGame_1_1Items_1_1Potion.html',1,'RpgGame::Items']]],
-  ['program_6',['Program',['../classRpgGame_1_1Program.html',1,'RpgGame']]]
+  ['program_6',['Program',['../classRpgGame_1_1Program.html',1,'RpgGame']]],
+  ['protectiveweaponmodifier_7',['ProtectiveWeaponModifier',['../classRpgGame_1_1Items_1_1Modifiers_1_1ProtectiveWeaponModifier.html',1,'RpgGame::Items::Modifiers']]]
 ];

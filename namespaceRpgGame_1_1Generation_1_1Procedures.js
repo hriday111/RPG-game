@@ -1,5 +1,6 @@
 var namespaceRpgGame_1_1Generation_1_1Procedures =
 [
+    [ "AddEnemiesProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure" ],
     [ "AddItemsProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1AddItemsProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1AddItemsProcedure" ],
     [ "AddWeaponsProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1AddWeaponsProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1AddWeaponsProcedure" ],
     [ "CentralRoomProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1CentralRoomProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1CentralRoomProcedure" ],

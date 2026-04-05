@@ -9,5 +9,6 @@ var searchData=
   ['inputhandler_6',['InputHandler',['../classRpgGame_1_1Input_1_1InputHandler.html',1,'RpgGame::Input']]],
   ['inventory_7',['Inventory',['../classRpgGame_1_1Core_1_1Inventory.html',1,'RpgGame::Core']]],
   ['inventorytolefthandcommand_8',['InventoryToLeftHandCommand',['../classRpgGame_1_1Input_1_1InventoryToLeftHandCommand.html',1,'RpgGame::Input']]],
-  ['inventorytorighthandcommand_9',['InventoryToRightHandCommand',['../classRpgGame_1_1Input_1_1InventoryToRightHandCommand.html',1,'RpgGame::Input']]]
+  ['inventorytorighthandcommand_9',['InventoryToRightHandCommand',['../classRpgGame_1_1Input_1_1InventoryToRightHandCommand.html',1,'RpgGame::Input']]],
+  ['iweapon_10',['IWeapon',['../interfaceRpgGame_1_1Items_1_1IWeapon.html',1,'RpgGame::Items']]]
 ];

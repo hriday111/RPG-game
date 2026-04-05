@@ -1,0 +1,5 @@
+<map id="RpgGame.Items.Modifiers.WeaponModifierDecorator.OnBeforeRemovedFromHands" name="RpgGame.Items.Modifiers.WeaponModifierDecorator.OnBeforeRemovedFromHands">
+<area shape="rect" id="Node000001" title="Invoked when the item is dropped to the ground; reverses equip&#45;time stat changes." alt="" coords="296,5,551,60"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a9feb3297228ce9428364d7df12b5abae" title="Handles the drop interaction for the item." alt="" coords="5,13,248,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="282,35,248,35,248,30,282,30"/>
+</map>

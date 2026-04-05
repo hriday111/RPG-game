@@ -16,6 +16,7 @@ var hierarchy =
     [ "RpgGame.Renderer.HelpEntry", "classRpgGame_1_1Renderer_1_1HelpEntry.html", null ],
     [ "RpgGame.Renderer.HelpOverlay", "classRpgGame_1_1Renderer_1_1HelpOverlay.html", null ],
     [ "RpgGame.Generation.IDungeonProcedure", "interfaceRpgGame_1_1Generation_1_1IDungeonProcedure.html", [
+      [ "RpgGame.Generation.Procedures.AddEnemiesProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure.html", null ],
       [ "RpgGame.Generation.Procedures.AddItemsProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1AddItemsProcedure.html", null ],
       [ "RpgGame.Generation.Procedures.AddWeaponsProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1AddWeaponsProcedure.html", null ],
       [ "RpgGame.Generation.Procedures.CentralRoomProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1CentralRoomProcedure.html", null ],
@@ -45,9 +46,16 @@ var hierarchy =
       [ "RpgGame.Items.Coin", "classRpgGame_1_1Items_1_1Coin.html", null ],
       [ "RpgGame.Items.Gold", "classRpgGame_1_1Items_1_1Gold.html", null ],
       [ "RpgGame.Items.IEquippable", "interfaceRpgGame_1_1Items_1_1IEquippable.html", [
-        [ "RpgGame.Items.Weapon", "classRpgGame_1_1Items_1_1Weapon.html", [
-          [ "RpgGame.Items.DoubleSword", "classRpgGame_1_1Items_1_1DoubleSword.html", null ],
-          [ "RpgGame.Items.Sword", "classRpgGame_1_1Items_1_1Sword.html", null ]
+        [ "RpgGame.Items.IWeapon", "interfaceRpgGame_1_1Items_1_1IWeapon.html", [
+          [ "RpgGame.Items.Modifiers.WeaponModifierDecorator", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html", [
+            [ "RpgGame.Items.Modifiers.ProtectiveWeaponModifier", "classRpgGame_1_1Items_1_1Modifiers_1_1ProtectiveWeaponModifier.html", null ],
+            [ "RpgGame.Items.Modifiers.StrongWeaponModifier", "classRpgGame_1_1Items_1_1Modifiers_1_1StrongWeaponModifier.html", null ],
+            [ "RpgGame.Items.Modifiers.UnluckyWeaponModifier", "classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html", null ]
+          ] ],
+          [ "RpgGame.Items.Weapon", "classRpgGame_1_1Items_1_1Weapon.html", [
+            [ "RpgGame.Items.DoubleSword", "classRpgGame_1_1Items_1_1DoubleSword.html", null ],
+            [ "RpgGame.Items.Sword", "classRpgGame_1_1Items_1_1Sword.html", null ]
+          ] ]
         ] ]
       ] ],
       [ "RpgGame.Items.Potion", "classRpgGame_1_1Items_1_1Potion.html", null ],

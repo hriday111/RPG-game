@@ -14,6 +14,7 @@ var annotated_dup =
       ] ],
       [ "Generation", "namespaceRpgGame_1_1Generation.html", [
         [ "Procedures", "namespaceRpgGame_1_1Generation_1_1Procedures.html", [
+          [ "AddEnemiesProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure" ],
           [ "AddItemsProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1AddItemsProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1AddItemsProcedure" ],
           [ "AddWeaponsProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1AddWeaponsProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1AddWeaponsProcedure" ],
           [ "CentralRoomProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1CentralRoomProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1CentralRoomProcedure" ],
@@ -52,12 +53,19 @@ var annotated_dup =
         [ "TakeToInventoryCommand", "classRpgGame_1_1Input_1_1TakeToInventoryCommand.html", "classRpgGame_1_1Input_1_1TakeToInventoryCommand" ]
       ] ],
       [ "Items", "namespaceRpgGame_1_1Items.html", [
+        [ "Modifiers", "namespaceRpgGame_1_1Items_1_1Modifiers.html", [
+          [ "ProtectiveWeaponModifier", "classRpgGame_1_1Items_1_1Modifiers_1_1ProtectiveWeaponModifier.html", "classRpgGame_1_1Items_1_1Modifiers_1_1ProtectiveWeaponModifier" ],
+          [ "StrongWeaponModifier", "classRpgGame_1_1Items_1_1Modifiers_1_1StrongWeaponModifier.html", "classRpgGame_1_1Items_1_1Modifiers_1_1StrongWeaponModifier" ],
+          [ "UnluckyWeaponModifier", "classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html", "classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier" ],
+          [ "WeaponModifierDecorator", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator" ]
+        ] ],
         [ "Coin", "classRpgGame_1_1Items_1_1Coin.html", "classRpgGame_1_1Items_1_1Coin" ],
         [ "DoubleSword", "classRpgGame_1_1Items_1_1DoubleSword.html", "classRpgGame_1_1Items_1_1DoubleSword" ],
         [ "Gold", "classRpgGame_1_1Items_1_1Gold.html", "classRpgGame_1_1Items_1_1Gold" ],
         [ "HandOccupation", "classRpgGame_1_1Items_1_1HandOccupation.html", "classRpgGame_1_1Items_1_1HandOccupation" ],
         [ "IEquippable", "interfaceRpgGame_1_1Items_1_1IEquippable.html", "interfaceRpgGame_1_1Items_1_1IEquippable" ],
         [ "IItem", "interfaceRpgGame_1_1Items_1_1IItem.html", "interfaceRpgGame_1_1Items_1_1IItem" ],
+        [ "IWeapon", "interfaceRpgGame_1_1Items_1_1IWeapon.html", "interfaceRpgGame_1_1Items_1_1IWeapon" ],
         [ "OneHandOccupation", "classRpgGame_1_1Items_1_1OneHandOccupation.html", "classRpgGame_1_1Items_1_1OneHandOccupation" ],
         [ "Potion", "classRpgGame_1_1Items_1_1Potion.html", "classRpgGame_1_1Items_1_1Potion" ],
         [ "Sword", "classRpgGame_1_1Items_1_1Sword.html", "classRpgGame_1_1Items_1_1Sword" ],

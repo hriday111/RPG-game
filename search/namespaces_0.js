@@ -8,6 +8,7 @@ var searchData=
   ['rpggame_3a_3ageneration_3a_3astrategies_5',['Strategies',['../namespaceRpgGame_1_1Generation_1_1Strategies.html',1,'RpgGame::Generation']]],
   ['rpggame_3a_3ainput_6',['Input',['../namespaceRpgGame_1_1Input.html',1,'RpgGame']]],
   ['rpggame_3a_3aitems_7',['Items',['../namespaceRpgGame_1_1Items.html',1,'RpgGame']]],
-  ['rpggame_3a_3arenderer_8',['Renderer',['../namespaceRpgGame_1_1Renderer.html',1,'RpgGame']]],
-  ['rpggame_3a_3atiles_9',['Tiles',['../namespaceRpgGame_1_1Tiles.html',1,'RpgGame']]]
+  ['rpggame_3a_3aitems_3a_3amodifiers_8',['Modifiers',['../namespaceRpgGame_1_1Items_1_1Modifiers.html',1,'RpgGame::Items']]],
+  ['rpggame_3a_3arenderer_9',['Renderer',['../namespaceRpgGame_1_1Renderer.html',1,'RpgGame']]],
+  ['rpggame_3a_3atiles_10',['Tiles',['../namespaceRpgGame_1_1Tiles.html',1,'RpgGame']]]
 ];

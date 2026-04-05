@@ -1,0 +1,7 @@
+<map id="RpgGame.Items.Modifiers.WeaponModifierDecorator.OnDrop" name="RpgGame.Items.Modifiers.WeaponModifierDecorator.OnDrop">
+<area shape="rect" id="Node000001" title="Handles the drop interaction for the item." alt="" coords="5,30,248,70"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Level.html#a377e083189e74d5d6ed5fd3234ebfa0f" title="Adds an item to the specified position in the level." alt="" coords="314,5,533,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,34,300,29,300,34,248,40"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a4a12965cad51123b0f1251333ff91763" title="Invoked when the item is dropped to the ground; reverses equip&#45;time stat changes." alt="" coords="296,55,551,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="248,60,283,64,282,69,248,66"/>
+</map>

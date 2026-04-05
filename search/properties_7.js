@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['name_0',['name',['../classRpgGame_1_1Items_1_1Coin.html#a3f6f6be14ce5ea76add2b43fa60e7c07',1,'RpgGame.Items.Coin.Name'],['../classRpgGame_1_1Items_1_1DoubleSword.html#abf93507091d389237347aa9a10bef7b8',1,'RpgGame.Items.DoubleSword.Name'],['../classRpgGame_1_1Items_1_1Gold.html#ade60cf8761352585e25cf1791213f8c5',1,'RpgGame.Items.Gold.Name'],['../interfaceRpgGame_1_1Items_1_1IItem.html#a00cea1d78c63d2696400d164660d8641',1,'RpgGame.Items.IItem.Name'],['../classRpgGame_1_1Items_1_1Potion.html#a2575c9bc2edafe1bc62c05f03ef56355',1,'RpgGame.Items.Potion.Name'],['../classRpgGame_1_1Items_1_1Sword.html#a7d283c5c4e9b1c3d7db17282bad15511',1,'RpgGame.Items.Sword.Name'],['../classRpgGame_1_1Items_1_1Thorn.html#afd4c596a06ce803b0fcfa404bb867447',1,'RpgGame.Items.Thorn.Name'],['../classRpgGame_1_1Items_1_1Weapon.html#ae749ab7a361ef77770b05b11737e3a85',1,'RpgGame.Items.Weapon.Name']]]
+  ['lefthand_0',['LeftHand',['../classRpgGame_1_1Character_1_1Player.html#a1974606bd9cdde05cc4547acb0e13733',1,'RpgGame::Character::Player']]],
+  ['luck_1',['Luck',['../classRpgGame_1_1Character_1_1Player.html#a81cee1bf3a9b1b853bd172f845c0654f',1,'RpgGame::Character::Player']]]
 ];

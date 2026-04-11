@@ -1,10 +1,5 @@
 var searchData=
 [
-  ['walltile_0',['WallTile',['../classRpgGame_1_1Tiles_1_1WallTile.html',1,'RpgGame::Tiles']]],
-  ['weapon_1',['weapon',['../classRpgGame_1_1Items_1_1Weapon.html',1,'RpgGame.Items.Weapon'],['../classRpgGame_1_1Items_1_1Weapon.html#a4981e01931ffc371f407dbe29f106418',1,'RpgGame.Items.Weapon.Weapon()']]],
-  ['weaponmodifierdecorator_2',['WeaponModifierDecorator',['../classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html',1,'RpgGame::Items::Modifiers']]],
-  ['width_3',['width',['../classRpgGame_1_1Core_1_1Level.html#a1a5794b0c6e7d074b6e66ab2a8822b6c',1,'RpgGame.Core.Level.Width'],['../classRpgGame_1_1Generation_1_1RectRoom.html#a27ab6c3f1355e7c7d54ef96b1bf3b43a',1,'RpgGame.Generation.RectRoom.Width']]],
-  ['windowheight_4',['WindowHeight',['../classRpgGame_1_1Core_1_1Config.html#a0ae8bff39195f2c83101e210f4bc9b15',1,'RpgGame::Core::Config']]],
-  ['windowwidth_5',['WindowWidth',['../classRpgGame_1_1Core_1_1Config.html#af2f9bcf02b7013b290fef29dae6ba659',1,'RpgGame::Core::Config']]],
-  ['wisdom_6',['Wisdom',['../classRpgGame_1_1Character_1_1Player.html#a0ca2cf2a1bbf65fd292339b0ce91427f',1,'RpgGame::Character::Player']]]
+  ['visitbarefists_0',['visitbarefists',['../interfaceRpgGame_1_1Combat_1_1ICombatAttack.html#a6db3e69dac112caf918c1e49b507fe55',1,'RpgGame.Combat.ICombatAttack.VisitBareFists()'],['../classRpgGame_1_1Combat_1_1MagicalStrikeAttack.html#a9bb2b15f19fbd64a1f630932f8542499',1,'RpgGame.Combat.MagicalStrikeAttack.VisitBareFists()'],['../classRpgGame_1_1Combat_1_1NormalAttack.html#a4d6b0129b959cabd25e57d09ee1ce78f',1,'RpgGame.Combat.NormalAttack.VisitBareFists()'],['../classRpgGame_1_1Combat_1_1StealthAttack.html#ab85694cd3c21ca83a869eef53546c899',1,'RpgGame.Combat.StealthAttack.VisitBareFists()']]],
+  ['visitequippednonweapon_1',['visitequippednonweapon',['../interfaceRpgGame_1_1Combat_1_1ICombatAttack.html#a5a6e5513f2e6c664037a53ab87b3b4ad',1,'RpgGame.Combat.ICombatAttack.VisitEquippedNonWeapon()'],['../classRpgGame_1_1Combat_1_1MagicalStrikeAttack.html#a42b577fa06631254b949f67d2872d68c',1,'RpgGame.Combat.MagicalStrikeAttack.VisitEquippedNonWeapon()'],['../classRpgGame_1_1Combat_1_1NormalAttack.html#a41b6d0e66a2ce5966012b5d205be5935',1,'RpgGame.Combat.NormalAttack.VisitEquippedNonWeapon()'],['../classRpgGame_1_1Combat_1_1StealthAttack.html#a7f20bc3936f4989ea47b2d1f46a1ed22',1,'RpgGame.Combat.StealthAttack.VisitEquippedNonWeapon()']]]
 ];

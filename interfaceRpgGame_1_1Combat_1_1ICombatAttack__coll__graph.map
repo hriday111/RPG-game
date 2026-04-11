@@ -1,0 +1,3 @@
+<map id="RpgGame.Combat.ICombatAttack" name="RpgGame.Combat.ICombatAttack">
+<area shape="rect" id="Node000001" title="Visitor for combat resolution: each concrete attack implements how damage and defense combine with he..." alt="" coords="5,5,268,312"/>
+</map>

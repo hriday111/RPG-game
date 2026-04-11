@@ -1,5 +1,6 @@
 var classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator =
 [
+    [ "AcceptCombatStrike", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a3a3fb03102c8f8cca984ea85f503db91", null ],
     [ "GetDescription", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a2183c31547c9d88a7bf2189c1e82f8ad", null ],
     [ "OnAfterEquippedToHands", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a112daa17197d38d6d8f487e0e7ce41f2", null ],
     [ "OnBeforeRemovedFromHands", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a4a12965cad51123b0f1251333ff91763", null ],

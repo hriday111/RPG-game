@@ -7,7 +7,17 @@ var annotated_dup =
         [ "Player", "classRpgGame_1_1Character_1_1Player.html", "classRpgGame_1_1Character_1_1Player" ]
       ] ],
       [ "Combat", "namespaceRpgGame_1_1Combat.html", [
-        [ "CombatRound", "classRpgGame_1_1Combat_1_1CombatRound.html", "classRpgGame_1_1Combat_1_1CombatRound" ]
+        [ "CombatContributionAccumulator", "classRpgGame_1_1Combat_1_1CombatContributionAccumulator.html", null ],
+        [ "CombatRound", "classRpgGame_1_1Combat_1_1CombatRound.html", "classRpgGame_1_1Combat_1_1CombatRound" ],
+        [ "HeavyWeaponCategory", "classRpgGame_1_1Combat_1_1HeavyWeaponCategory.html", null ],
+        [ "ICombatAttack", "interfaceRpgGame_1_1Combat_1_1ICombatAttack.html", "interfaceRpgGame_1_1Combat_1_1ICombatAttack" ],
+        [ "ICombatContribution", "interfaceRpgGame_1_1Combat_1_1ICombatContribution.html", null ],
+        [ "IWeaponCategory", "interfaceRpgGame_1_1Combat_1_1IWeaponCategory.html", null ],
+        [ "LightWeaponCategory", "classRpgGame_1_1Combat_1_1LightWeaponCategory.html", null ],
+        [ "MagicalStrikeAttack", "classRpgGame_1_1Combat_1_1MagicalStrikeAttack.html", "classRpgGame_1_1Combat_1_1MagicalStrikeAttack" ],
+        [ "MagicalWeaponCategory", "classRpgGame_1_1Combat_1_1MagicalWeaponCategory.html", null ],
+        [ "NormalAttack", "classRpgGame_1_1Combat_1_1NormalAttack.html", "classRpgGame_1_1Combat_1_1NormalAttack" ],
+        [ "StealthAttack", "classRpgGame_1_1Combat_1_1StealthAttack.html", "classRpgGame_1_1Combat_1_1StealthAttack" ]
       ] ],
       [ "Core", "namespaceRpgGame_1_1Core.html", [
         [ "Config", "classRpgGame_1_1Core_1_1Config.html", "classRpgGame_1_1Core_1_1Config" ],
@@ -53,6 +63,7 @@ var annotated_dup =
         [ "MoveRightCommand", "classRpgGame_1_1Input_1_1MoveRightCommand.html", "classRpgGame_1_1Input_1_1MoveRightCommand" ],
         [ "MoveUpCommand", "classRpgGame_1_1Input_1_1MoveUpCommand.html", "classRpgGame_1_1Input_1_1MoveUpCommand" ],
         [ "QuitGameCommand", "classRpgGame_1_1Input_1_1QuitGameCommand.html", "classRpgGame_1_1Input_1_1QuitGameCommand" ],
+        [ "SelectCombatAttackCommand", "classRpgGame_1_1Input_1_1SelectCombatAttackCommand.html", "classRpgGame_1_1Input_1_1SelectCombatAttackCommand" ],
         [ "SelectInventoryCommand", "classRpgGame_1_1Input_1_1SelectInventoryCommand.html", "classRpgGame_1_1Input_1_1SelectInventoryCommand" ],
         [ "TakeToInventoryCommand", "classRpgGame_1_1Input_1_1TakeToInventoryCommand.html", "classRpgGame_1_1Input_1_1TakeToInventoryCommand" ]
       ] ],
@@ -64,6 +75,7 @@ var annotated_dup =
           [ "WeaponModifierDecorator", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator" ]
         ] ],
         [ "Coin", "classRpgGame_1_1Items_1_1Coin.html", "classRpgGame_1_1Items_1_1Coin" ],
+        [ "CrystalOrb", "classRpgGame_1_1Items_1_1CrystalOrb.html", "classRpgGame_1_1Items_1_1CrystalOrb" ],
         [ "DoubleSword", "classRpgGame_1_1Items_1_1DoubleSword.html", "classRpgGame_1_1Items_1_1DoubleSword" ],
         [ "Gold", "classRpgGame_1_1Items_1_1Gold.html", "classRpgGame_1_1Items_1_1Gold" ],
         [ "HandOccupation", "classRpgGame_1_1Items_1_1HandOccupation.html", "classRpgGame_1_1Items_1_1HandOccupation" ],

@@ -114,6 +114,9 @@ Collaboration diagram for RpgGame.Items.Weapon:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:acc8a9b656cc3e659ecbfd2f06c498804" id="r_acc8a9b656cc3e659ecbfd2f06c498804"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Weapon.html#acc8a9b656cc3e659ecbfd2f06c498804">AcceptCombatStrike</a> (<a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatAttack.html">ICombatAttack</a> attack, <a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player, <a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatContribution.html">ICombatContribution</a> contribution)</td></tr>
+<tr class="memdesc:acc8a9b656cc3e659ecbfd2f06c498804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double dispatch: weapon category forwards to <em>attack</em> .  <br /></td></tr>
+<tr class="separator:acc8a9b656cc3e659ecbfd2f06c498804"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a558ddd2b965991e682b34dd532729a17" id="r_a558ddd2b965991e682b34dd532729a17"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Weapon.html#a558ddd2b965991e682b34dd532729a17">TryEquipToLeft</a> (<a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player)</td></tr>
 <tr class="memdesc:a558ddd2b965991e682b34dd532729a17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to equip the weapon in the player's left hand.  <br /></td></tr>
 <tr class="separator:a558ddd2b965991e682b34dd532729a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +156,10 @@ Properties</h2></td></tr>
 <tr class="memitem:aec0c613435b5d9f59a03243ce47741c5" id="r_aec0c613435b5d9f59a03243ce47741c5"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Weapon.html#aec0c613435b5d9f59a03243ce47741c5">Defense</a><code> [get]</code></td></tr>
 <tr class="memdesc:aec0c613435b5d9f59a03243ce47741c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defense contributed while this weapon is equipped (reduces incoming enemy damage).  <br /></td></tr>
 <tr class="separator:aec0c613435b5d9f59a03243ce47741c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42bad5052a68d6ea59974481e407d84" id="r_aa42bad5052a68d6ea59974481e407d84"><td class="memItemLeft" align="right" valign="top"><a id="aa42bad5052a68d6ea59974481e407d84" name="aa42bad5052a68d6ea59974481e407d84"></a>
+<a class="el" href="interfaceRpgGame_1_1Combat_1_1IWeaponCategory.html">IWeaponCategory</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CombatCategory</b><code> [get]</code></td></tr>
+<tr class="memdesc:aa42bad5052a68d6ea59974481e407d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Heavy, light, or magical classification for combat visitors. <br /></td></tr>
+<tr class="separator:aa42bad5052a68d6ea59974481e407d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interfaceRpgGame_1_1Items_1_1IWeapon"><td colspan="2" onclick="javascript:toggleInherit('properties_interfaceRpgGame_1_1Items_1_1IWeapon')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interfaceRpgGame_1_1Items_1_1IWeapon.html">RpgGame.Items.IWeapon</a></td></tr>
 <tr class="inherit_header properties_interfaceRpgGame_1_1Items_1_1IItem"><td colspan="2" onclick="javascript:toggleInherit('properties_interfaceRpgGame_1_1Items_1_1IItem')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interfaceRpgGame_1_1Items_1_1IItem.html">RpgGame.Items.IItem</a></td></tr>
 </table>
@@ -196,6 +203,44 @@ Properties</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="acc8a9b656cc3e659ecbfd2f06c498804" name="acc8a9b656cc3e659ecbfd2f06c498804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc8a9b656cc3e659ecbfd2f06c498804">&#9670;&#160;</a></span>AcceptCombatStrike()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RpgGame.Items.Weapon.AcceptCombatStrike </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatAttack.html">ICombatAttack</a>&#160;</td>
+          <td class="paramname"><em>attack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a>&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatContribution.html">ICombatContribution</a>&#160;</td>
+          <td class="paramname"><em>contribution</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Double dispatch: weapon category forwards to <em>attack</em> . </p>
+
+<p>Implements <a class="el" href="interfaceRpgGame_1_1Items_1_1IWeapon.html#afac22cf73e5bf9519a43576821b95d05">RpgGame.Items.IWeapon</a>.</p>
+
+</div>
+</div>
 <a id="a5537bb1668ccdca9663735e0cf94c5e9" name="a5537bb1668ccdca9663735e0cf94c5e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5537bb1668ccdca9663735e0cf94c5e9">&#9670;&#160;</a></span>GetDescription()</h2>
 

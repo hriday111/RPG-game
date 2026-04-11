@@ -2,6 +2,7 @@ var namespaceRpgGame_1_1Items =
 [
     [ "Modifiers", "namespaceRpgGame_1_1Items_1_1Modifiers.html", "namespaceRpgGame_1_1Items_1_1Modifiers" ],
     [ "Coin", "classRpgGame_1_1Items_1_1Coin.html", "classRpgGame_1_1Items_1_1Coin" ],
+    [ "CrystalOrb", "classRpgGame_1_1Items_1_1CrystalOrb.html", "classRpgGame_1_1Items_1_1CrystalOrb" ],
     [ "DoubleSword", "classRpgGame_1_1Items_1_1DoubleSword.html", "classRpgGame_1_1Items_1_1DoubleSword" ],
     [ "Gold", "classRpgGame_1_1Items_1_1Gold.html", "classRpgGame_1_1Items_1_1Gold" ],
     [ "HandOccupation", "classRpgGame_1_1Items_1_1HandOccupation.html", "classRpgGame_1_1Items_1_1HandOccupation" ],

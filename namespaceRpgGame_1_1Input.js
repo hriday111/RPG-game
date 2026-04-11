@@ -13,6 +13,7 @@ var namespaceRpgGame_1_1Input =
     [ "MoveRightCommand", "classRpgGame_1_1Input_1_1MoveRightCommand.html", "classRpgGame_1_1Input_1_1MoveRightCommand" ],
     [ "MoveUpCommand", "classRpgGame_1_1Input_1_1MoveUpCommand.html", "classRpgGame_1_1Input_1_1MoveUpCommand" ],
     [ "QuitGameCommand", "classRpgGame_1_1Input_1_1QuitGameCommand.html", "classRpgGame_1_1Input_1_1QuitGameCommand" ],
+    [ "SelectCombatAttackCommand", "classRpgGame_1_1Input_1_1SelectCombatAttackCommand.html", "classRpgGame_1_1Input_1_1SelectCombatAttackCommand" ],
     [ "SelectInventoryCommand", "classRpgGame_1_1Input_1_1SelectInventoryCommand.html", "classRpgGame_1_1Input_1_1SelectInventoryCommand" ],
     [ "TakeToInventoryCommand", "classRpgGame_1_1Input_1_1TakeToInventoryCommand.html", "classRpgGame_1_1Input_1_1TakeToInventoryCommand" ],
     [ "InputResult", "namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49fa", [

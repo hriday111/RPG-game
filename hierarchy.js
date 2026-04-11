@@ -16,6 +16,14 @@ var hierarchy =
     ] ],
     [ "RpgGame.Renderer.HelpEntry", "classRpgGame_1_1Renderer_1_1HelpEntry.html", null ],
     [ "RpgGame.Renderer.HelpOverlay", "classRpgGame_1_1Renderer_1_1HelpOverlay.html", null ],
+    [ "RpgGame.Combat.ICombatAttack", "interfaceRpgGame_1_1Combat_1_1ICombatAttack.html", [
+      [ "RpgGame.Combat.MagicalStrikeAttack", "classRpgGame_1_1Combat_1_1MagicalStrikeAttack.html", null ],
+      [ "RpgGame.Combat.NormalAttack", "classRpgGame_1_1Combat_1_1NormalAttack.html", null ],
+      [ "RpgGame.Combat.StealthAttack", "classRpgGame_1_1Combat_1_1StealthAttack.html", null ]
+    ] ],
+    [ "RpgGame.Combat.ICombatContribution", "interfaceRpgGame_1_1Combat_1_1ICombatContribution.html", [
+      [ "RpgGame.Combat.CombatContributionAccumulator", "classRpgGame_1_1Combat_1_1CombatContributionAccumulator.html", null ]
+    ] ],
     [ "RpgGame.Generation.IDungeonProcedure", "interfaceRpgGame_1_1Generation_1_1IDungeonProcedure.html", [
       [ "RpgGame.Generation.Procedures.AddEnemiesProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure.html", null ],
       [ "RpgGame.Generation.Procedures.AddItemsProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1AddItemsProcedure.html", null ],
@@ -41,6 +49,7 @@ var hierarchy =
       [ "RpgGame.Input.MoveRightCommand", "classRpgGame_1_1Input_1_1MoveRightCommand.html", null ],
       [ "RpgGame.Input.MoveUpCommand", "classRpgGame_1_1Input_1_1MoveUpCommand.html", null ],
       [ "RpgGame.Input.QuitGameCommand", "classRpgGame_1_1Input_1_1QuitGameCommand.html", null ],
+      [ "RpgGame.Input.SelectCombatAttackCommand", "classRpgGame_1_1Input_1_1SelectCombatAttackCommand.html", null ],
       [ "RpgGame.Input.SelectInventoryCommand", "classRpgGame_1_1Input_1_1SelectInventoryCommand.html", null ],
       [ "RpgGame.Input.TakeToInventoryCommand", "classRpgGame_1_1Input_1_1TakeToInventoryCommand.html", null ]
     ] ],
@@ -55,6 +64,7 @@ var hierarchy =
             [ "RpgGame.Items.Modifiers.UnluckyWeaponModifier", "classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html", null ]
           ] ],
           [ "RpgGame.Items.Weapon", "classRpgGame_1_1Items_1_1Weapon.html", [
+            [ "RpgGame.Items.CrystalOrb", "classRpgGame_1_1Items_1_1CrystalOrb.html", null ],
             [ "RpgGame.Items.DoubleSword", "classRpgGame_1_1Items_1_1DoubleSword.html", null ],
             [ "RpgGame.Items.Sword", "classRpgGame_1_1Items_1_1Sword.html", null ]
           ] ]
@@ -69,6 +79,11 @@ var hierarchy =
     ] ],
     [ "RpgGame.Input.InputHandler", "classRpgGame_1_1Input_1_1InputHandler.html", null ],
     [ "RpgGame.Core.Inventory", "classRpgGame_1_1Core_1_1Inventory.html", null ],
+    [ "RpgGame.Combat.IWeaponCategory", "interfaceRpgGame_1_1Combat_1_1IWeaponCategory.html", [
+      [ "RpgGame.Combat.HeavyWeaponCategory", "classRpgGame_1_1Combat_1_1HeavyWeaponCategory.html", null ],
+      [ "RpgGame.Combat.LightWeaponCategory", "classRpgGame_1_1Combat_1_1LightWeaponCategory.html", null ],
+      [ "RpgGame.Combat.MagicalWeaponCategory", "classRpgGame_1_1Combat_1_1MagicalWeaponCategory.html", null ]
+    ] ],
     [ "RpgGame.Core.Level", "classRpgGame_1_1Core_1_1Level.html", null ],
     [ "RpgGame.Generation.MapSpawnHelper", "classRpgGame_1_1Generation_1_1MapSpawnHelper.html", null ],
     [ "RpgGame.Program", "classRpgGame_1_1Program.html", null ],

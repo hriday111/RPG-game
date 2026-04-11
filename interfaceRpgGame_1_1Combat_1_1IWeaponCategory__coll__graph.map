@@ -1,0 +1,3 @@
+<map id="RpgGame.Combat.IWeaponCategory" name="RpgGame.Combat.IWeaponCategory">
+<area shape="rect" id="Node000001" title="Weapon classification for combat: dispatches to the active ICombatAttack without type tags (each conc..." alt="" coords="5,5,257,129"/>
+</map>

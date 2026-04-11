@@ -114,6 +114,9 @@ Collaboration diagram for RpgGame.Items.Modifiers.WeaponModifierDecorator:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a3a3fb03102c8f8cca984ea85f503db91" id="r_a3a3fb03102c8f8cca984ea85f503db91"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a3a3fb03102c8f8cca984ea85f503db91">AcceptCombatStrike</a> (<a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatAttack.html">ICombatAttack</a> attack, <a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player, <a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatContribution.html">ICombatContribution</a> contribution)</td></tr>
+<tr class="memdesc:a3a3fb03102c8f8cca984ea85f503db91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double dispatch: weapon category forwards to <em>attack</em> .  <br /></td></tr>
+<tr class="separator:a3a3fb03102c8f8cca984ea85f503db91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2183c31547c9d88a7bf2189c1e82f8ad" id="r_a2183c31547c9d88a7bf2189c1e82f8ad"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a2183c31547c9d88a7bf2189c1e82f8ad">GetDescription</a> ()</td></tr>
 <tr class="memdesc:a2183c31547c9d88a7bf2189c1e82f8ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a short textual description of the item.<dl class="section return"><dt>Returns</dt><dd>A human-readable description of the item.</dd></dl>
   <br /></td></tr>
@@ -203,6 +206,52 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Decorator base for Weapon stacks: forwards most behavior to an inner IEquippable while allowing subclasses to adjust name, damage, and equip-side player stats. Does not add an effect list to weapon types. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3a3fb03102c8f8cca984ea85f503db91" name="a3a3fb03102c8f8cca984ea85f503db91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a3fb03102c8f8cca984ea85f503db91">&#9670;&#160;</a></span>AcceptCombatStrike()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RpgGame.Items.Modifiers.WeaponModifierDecorator.AcceptCombatStrike </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatAttack.html">ICombatAttack</a>&#160;</td>
+          <td class="paramname"><em>attack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a>&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatContribution.html">ICombatContribution</a>&#160;</td>
+          <td class="paramname"><em>contribution</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Double dispatch: weapon category forwards to <em>attack</em> . </p>
+
+<p>Implements <a class="el" href="interfaceRpgGame_1_1Items_1_1IWeapon.html#afac22cf73e5bf9519a43576821b95d05">RpgGame.Items.IWeapon</a>.</p>
+
+</div>
+</div>
 <a id="a2183c31547c9d88a7bf2189c1e82f8ad" name="a2183c31547c9d88a7bf2189c1e82f8ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2183c31547c9d88a7bf2189c1e82f8ad">&#9670;&#160;</a></span>GetDescription()</h2>
 

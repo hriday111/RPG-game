@@ -1,0 +1,9 @@
+<map id="RpgGame.Combat.ICombatAttack" name="RpgGame.Combat.ICombatAttack">
+<area shape="rect" id="Node000001" title="Visitor for combat resolution: each concrete attack implements how damage and defense combine with he..." alt="" coords="292,5,555,312"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Combat_1_1MagicalStrikeAttack.html" title="Magical strike: magical weapons use full category damage; other weapons deal 1." alt="" coords="5,419,268,755"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="307,325,282,361,243,421,238,418,277,359,302,322"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Combat_1_1NormalAttack.html" title="Standard strike: heavy/light use full category damage; magical weapons deal 1." alt="" coords="292,360,555,815"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="426,326,426,360,421,360,421,326"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Combat_1_1StealthAttack.html" title="Stealth strike: light damage doubled, heavy halved, magical weapon damage 1." alt="" coords="579,427,841,748"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="544,322,570,359,613,425,609,428,565,361,540,325"/>
+</map>

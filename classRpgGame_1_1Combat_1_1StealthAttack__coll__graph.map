@@ -1,0 +1,5 @@
+<map id="RpgGame.Combat.StealthAttack" name="RpgGame.Combat.StealthAttack">
+<area shape="rect" id="Node000001" title="Stealth strike: light damage doubled, heavy halved, magical weapon damage 1." alt="" coords="5,360,268,681"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Combat_1_1ICombatAttack.html" title="Visitor for combat resolution: each concrete attack implements how damage and defense combine with he..." alt="" coords="5,5,268,312"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,326,139,360,134,360,134,326"/>
+</map>

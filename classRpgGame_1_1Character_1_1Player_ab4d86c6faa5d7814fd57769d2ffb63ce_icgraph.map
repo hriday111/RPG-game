@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Reduces the player&#39;s health by the specified amount." alt="" coords="916,73,1116,113"/>
 <area shape="rect" id="Node000002" href="$classRpgGame_1_1Items_1_1Thorn.html#a2976052765d686a38aaf8bc808a3bddc" title="Applies damage to the player when they step on the thorn." alt="" coords="631,51,863,77"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="902,84,863,79,864,74,903,78"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Combat_1_1CombatRound.html#a705af5dabe146c5a9a7e09bb9910f33a" title="Player attacks first. If the golem survives, it counter&#45;attacks once. Enemy damage is reduced by the ..." alt="" coords="627,101,868,141"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Combat_1_1CombatRound.html#a705af5dabe146c5a9a7e09bb9910f33a" title="Player attacks first. If the golem survives, it counter&#45;attacks once. Damage and defense use Player...." alt="" coords="627,101,868,141"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="903,108,869,111,868,106,902,103"/>
 <area shape="rect" id="Node000004" href="$classRpgGame_1_1Core_1_1Level.html#af523ef2f3444b888867305d0a2e6a512" title="One orthogonal step from the player (WASD): walk onto a free tile, or melee&#45;attack a golem on the tar..." alt="" coords="324,101,579,141"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="613,124,579,124,579,119,613,119"/>

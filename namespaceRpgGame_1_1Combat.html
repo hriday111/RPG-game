@@ -99,8 +99,35 @@ $(document).ready(function(){initNavTree('namespaceRpgGame_1_1Combat.html',''); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Combat_1_1CombatContributionAccumulator.html">CombatContributionAccumulator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutable accumulator used while visiting equipped items for a single strike.  <a href="classRpgGame_1_1Combat_1_1CombatContributionAccumulator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Combat_1_1CombatRound.html">CombatRound</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves a single turn of melee combat between the player and one golem.  <a href="classRpgGame_1_1Combat_1_1CombatRound.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Combat_1_1HeavyWeaponCategory.html">HeavyWeaponCategory</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatAttack.html">ICombatAttack</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visitor for combat resolution: each concrete attack implements how damage and defense combine with heavy, light, and magical weapon categories (double dispatch via IWeaponCategory.DispatchCombat).  <a href="interfaceRpgGame_1_1Combat_1_1ICombatAttack.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatContribution.html">ICombatContribution</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collects per-hand damage and defense contributions for one combat exchange.  <a href="interfaceRpgGame_1_1Combat_1_1ICombatContribution.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Combat_1_1IWeaponCategory.html">IWeaponCategory</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weapon classification for combat: dispatches to the active ICombatAttack without type tags (each concrete weapon composes one category instance).  <a href="interfaceRpgGame_1_1Combat_1_1IWeaponCategory.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Combat_1_1LightWeaponCategory.html">LightWeaponCategory</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Combat_1_1MagicalStrikeAttack.html">MagicalStrikeAttack</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magical strike: magical weapons use full category damage; other weapons deal 1.  <a href="classRpgGame_1_1Combat_1_1MagicalStrikeAttack.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Combat_1_1MagicalWeaponCategory.html">MagicalWeaponCategory</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Combat_1_1NormalAttack.html">NormalAttack</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Standard strike: heavy/light use full category damage; magical weapons deal 1.  <a href="classRpgGame_1_1Combat_1_1NormalAttack.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Combat_1_1StealthAttack.html">StealthAttack</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stealth strike: light damage doubled, heavy halved, magical weapon damage 1.  <a href="classRpgGame_1_1Combat_1_1StealthAttack.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>

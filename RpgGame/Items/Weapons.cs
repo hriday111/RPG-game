@@ -1,4 +1,5 @@
 using RpgGame.Character;
+using RpgGame.Combat;
 using RpgGame.Core;
 
 namespace RpgGame.Items;
@@ -56,6 +57,26 @@ public abstract class Weapon : IWeapon
 
     /// <inheritdoc />
     public virtual int Defense => 0;
+
+    /// <summary>
+    /// Heavy, light, or magical classification for combat visitors.
+    /// </summary>
+    protected abstract IWeaponCategory CombatCategory { get; }
+
+    /// <inheritdoc />
+    public void AcceptCombatStrike(ICombatAttack attack, Player player, ICombatContribution contribution)
+        => DispatchCombatUsingSurface(attack, this, player, contribution);
+
+    /// <summary>
+    /// Applies <paramref name="attack"/> using this weapon's category but <paramref name="damageSurface"/>'s
+    /// <see cref="IWeapon.Damage"/> (so decorators retain category and stacked modifiers).
+    /// </summary>
+    internal void DispatchCombatUsingSurface(
+        ICombatAttack attack,
+        IWeapon damageSurface,
+        Player player,
+        ICombatContribution contribution)
+        => CombatCategory.DispatchCombat(attack, damageSurface, player, contribution);
 
     /// <summary>
     /// Attempts to equip the weapon in the player's left hand.

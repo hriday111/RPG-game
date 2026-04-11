@@ -2,6 +2,7 @@ using RpgGame.Character;
 using RpgGame.Combat;
 using RpgGame.Core;
 using RpgGame.Items;
+using RpgGame.Items.Modifiers;
 using RpgGame.Tiles;
 
 namespace RpgGame.Tests;
@@ -13,19 +14,42 @@ public class CombatRoundTests
     {
         private readonly int _damage;
         private readonly int _weaponDefense;
+        private readonly IWeaponCategory _category;
 
-        public TunedBlade(int damage, int weaponDefense = 0)
+        public TunedBlade(int damage, int weaponDefense = 0, IWeaponCategory? category = null)
             : base(new OneHandOccupation())
         {
             _damage = damage;
             _weaponDefense = weaponDefense;
+            _category = category ?? HeavyWeaponCategory.Instance;
         }
+
+        protected override IWeaponCategory CombatCategory => _category;
 
         public override string Name => "Tuned blade";
         public override ConsoleColor color => ConsoleColor.Gray;
         public override char Symbol => 't';
         public override int Damage => _damage;
         public override int Defense => _weaponDefense;
+    }
+
+    /// <summary>Equippable that is not a <see cref="IWeapon"/> (combat damage 0 from that hand).</summary>
+    private sealed class Trinket : IEquippable
+    {
+        private static readonly OneHandOccupation Occ = new();
+
+        public string Name => "Trinket";
+        public char Symbol => '%';
+        public ConsoleColor color => ConsoleColor.Magenta;
+        public string GetDescription() => "non-weapon";
+
+        public bool OnPickup(Player player, Inventory inventory) => inventory.AddToInventory(this);
+
+        public void OnDrop(Level level, Player player) => level.AddItem(player.Pos, this);
+
+        public bool TryEquipToLeft(Player player) => Occ.EquipLeft(player, this);
+
+        public bool TryEquipToRight(Player player) => Occ.EquipRight(player, this);
     }
 
     [Fact]
@@ -53,8 +77,8 @@ public class CombatRoundTests
         CombatRoundResult result = CombatRound.Resolve(player, golem);
 
         Assert.False(result.EnemyDefeated);
-        Assert.Equal(7, result.DamageAppliedToPlayer);
-        Assert.Equal(hpBefore - 7, player.Health);
+        Assert.Equal(4, result.DamageAppliedToPlayer);
+        Assert.Equal(hpBefore - 4, player.Health);
     }
 
     [Fact]
@@ -66,7 +90,7 @@ public class CombatRoundTests
 
         CombatRoundResult result = CombatRound.Resolve(player, golem);
 
-        Assert.Equal(2, result.DamageAppliedToEnemy);
+        Assert.Equal(10, result.DamageAppliedToEnemy);
     }
 
     [Fact]
@@ -79,6 +103,52 @@ public class CombatRoundTests
 
         int toPlayer = Math.Max(0, 20 - player.GetDefenseStrength());
         Assert.Equal(100 - toPlayer, player.Health);
+    }
+
+    [Fact]
+    public void LightWeapon_StealthAttack_DoublesCategoryDamage()
+    {
+        var player = new Player(new Position(0, 0));
+        player.EquipLeft(new Sword());
+        player.SetSelectedCombatAttack(StealthAttack.Instance);
+        // (10 + DEX 5 + LCK 3) * 2
+        Assert.Equal(36, player.GetOutgoingDamageForAttack(StealthAttack.Instance));
+    }
+
+    [Fact]
+    public void MagicalWeapon_MagicalStrike_UsesWisdomScaling()
+    {
+        var player = new Player(new Position(0, 0));
+        player.EquipLeft(new CrystalOrb());
+        player.SetSelectedCombatAttack(MagicalStrikeAttack.Instance);
+        // 8 + WIS 6
+        Assert.Equal(14, player.GetOutgoingDamageForAttack(MagicalStrikeAttack.Instance));
+    }
+
+    [Fact]
+    public void StrongModifier_ForwardsCategory_LightStealthUsesDecoratedDamage()
+    {
+        var player = new Player(new Position(0, 0));
+        player.EquipLeft(new StrongWeaponModifier(new Sword()));
+        player.SetSelectedCombatAttack(StealthAttack.Instance);
+        // (15 + 5 + 3) * 2
+        Assert.Equal(46, player.GetOutgoingDamageForAttack(StealthAttack.Instance));
+    }
+
+    [Fact]
+    public void NonWeaponEquippable_DealsNoDamage()
+    {
+        var player = new Player(new Position(0, 0));
+        player.EquipLeft(new Trinket());
+        Assert.Equal(0, player.GetOutgoingDamageForAttack(NormalAttack.Instance));
+    }
+
+    [Fact]
+    public void NormalAttack_MagicalWeapon_DealsOneDamage()
+    {
+        var player = new Player(new Position(0, 0));
+        player.EquipLeft(new CrystalOrb());
+        Assert.Equal(1, player.GetOutgoingDamageForAttack(NormalAttack.Instance));
     }
 }
 

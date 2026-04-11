@@ -1,4 +1,5 @@
 using RpgGame.Character;
+using RpgGame.Combat;
 using RpgGame.Core;
 
 namespace RpgGame.Renderer;
@@ -122,6 +123,15 @@ public class ConsoleRenderer
             Console.Write(new string(' ', Config.SidebarWidth));
     }
 
+    private static string DescribeSelectedAttack(Player player)
+    {
+        if (ReferenceEquals(player.SelectedCombatAttack, StealthAttack.Instance))
+            return "Stealth (F3)";
+        if (ReferenceEquals(player.SelectedCombatAttack, MagicalStrikeAttack.Instance))
+            return "Magical (F4)";
+        return "Normal (F2)";
+    }
+
     /// <summary>
     /// Builds sidebar lines (stats, equipment, combat, inventory). Rows past the map height are printed below the map, aligned with the panel.
     /// </summary>
@@ -147,6 +157,7 @@ public class ConsoleRenderer
             PadLine(player.Health <= 0 ? " Any key quits to desktop." : " "),
             "├" + new string('─', innerWidth) + "┤",
             PadLine(" COMBAT"),
+            PadLine($" Next: {DescribeSelectedAttack(player)}"),
             PadLine(string.IsNullOrEmpty(level.LastCombatMessage) ? " —" : $" {level.LastCombatMessage}"),
             "├" + new string('─', innerWidth) + "┤",
             PadLine($" STR: {player.Strength,-3} DEX: {player.Dexterity,-3}"),

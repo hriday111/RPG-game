@@ -1,3 +1,5 @@
+using RpgGame.Combat;
+
 namespace RpgGame.Items;
 
 /// <summary>
@@ -13,6 +15,9 @@ namespace RpgGame.Items;
 /// </remarks>
 public class Sword : Weapon
 {
+    /// <inheritdoc />
+    protected override IWeaponCategory CombatCategory => LightWeaponCategory.Instance;
+
     /// <summary>
     /// Initializes a new instance of the <see cref="Sword"/> class.
     /// </summary>

@@ -1,4 +1,5 @@
 using RpgGame.Character;
+using RpgGame.Combat;
 using RpgGame.Core;
 namespace RpgGame.Input;
 
@@ -58,6 +59,9 @@ public class InputHandler
         Register(ConsoleKey.Escape, 0, new QuitGameCommand(), "Quit game");
         Register(ConsoleKey.Q, ConsoleModifiers.Shift, new DropLeftCommand(), "Drop left-hand item");
         Register(ConsoleKey.E, ConsoleModifiers.Shift, new DropRightCommand(), "Drop right-hand item");
+        Register(ConsoleKey.F2, 0, new SelectCombatAttackCommand(NormalAttack.Instance), "Normal attack (next melee)");
+        Register(ConsoleKey.F3, 0, new SelectCombatAttackCommand(StealthAttack.Instance), "Stealth attack (next melee)");
+        Register(ConsoleKey.F4, 0, new SelectCombatAttackCommand(MagicalStrikeAttack.Instance), "Magical strike (next melee)");
         Register(ConsoleKey.F1, 0, new HelpCommand(), "Help Command");
     }
 

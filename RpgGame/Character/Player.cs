@@ -1,4 +1,4 @@
-using System.Numerics;
+using RpgGame.Combat;
 using RpgGame.Core;
 using RpgGame.Items;
 namespace RpgGame.Character;
@@ -51,6 +51,17 @@ public class Player : Character
     /// </summary>
     public IEquippable? RightHand { get; private set; }
 
+    /// <summary>
+    /// Attack style used for the next melee exchange (normal, stealth, or magical strike).
+    /// </summary>
+    public ICombatAttack SelectedCombatAttack { get; private set; } = NormalAttack.Instance;
+
+    /// <summary>
+    /// Selects how the player strikes on the next combat round.
+    /// </summary>
+    public void SetSelectedCombatAttack(ICombatAttack attack)
+        => SelectedCombatAttack = attack ?? NormalAttack.Instance;
+
     #endregion
     #region Stat Logic
 
@@ -77,43 +88,59 @@ public class Player : Character
     }
 
     /// <summary>
-    /// Defense used against enemy attacks: Dexterity plus defensive values from held weapons.
-    /// Two-handed weapons are counted once when both hands reference the same item.
+    /// Defense against the golem's counter-attack for the current <see cref="SelectedCombatAttack"/>.
     /// </summary>
     public int GetDefenseStrength()
+        => GetDefenseForAttack(SelectedCombatAttack);
+
+    /// <summary>
+    /// Outgoing damage for the current <see cref="SelectedCombatAttack"/>.
+    /// </summary>
+    public int GetMeleeAttackPower()
+        => GetOutgoingDamageForAttack(SelectedCombatAttack);
+
+    /// <summary>
+    /// Total defense from equipment and attack style for one exchange.
+    /// </summary>
+    public int GetDefenseForAttack(ICombatAttack attack)
     {
-        return Dexterity + SumEquippedWeaponDefense();
+        var acc = new CombatContributionAccumulator();
+        AccumulateCombatContributions(attack, acc);
+        return acc.TotalDefense;
     }
 
     /// <summary>
-    /// Melee attack power: sum of equipped weapon damage, or unarmed <see cref="Strength"/> (minimum 1).
+    /// Total outgoing damage for one exchange with the given attack style.
     /// </summary>
-    public int GetMeleeAttackPower()
+    public int GetOutgoingDamageForAttack(ICombatAttack attack)
     {
-        int fromWeapons = SumEquippedWeaponDamage();
-        if (fromWeapons > 0)
-            return fromWeapons;
-        return Math.Max(1, Strength);
+        var acc = new CombatContributionAccumulator();
+        AccumulateCombatContributions(attack, acc);
+        return acc.TotalDamage;
     }
 
-    private int SumEquippedWeaponDamage()
+    private void AccumulateCombatContributions(ICombatAttack attack, ICombatContribution acc)
     {
-        int total = 0;
-        if (LeftHand is IWeapon lw)
-            total += lw.Damage;
-        if (RightHand is IWeapon rw && !ReferenceEquals(LeftHand, RightHand))
-            total += rw.Damage;
-        return total;
-    }
+        bool anyHandOccupied = LeftHand != null || RightHand != null;
 
-    private int SumEquippedWeaponDefense()
-    {
-        int total = 0;
-        if (LeftHand is IWeapon lw)
-            total += lw.Defense;
-        if (RightHand is IWeapon rw && !ReferenceEquals(LeftHand, RightHand))
-            total += rw.Defense;
-        return total;
+        if (LeftHand != null)
+        {
+            if (LeftHand is IWeapon lw)
+                lw.AcceptCombatStrike(attack, this, acc);
+            else
+                attack.VisitEquippedNonWeapon(LeftHand, this, acc);
+        }
+
+        if (RightHand != null && !ReferenceEquals(LeftHand, RightHand))
+        {
+            if (RightHand is IWeapon rw)
+                rw.AcceptCombatStrike(attack, this, acc);
+            else
+                attack.VisitEquippedNonWeapon(RightHand, this, acc);
+        }
+
+        if (!anyHandOccupied)
+            attack.VisitBareFists(this, acc);
     }
 
     #endregion

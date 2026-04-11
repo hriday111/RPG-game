@@ -1,4 +1,5 @@
 using RpgGame.Character;
+using RpgGame.Combat;
 using RpgGame.Core;
 
 namespace RpgGame.Items.Modifiers;
@@ -34,6 +35,10 @@ public abstract class WeaponModifierDecorator : IWeapon
 
     /// <inheritdoc />
     public virtual int Defense => ((IWeapon)Inner).Defense;
+
+    /// <inheritdoc />
+    public virtual void AcceptCombatStrike(ICombatAttack attack, Player player, ICombatContribution contribution)
+        => ResolveCoreWeapon().DispatchCombatUsingSurface(attack, this, player, contribution);
 
     /// <inheritdoc />
     public virtual string GetDescription() => $"{Name} (Damage: {Damage})";

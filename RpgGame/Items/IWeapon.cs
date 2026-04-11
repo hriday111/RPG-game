@@ -1,3 +1,6 @@
+using RpgGame.Character;
+using RpgGame.Combat;
+
 namespace RpgGame.Items;
 
 /// <summary>
@@ -18,4 +21,9 @@ public interface IWeapon : IEquippable
     /// Defense contributed while this weapon is equipped (reduces incoming enemy damage).
     /// </summary>
     int Defense => 0;
+
+    /// <summary>
+    /// Double dispatch: weapon category forwards to <paramref name="attack"/>.
+    /// </summary>
+    void AcceptCombatStrike(ICombatAttack attack, Player player, ICombatContribution contribution);
 }

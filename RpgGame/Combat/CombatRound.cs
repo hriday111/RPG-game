@@ -18,7 +18,7 @@ public static class CombatRound
 {
     /// <summary>
     /// Player attacks first. If the golem survives, it counter-attacks once.
-    /// Enemy damage is reduced by the player's <see cref="Player.GetDefenseStrength"/>.
+    /// Damage and defense use <see cref="Player.SelectedCombatAttack"/> (F2–F4).
     /// </summary>
     public static CombatRoundResult Resolve(Player player, Golem golem)
     {

@@ -1,0 +1,17 @@
+@startuml
+class HeavyWeaponCategory <<sealed>> {
+    + {static} Instance : HeavyWeaponCategory <<get>>
+    + DispatchCombat(attack:ICombatAttack, weapon:IWeapon, player:Player, contribution:ICombatContribution) : void
+}
+class LightWeaponCategory <<sealed>> {
+    + {static} Instance : LightWeaponCategory <<get>>
+    + DispatchCombat(attack:ICombatAttack, weapon:IWeapon, player:Player, contribution:ICombatContribution) : void
+}
+class MagicalWeaponCategory <<sealed>> {
+    + {static} Instance : MagicalWeaponCategory <<get>>
+    + DispatchCombat(attack:ICombatAttack, weapon:IWeapon, player:Player, contribution:ICombatContribution) : void
+}
+IWeaponCategory <|-- HeavyWeaponCategory
+IWeaponCategory <|-- LightWeaponCategory
+IWeaponCategory <|-- MagicalWeaponCategory
+@enduml

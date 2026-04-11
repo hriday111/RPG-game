@@ -1,3 +1,11 @@
 @startuml
 !include ./CombatRound.puml
+!include ./ICombatContribution.puml
+!include ./CombatContributionAccumulator.puml
+!include ./ICombatAttack.puml
+!include ./IWeaponCategory.puml
+!include ./WeaponCombatCategories.puml
+!include ./NormalAttack.puml
+!include ./StealthAttack.puml
+!include ./MagicalStrikeAttack.puml
 @enduml

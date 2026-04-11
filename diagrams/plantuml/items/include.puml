@@ -12,6 +12,7 @@
 !include ./Sword.puml
 !include ./Weapons.puml
 !include ./IWeapon.puml
+!include ./CrystalOrb.puml
 !include ./Modifiers/WeaponModifierDecorator.puml
 !include ./Modifiers/StrongWeaponModifier.puml
 !include ./Modifiers/UnluckyWeaponModifier.puml

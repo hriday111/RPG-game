@@ -5,6 +5,7 @@ abstract class WeaponModifierDecorator {
     + <<virtual>> color : ConsoleColor <<get>>
     + <<virtual>> Damage : int <<get>>
     + <<virtual>> Defense : int <<get>>
+    + <<virtual>> AcceptCombatStrike(attack:ICombatAttack, player:Player, contribution:ICombatContribution) : void
     + <<virtual>> GetDescription() : string
     + OnPickup(player:Player, inventory:Inventory) : bool
     + OnDrop(level:Level, player:Player) : void

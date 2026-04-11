@@ -1,0 +1,9 @@
+@startuml
+class CombatContributionAccumulator <<sealed>> {
+    + TotalDamage : int <<get>>
+    + TotalDefense : int <<get>>
+    + AddDamage(amount:int) : void
+    + AddDefense(amount:int) : void
+}
+ICombatContribution <|-- CombatContributionAccumulator
+@enduml

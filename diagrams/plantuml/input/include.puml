@@ -14,4 +14,5 @@
 !include ./SelectInventoryCommand.puml
 !include ./TakeToInventoryCommand.puml
 !include ./HelpCommand.puml
+!include ./SelectCombatAttackCommand.puml
 @enduml

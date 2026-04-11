@@ -5,6 +5,7 @@ abstract class Weapon {
     + {abstract} Symbol : char <<get>>
     + {abstract} Damage : int <<get>>
     + <<virtual>> Defense : int <<get>>
+    + AcceptCombatStrike(attack:ICombatAttack, player:Player, contribution:ICombatContribution) : void
     + TryEquipToLeft(player:Player) : bool
     + TryEquipToRight(player:Player) : bool
     + <<virtual>> GetDescription() : string

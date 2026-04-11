@@ -1,0 +1,6 @@
+@startuml
+class DropRightCommand {
+    + Execute(level:Level, player:Player, inventory:Inventory) : InputResult
+}
+IInputCommand <|-- DropRightCommand
+@enduml

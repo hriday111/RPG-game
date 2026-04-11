@@ -1,0 +1,13 @@
+@startuml
+class Inventory {
+    + SelectedIndex : int <<get>> <<set>> = 0
+    + Inventory(player:Player, size:int)
+    + AddToInventory(item:IEquippable) : bool
+    + GetSelectedItem() : IEquippable?
+    + GetNItem(n:int) : IEquippable?
+    + GetCount() : int
+    + TakeToRight() : bool
+    + TakeToLeft() : bool
+    + Size : int <<get>>
+}
+@enduml

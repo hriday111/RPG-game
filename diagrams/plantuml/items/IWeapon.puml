@@ -1,0 +1,5 @@
+@startuml
+interface IWeapon {
+}
+IEquippable <|-- IWeapon
+@enduml

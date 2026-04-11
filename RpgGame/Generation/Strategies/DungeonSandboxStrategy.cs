@@ -11,6 +11,7 @@ namespace RpgGame.Generation.Strategies;
 /// 2. Carves a central room in the middle
 /// 3. Spawns coins and gold for the player to collect
 /// 4. Spawns weapons for the player to find
+/// 5. Spawns golem enemies
 /// </remarks>
 public class DungeonSandboxStrategy : IDungeonStrategy
 {
@@ -24,6 +25,7 @@ public class DungeonSandboxStrategy : IDungeonStrategy
             .Add(new FilledDungeonProcedure())
             .Add(new CentralRoomProcedure(20, 10))
             .Add(new AddItemsProcedure(5, 2))
-            .Add(new AddWeaponsProcedure());
+            .Add(new AddWeaponsProcedure())
+            .Add(new AddEnemiesProcedure(1));
     }
 }

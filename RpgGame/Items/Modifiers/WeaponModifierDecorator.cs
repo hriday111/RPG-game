@@ -33,6 +33,9 @@ public abstract class WeaponModifierDecorator : IWeapon
     public virtual int Damage => ((IWeapon)Inner).Damage;
 
     /// <inheritdoc />
+    public virtual int Defense => ((IWeapon)Inner).Defense;
+
+    /// <inheritdoc />
     public virtual string GetDescription() => $"{Name} (Damage: {Damage})";
 
     /// <inheritdoc />

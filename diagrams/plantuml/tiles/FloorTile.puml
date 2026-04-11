@@ -1,0 +1,8 @@
+@startuml
+class FloorTile <<sealed>> {
+    + <<override>> Symbol : char <<get>>
+    + <<override>> color : ConsoleColor <<get>>
+    + <<override>> IsWalkable : bool <<get>>
+}
+Tile <|-- FloorTile
+@enduml

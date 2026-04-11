@@ -1,0 +1,12 @@
+@startuml
+class MapSpawnHelper <<static>> {
+    + {static} SpawnItemsAsync(level:Level, count:int, factory:Func<TItem>) : Task
+    + {static} SpawnCoinsAsync(level:Level, count:int) : Task
+    + {static} SpawnSwordAsync(level:Level, count:int) : Task
+    + {static} SpawnDoubleSwordAsync(level:Level, count:int) : Task
+    + {static} SpawnGoldAsync(level:Level, count:int) : Task
+    + {static} SpawnPotionsAsync(level:Level, count:int) : Task
+    + {static} SpawnThornsAsync(level:Level, count:int) : Task
+    + {static} SpawnGolemAsync(level:Level, count:int) : Task
+}
+@enduml

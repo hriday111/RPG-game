@@ -1,0 +1,15 @@
+@startuml
+abstract class WeaponModifierDecorator {
+    + {abstract} Name : string <<get>>
+    + <<virtual>> Symbol : char <<get>>
+    + <<virtual>> color : ConsoleColor <<get>>
+    + <<virtual>> Damage : int <<get>>
+    + <<virtual>> Defense : int <<get>>
+    + <<virtual>> GetDescription() : string
+    + OnPickup(player:Player, inventory:Inventory) : bool
+    + OnDrop(level:Level, player:Player) : void
+    + TryEquipToLeft(player:Player) : bool
+    + TryEquipToRight(player:Player) : bool
+}
+IWeapon <|-- WeaponModifierDecorator
+@enduml

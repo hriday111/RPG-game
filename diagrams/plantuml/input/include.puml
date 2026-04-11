@@ -1,0 +1,17 @@
+@startuml
+!include ./ControlDescriptor.puml
+!include ./DropLeftCommand.puml
+!include ./DropRightCommand.puml
+!include ./IInputCommand.puml
+!include ./InputHandler.puml
+!include ./InventoryToLeftCommand.puml
+!include ./InventoryToRightHandCommand.puml
+!include ./MoveDownCommand.puml
+!include ./MoveLeftCommand.puml
+!include ./MoveRightCommand.puml
+!include ./MoveUpCommand.puml
+!include ./QuitGameCommand.puml
+!include ./SelectInventoryCommand.puml
+!include ./TakeToInventoryCommand.puml
+!include ./HelpCommand.puml
+@enduml

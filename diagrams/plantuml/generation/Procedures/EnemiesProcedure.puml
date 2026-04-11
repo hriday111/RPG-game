@@ -1,0 +1,7 @@
+@startuml
+class AddEnemiesProcedure {
+    + AddEnemiesProcedure(GolemCount:int)
+    + <<async>> ApplyAsync(level:Level, context:DungeonContext) : Task
+}
+IDungeonProcedure <|-- AddEnemiesProcedure
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+abstract class Weapon {
+    + {abstract} Name : string <<get>>
+    + {abstract} color : ConsoleColor <<get>>
+    + {abstract} Symbol : char <<get>>
+    + {abstract} Damage : int <<get>>
+    + <<virtual>> Defense : int <<get>>
+    + TryEquipToLeft(player:Player) : bool
+    + TryEquipToRight(player:Player) : bool
+    + <<virtual>> GetDescription() : string
+    + OnPickup(player:Player, inventory:Inventory) : bool
+    + OnDrop(level:Level, player:Player) : void
+}
+IWeapon <|-- Weapon
+@enduml

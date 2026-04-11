@@ -1,0 +1,6 @@
+@startuml
+class MoveDownCommand {
+    + Execute(level:Level, player:Player, inventory:Inventory) : InputResult
+}
+IInputCommand <|-- MoveDownCommand
+@enduml

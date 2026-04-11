@@ -1,6 +1,18 @@
 using RpgGame.Character;
 using RpgGame.Core;
 namespace RpgGame.Input;
+
+/// <summary>
+/// Result of <see cref="IInputCommand.Execute"/> and <see cref="InputHandler.HandleInput"/>.
+/// </summary>
+public enum InputResult
+{
+    /// <summary>No registered command matched the key.</summary>
+    None = 0,
+    Ok = 1,
+    Quit = -1,
+    Help = 2,
+}
 /// <summary>
 /// Maps console key combinations to their corresponding
 /// <see cref="IInputCommand"/> implementations and
@@ -26,10 +38,10 @@ public class InputHandler
             controlDescriptors.Add(new ControlDescriptor(key, mods, description));
         }
 
-        Register(ConsoleKey.W, 0, new MoveUpCommand(), "Move up");
-        Register(ConsoleKey.S, 0, new MoveDownCommand(), "Move down");
-        Register(ConsoleKey.A, 0, new MoveLeftCommand(), "Move left");
-        Register(ConsoleKey.D, 0, new MoveRightCommand(), "Move right");
+        Register(ConsoleKey.W, 0, new MoveUpCommand(), "Move up / attack golem ahead");
+        Register(ConsoleKey.S, 0, new MoveDownCommand(), "Move down / attack golem ahead");
+        Register(ConsoleKey.A, 0, new MoveLeftCommand(), "Move left / attack golem ahead");
+        Register(ConsoleKey.D, 0, new MoveRightCommand(), "Move right / attack golem ahead");
         Register(ConsoleKey.F, 0, new TakeToInventoryCommand(), "Pick up / take item");
         Register(ConsoleKey.Q, 0, new InventoryToLeftHandCommand(), "Equip to left hand");
         Register(ConsoleKey.E, 0, new InventoryToRightHandCommand(), "Equip to right hand");
@@ -46,7 +58,13 @@ public class InputHandler
         Register(ConsoleKey.Escape, 0, new QuitGameCommand(), "Quit game");
         Register(ConsoleKey.Q, ConsoleModifiers.Shift, new DropLeftCommand(), "Drop left-hand item");
         Register(ConsoleKey.E, ConsoleModifiers.Shift, new DropRightCommand(), "Drop right-hand item");
+        Register(ConsoleKey.F1, 0, new HelpCommand(), "Help Command");
     }
+
+    /// <summary>
+    /// All registered key bindings with descriptions (e.g. for a help menu).
+    /// </summary>
+    public IReadOnlyList<ControlDescriptor> Bindings => controlDescriptors;
 
     /// <summary>
     /// Processes a <see cref="ConsoleKeyInfo"/> entry and executes
@@ -57,27 +75,17 @@ public class InputHandler
     /// <param name="player">The player character.</param>
     /// <param name="inventory">The player's inventory.</param>
     /// <returns>
-    /// Command execution result (see individual commands). Returns
-    /// <c>-1</c> when esc is pressed.
+    /// Command execution result from the matched command, or <see cref="InputResult.None"/> if no binding exists.
     /// </returns>
-    /// <summary>
-    /// A read-only collection of all registered bindings along with descriptions.
-    /// Useful for building a help menu.
-    /// </summary>
-    public IReadOnlyList<ControlDescriptor> Bindings => controlDescriptors;
-
-    public int HandleInput(ConsoleKeyInfo key, Level level, Player player, Inventory inventory)
+    public InputResult HandleInput(ConsoleKeyInfo key, Level level, Player player, Inventory inventory)
     {
-        // show help when F1 is pressed; caller will toggle the help flag
-        if (key.Key == ConsoleKey.F1)
-            return 2;
-
         var combo = (key.Key, key.Modifiers);
 
         if (commands.TryGetValue(combo, out var command))
         {
             return command.Execute(level, player, inventory);
         }
-        return 0;
+
+        return InputResult.None;
     }
 }

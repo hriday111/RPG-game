@@ -1,0 +1,10 @@
+@startuml
+class Sword {
+    + Sword()
+    + <<override>> Name : string <<get>>
+    + <<override>> color : ConsoleColor <<get>>
+    + <<override>> Symbol : char <<get>>
+    + <<override>> Damage : int <<get>>
+}
+Weapon <|-- Sword
+@enduml

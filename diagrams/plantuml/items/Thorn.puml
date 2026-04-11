@@ -1,0 +1,11 @@
+@startuml
+class Thorn {
+    + Name : string <<get>>
+    + Symbol : char <<get>>
+    + color : ConsoleColor <<get>>
+    + GetDescription() : string
+    + OnPickup(player:Player, inventory:Inventory) : bool
+    + OnDrop(level:Level, player:Player) : void
+}
+IItem <|-- Thorn
+@enduml

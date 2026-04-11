@@ -54,6 +54,9 @@ public abstract class Weapon : IWeapon
     /// </summary>
     public abstract int Damage { get; }
 
+    /// <inheritdoc />
+    public virtual int Defense => 0;
+
     /// <summary>
     /// Attempts to equip the weapon in the player's left hand.
     /// </summary>

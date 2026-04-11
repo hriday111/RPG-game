@@ -9,8 +9,8 @@ using RpgGame.Core;
 public class QuitGameCommand : IInputCommand
 {
     /// <inheritdoc/>
-    public int Execute(Level level, Player player, Inventory inventory)
+    public InputResult Execute(Level level, Player player, Inventory inventory)
     {
-        return -1;
+        return InputResult.Quit;
     }
 }

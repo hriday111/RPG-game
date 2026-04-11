@@ -1,0 +1,8 @@
+@startuml
+class Directions <<static>> {
+    + {static} <<readonly>> Up : Position
+    + {static} <<readonly>> Down : Position
+    + {static} <<readonly>> Left : Position
+    + {static} <<readonly>> Right : Position
+}
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+class ConsoleRenderer {
+    + RegisterHelpEntry(keyText:string, description:string) : void
+    + ToggleHelpDisplay() : void
+    + Render(level:Level, player:Character.Player, inventory:Inventory) : void
+}
+@enduml

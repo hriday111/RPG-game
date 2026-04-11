@@ -19,6 +19,9 @@ public sealed class ProtectiveWeaponModifier : WeaponModifierDecorator
     public override string Name => $"{Inner.Name} (Protective)";
 
     /// <inheritdoc />
+    public override int Defense => base.Defense + 3;
+
+    /// <inheritdoc />
     protected override void OnAfterEquippedToHands(Player player)
     {
         player.ApplyWisdomDelta(WisdomBonus);

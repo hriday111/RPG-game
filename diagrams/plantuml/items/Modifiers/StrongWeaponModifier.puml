@@ -1,0 +1,8 @@
+@startuml
+class StrongWeaponModifier <<sealed>> {
+    + StrongWeaponModifier(inner:IEquippable)
+    + <<override>> Name : string <<get>>
+    + <<override>> Damage : int <<get>>
+}
+WeaponModifierDecorator <|-- StrongWeaponModifier
+@enduml

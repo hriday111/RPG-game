@@ -1,0 +1,6 @@
+@startuml
+class DungeonGroundsStrategy {
+    + Create() : DungeonBuilder
+}
+IDungeonStrategy <|-- DungeonGroundsStrategy
+@enduml

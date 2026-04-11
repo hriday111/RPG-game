@@ -15,9 +15,9 @@ public class SelectInventoryCommand : IInputCommand
         _slotIndex = slotIndex;
     }
 
-    public int Execute(Level level, Player player, Inventory inventory)
+    public InputResult Execute(Level level, Player player, Inventory inventory)
     {
         inventory.SelectedIndex = _slotIndex;
-        return 1;
+        return InputResult.Ok;
     }
 }

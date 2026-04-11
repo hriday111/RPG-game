@@ -1,0 +1,20 @@
+@startuml
+!include ./DungeonBuilder.puml
+!include ./DungeonContext.puml
+!include ./IDungeonProcedure.puml
+!include ./IMapGenerator.puml
+!include ./RectRoom.puml
+!include ./SimpleRoomGenerator.puml
+!include ./MapSpawnHelper.puml
+!include ./Procedures/CentralRoomProcedure.puml
+!include ./Procedures/ChamberProcedure.puml
+!include ./Procedures/EmptyDungeonProcedure.puml
+!include ./Procedures/FilledDungeonProcedures.puml
+!include ./Procedures/ItemsProcedure.puml
+!include ./Procedures/PathsProcedure.puml
+!include ./Procedures/WeaponsProcedure.puml
+!include ./Procedures/EnemiesProcedure.puml
+!include ./Strategies/DungeonGroundStrategy.puml
+!include ./Strategies/DungeonSandboxStrategy.puml
+!include ./Strategies/IDungeonStrategy.puml
+@enduml

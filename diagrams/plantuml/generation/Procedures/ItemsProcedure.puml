@@ -1,0 +1,7 @@
+@startuml
+class AddItemsProcedure {
+    + AddItemsProcedure(CoinCount:int, GoldCount:int, PotionCount:int, ThornCount:int)
+    + <<async>> ApplyAsync(level:Level, context:DungeonContext) : Task
+}
+IDungeonProcedure <|-- AddItemsProcedure
+@enduml

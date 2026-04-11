@@ -13,4 +13,9 @@ public interface IWeapon : IEquippable
     /// Gets the effective damage for this weapon, including any stacked decorators.
     /// </summary>
     int Damage { get; }
+
+    /// <summary>
+    /// Defense contributed while this weapon is equipped (reduces incoming enemy damage).
+    /// </summary>
+    int Defense => 0;
 }

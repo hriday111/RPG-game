@@ -1,4 +1,6 @@
+using System.Diagnostics.CodeAnalysis;
 using RpgGame.Character;
+using RpgGame.Combat;
 using RpgGame.Items;
 using RpgGame.Tiles;
 
@@ -50,6 +52,16 @@ public class Level
     /// Gets the golems currently on the level.
     /// </summary>
     public IReadOnlyList<Golem> Golems => golems;
+
+    /// <summary>
+    /// Text describing the last orthogonal melee exchange, for the UI.
+    /// </summary>
+    public string? LastCombatMessage { get; private set; }
+
+    /// <summary>
+    /// Clears <see cref="LastCombatMessage"/> after a non-combat action.
+    /// </summary>
+    public void ClearCombatFeedback() => LastCombatMessage = null;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="Level"/> class.
@@ -148,6 +160,87 @@ public class Level
 
         tile.IsOccupied = true;
         golems.Add(golem);
+    }
+
+    /// <summary>
+    /// Removes a golem from the level and frees its tile for movement.
+    /// </summary>
+    /// <returns>True if the golem was present and removed.</returns>
+    public bool RemoveGolem(Golem golem)
+    {
+        ArgumentNullException.ThrowIfNull(golem);
+        if (!golems.Remove(golem))
+            return false;
+
+        if (IsInBounds(golem.Pos))
+            GetTile(golem.Pos.X, golem.Pos.Y).IsOccupied = false;
+
+        return true;
+    }
+
+    /// <summary>
+    /// When a golem occupies <paramref name="pos"/>, sets <paramref name="golem"/> and returns true.
+    /// </summary>
+    public bool TryGetGolemAt(Position pos, [NotNullWhen(true)] out Golem? golem)
+    {
+        foreach (var g in golems)
+        {
+            if (g.Pos == pos)
+            {
+                golem = g;
+                return true;
+            }
+        }
+
+        golem = null;
+        return false;
+    }
+
+    /// <summary>
+    /// One orthogonal step from the player (WASD): walk onto a free tile, or melee-attack
+    /// a golem on the target tile. Diagonal offsets are rejected (distance must be 1 on the grid).
+    /// </summary>
+    /// <returns>True if a move or combat exchange was attempted on a valid target tile.</returns>
+    public bool TryOrthogonalStepOrMeleeCombat(Player player, Position targetPos)
+    {
+        ArgumentNullException.ThrowIfNull(player);
+
+        int manhattan = Math.Abs(targetPos.X - player.Pos.X) + Math.Abs(targetPos.Y - player.Pos.Y);
+        if (manhattan != 1)
+            return false;
+
+        if (!IsInBounds(targetPos))
+            return false;
+
+        var tile = GetTile(targetPos.X, targetPos.Y);
+        if (!tile.IsWalkable)
+            return false;
+
+        if (TryGetGolemAt(targetPos, out Golem? golemAtTarget))
+        {
+            CombatRoundResult result = CombatRound.Resolve(player, golemAtTarget);
+            LastCombatMessage = DescribeCombatRound(result, golemAtTarget);
+            if (golemAtTarget.IsDead)
+                RemoveGolem(golemAtTarget);
+            return true;
+        }
+
+        if (tile.IsOccupied)
+            return false;
+
+        ClearCombatFeedback();
+        GetTile(player.Pos.X, player.Pos.Y).IsOccupied = false;
+        player.Move(targetPos);
+        tile.IsOccupied = true;
+        return true;
+    }
+
+    private static string DescribeCombatRound(CombatRoundResult result, Golem golem)
+    {
+        string label = golem.EquippedWeapon.Name;
+        if (result.EnemyDefeated)
+            return $"You deal {result.DamageAppliedToEnemy} damage. {label} golem destroyed.";
+        return $"You deal {result.DamageAppliedToEnemy} damage. {label} golem hits you for {result.DamageAppliedToPlayer}.";
     }
 
     #endregion

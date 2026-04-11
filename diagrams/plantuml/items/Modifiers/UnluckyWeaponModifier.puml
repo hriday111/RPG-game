@@ -1,0 +1,7 @@
+@startuml
+class UnluckyWeaponModifier <<sealed>> {
+    + UnluckyWeaponModifier(inner:IEquippable)
+    + <<override>> Name : string <<get>>
+}
+WeaponModifierDecorator <|-- UnluckyWeaponModifier
+@enduml

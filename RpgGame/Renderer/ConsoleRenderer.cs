@@ -1,4 +1,3 @@
-using System.ComponentModel.DataAnnotations;
 using RpgGame.Character;
 using RpgGame.Core;
 
@@ -56,6 +55,8 @@ public class ConsoleRenderer
 
         Console.SetCursorPosition(0, 0);
 
+        List<string> sidebarContent = GetSidebarContent(player, level, inventory);
+
         for (int y = 0; y < level.Height; y++)
         {
             for (int x = 0; x < level.Width; x++)
@@ -66,10 +67,10 @@ public class ConsoleRenderer
                 {
                     Console.Write(player.Symbol);
                 }
-                else if (level.Golems.FirstOrDefault(g => g.Pos == currentPos) is { } golem)
+                else if (level.TryGetGolemAt(currentPos, out Golem? golemHere))
                 {
                     Console.ResetColor();
-                    Console.Write(golem.Symbol);
+                    Console.Write(golemHere.Symbol);
                 }
                 else
                 {
@@ -88,20 +89,33 @@ public class ConsoleRenderer
                 }
             }
 
-            DrawSidebarLine(player, level, inventory, y);
+            DrawSidebarLine(sidebarContent, y);
             Console.WriteLine();
+        }
+
+        // Sidebar is taller than the map: continue under the map, same column as the panel.
+        for (int i = level.Height; i < sidebarContent.Count; i++)
+        {
+            Console.Write(new string(' ', level.Width));
+            Console.Write("  ");
+            Console.WriteLine(sidebarContent[i].PadRight(Config.SidebarWidth));
+        }
+
+        if (player.Health <= 0)
+        {
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("  GAME OVER — You were defeated. Press any key to exit.");
+            Console.ResetColor();
         }
     }
 
     /// <summary>
-    /// Draws a single line of the sidebar aligned with the map row.
+    /// Draws one sidebar row beside the map (same index as the map row).
     /// </summary>
-    private void DrawSidebarLine(Player player, Level level, Inventory inventory, int line)
+    private static void DrawSidebarLine(IReadOnlyList<string> sidebarContent, int line)
     {
-        Console.Write("  "); // spacing
-
-        var sidebarContent = GetSidebarContent(player, level, inventory);
-        //int longest = sidebarContent.Max(s => s.Length);
+        Console.Write("  ");
         if (line < sidebarContent.Count)
             Console.Write(sidebarContent[line].PadRight(Config.SidebarWidth));
         else
@@ -109,22 +123,8 @@ public class ConsoleRenderer
     }
 
     /// <summary>
-    /// Generates the content for the sidebar based on the player's current state,
-    /// inventory, and other relevant information.  The content is returned as a
-    /// list of strings, where each string represents a line in the sidebar.  The caller is responsible for aligning these lines with the map rendering.
+    /// Builds sidebar lines (stats, equipment, combat, inventory). Rows past the map height are printed below the map, aligned with the panel.
     /// </summary>
-    /// <param name="player"></param>
-    /// <param name="level"></param>
-    /// <param name="inventory"></param>
-    /// <remarks>
-    /// There is a slight visual glitch that the last line closing the menu box is not rendered as it is more than the Console Lenght defined in the <cref="Config"/> file.
-    /// <returns>
-    /// Returns a list of strings representing the lines to be displayed in the sidebar.  The content includes: 
-    /// - Character stats (HP, Luck, Strength, etc.)
-    /// - Equipped items (left and right hand)
-    /// - Currency (coins, gold)
-    /// - Inventory slots (with indicators for selected item)
-    /// </returns>
     private List<string> GetSidebarContent(Player player, Level level, Inventory inventory)
     {
         int innerWidth = Config.SidebarWidth - 2;
@@ -143,7 +143,12 @@ public class ConsoleRenderer
             PadLine(" [F1] Help"),
             "├" + new string('─', innerWidth) + "┤",
             PadLine(" CHARACTER"),
-            PadLine($" HP : {player.Health,-3} LCK: {player.Luck,-3}"),
+            PadLine(player.Health <= 0 ? " *** YOU DIED - GAME OVER ***" : $" HP : {player.Health,-3} LCK: {player.Luck,-3}"),
+            PadLine(player.Health <= 0 ? " Any key quits to desktop." : " "),
+            "├" + new string('─', innerWidth) + "┤",
+            PadLine(" COMBAT"),
+            PadLine(string.IsNullOrEmpty(level.LastCombatMessage) ? " —" : $" {level.LastCombatMessage}"),
+            "├" + new string('─', innerWidth) + "┤",
             PadLine($" STR: {player.Strength,-3} DEX: {player.Dexterity,-3}"),
             PadLine($" AGG: {player.Aggression,-3} WIS: {player.Wisdom,-3}"),
             "├" + new string('─', innerWidth) + "┤",

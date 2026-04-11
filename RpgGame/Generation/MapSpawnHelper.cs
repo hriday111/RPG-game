@@ -22,7 +22,15 @@ namespace RpgGame.Generation
         /// Random number generator used internally by the helper methods.
         /// </summary>
         private static readonly Random random = new();
-
+        /// <summary>
+        /// Picks a sword or double sword and applies the same random modifiers as floor loot weapons.
+        /// </summary>
+        private static IWeapon CreateRandomGolemWeapon()
+        {
+            Weapon core = random.Next(2) == 0 ? new Sword() : new DoubleSword();
+            IEquippable wrapped = WrapWeaponWithRandomModifiers(core);
+            return (IWeapon)wrapped;
+        }
         /// <summary>
         /// Wraps a weapon with zero or more stacked decorators at level generation time.
         /// </summary>
@@ -139,7 +147,7 @@ namespace RpgGame.Generation
             {
                 var used = new HashSet<(int X, int Y)>();
                 foreach (var g in level.Golems)
-                    used.Add((g.Pos.X, g.Pos.Y));
+                    used.Add((g.Pos.X, g.Pos.Y)); //basically skips these instructions when adding first golem
 
                 int spawned = 0;
                 int attempts = 0;
@@ -161,7 +169,7 @@ namespace RpgGame.Generation
                     if (!used.Add((x, y)))
                         continue;
 
-                    level.AddGolem(new Golem(new Position(x, y)));
+                    level.AddGolem(new Golem(new Position(x, y), CreateRandomGolemWeapon()));
                     spawned++;
                 }
             });

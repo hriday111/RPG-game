@@ -76,6 +76,46 @@ public class Player : Character
             Health = 0;
     }
 
+    /// <summary>
+    /// Defense used against enemy attacks: Dexterity plus defensive values from held weapons.
+    /// Two-handed weapons are counted once when both hands reference the same item.
+    /// </summary>
+    public int GetDefenseStrength()
+    {
+        return Dexterity + SumEquippedWeaponDefense();
+    }
+
+    /// <summary>
+    /// Melee attack power: sum of equipped weapon damage, or unarmed <see cref="Strength"/> (minimum 1).
+    /// </summary>
+    public int GetMeleeAttackPower()
+    {
+        int fromWeapons = SumEquippedWeaponDamage();
+        if (fromWeapons > 0)
+            return fromWeapons;
+        return Math.Max(1, Strength);
+    }
+
+    private int SumEquippedWeaponDamage()
+    {
+        int total = 0;
+        if (LeftHand is IWeapon lw)
+            total += lw.Damage;
+        if (RightHand is IWeapon rw && !ReferenceEquals(LeftHand, RightHand))
+            total += rw.Damage;
+        return total;
+    }
+
+    private int SumEquippedWeaponDefense()
+    {
+        int total = 0;
+        if (LeftHand is IWeapon lw)
+            total += lw.Defense;
+        if (RightHand is IWeapon rw && !ReferenceEquals(LeftHand, RightHand))
+            total += rw.Defense;
+        return total;
+    }
+
     #endregion
 
     #region Currency

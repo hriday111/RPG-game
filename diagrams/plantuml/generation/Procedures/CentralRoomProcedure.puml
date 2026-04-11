@@ -1,0 +1,7 @@
+@startuml
+class CentralRoomProcedure {
+    + CentralRoomProcedure(width:int, height:int)
+    + ApplyAsync(level:Level, context:DungeonContext) : Task
+}
+IDungeonProcedure <|-- CentralRoomProcedure
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+!include ./Config.puml
+!include ./Directions.puml
+!include ./Inventory.puml
+!include ./Level.puml
+@enduml

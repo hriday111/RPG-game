@@ -18,7 +18,6 @@ uml/*
 
 docs*
 !docs.yml
-dotnet-ci.yml   
 publish-docs.sh
 
 ClassDiagram.puml

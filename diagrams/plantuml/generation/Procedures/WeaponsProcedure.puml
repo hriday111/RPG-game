@@ -1,0 +1,7 @@
+@startuml
+class AddWeaponsProcedure {
+    + AddWeaponsProcedure(SwordCount:int, DoubleSwordCount:int)
+    + <<async>> ApplyAsync(level:Level, context:DungeonContext) : Task
+}
+IDungeonProcedure <|-- AddWeaponsProcedure
+@enduml

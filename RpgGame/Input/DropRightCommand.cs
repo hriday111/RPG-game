@@ -9,9 +9,9 @@ using RpgGame.Core;
 public class DropRightCommand : IInputCommand
 {
     /// <inheritdoc/>
-    public int Execute(Level level, Player player, Inventory inventory)
+    public InputResult Execute(Level level, Player player, Inventory inventory)
     {
         player.DropRight(level);
-        return 1;
+        return InputResult.Ok;
     }
 }

@@ -1,0 +1,11 @@
+@startuml
+struct CombatRoundResult <<readonly>> <<record>> {
+    + EnemyDefeated : bool <<get>> <<init>>
+    + PlayerRawDamage : int <<get>> <<init>>
+    + DamageAppliedToEnemy : int <<get>> <<init>>
+    + DamageAppliedToPlayer : int <<get>> <<init>>
+}
+class CombatRound <<static>> {
+    + {static} Resolve(player:Player, golem:Golem) : CombatRoundResult
+}
+@enduml

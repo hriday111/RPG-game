@@ -1,0 +1,6 @@
+@startuml
+class QuitGameCommand {
+    + Execute(level:Level, player:Player, inventory:Inventory) : InputResult
+}
+IInputCommand <|-- QuitGameCommand
+@enduml

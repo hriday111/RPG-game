@@ -9,9 +9,9 @@ using RpgGame.Core;
 public class InventoryToRightHandCommand : IInputCommand
 {
     /// <inheritdoc/>
-    public int Execute(Level level, Player player, Inventory inventory)
+    public InputResult Execute(Level level, Player player, Inventory inventory)
     {
         inventory.TakeToRight();
-        return 1;
+        return InputResult.Ok;
     }
 }

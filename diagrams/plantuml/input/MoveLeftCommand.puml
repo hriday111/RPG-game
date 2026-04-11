@@ -1,0 +1,6 @@
+@startuml
+class MoveLeftCommand {
+    + Execute(level:Level, player:Player, inventory:Inventory) : InputResult
+}
+IInputCommand <|-- MoveLeftCommand
+@enduml

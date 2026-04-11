@@ -16,7 +16,7 @@ namespace RpgGame.Generation;
 /// <item><description>A fully walkable floor.</description></item>
 /// <item><description>Solid border walls enclosing the map.</description></item>
 /// <item><description>Random rectangular wall clusters as obstacles.</description></item>
-/// <item><description>Randomly placed coins and weapons.</description></item>
+/// <item><description>Randomly placed coins, weapons, and golems.</description></item>
 /// </list>
 /// 
 /// This generator is intended as a basic implementation of
@@ -46,6 +46,7 @@ public class SimpleRoomGenerator : IMapGenerator
         await MapSpawnHelper.SpawnSwordAsync(level, 4);
         await MapSpawnHelper.SpawnDoubleSwordAsync(level, 1);
         await MapSpawnHelper.SpawnGoldAsync(level, 2);
+        await MapSpawnHelper.SpawnGolemAsync(level, 2);
     }
 
     /// <summary>

@@ -39,4 +39,7 @@ public class DoubleSword : Weapon
     /// Gets the damage value dealt by this weapon.
     /// </summary>
     public override int Damage => 25;
+
+    /// <inheritdoc />
+    public override int Defense => 2;
 }

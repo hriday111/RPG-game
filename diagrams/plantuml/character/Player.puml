@@ -1,0 +1,27 @@
+@startuml
+class Player {
+    + <<override>> Symbol : char <<get>>
+    + Strength : int <<get>>
+    + Dexterity : int <<get>>
+    + Health : int <<get>>
+    + Luck : int <<get>>
+    + Aggression : int <<get>>
+    + Wisdom : int <<get>>
+    + LeftHand : IEquippable? <<get>>
+    + RightHand : IEquippable? <<get>>
+    + RestoreHealth(amount:int) : void
+    + TakeDamage(amount:int) : void
+    + GetDefenseStrength() : int
+    + GetMeleeAttackPower() : int
+    + Coins : int <<get>>
+    + Gold : int <<get>>
+    + AddCoins(amount:int) : void
+    + AddGold(amount:int) : void
+    + EquipLeft(item:IEquippable) : bool
+    + EquipRight(item:IEquippable) : bool
+    + DropLeft(level:Level) : void
+    + DropRight(level:Level) : void
+    + Player(startPosition:Position)
+}
+Character <|-- Player
+@enduml

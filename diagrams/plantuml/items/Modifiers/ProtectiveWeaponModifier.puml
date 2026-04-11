@@ -1,0 +1,8 @@
+@startuml
+class ProtectiveWeaponModifier <<sealed>> {
+    + ProtectiveWeaponModifier(inner:IEquippable)
+    + <<override>> Name : string <<get>>
+    + <<override>> Defense : int <<get>>
+}
+WeaponModifierDecorator <|-- ProtectiveWeaponModifier
+@enduml

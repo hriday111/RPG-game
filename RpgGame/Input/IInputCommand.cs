@@ -5,7 +5,7 @@ using RpgGame.Core;
 
 /// <summary>
 /// Represents a user input command that manipulates the game
-/// state (level, player, inventory) and returns an integer result.
+/// state (level, player, inventory) and returns a <see cref="InputResult"/>.
 /// </summary>
 public interface IInputCommand
 {
@@ -16,8 +16,8 @@ public interface IInputCommand
     /// <param name="player">The player character.</param>
     /// <param name="inventory">The player's inventory.</param>
     /// <returns>
-    /// Typically <c>1</c> to indicate the game should continue,
-    /// <c>-1</c> to signal exit, or other values for custom logic.
+    /// Usually <see cref="InputResult.Ok"/> to continue,
+    /// <see cref="InputResult.Quit"/> to exit, or <see cref="InputResult.Help"/> to toggle help.
     /// </returns>
-    int Execute(Level level, Player player, Inventory inventory);
+    InputResult Execute(Level level, Player player, Inventory inventory);
 }

@@ -1,0 +1,5 @@
+@startuml
+!include ./Character.puml
+!include ./Player.puml
+!include ./Golem.puml
+@enduml

@@ -12,7 +12,7 @@ using RpgGame.Core;
 public class TakeToInventoryCommand : IInputCommand
 {
     /// <inheritdoc/>
-    public int Execute(Level level, Player player, Inventory inventory)
+    public InputResult Execute(Level level, Player player, Inventory inventory)
     {
         var item = level.GetTopItem(player.Pos);
         if (item != null)
@@ -20,7 +20,7 @@ public class TakeToInventoryCommand : IInputCommand
             if (item.OnPickup(player, inventory)) { level.TakeTopItem(player.Pos); }
 
         }
-        return 1;
+        return InputResult.Ok;
     }
 
 }

@@ -49,7 +49,6 @@ class Program
         {
             renderer.RegisterHelpEntry(binding.DisplayText, binding.Description);
         }
-        renderer.RegisterHelpEntry("F1", "Show this help menu");
 
         Console.Clear();
         RunGameLoop(level, player, renderer, inventory, inputHandler, Config.TargetFPS);
@@ -95,12 +94,12 @@ class Program
             // the key used to dismiss the popup from being interpreted as
             // a game command.
             var key = Console.ReadKey(true);
-            int result = inputHandler.HandleInput(key, level, player, inventory);
-            if (result == -1)
+            InputResult result = player.Health <= 0 ? InputResult.Quit : inputHandler.HandleInput(key, level, player, inventory);
+            if (result == InputResult.Quit)
             {
                 isRunning = false;
             }
-            else if (result == 2)
+            else if (result == InputResult.Help)
             {
                 renderer.ToggleHelpDisplay();
             }

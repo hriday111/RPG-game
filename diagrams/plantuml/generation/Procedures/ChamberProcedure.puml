@@ -1,0 +1,7 @@
+@startuml
+class ChambersProcedure {
+    + ChambersProcedure(roomCount:int)
+    + ApplyAsync(level:Level, context:DungeonContext) : Task
+}
+IDungeonProcedure <|-- ChambersProcedure
+@enduml

@@ -6,6 +6,8 @@ var classRpgGame_1_1Character_1_1Player =
     [ "DropRight", "classRpgGame_1_1Character_1_1Player.html#a177a7696a43687bb2a9da970a2d4f559", null ],
     [ "EquipLeft", "classRpgGame_1_1Character_1_1Player.html#a8fbd9664d432e62eaba416e06ea76d3f", null ],
     [ "EquipRight", "classRpgGame_1_1Character_1_1Player.html#ab5c26000021438899c9d3e4d36e8d2b7", null ],
+    [ "GetDefenseStrength", "classRpgGame_1_1Character_1_1Player.html#a011a02380a8eae15e749752b3d4329b7", null ],
+    [ "GetMeleeAttackPower", "classRpgGame_1_1Character_1_1Player.html#a7b1ca41a39f3e32018fa6867efbd2325", null ],
     [ "RestoreHealth", "classRpgGame_1_1Character_1_1Player.html#acbe997c5dad36a3935dc909b1b971644", null ],
     [ "TakeDamage", "classRpgGame_1_1Character_1_1Player.html#ab4d86c6faa5d7814fd57769d2ffb63ce", null ],
     [ "Aggression", "classRpgGame_1_1Character_1_1Player.html#a5851dd740a606b2516e33bf1de296ba3", null ],

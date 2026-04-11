@@ -115,15 +115,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9941faa2375ffb6325a5ac6ccf2fc72" id="r_ab9941faa2375ffb6325a5ac6ccf2fc72"><td class="memItemLeft" align="right" valign="top"><a id="ab9941faa2375ffb6325a5ac6ccf2fc72" name="ab9941faa2375ffb6325a5ac6ccf2fc72"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SelectInventoryCommand</b> (int slotIndex)</td></tr>
 <tr class="separator:ab9941faa2375ffb6325a5ac6ccf2fc72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec3ecb753ca801957b83f6215ac77b8b" id="r_aec3ecb753ca801957b83f6215ac77b8b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Input_1_1SelectInventoryCommand.html#aec3ecb753ca801957b83f6215ac77b8b">Execute</a> (<a class="el" href="classRpgGame_1_1Core_1_1Level.html">Level</a> level, <a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player, <a class="el" href="classRpgGame_1_1Core_1_1Inventory.html">Inventory</a> inventory)</td></tr>
-<tr class="memdesc:aec3ecb753ca801957b83f6215ac77b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the command using provided game objects.  <br /></td></tr>
-<tr class="separator:aec3ecb753ca801957b83f6215ac77b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a214d2037b52a64de64717ae41b9b7127" id="r_a214d2037b52a64de64717ae41b9b7127"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49fa">InputResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Input_1_1SelectInventoryCommand.html#a214d2037b52a64de64717ae41b9b7127">Execute</a> (<a class="el" href="classRpgGame_1_1Core_1_1Level.html">Level</a> level, <a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player, <a class="el" href="classRpgGame_1_1Core_1_1Inventory.html">Inventory</a> inventory)</td></tr>
+<tr class="memdesc:a214d2037b52a64de64717ae41b9b7127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the command using provided game objects.  <br /></td></tr>
+<tr class="separator:a214d2037b52a64de64717ae41b9b7127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Selects a specific inventory slot. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aec3ecb753ca801957b83f6215ac77b8b" name="aec3ecb753ca801957b83f6215ac77b8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec3ecb753ca801957b83f6215ac77b8b">&#9670;&#160;</a></span>Execute()</h2>
+<a id="a214d2037b52a64de64717ae41b9b7127" name="a214d2037b52a64de64717ae41b9b7127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a214d2037b52a64de64717ae41b9b7127">&#9670;&#160;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -132,7 +132,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int RpgGame.Input.SelectInventoryCommand.Execute </td>
+          <td class="memname"><a class="el" href="namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49fa">InputResult</a> RpgGame.Input.SelectInventoryCommand.Execute </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classRpgGame_1_1Core_1_1Level.html">Level</a>&#160;</td>
           <td class="paramname"><em>level</em>, </td>
@@ -171,9 +171,9 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Typically <code>1</code> to indicate the game should continue, <code>-1</code> to signal exit, or other values for custom logic. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Usually InputResult.Ok to continue, InputResult.Quit to exit, or InputResult.Help to toggle help. </dd></dl>
 
-<p>Implements <a class="el" href="interfaceRpgGame_1_1Input_1_1IInputCommand.html#a1158b3faf6c7e486e668b91bb91129a9">RpgGame.Input.IInputCommand</a>.</p>
+<p>Implements <a class="el" href="interfaceRpgGame_1_1Input_1_1IInputCommand.html#a9d415a9e2dcba7c7230b2cace32fb655">RpgGame.Input.IInputCommand</a>.</p>
 
 </div>
 </div>

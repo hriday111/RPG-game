@@ -1,4 +1,4 @@
 var classRpgGame_1_1Input_1_1QuitGameCommand =
 [
-    [ "Execute", "classRpgGame_1_1Input_1_1QuitGameCommand.html#a519ec85b0aafcf09df4b023db5de7924", null ]
+    [ "Execute", "classRpgGame_1_1Input_1_1QuitGameCommand.html#a90b63956c0ca1936992821a3651aed41", null ]
 ];

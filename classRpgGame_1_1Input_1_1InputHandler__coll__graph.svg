@@ -30,9 +30,9 @@
 <text text-anchor="start" x="4" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="17" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00">InputHandler()</text>
 <text text-anchor="start" x="4" y="-40" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-40" font-family="Helvetica,sans-Serif" font-size="10.00">int HandleInput(ConsoleKey</text>
-<text text-anchor="start" x="17" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">Info key, Level level,</text>
-<text text-anchor="start" x="17" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00"> Player player, Inventory</text>
+<text text-anchor="start" x="17" y="-40" font-family="Helvetica,sans-Serif" font-size="10.00">InputResult HandleInput</text>
+<text text-anchor="start" x="17" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">(ConsoleKeyInfo key, Level</text>
+<text text-anchor="start" x="17" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00"> level, Player player, Inventory</text>
 <text text-anchor="start" x="17" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00"> inventory)</text>
 <polygon fill="#666666" stroke="#666666" points="0,-91 0,-91 186,-91 186,-91 0,-91"/>
 <polygon fill="#666666" stroke="#666666" points="0,-65 0,-65 15,-65 15,-65 0,-65"/>

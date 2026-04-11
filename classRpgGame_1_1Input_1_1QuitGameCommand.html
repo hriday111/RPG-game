@@ -112,8 +112,8 @@ Collaboration diagram for RpgGame.Input.QuitGameCommand:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a519ec85b0aafcf09df4b023db5de7924" id="r_a519ec85b0aafcf09df4b023db5de7924"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Input_1_1QuitGameCommand.html#a519ec85b0aafcf09df4b023db5de7924">Execute</a> (<a class="el" href="classRpgGame_1_1Core_1_1Level.html">Level</a> level, <a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player, <a class="el" href="classRpgGame_1_1Core_1_1Inventory.html">Inventory</a> inventory)</td></tr>
-<tr class="memdesc:a519ec85b0aafcf09df4b023db5de7924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the command using provided game objects.<dl class="params"><dt>Parameters</dt><dd>
+<tr class="memitem:a90b63956c0ca1936992821a3651aed41" id="r_a90b63956c0ca1936992821a3651aed41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49fa">InputResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Input_1_1QuitGameCommand.html#a90b63956c0ca1936992821a3651aed41">Execute</a> (<a class="el" href="classRpgGame_1_1Core_1_1Level.html">Level</a> level, <a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player, <a class="el" href="classRpgGame_1_1Core_1_1Inventory.html">Inventory</a> inventory)</td></tr>
+<tr class="memdesc:a90b63956c0ca1936992821a3651aed41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the command using provided game objects.<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">level</td><td>The current level.</td></tr>
     <tr><td class="paramname">player</td><td>The player character.</td></tr>
@@ -121,15 +121,15 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Typically <code>1</code> to indicate the game should continue, <code>-1</code> to signal exit, or other values for custom logic. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Usually InputResult.Ok to continue, InputResult.Quit to exit, or InputResult.Help to toggle help. </dd></dl>
   <br /></td></tr>
-<tr class="separator:a519ec85b0aafcf09df4b023db5de7924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a90b63956c0ca1936992821a3651aed41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Command that causes the game loop to exit. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a519ec85b0aafcf09df4b023db5de7924" name="a519ec85b0aafcf09df4b023db5de7924"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a519ec85b0aafcf09df4b023db5de7924">&#9670;&#160;</a></span>Execute()</h2>
+<a id="a90b63956c0ca1936992821a3651aed41" name="a90b63956c0ca1936992821a3651aed41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90b63956c0ca1936992821a3651aed41">&#9670;&#160;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int RpgGame.Input.QuitGameCommand.Execute </td>
+          <td class="memname"><a class="el" href="namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49fa">InputResult</a> RpgGame.Input.QuitGameCommand.Execute </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classRpgGame_1_1Core_1_1Level.html">Level</a>&#160;</td>
           <td class="paramname"><em>level</em>, </td>
@@ -176,10 +176,10 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Typically <code>1</code> to indicate the game should continue, <code>-1</code> to signal exit, or other values for custom logic. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Usually InputResult.Ok to continue, InputResult.Quit to exit, or InputResult.Help to toggle help. </dd></dl>
  </p>
 
-<p>Implements <a class="el" href="interfaceRpgGame_1_1Input_1_1IInputCommand.html#a1158b3faf6c7e486e668b91bb91129a9">RpgGame.Input.IInputCommand</a>.</p>
+<p>Implements <a class="el" href="interfaceRpgGame_1_1Input_1_1IInputCommand.html#a9d415a9e2dcba7c7230b2cace32fb655">RpgGame.Input.IInputCommand</a>.</p>
 
 </div>
 </div>

@@ -1,0 +1,7 @@
+<map id="RpgGame.Core.Level.RemoveGolem" name="RpgGame.Core.Level.RemoveGolem">
+<area shape="rect" id="Node000001" title="Removes a golem from the level and frees its tile for movement." alt="" coords="5,23,223,63"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Level.html#ad48a7c23cc285da72a157194198e553a" title="Retrieves the tile at the specified coordinates." alt="" coords="283,5,493,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,31,269,26,269,32,223,36"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Core_1_1Level.html#a29d79bf5cda2e96ca6e823f9d5772db0" title="Checks whether the specified position lies within the level boundaries." alt="" coords="271,55,505,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,50,257,53,257,59,223,56"/>
+</map>

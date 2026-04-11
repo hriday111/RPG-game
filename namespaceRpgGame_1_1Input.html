@@ -91,7 +91,8 @@ $(document).ready(function(){initNavTree('namespaceRpgGame_1_1Input.html',''); i
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">RpgGame.Input Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -107,8 +108,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Input_1_1DropRightCommand.html">DropRightCommand</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instructs the player to drop the item in their right hand onto the level.  <a href="classRpgGame_1_1Input_1_1DropRightCommand.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Input_1_1HelpCommand.html">HelpCommand</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command that causes the game loop to exit.  <a href="classRpgGame_1_1Input_1_1HelpCommand.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Input_1_1IInputCommand.html">IInputCommand</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a user input command that manipulates the game state (level, player, inventory) and returns an integer result.  <a href="interfaceRpgGame_1_1Input_1_1IInputCommand.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a user input command that manipulates the game state (level, player, inventory) and returns a InputResult.  <a href="interfaceRpgGame_1_1Input_1_1IInputCommand.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Input_1_1InputHandler.html">InputHandler</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps console key combinations to their corresponding IInputCommand implementations and invokes them when input is received.  <a href="classRpgGame_1_1Input_1_1InputHandler.html#details">More...</a><br /></td></tr>
@@ -140,7 +144,38 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Input_1_1TakeToInventoryCommand.html">TakeToInventoryCommand</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Picks up the item resting on the player's current tile and places it into the inventory if possible.  <a href="classRpgGame_1_1Input_1_1TakeToInventoryCommand.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ac0add8582d6c497e13d4a411db6f49fa" id="r_ac0add8582d6c497e13d4a411db6f49fa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49fa">InputResult</a> { <a class="el" href="namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49faa6adf97f83acf6453d4a6a4b1070f3754">None</a> = 0
+, <b>Ok</b> = 1
+, <b>Quit</b> = -1
+, <b>Help</b> = 2
+ }</td></tr>
+<tr class="memdesc:ac0add8582d6c497e13d4a411db6f49fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Result of IInputCommand.Execute and InputHandler.HandleInput.  <a href="namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49fa">More...</a><br /></td></tr>
+<tr class="separator:ac0add8582d6c497e13d4a411db6f49fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ac0add8582d6c497e13d4a411db6f49fa" name="ac0add8582d6c497e13d4a411db6f49fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0add8582d6c497e13d4a411db6f49fa">&#9670;&#160;</a></span>InputResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49fa">RpgGame.Input.InputResult</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Result of IInputCommand.Execute and InputHandler.HandleInput. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac0add8582d6c497e13d4a411db6f49faa6adf97f83acf6453d4a6a4b1070f3754" name="ac0add8582d6c497e13d4a411db6f49faa6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"><p>No registered command matched the key. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

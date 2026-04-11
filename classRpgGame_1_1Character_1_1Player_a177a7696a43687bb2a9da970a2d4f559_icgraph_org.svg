@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classRpgGame_1_1Input_1_1DropRightCommand.html#a9c276b3f89036aeec18cc97116d13007" target="_top" xlink:title="Executes the command using provided game objects.Typically 1 to indicate the game should continue,...">
+<g id="a_Node000002"><a xlink:href="classRpgGame_1_1Input_1_1DropRightCommand.html#a53feef50d9d12cf04592c54575c71141" target="_top" xlink:title="Executes the command using provided game objects.Usually InputResult.Ok to continue,...">
 <polygon fill="white" stroke="#666666" points="197,-30 0,-30 0,0 197,0 197,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Input.DropRightCommand.</text>
 <text text-anchor="middle" x="98.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Execute</text>

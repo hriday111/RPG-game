@@ -15,10 +15,10 @@
 <polygon fill="#999999" stroke="transparent" points="180,-71 0,-71 0,0 180,0 180,-71"/>
 <text text-anchor="start" x="5" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Input.MoveUpCommand</text>
 <text text-anchor="start" x="88" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="13.5" y="-28.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="36" y="-28.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Execute(Level level,</text>
-<text text-anchor="start" x="36" y="-17.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Player player, Inventory</text>
-<text text-anchor="start" x="36" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00"> inventory)</text>
+<text text-anchor="start" x="8.5" y="-28.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="26" y="-28.5" font-family="Helvetica,sans-Serif" font-size="10.00">InputResult Execute</text>
+<text text-anchor="start" x="26" y="-17.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Level level, Player</text>
+<text text-anchor="start" x="26" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00"> player, Inventory inventory)</text>
 <polygon fill="#666666" stroke="#666666" points="0,-53.5 0,-53.5 180,-53.5 180,-53.5 0,-53.5"/>
 <polygon fill="#666666" stroke="#666666" points="0,-38.5 0,-38.5 180,-38.5 180,-38.5 0,-38.5"/>
 <polygon fill="none" stroke="#666666" points="0,0 0,-71 180,-71 180,0 0,0"/>
@@ -29,16 +29,16 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="interfaceRpgGame_1_1Input_1_1IInputCommand.html" target="_top" xlink:title="Represents a user input command that manipulates the game state (level, player, inventory) and return...">
-<polygon fill="white" stroke="transparent" points="161,-178 19,-178 19,-107 161,-107 161,-178"/>
-<text text-anchor="start" x="50.5" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">IInputCommand</text>
-<text text-anchor="start" x="88" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="23" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="36" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Execute(Level level,</text>
-<text text-anchor="start" x="36" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Player player, Inventory</text>
-<text text-anchor="start" x="36" y="-113.5" font-family="Helvetica,sans-Serif" font-size="10.00"> inventory)</text>
-<polygon fill="#666666" stroke="#666666" points="19,-160.5 19,-160.5 161,-160.5 161,-160.5 19,-160.5"/>
-<polygon fill="#666666" stroke="#666666" points="19,-145.5 19,-145.5 161,-145.5 161,-145.5 19,-145.5"/>
-<polygon fill="none" stroke="#666666" points="19,-107 19,-178 161,-178 161,-107 19,-107"/>
+<polygon fill="white" stroke="transparent" points="170.5,-178 9.5,-178 9.5,-107 170.5,-107 170.5,-178"/>
+<text text-anchor="start" x="51" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">IInputCommand</text>
+<text text-anchor="start" x="88.5" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="14" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="27" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">InputResult Execute</text>
+<text text-anchor="start" x="27" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Level level, Player</text>
+<text text-anchor="start" x="27" y="-113.5" font-family="Helvetica,sans-Serif" font-size="10.00"> player, Inventory inventory)</text>
+<polygon fill="#666666" stroke="#666666" points="10,-160.5 10,-160.5 171,-160.5 171,-160.5 10,-160.5"/>
+<polygon fill="#666666" stroke="#666666" points="10,-145.5 10,-145.5 171,-145.5 171,-145.5 10,-145.5"/>
+<polygon fill="none" stroke="#666666" points="9.5,-107 9.5,-178 170.5,-178 170.5,-107 9.5,-107"/>
 </a>
 </g>
 </g>

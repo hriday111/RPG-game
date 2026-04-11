@@ -10,20 +10,20 @@
 <area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="711,188,751,226,747,230,707,191"/>
 <area shape="rect" id="Node000014" href="$classRpgGame_1_1Items_1_1Thorn.html" title="Represents a Thorn on that map, and walking over it causes damange." alt="" coords="971,228,1185,403"/>
 <area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="730,129,844,171,961,226,972,232,969,237,958,230,842,176,728,134"/>
-<area shape="rect" id="Node000005" href="$interfaceRpgGame_1_1Items_1_1IWeapon.html" title="An equippable item that contributes a damage value (typically a weapon)." alt="" coords="519,451,698,516"/>
+<area shape="rect" id="Node000005" href="$interfaceRpgGame_1_1Items_1_1IWeapon.html" title="An equippable item that contributes a damage value (typically a weapon)." alt="" coords="519,451,698,536"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="611,387,611,450,606,450,606,387"/>
-<area shape="rect" id="Node000006" href="$classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html" title="Decorator base for Weapon stacks: forwards most behavior to an inner IEquippable while allowing subcl..." alt="" coords="369,564,598,1001"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="592,530,578,565,573,563,588,528"/>
-<area shape="rect" id="Node000010" href="$classRpgGame_1_1Items_1_1Weapon.html" title="Represents an abstract base class for all equippable weapons." alt="" coords="741,584,964,981"/>
-<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="645,525,743,644,739,647,641,529"/>
-<area shape="rect" id="Node000007" href="$classRpgGame_1_1Items_1_1Modifiers_1_1ProtectiveWeaponModifier.html" title="Decorator that increases the player&#39;s wisdom by 5 while this stack is equipped. Name gains a &quot;(Protec..." alt="" coords="5,1049,247,1213"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="360,907,212,1051,208,1047,357,903"/>
-<area shape="rect" id="Node000008" href="$classRpgGame_1_1Items_1_1Modifiers_1_1StrongWeaponModifier.html" title="Decorator that increases weapon damage (+5). Name gains a &quot;(Strong)&quot; suffix." alt="" coords="271,1074,458,1189"/>
-<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="407,1015,386,1075,381,1073,402,1014"/>
-<area shape="rect" id="Node000009" href="$classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html" title="Decorator that reduces the player&#39;s luck by 5 while this stack is equipped. Name gains an &quot;(Unlucky)&quot;..." alt="" coords="483,1049,724,1213"/>
-<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="566,1014,578,1048,573,1050,561,1015"/>
-<area shape="rect" id="Node000011" href="$classRpgGame_1_1Items_1_1DoubleSword.html" title="Represents a powerful two&#45;handed sword weapon." alt="" coords="748,1061,957,1201"/>
-<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="855,996,855,1061,850,1061,850,996"/>
-<area shape="rect" id="Node000012" href="$classRpgGame_1_1Items_1_1Sword.html" title="Represents a standard one&#45;handed sword weapon." alt="" coords="982,1061,1155,1201"/>
-<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="974,973,1028,1060,1023,1062,969,975"/>
+<area shape="rect" id="Node000006" href="$classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html" title="Decorator base for Weapon stacks: forwards most behavior to an inner IEquippable while allowing subcl..." alt="" coords="369,584,598,1041"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="590,549,576,584,571,582,585,547"/>
+<area shape="rect" id="Node000010" href="$classRpgGame_1_1Items_1_1Weapon.html" title="Represents an abstract base class for all equippable weapons." alt="" coords="741,604,964,1021"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="651,545,743,665,739,668,647,548"/>
+<area shape="rect" id="Node000007" href="$classRpgGame_1_1Items_1_1Modifiers_1_1ProtectiveWeaponModifier.html" title="Decorator that increases the player&#39;s wisdom by 5 while this stack is equipped. Name gains a &quot;(Protec..." alt="" coords="5,1089,247,1273"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="361,943,217,1091,213,1087,357,940"/>
+<area shape="rect" id="Node000008" href="$classRpgGame_1_1Items_1_1Modifiers_1_1StrongWeaponModifier.html" title="Decorator that increases weapon damage (+5). Name gains a &quot;(Strong)&quot; suffix." alt="" coords="271,1124,458,1239"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="408,1055,386,1124,380,1123,403,1054"/>
+<area shape="rect" id="Node000009" href="$classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html" title="Decorator that reduces the player&#39;s luck by 5 while this stack is equipped. Name gains an &quot;(Unlucky)&quot;..." alt="" coords="483,1099,724,1263"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="565,1054,579,1098,574,1100,560,1055"/>
+<area shape="rect" id="Node000011" href="$classRpgGame_1_1Items_1_1DoubleSword.html" title="Represents a powerful two&#45;handed sword weapon." alt="" coords="748,1101,957,1261"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="855,1035,855,1101,850,1101,850,1035"/>
+<area shape="rect" id="Node000012" href="$classRpgGame_1_1Items_1_1Sword.html" title="Represents a standard one&#45;handed sword weapon." alt="" coords="982,1111,1155,1251"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="973,1013,1030,1110,1026,1113,969,1016"/>
 </map>

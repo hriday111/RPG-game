@@ -1,7 +1,7 @@
 <map id="RpgGame.Character.Character" name="RpgGame.Character.Character">
-<area shape="rect" id="Node000001" title="Base abstract class for both playable and non&#45;playable characters." alt="" coords="131,5,342,140"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Golem.html" title="Represents a Golem character in the game. Golems are typically non&#45;player characters (NPCs) that may ..." alt="" coords="5,489,225,574"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,154,129,489,124,487,213,153"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Character_1_1Player.html" title="Represents the player&#45;controlled character in the game." alt="" coords="249,188,467,875"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="260,153,270,187,264,189,255,154"/>
+<area shape="rect" id="Node000001" title="Base abstract class for both playable and non&#45;playable characters." alt="" coords="151,5,361,140"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Golem.html" title="Represents a Golem enemy on the level. It carries a weapon that sets counter&#45;attack damage and contri..." alt="" coords="5,437,251,666"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,154,161,437,156,436,232,152"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Character_1_1Player.html" title="Represents the player&#45;controlled character in the game." alt="" coords="275,188,493,915"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="280,153,289,187,284,189,275,154"/>
 </map>

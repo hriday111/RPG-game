@@ -29,7 +29,8 @@ var NAVTREE =
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
-        [ "Functions", "namespacemembers_func.html", null ]
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -37,7 +38,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ],
         [ "Properties", "functions_prop.html", null ]
@@ -49,8 +50,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classRpgGame_1_1Input_1_1MoveLeftCommand.html#a6f72bae13e13dfec5271a62e066d6c6e",
-"interfaceRpgGame_1_1Input_1_1IInputCommand.html"
+"classRpgGame_1_1Input_1_1ControlDescriptor.html",
+"classRpgGame_1_1Renderer_1_1HelpOverlay.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

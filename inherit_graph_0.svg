@@ -20,7 +20,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:href="classRpgGame_1_1Character_1_1Golem.html" target="_top" xlink:title="Represents a Golem character in the game. Golems are typically non&#45;player characters (NPCs) that may ...">
+<g id="a_Node000001"><a xlink:href="classRpgGame_1_1Character_1_1Golem.html" target="_top" xlink:title="Represents a Golem enemy on the level. It carries a weapon that sets counter&#45;attack damage and contri...">
 <polygon fill="white" stroke="#666666" points="349,-56 200,-56 200,-37 349,-37 349,-56"/>
 <text text-anchor="middle" x="274.5" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Character.Golem</text>
 </a>

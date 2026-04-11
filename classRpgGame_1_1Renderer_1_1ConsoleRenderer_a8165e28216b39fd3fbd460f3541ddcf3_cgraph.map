@@ -1,10 +1,12 @@
 <map id="RpgGame.Renderer.ConsoleRenderer.Render" name="RpgGame.Renderer.ConsoleRenderer.Render">
-<area shape="rect" id="Node000001" title="Renders the current level state and player information to the console. If the help flag is set,..." alt="" coords="5,47,209,87"/>
+<area shape="rect" id="Node000001" title="Renders the current level state and player information to the console. If the help flag is set,..." alt="" coords="5,85,209,125"/>
 <area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Level.html#ad48a7c23cc285da72a157194198e553a" title="Retrieves the tile at the specified coordinates." alt="" coords="271,5,482,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,46,293,31,294,36,210,51"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,82,200,60,257,39,287,31,289,36,258,45,202,65,151,87"/>
 <area shape="rect" id="Node000003" href="$classRpgGame_1_1Core_1_1Level.html#a50c45cab6083fa428e8534c83d841f57" title="Retrieves the top item at a position without removing it." alt="" coords="257,55,496,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,65,244,65,244,70,209,70"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,88,270,79,271,85,210,93"/>
 <area shape="rect" id="Node000004" href="$namespaceRpgGame_1_1Character.html#ab2e6f640f8bfc682c50e3c19e0d417f1" title="A record for tracking the position of Characters, Items, and Tiles if needed." alt="" coords="273,128,481,153"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,85,317,122,315,127,181,90"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="210,116,269,124,268,129,209,121"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Core_1_1Level.html#a81b95d5c2aa808c7e214c7b0ba037ef4" title="When a golem occupies pos , sets golem &#160;and returns true." alt="" coords="274,178,479,218"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="156,122,258,162,287,171,285,176,256,167,154,127"/>
 <area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="333,130,324,120,329,110,347,103,377,101,415,105,426,110,429,116,425,119,422,114,414,111,377,107,348,109,332,114,329,119,337,126"/>
 </map>

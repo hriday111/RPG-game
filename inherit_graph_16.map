@@ -1,3 +1,29 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classRpgGame_1_1Program.html" title="Entry point of the RPG game application." alt="" coords="5,5,151,31"/>
+<area shape="rect" id="Node000000" href="$interfaceRpgGame_1_1Items_1_1IItem.html" title="Defines the contract for all items that can exist within the game world." alt="" coords="5,170,171,195"/>
+<area shape="rect" id="Node000001" href="$classRpgGame_1_1Items_1_1Coin.html" title="Represents a coin item that increases the player&#39;s currency when picked up." alt="" coords="242,71,402,97"/>
+<area shape="poly" id="edge29_Node000000_Node000001" title=" " alt="" coords="117,160,163,132,218,106,253,94,255,99,220,110,166,137,120,165"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Items_1_1Gold.html" title="Represents a gold item that increases the player&#39;s gold currency when picked up." alt="" coords="241,121,403,146"/>
+<area shape="poly" id="edge30_Node000000_Node000002" title=" " alt="" coords="162,165,260,143,261,149,163,170"/>
+<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Items_1_1IEquippable.html" title="Represents an item that can be equipped by the player." alt="" coords="219,170,425,195"/>
+<area shape="poly" id="edge31_Node000000_Node000003" title=" " alt="" coords="184,180,218,180,218,185,184,185"/>
+<area shape="rect" id="Node000012" href="$classRpgGame_1_1Items_1_1Potion.html" title="Represents a consumable health potion." alt="" coords="236,219,408,245"/>
+<area shape="poly" id="edge40_Node000000_Node000012" title=" " alt="" coords="163,196,261,217,260,222,162,201"/>
+<area shape="rect" id="Node000013" href="$classRpgGame_1_1Items_1_1Thorn.html" title="Represents a Thorn on that map, and walking over it causes damange." alt="" coords="238,269,406,294"/>
+<area shape="poly" id="edge41_Node000000_Node000013" title=" " alt="" coords="120,201,166,229,220,255,255,266,253,271,218,260,163,233,117,205"/>
+<area shape="rect" id="Node000004" href="$interfaceRpgGame_1_1Items_1_1IWeapon.html" title="An equippable item that contributes a damage value (typically a weapon)." alt="" coords="473,170,660,195"/>
+<area shape="poly" id="edge32_Node000003_Node000004" title=" " alt="" coords="439,180,473,180,473,185,439,185"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html" title="Decorator base for Weapon stacks: forwards most behavior to an inner IEquippable while allowing subcl..." alt="" coords="708,101,903,141"/>
+<area shape="poly" id="edge33_Node000004_Node000005" title=" " alt="" coords="629,164,726,139,727,144,631,169"/>
+<area shape="rect" id="Node000009" href="$classRpgGame_1_1Items_1_1Weapon.html" title="Represents an abstract base class for all equippable weapons." alt="" coords="714,198,897,223"/>
+<area shape="poly" id="edge37_Node000004_Node000009" title=" " alt="" coords="674,193,714,197,713,203,673,198"/>
+<area shape="rect" id="Node000006" href="$classRpgGame_1_1Items_1_1Modifiers_1_1ProtectiveWeaponModifier.html" title="Decorator that increases the player&#39;s wisdom by 5 while this stack is equipped. Name gains a &quot;(Protec..." alt="" coords="962,5,1157,45"/>
+<area shape="poly" id="edge34_Node000005_Node000006" title=" " alt="" coords="859,93,950,55,985,43,987,48,952,60,862,98"/>
+<area shape="rect" id="Node000007" href="$classRpgGame_1_1Items_1_1Modifiers_1_1StrongWeaponModifier.html" title="Decorator that increases weapon damage (+5). Name gains a &quot;(Strong)&quot; suffix." alt="" coords="962,69,1157,109"/>
+<area shape="poly" id="edge35_Node000005_Node000007" title=" " alt="" coords="916,105,962,99,962,104,916,110"/>
+<area shape="rect" id="Node000008" href="$classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html" title="Decorator that reduces the player&#39;s luck by 5 while this stack is equipped. Name gains an &quot;(Unlucky)&quot;..." alt="" coords="962,133,1157,173"/>
+<area shape="poly" id="edge36_Node000005_Node000008" title=" " alt="" coords="916,133,962,138,962,144,916,138"/>
+<area shape="rect" id="Node000010" href="$classRpgGame_1_1Items_1_1DoubleSword.html" title="Represents a powerful two&#45;handed sword weapon." alt="" coords="951,198,1168,223"/>
+<area shape="poly" id="edge38_Node000009_Node000010" title=" " alt="" coords="910,208,951,208,951,213,910,213"/>
+<area shape="rect" id="Node000011" href="$classRpgGame_1_1Items_1_1Sword.html" title="Represents a standard one&#45;handed sword weapon." alt="" coords="974,247,1145,273"/>
+<area shape="poly" id="edge39_Node000009_Node000011" title=" " alt="" coords="885,223,994,245,993,250,884,229"/>
 </map>

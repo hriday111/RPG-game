@@ -15,10 +15,10 @@
 <polygon fill="#999999" stroke="transparent" points="189,-71 0,-71 0,0 189,0 189,-71"/>
 <text text-anchor="start" x="5.5" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Input.QuitGameCommand</text>
 <text text-anchor="start" x="93" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="16" y="-28.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="40.5" y="-28.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Execute(Level level,</text>
-<text text-anchor="start" x="40.5" y="-17.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Player player, Inventory</text>
-<text text-anchor="start" x="40.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00"> inventory)</text>
+<text text-anchor="start" x="11.5" y="-28.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="31.5" y="-28.5" font-family="Helvetica,sans-Serif" font-size="10.00">InputResult Execute</text>
+<text text-anchor="start" x="31.5" y="-17.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Level level, Player</text>
+<text text-anchor="start" x="31.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00"> player, Inventory inventory)</text>
 <polygon fill="#666666" stroke="#666666" points="0.5,-53.5 0.5,-53.5 189.5,-53.5 189.5,-53.5 0.5,-53.5"/>
 <polygon fill="#666666" stroke="#666666" points="0.5,-38.5 0.5,-38.5 189.5,-38.5 189.5,-38.5 0.5,-38.5"/>
 <polygon fill="none" stroke="#666666" points="0,0 0,-71 189,-71 189,0 0,0"/>
@@ -29,16 +29,16 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="interfaceRpgGame_1_1Input_1_1IInputCommand.html" target="_top" xlink:title="Represents a user input command that manipulates the game state (level, player, inventory) and return...">
-<polygon fill="white" stroke="transparent" points="165.5,-178 23.5,-178 23.5,-107 165.5,-107 165.5,-178"/>
-<text text-anchor="start" x="55" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">IInputCommand</text>
-<text text-anchor="start" x="92.5" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="27.5" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="40.5" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Execute(Level level,</text>
-<text text-anchor="start" x="40.5" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Player player, Inventory</text>
-<text text-anchor="start" x="40.5" y="-113.5" font-family="Helvetica,sans-Serif" font-size="10.00"> inventory)</text>
-<polygon fill="#666666" stroke="#666666" points="23.5,-160.5 23.5,-160.5 165.5,-160.5 165.5,-160.5 23.5,-160.5"/>
-<polygon fill="#666666" stroke="#666666" points="23.5,-145.5 23.5,-145.5 165.5,-145.5 165.5,-145.5 23.5,-145.5"/>
-<polygon fill="none" stroke="#666666" points="23.5,-107 23.5,-178 165.5,-178 165.5,-107 23.5,-107"/>
+<polygon fill="white" stroke="transparent" points="175,-178 14,-178 14,-107 175,-107 175,-178"/>
+<text text-anchor="start" x="55.5" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">IInputCommand</text>
+<text text-anchor="start" x="93" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="18.5" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="31.5" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">InputResult Execute</text>
+<text text-anchor="start" x="31.5" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Level level, Player</text>
+<text text-anchor="start" x="31.5" y="-113.5" font-family="Helvetica,sans-Serif" font-size="10.00"> player, Inventory inventory)</text>
+<polygon fill="#666666" stroke="#666666" points="14.5,-160.5 14.5,-160.5 175.5,-160.5 175.5,-160.5 14.5,-160.5"/>
+<polygon fill="#666666" stroke="#666666" points="14.5,-145.5 14.5,-145.5 175.5,-145.5 175.5,-145.5 14.5,-145.5"/>
+<polygon fill="none" stroke="#666666" points="14,-107 14,-178 175,-178 175,-107 14,-107"/>
 </a>
 </g>
 </g>

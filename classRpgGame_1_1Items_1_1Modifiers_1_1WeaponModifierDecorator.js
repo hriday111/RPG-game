@@ -10,6 +10,7 @@ var classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator =
     [ "TryEquipToRight", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a8d9410b8fef19a17bddac447576436a8", null ],
     [ "color", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#ab9417eaf19c442fbfc5fc3c359e9cf99", null ],
     [ "Damage", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a87b6f7d6f5b0c0470ff2cdf32d9e4d7c", null ],
+    [ "Defense", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a3232a03aeaf9b6a56cb8cb259f2085ab", null ],
     [ "Inner", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a0f10e2270ef48c6081029737e4e92e76", null ],
     [ "Name", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a98e163ea7ce61ab326496bbd503273e6", null ],
     [ "Symbol", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a8171fac924156710660cf915af3fffb0", null ]

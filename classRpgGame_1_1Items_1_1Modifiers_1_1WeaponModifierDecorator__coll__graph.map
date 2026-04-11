@@ -1,9 +1,9 @@
 <map id="RpgGame.Items.Modifiers.WeaponModifierDecorator" name="RpgGame.Items.Modifiers.WeaponModifierDecorator">
-<area shape="rect" id="Node000001" title="Decorator base for Weapon stacks: forwards most behavior to an inner IEquippable while allowing subcl..." alt="" coords="5,504,235,941"/>
-<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Items_1_1IWeapon.html" title="An equippable item that contributes a damage value (typically a weapon)." alt="" coords="67,391,173,456"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,470,123,504,117,504,117,470"/>
+<area shape="rect" id="Node000001" title="Decorator base for Weapon stacks: forwards most behavior to an inner IEquippable while allowing subcl..." alt="" coords="5,524,235,981"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Items_1_1IWeapon.html" title="An equippable item that contributes a damage value (typically a weapon)." alt="" coords="67,391,173,476"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,490,123,523,117,523,117,490"/>
 <area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Items_1_1IEquippable.html" title="Represents an item that can be equipped by the player." alt="" coords="38,228,202,343"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,356,123,391,117,391,117,356"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,356,123,390,117,390,117,356"/>
 <area shape="rect" id="Node000004" href="$interfaceRpgGame_1_1Items_1_1IItem.html" title="Defines the contract for all items that can exist within the game world." alt="" coords="13,5,227,180"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,194,123,228,117,228,117,194"/>
 </map>

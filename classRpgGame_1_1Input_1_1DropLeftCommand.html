@@ -112,8 +112,8 @@ Collaboration diagram for RpgGame.Input.DropLeftCommand:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adfa777e251b22900e3bea5203f888373" id="r_adfa777e251b22900e3bea5203f888373"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Input_1_1DropLeftCommand.html#adfa777e251b22900e3bea5203f888373">Execute</a> (<a class="el" href="classRpgGame_1_1Core_1_1Level.html">Level</a> level, <a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player, <a class="el" href="classRpgGame_1_1Core_1_1Inventory.html">Inventory</a> inventory)</td></tr>
-<tr class="memdesc:adfa777e251b22900e3bea5203f888373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the command using provided game objects.<dl class="params"><dt>Parameters</dt><dd>
+<tr class="memitem:a4e0b1c965278603e6486087009709780" id="r_a4e0b1c965278603e6486087009709780"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49fa">InputResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Input_1_1DropLeftCommand.html#a4e0b1c965278603e6486087009709780">Execute</a> (<a class="el" href="classRpgGame_1_1Core_1_1Level.html">Level</a> level, <a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player, <a class="el" href="classRpgGame_1_1Core_1_1Inventory.html">Inventory</a> inventory)</td></tr>
+<tr class="memdesc:a4e0b1c965278603e6486087009709780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the command using provided game objects.<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">level</td><td>The current level.</td></tr>
     <tr><td class="paramname">player</td><td>The player character.</td></tr>
@@ -121,15 +121,15 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Typically <code>1</code> to indicate the game should continue, <code>-1</code> to signal exit, or other values for custom logic. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Usually InputResult.Ok to continue, InputResult.Quit to exit, or InputResult.Help to toggle help. </dd></dl>
   <br /></td></tr>
-<tr class="separator:adfa777e251b22900e3bea5203f888373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a4e0b1c965278603e6486087009709780"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Instructs the player to drop the item in their left hand onto the level. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="adfa777e251b22900e3bea5203f888373" name="adfa777e251b22900e3bea5203f888373"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfa777e251b22900e3bea5203f888373">&#9670;&#160;</a></span>Execute()</h2>
+<a id="a4e0b1c965278603e6486087009709780" name="a4e0b1c965278603e6486087009709780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e0b1c965278603e6486087009709780">&#9670;&#160;</a></span>Execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,7 +138,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int RpgGame.Input.DropLeftCommand.Execute </td>
+          <td class="memname"><a class="el" href="namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49fa">InputResult</a> RpgGame.Input.DropLeftCommand.Execute </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classRpgGame_1_1Core_1_1Level.html">Level</a>&#160;</td>
           <td class="paramname"><em>level</em>, </td>
@@ -176,14 +176,14 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Typically <code>1</code> to indicate the game should continue, <code>-1</code> to signal exit, or other values for custom logic. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Usually InputResult.Ok to continue, InputResult.Quit to exit, or InputResult.Help to toggle help. </dd></dl>
  </p>
 
-<p>Implements <a class="el" href="interfaceRpgGame_1_1Input_1_1IInputCommand.html#a1158b3faf6c7e486e668b91bb91129a9">RpgGame.Input.IInputCommand</a>.</p>
+<p>Implements <a class="el" href="interfaceRpgGame_1_1Input_1_1IInputCommand.html#a9d415a9e2dcba7c7230b2cace32fb655">RpgGame.Input.IInputCommand</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Input_1_1DropLeftCommand_adfa777e251b22900e3bea5203f888373_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Input_1_1DropLeftCommand_a4e0b1c965278603e6486087009709780_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>

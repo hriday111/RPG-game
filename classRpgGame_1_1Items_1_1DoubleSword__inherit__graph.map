@@ -1,11 +1,11 @@
 <map id="RpgGame.Items.DoubleSword" name="RpgGame.Items.DoubleSword">
-<area shape="rect" id="Node000001" title="Represents a powerful two&#45;handed sword weapon." alt="" coords="12,949,221,1089"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Items_1_1Weapon.html" title="Represents an abstract base class for all equippable weapons." alt="" coords="5,504,228,901"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,915,119,949,114,949,114,915"/>
-<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Items_1_1IWeapon.html" title="An equippable item that contributes a damage value (typically a weapon)." alt="" coords="64,391,169,456"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="119,470,119,504,114,504,114,470"/>
+<area shape="rect" id="Node000001" title="Represents a powerful two&#45;handed sword weapon." alt="" coords="12,989,221,1149"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Items_1_1Weapon.html" title="Represents an abstract base class for all equippable weapons." alt="" coords="5,524,228,941"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,955,119,989,114,989,114,955"/>
+<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Items_1_1IWeapon.html" title="An equippable item that contributes a damage value (typically a weapon)." alt="" coords="64,391,169,476"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="119,490,119,524,114,524,114,490"/>
 <area shape="rect" id="Node000004" href="$interfaceRpgGame_1_1Items_1_1IEquippable.html" title="Represents an item that can be equipped by the player." alt="" coords="35,228,199,343"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="119,356,119,391,114,391,114,356"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="119,356,119,390,114,390,114,356"/>
 <area shape="rect" id="Node000005" href="$interfaceRpgGame_1_1Items_1_1IItem.html" title="Defines the contract for all items that can exist within the game world." alt="" coords="9,5,224,180"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="119,194,119,228,114,228,114,194"/>
 </map>

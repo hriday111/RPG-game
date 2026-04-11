@@ -1,0 +1,5 @@
+<map id="RpgGame.Input.HelpCommand" name="RpgGame.Input.HelpCommand">
+<area shape="rect" id="Node000001" title="Command that causes the game loop to exit." alt="" coords="5,148,221,243"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Input_1_1IInputCommand.html" title="Represents a user input command that manipulates the game state (level, player, inventory) and return..." alt="" coords="6,5,221,100"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,114,116,148,111,148,111,114"/>
+</map>

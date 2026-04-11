@@ -1,6 +1,7 @@
 var namespaceRpgGame =
 [
     [ "Character", "namespaceRpgGame_1_1Character.html", "namespaceRpgGame_1_1Character" ],
+    [ "Combat", "namespaceRpgGame_1_1Combat.html", "namespaceRpgGame_1_1Combat" ],
     [ "Core", "namespaceRpgGame_1_1Core.html", "namespaceRpgGame_1_1Core" ],
     [ "Generation", "namespaceRpgGame_1_1Generation.html", "namespaceRpgGame_1_1Generation" ],
     [ "Input", "namespaceRpgGame_1_1Input.html", "namespaceRpgGame_1_1Input" ],

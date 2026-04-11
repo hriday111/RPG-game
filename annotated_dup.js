@@ -3,8 +3,11 @@ var annotated_dup =
     [ "RpgGame", "namespaceRpgGame.html", [
       [ "Character", "namespaceRpgGame_1_1Character.html", [
         [ "Character", "classRpgGame_1_1Character_1_1Character.html", "classRpgGame_1_1Character_1_1Character" ],
-        [ "Golem", "classRpgGame_1_1Character_1_1Golem.html", null ],
+        [ "Golem", "classRpgGame_1_1Character_1_1Golem.html", "classRpgGame_1_1Character_1_1Golem" ],
         [ "Player", "classRpgGame_1_1Character_1_1Player.html", "classRpgGame_1_1Character_1_1Player" ]
+      ] ],
+      [ "Combat", "namespaceRpgGame_1_1Combat.html", [
+        [ "CombatRound", "classRpgGame_1_1Combat_1_1CombatRound.html", "classRpgGame_1_1Combat_1_1CombatRound" ]
       ] ],
       [ "Core", "namespaceRpgGame_1_1Core.html", [
         [ "Config", "classRpgGame_1_1Core_1_1Config.html", "classRpgGame_1_1Core_1_1Config" ],
@@ -40,6 +43,7 @@ var annotated_dup =
         [ "ControlDescriptor", "classRpgGame_1_1Input_1_1ControlDescriptor.html", "classRpgGame_1_1Input_1_1ControlDescriptor" ],
         [ "DropLeftCommand", "classRpgGame_1_1Input_1_1DropLeftCommand.html", "classRpgGame_1_1Input_1_1DropLeftCommand" ],
         [ "DropRightCommand", "classRpgGame_1_1Input_1_1DropRightCommand.html", "classRpgGame_1_1Input_1_1DropRightCommand" ],
+        [ "HelpCommand", "classRpgGame_1_1Input_1_1HelpCommand.html", "classRpgGame_1_1Input_1_1HelpCommand" ],
         [ "IInputCommand", "interfaceRpgGame_1_1Input_1_1IInputCommand.html", "interfaceRpgGame_1_1Input_1_1IInputCommand" ],
         [ "InputHandler", "classRpgGame_1_1Input_1_1InputHandler.html", "classRpgGame_1_1Input_1_1InputHandler" ],
         [ "InventoryToLeftHandCommand", "classRpgGame_1_1Input_1_1InventoryToLeftHandCommand.html", "classRpgGame_1_1Input_1_1InventoryToLeftHandCommand" ],

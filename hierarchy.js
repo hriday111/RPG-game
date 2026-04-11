@@ -4,6 +4,7 @@ var hierarchy =
       [ "RpgGame.Character.Golem", "classRpgGame_1_1Character_1_1Golem.html", null ],
       [ "RpgGame.Character.Player", "classRpgGame_1_1Character_1_1Player.html", null ]
     ] ],
+    [ "RpgGame.Combat.CombatRound", "classRpgGame_1_1Combat_1_1CombatRound.html", null ],
     [ "RpgGame.Core.Config", "classRpgGame_1_1Core_1_1Config.html", null ],
     [ "RpgGame.Renderer.ConsoleRenderer", "classRpgGame_1_1Renderer_1_1ConsoleRenderer.html", null ],
     [ "RpgGame.Input.ControlDescriptor", "classRpgGame_1_1Input_1_1ControlDescriptor.html", null ],
@@ -32,6 +33,7 @@ var hierarchy =
     [ "RpgGame.Input.IInputCommand", "interfaceRpgGame_1_1Input_1_1IInputCommand.html", [
       [ "RpgGame.Input.DropLeftCommand", "classRpgGame_1_1Input_1_1DropLeftCommand.html", null ],
       [ "RpgGame.Input.DropRightCommand", "classRpgGame_1_1Input_1_1DropRightCommand.html", null ],
+      [ "RpgGame.Input.HelpCommand", "classRpgGame_1_1Input_1_1HelpCommand.html", null ],
       [ "RpgGame.Input.InventoryToLeftHandCommand", "classRpgGame_1_1Input_1_1InventoryToLeftHandCommand.html", null ],
       [ "RpgGame.Input.InventoryToRightHandCommand", "classRpgGame_1_1Input_1_1InventoryToRightHandCommand.html", null ],
       [ "RpgGame.Input.MoveDownCommand", "classRpgGame_1_1Input_1_1MoveDownCommand.html", null ],

@@ -8,6 +8,7 @@ var classRpgGame_1_1Items_1_1Weapon =
     [ "TryEquipToRight", "classRpgGame_1_1Items_1_1Weapon.html#a43cade26eb8c185300e3bfe1d06589a0", null ],
     [ "color", "classRpgGame_1_1Items_1_1Weapon.html#a1a73d7bfdf34b5e3165508a162adbf47", null ],
     [ "Damage", "classRpgGame_1_1Items_1_1Weapon.html#afa382f8ef0205684836436baf37a636c", null ],
+    [ "Defense", "classRpgGame_1_1Items_1_1Weapon.html#aec0c613435b5d9f59a03243ce47741c5", null ],
     [ "Name", "classRpgGame_1_1Items_1_1Weapon.html#ae749ab7a361ef77770b05b11737e3a85", null ],
     [ "Symbol", "classRpgGame_1_1Items_1_1Weapon.html#a9015fb80b2bf4ce00c56b324463effc2", null ]
 ];

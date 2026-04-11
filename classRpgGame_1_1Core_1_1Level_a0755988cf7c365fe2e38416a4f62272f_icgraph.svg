@@ -30,7 +30,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classRpgGame_1_1Input_1_1TakeToInventoryCommand.html#a267b724b8c02cf1e7901f971131110fa" target="_top" xlink:title="Executes the command using provided game objects.Typically 1 to indicate the game should continue,...">
+<g id="a_Node000002"><a xlink:href="classRpgGame_1_1Input_1_1TakeToInventoryCommand.html#a42223f6069c31e1f52e20e75e2bb3edf" target="_top" xlink:title="Executes the command using provided game objects.Usually InputResult.Ok to continue,...">
 <polygon fill="white" stroke="#666666" points="174,-30 0,-30 0,0 174,0 174,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Input.TakeToInventory</text>
 <text text-anchor="middle" x="87" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">Command.Execute</text>

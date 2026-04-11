@@ -5,8 +5,10 @@
 <area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="622,76,505,48,506,43,623,71"/>
 <area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1MapSpawnHelper.html#a709966f4f9718bc81310b4e4f3d6f5dd" title="Spawns golems at random walkable, unoccupied positions, avoiding the default player spawn." alt="" coords="301,69,539,109"/>
 <area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="573,92,539,92,539,87,573,87"/>
-<area shape="rect" id="Node000005" href="$classRpgGame_1_1Generation_1_1MapSpawnHelper.html#a1d4ada95af130a739159a6b306a5cf3b" title="Asynchronously places a number of items at random walkable locations on the given level." alt="" coords="301,134,539,189"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="630,108,524,137,522,131,628,103"/>
-<area shape="rect" id="Node000004" href="$classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure.html#a3d12247ff2444089f35771a96d5ca050" title="Asynchronously applies this generation step to the level." alt="" coords="5,69,253,109"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="288,92,253,92,253,87,288,87"/>
+<area shape="rect" id="Node000006" href="$classRpgGame_1_1Generation_1_1MapSpawnHelper.html#a1d4ada95af130a739159a6b306a5cf3b" title="Asynchronously places a number of items at random walkable locations on the given level." alt="" coords="301,134,539,189"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="630,108,524,137,522,131,628,103"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure.html#a3d12247ff2444089f35771a96d5ca050" title="Asynchronously applies this generation step to the level." alt="" coords="5,37,253,77"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="287,77,253,74,254,68,288,72"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Generation_1_1SimpleRoomGenerator.html#a8caf609eb1559582bff3d5f1f4c28f64" title="Asynchronously generates the level; uses the new async spawn helpers to perform item placement withou..." alt="" coords="16,101,243,141"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="288,107,243,112,242,106,287,101"/>
 </map>

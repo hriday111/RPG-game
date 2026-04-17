@@ -1,4 +1,5 @@
 using RpgGame.Character;
+using RpgGame.Combat;
 
 namespace RpgGame.Items;
 
@@ -38,4 +39,25 @@ public interface IEquippable : IItem
     /// otherwise false.
     /// </returns>
     bool TryEquipToRight(Player player);
+
+    /// <summary>
+    /// Contributes this equipped item to one combat exchange.
+    /// Non-weapon equippables default to non-weapon attack handling.
+    /// </summary>
+    void ContributeCombat(ICombatAttack attack, Player player, ICombatContribution contribution)
+        => attack.VisitEquippedNonWeapon(this, player, contribution);
+
+    /// <summary>
+    /// Called after this item has been equipped into the player's hands.
+    /// </summary>
+    void OnEquippedToHands(Player player)
+    {
+    }
+
+    /// <summary>
+    /// Called right before this item is removed from the player's hands.
+    /// </summary>
+    void OnRemovedFromHands(Player player)
+    {
+    }
 }

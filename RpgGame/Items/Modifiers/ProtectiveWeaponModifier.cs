@@ -22,16 +22,16 @@ public sealed class ProtectiveWeaponModifier : WeaponModifierDecorator
     public override int Defense => base.Defense + 3;
 
     /// <inheritdoc />
-    protected override void OnAfterEquippedToHands(Player player)
+    public override void OnEquippedToHands(Player player)
     {
         player.ApplyWisdomDelta(WisdomBonus);
-        base.OnAfterEquippedToHands(player);
+        base.OnEquippedToHands(player);
     }
 
     /// <inheritdoc />
-    protected override void OnBeforeRemovedFromHands(Player player)
+    public override void OnRemovedFromHands(Player player)
     {
         player.ApplyWisdomDelta(-WisdomBonus);
-        base.OnBeforeRemovedFromHands(player);
+        base.OnRemovedFromHands(player);
     }
 }

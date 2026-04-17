@@ -67,6 +67,10 @@ public abstract class Weapon : IWeapon
     public void AcceptCombatStrike(ICombatAttack attack, Player player, ICombatContribution contribution)
         => DispatchCombatUsingSurface(attack, this, player, contribution);
 
+    /// <inheritdoc />
+    public virtual void ContributeCombat(ICombatAttack attack, Player player, ICombatContribution contribution)
+        => AcceptCombatStrike(attack, player, contribution);
+
     /// <summary>
     /// Applies <paramref name="attack"/> using this weapon's category but <paramref name="damageSurface"/>'s
     /// <see cref="IWeapon.Damage"/> (so decorators retain category and stacked modifiers).

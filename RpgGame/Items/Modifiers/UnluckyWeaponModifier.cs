@@ -19,16 +19,16 @@ public sealed class UnluckyWeaponModifier : WeaponModifierDecorator
     public override string Name => $"{Inner.Name} (Unlucky)";
 
     /// <inheritdoc />
-    protected override void OnAfterEquippedToHands(Player player)
+    public override void OnEquippedToHands(Player player)
     {
         player.ApplyLuckDelta(-LuckPenalty);
-        base.OnAfterEquippedToHands(player);
+        base.OnEquippedToHands(player);
     }
 
     /// <inheritdoc />
-    protected override void OnBeforeRemovedFromHands(Player player)
+    public override void OnRemovedFromHands(Player player)
     {
         player.ApplyLuckDelta(LuckPenalty);
-        base.OnBeforeRemovedFromHands(player);
+        base.OnRemovedFromHands(player);
     }
 }

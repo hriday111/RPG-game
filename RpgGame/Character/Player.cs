@@ -124,20 +124,10 @@ public class Player : Character
         bool anyHandOccupied = LeftHand != null || RightHand != null;
 
         if (LeftHand != null)
-        {
-            if (LeftHand is IWeapon lw)
-                lw.AcceptCombatStrike(attack, this, acc);
-            else
-                attack.VisitEquippedNonWeapon(LeftHand, this, acc);
-        }
+            LeftHand.ContributeCombat(attack, this, acc);
 
         if (RightHand != null && !ReferenceEquals(LeftHand, RightHand))
-        {
-            if (RightHand is IWeapon rw)
-                rw.AcceptCombatStrike(attack, this, acc);
-            else
-                attack.VisitEquippedNonWeapon(RightHand, this, acc);
-        }
+            RightHand.ContributeCombat(attack, this, acc);
 
         if (!anyHandOccupied)
             attack.VisitBareFists(this, acc);

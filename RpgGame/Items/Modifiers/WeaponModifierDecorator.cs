@@ -41,6 +41,10 @@ public abstract class WeaponModifierDecorator : IWeapon
         => ResolveCoreWeapon().DispatchCombatUsingSurface(attack, this, player, contribution);
 
     /// <inheritdoc />
+    public virtual void ContributeCombat(ICombatAttack attack, Player player, ICombatContribution contribution)
+        => AcceptCombatStrike(attack, player, contribution);
+
+    /// <inheritdoc />
     public virtual string GetDescription() => $"{Name} (Damage: {Damage})";
 
     /// <inheritdoc />
@@ -50,7 +54,7 @@ public abstract class WeaponModifierDecorator : IWeapon
     /// <inheritdoc />
     public void OnDrop(Level level, Player player)
     {
-        OnBeforeRemovedFromHands(player);
+        OnRemovedFromHands(player);
         level.AddItem(player.Pos, this);
     }
 
@@ -59,7 +63,7 @@ public abstract class WeaponModifierDecorator : IWeapon
     {
         if (!ResolveCoreWeapon().ApplyEquipLeft(player, this))
             return false;
-        OnAfterEquippedToHands(player);
+        OnEquippedToHands(player);
         return true;
     }
 
@@ -68,7 +72,7 @@ public abstract class WeaponModifierDecorator : IWeapon
     {
         if (!ResolveCoreWeapon().ApplyEquipRight(player, this))
             return false;
-        OnAfterEquippedToHands(player);
+        OnEquippedToHands(player);
         return true;
     }
 
@@ -88,18 +92,10 @@ public abstract class WeaponModifierDecorator : IWeapon
     /// <summary>
     /// Invoked after this stack has been stored in the player's hands.
     /// </summary>
-    protected virtual void OnAfterEquippedToHands(Player player)
-    {
-        if (Inner is WeaponModifierDecorator d)
-            d.OnAfterEquippedToHands(player);
-    }
+    public virtual void OnEquippedToHands(Player player) => Inner.OnEquippedToHands(player);
 
     /// <summary>
     /// Invoked when the item is dropped to the ground; reverses equip-time stat changes.
     /// </summary>
-    protected virtual void OnBeforeRemovedFromHands(Player player)
-    {
-        if (Inner is WeaponModifierDecorator d)
-            d.OnBeforeRemovedFromHands(player);
-    }
+    public virtual void OnRemovedFromHands(Player player) => Inner.OnRemovedFromHands(player);
 }

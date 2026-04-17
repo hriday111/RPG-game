@@ -137,6 +137,10 @@ namespace RpgGame.Generation
         /// <returns></returns>
         public static Task SpawnThornsAsync(Level level, int count) =>
             SpawnItemsAsync(level, count, () => new Thorn());
+        
+        
+        public static Task SpawnCrystalOrbAsync(Level level, int count) =>
+            SpawnItemsAsync(level, count, ()=> new CrystalOrb());
 
         /// <summary>
         /// Spawns golems at random walkable, unoccupied positions, avoiding the default player spawn.

@@ -13,16 +13,17 @@ public class AddWeaponsProcedure : IDungeonProcedure
 {
     private readonly int SwordCount;
     private readonly int DoubleSwordCount;
-
+    private readonly int CrystalOrbCount;
     /// <summary>
     /// Initializes the weapons spawning procedure.
     /// </summary>
     /// <param name="SwordCount">The number of one-handed swords to spawn. Defaults to 2.</param>
     /// <param name="DoubleSwordCount">The number of two-handed swords to spawn. Defaults to 1.</param>
-    public AddWeaponsProcedure(int SwordCount = 2, int DoubleSwordCount = 1)
+    public AddWeaponsProcedure(int SwordCount = 2, int DoubleSwordCount = 1, int CrystalOrbCount=1)
     {
-        this.SwordCount = 2;
-        this.DoubleSwordCount = 1;
+        this.SwordCount = SwordCount;
+        this.DoubleSwordCount = DoubleSwordCount;
+        this.CrystalOrbCount =CrystalOrbCount;
     }
 
     /// <summary>
@@ -35,5 +36,6 @@ public class AddWeaponsProcedure : IDungeonProcedure
     {
         await MapSpawnHelper.SpawnSwordAsync(level, SwordCount);
         await MapSpawnHelper.SpawnDoubleSwordAsync(level, DoubleSwordCount);
+        await MapSpawnHelper.SpawnCrystalOrbAsync(level, CrystalOrbCount);
     }
 }

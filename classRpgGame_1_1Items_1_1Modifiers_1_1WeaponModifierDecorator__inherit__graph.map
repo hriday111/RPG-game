@@ -1,15 +1,15 @@
 <map id="RpgGame.Items.Modifiers.WeaponModifierDecorator" name="RpgGame.Items.Modifiers.WeaponModifierDecorator">
-<area shape="rect" id="Node000001" title="Decorator base for Weapon stacks: forwards most behavior to an inner IEquippable while allowing subcl..." alt="" coords="234,568,495,1089"/>
-<area shape="rect" id="Node000005" href="$classRpgGame_1_1Items_1_1Modifiers_1_1ProtectiveWeaponModifier.html" title="Decorator that increases the player&#39;s wisdom by 5 while this stack is equipped. Name gains a &quot;(Protec..." alt="" coords="5,1137,247,1321"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="229,1061,183,1138,178,1136,225,1059"/>
-<area shape="rect" id="Node000006" href="$classRpgGame_1_1Items_1_1Modifiers_1_1StrongWeaponModifier.html" title="Decorator that increases weapon damage (+5). Name gains a &quot;(Strong)&quot; suffix." alt="" coords="271,1172,458,1287"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="367,1103,367,1172,362,1172,362,1103"/>
-<area shape="rect" id="Node000007" href="$classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html" title="Decorator that reduces the player&#39;s luck by 5 while this stack is equipped. Name gains an &quot;(Unlucky)&quot;..." alt="" coords="483,1147,724,1311"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="505,1058,557,1146,553,1149,500,1061"/>
-<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Items_1_1IWeapon.html" title="An equippable item that contributes a damage value (typically a weapon)." alt="" coords="234,391,495,520"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="367,534,367,568,362,568,362,534"/>
-<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Items_1_1IEquippable.html" title="Represents an item that can be equipped by the player." alt="" coords="283,228,447,343"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="367,356,367,390,362,390,362,356"/>
-<area shape="rect" id="Node000004" href="$interfaceRpgGame_1_1Items_1_1IItem.html" title="Defines the contract for all items that can exist within the game world." alt="" coords="257,5,472,180"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="367,194,367,228,362,228,362,194"/>
+<area shape="rect" id="Node000001" title="Decorator base for Weapon stacks: forwards most behavior to an inner IEquippable while allowing subcl..." alt="" coords="224,701,485,1287"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Items_1_1Modifiers_1_1ProtectiveWeaponModifier.html" title="Decorator that increases the player&#39;s wisdom by 5 while this stack is equipped. Name gains a &quot;(Protec..." alt="" coords="5,1335,237,1519"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="220,1250,173,1335,168,1333,215,1247"/>
+<area shape="rect" id="Node000006" href="$classRpgGame_1_1Items_1_1Modifiers_1_1StrongWeaponModifier.html" title="Decorator that increases weapon damage (+5). Name gains a &quot;(Strong)&quot; suffix." alt="" coords="261,1369,448,1484"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="357,1300,357,1369,352,1369,352,1300"/>
+<area shape="rect" id="Node000007" href="$classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html" title="Decorator that reduces the player&#39;s luck by 5 while this stack is equipped. Name gains an &quot;(Unlucky)&quot;..." alt="" coords="472,1345,704,1509"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="494,1247,547,1343,542,1346,490,1250"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Items_1_1IWeapon.html" title="An equippable item that contributes a damage value (typically a weapon)." alt="" coords="224,524,485,653"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="357,667,357,701,352,701,352,667"/>
+<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Items_1_1IEquippable.html" title="Represents an item that can be equipped by the player." alt="" coords="224,228,485,476"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="357,489,357,523,352,523,352,489"/>
+<area shape="rect" id="Node000004" href="$interfaceRpgGame_1_1Items_1_1IItem.html" title="Defines the contract for all items that can exist within the game world." alt="" coords="247,5,462,180"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="357,194,357,228,352,228,352,194"/>
 </map>

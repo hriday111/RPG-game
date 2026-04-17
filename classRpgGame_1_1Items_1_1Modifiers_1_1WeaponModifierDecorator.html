@@ -117,6 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a3fb03102c8f8cca984ea85f503db91" id="r_a3a3fb03102c8f8cca984ea85f503db91"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a3a3fb03102c8f8cca984ea85f503db91">AcceptCombatStrike</a> (<a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatAttack.html">ICombatAttack</a> attack, <a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player, <a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatContribution.html">ICombatContribution</a> contribution)</td></tr>
 <tr class="memdesc:a3a3fb03102c8f8cca984ea85f503db91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double dispatch: weapon category forwards to <em>attack</em> .  <br /></td></tr>
 <tr class="separator:a3a3fb03102c8f8cca984ea85f503db91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f9f69a5e5c451eb5b1f65a64c0c121" id="r_a20f9f69a5e5c451eb5b1f65a64c0c121"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a20f9f69a5e5c451eb5b1f65a64c0c121">ContributeCombat</a> (<a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatAttack.html">ICombatAttack</a> attack, <a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player, <a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatContribution.html">ICombatContribution</a> contribution)</td></tr>
+<tr class="memdesc:a20f9f69a5e5c451eb5b1f65a64c0c121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contributes this equipped item to one combat exchange. Non-weapon equippables default to non-weapon attack handling.  <br /></td></tr>
+<tr class="separator:a20f9f69a5e5c451eb5b1f65a64c0c121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2183c31547c9d88a7bf2189c1e82f8ad" id="r_a2183c31547c9d88a7bf2189c1e82f8ad"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a2183c31547c9d88a7bf2189c1e82f8ad">GetDescription</a> ()</td></tr>
 <tr class="memdesc:a2183c31547c9d88a7bf2189c1e82f8ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a short textual description of the item.<dl class="section return"><dt>Returns</dt><dd>A human-readable description of the item.</dd></dl>
   <br /></td></tr>
@@ -162,6 +165,12 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if the item was successfully equipped in the right hand; otherwise false. </dd></dl>
   <br /></td></tr>
 <tr class="separator:a8d9410b8fef19a17bddac447576436a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14582ad3af1e4ce7fd9ad0b1d5b25182" id="r_a14582ad3af1e4ce7fd9ad0b1d5b25182"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a14582ad3af1e4ce7fd9ad0b1d5b25182">OnEquippedToHands</a> (<a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player)</td></tr>
+<tr class="memdesc:a14582ad3af1e4ce7fd9ad0b1d5b25182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked after this stack has been stored in the player's hands.  <br /></td></tr>
+<tr class="separator:a14582ad3af1e4ce7fd9ad0b1d5b25182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f88539763fe9d9b5f913dffe727cb29" id="r_a8f88539763fe9d9b5f913dffe727cb29"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a8f88539763fe9d9b5f913dffe727cb29">OnRemovedFromHands</a> (<a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player)</td></tr>
+<tr class="memdesc:a8f88539763fe9d9b5f913dffe727cb29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked when the item is dropped to the ground; reverses equip-time stat changes.  <br /></td></tr>
+<tr class="separator:a8f88539763fe9d9b5f913dffe727cb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -172,12 +181,6 @@ Protected Member Functions</h2></td></tr>
 <a class="el" href="classRpgGame_1_1Items_1_1Weapon.html">Weapon</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ResolveCoreWeapon</b> ()</td></tr>
 <tr class="memdesc:a20d5be6d04a54ed896cd9374138d3f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Walks the decorator chain to the concrete Weapon that owns hand rules. <br /></td></tr>
 <tr class="separator:a20d5be6d04a54ed896cd9374138d3f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a112daa17197d38d6d8f487e0e7ce41f2" id="r_a112daa17197d38d6d8f487e0e7ce41f2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a112daa17197d38d6d8f487e0e7ce41f2">OnAfterEquippedToHands</a> (<a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player)</td></tr>
-<tr class="memdesc:a112daa17197d38d6d8f487e0e7ce41f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked after this stack has been stored in the player's hands.  <br /></td></tr>
-<tr class="separator:a112daa17197d38d6d8f487e0e7ce41f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a12965cad51123b0f1251333ff91763" id="r_a4a12965cad51123b0f1251333ff91763"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a4a12965cad51123b0f1251333ff91763">OnBeforeRemovedFromHands</a> (<a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player)</td></tr>
-<tr class="memdesc:a4a12965cad51123b0f1251333ff91763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked when the item is dropped to the ground; reverses equip-time stat changes.  <br /></td></tr>
-<tr class="separator:a4a12965cad51123b0f1251333ff91763"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -252,6 +255,52 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="a20f9f69a5e5c451eb5b1f65a64c0c121" name="a20f9f69a5e5c451eb5b1f65a64c0c121"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f9f69a5e5c451eb5b1f65a64c0c121">&#9670;&#160;</a></span>ContributeCombat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RpgGame.Items.Modifiers.WeaponModifierDecorator.ContributeCombat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatAttack.html">ICombatAttack</a>&#160;</td>
+          <td class="paramname"><em>attack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a>&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatContribution.html">ICombatContribution</a>&#160;</td>
+          <td class="paramname"><em>contribution</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Contributes this equipped item to one combat exchange. Non-weapon equippables default to non-weapon attack handling. </p>
+
+<p>Implements <a class="el" href="interfaceRpgGame_1_1Items_1_1IEquippable.html#a40a1a467a003c573e82f03a5603aa51d">RpgGame.Items.IEquippable</a>.</p>
+
+</div>
+</div>
 <a id="a2183c31547c9d88a7bf2189c1e82f8ad" name="a2183c31547c9d88a7bf2189c1e82f8ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2183c31547c9d88a7bf2189c1e82f8ad">&#9670;&#160;</a></span>GetDescription()</h2>
 
@@ -279,76 +328,6 @@ Properties</h2></td></tr>
  </p>
 
 <p>Implements <a class="el" href="interfaceRpgGame_1_1Items_1_1IItem.html#a3b24877987d7b60925468d57640a0b82">RpgGame.Items.IItem</a>.</p>
-
-</div>
-</div>
-<a id="a112daa17197d38d6d8f487e0e7ce41f2" name="a112daa17197d38d6d8f487e0e7ce41f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a112daa17197d38d6d8f487e0e7ce41f2">&#9670;&#160;</a></span>OnAfterEquippedToHands()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void RpgGame.Items.Modifiers.WeaponModifierDecorator.OnAfterEquippedToHands </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a>&#160;</td>
-          <td class="paramname"><em>player</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Invoked after this stack has been stored in the player's hands. </p>
-
-<p>Reimplemented in <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1ProtectiveWeaponModifier.html#a819dbb50ee8669e0f05ef67b4cfe9422">RpgGame.Items.Modifiers.ProtectiveWeaponModifier</a>, and <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html#a357dfc114762bb21172a5de152e068ed">RpgGame.Items.Modifiers.UnluckyWeaponModifier</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator_a112daa17197d38d6d8f487e0e7ce41f2_icgraph.svg" width="551" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
-</div>
-</div>
-<a id="a4a12965cad51123b0f1251333ff91763" name="a4a12965cad51123b0f1251333ff91763"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a12965cad51123b0f1251333ff91763">&#9670;&#160;</a></span>OnBeforeRemovedFromHands()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void RpgGame.Items.Modifiers.WeaponModifierDecorator.OnBeforeRemovedFromHands </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a>&#160;</td>
-          <td class="paramname"><em>player</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Invoked when the item is dropped to the ground; reverses equip-time stat changes. </p>
-
-<p>Reimplemented in <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1ProtectiveWeaponModifier.html#adfba8306972ad7bbbdb3dc37c894c0de">RpgGame.Items.Modifiers.ProtectiveWeaponModifier</a>, and <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html#aa1dfd0a9df8d25fff8301f4654f3c929">RpgGame.Items.Modifiers.UnluckyWeaponModifier</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator_a4a12965cad51123b0f1251333ff91763_icgraph.svg" width="556" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -399,7 +378,44 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator_a9feb3297228ce9428364d7df12b5abae_cgraph.svg" width="556" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator_a9feb3297228ce9428364d7df12b5abae_cgraph.svg" width="576" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a14582ad3af1e4ce7fd9ad0b1d5b25182" name="a14582ad3af1e4ce7fd9ad0b1d5b25182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14582ad3af1e4ce7fd9ad0b1d5b25182">&#9670;&#160;</a></span>OnEquippedToHands()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RpgGame.Items.Modifiers.WeaponModifierDecorator.OnEquippedToHands </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a>&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Invoked after this stack has been stored in the player's hands. </p>
+
+<p>Implements <a class="el" href="interfaceRpgGame_1_1Items_1_1IEquippable.html#afa5f6384e6eb199b900b47946ca0bf83">RpgGame.Items.IEquippable</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1ProtectiveWeaponModifier.html#a1a9b33b0de5cf072d89e50936e492b56">RpgGame.Items.Modifiers.ProtectiveWeaponModifier</a>, and <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html#a16c6ccb15c40aaecf4e7929961c79d4d">RpgGame.Items.Modifiers.UnluckyWeaponModifier</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator_a14582ad3af1e4ce7fd9ad0b1d5b25182_icgraph.svg" width="580" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -444,6 +460,43 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a8f88539763fe9d9b5f913dffe727cb29" name="a8f88539763fe9d9b5f913dffe727cb29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f88539763fe9d9b5f913dffe727cb29">&#9670;&#160;</a></span>OnRemovedFromHands()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void RpgGame.Items.Modifiers.WeaponModifierDecorator.OnRemovedFromHands </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a>&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Invoked when the item is dropped to the ground; reverses equip-time stat changes. </p>
+
+<p>Implements <a class="el" href="interfaceRpgGame_1_1Items_1_1IEquippable.html#a84ec0913e62dc29b44c8b597c2bb6991">RpgGame.Items.IEquippable</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1ProtectiveWeaponModifier.html#a176e656cb1cd40809b7bd6106a5fef88">RpgGame.Items.Modifiers.ProtectiveWeaponModifier</a>, and <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html#ad611c4b1634f4c7df120cdde2836c456">RpgGame.Items.Modifiers.UnluckyWeaponModifier</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator_a8f88539763fe9d9b5f913dffe727cb29_icgraph.svg" width="576" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a id="a6152df6c477876f92ff4368c7611b0ab" name="a6152df6c477876f92ff4368c7611b0ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6152df6c477876f92ff4368c7611b0ab">&#9670;&#160;</a></span>TryEquipToLeft()</h2>
 
@@ -481,7 +534,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator_a6152df6c477876f92ff4368c7611b0ab_cgraph.svg" width="555" height="168"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator_a6152df6c477876f92ff4368c7611b0ab_cgraph.svg" width="580" height="168"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -523,7 +576,7 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator_a8d9410b8fef19a17bddac447576436a8_cgraph.svg" width="555" height="168"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator_a8d9410b8fef19a17bddac447576436a8_cgraph.svg" width="580" height="168"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

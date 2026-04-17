@@ -2,6 +2,7 @@ var classRpgGame_1_1Items_1_1Weapon =
 [
     [ "Weapon", "classRpgGame_1_1Items_1_1Weapon.html#a4981e01931ffc371f407dbe29f106418", null ],
     [ "AcceptCombatStrike", "classRpgGame_1_1Items_1_1Weapon.html#acc8a9b656cc3e659ecbfd2f06c498804", null ],
+    [ "ContributeCombat", "classRpgGame_1_1Items_1_1Weapon.html#aaeacf9a64f13674c37f334cdbd66979e", null ],
     [ "GetDescription", "classRpgGame_1_1Items_1_1Weapon.html#a5537bb1668ccdca9663735e0cf94c5e9", null ],
     [ "OnDrop", "classRpgGame_1_1Items_1_1Weapon.html#a339e37ae4e04120d793116e8ab6b48d7", null ],
     [ "OnPickup", "classRpgGame_1_1Items_1_1Weapon.html#adedf8425394852452425b7951b834120", null ],

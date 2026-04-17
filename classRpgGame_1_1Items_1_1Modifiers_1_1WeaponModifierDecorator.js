@@ -1,11 +1,12 @@
 var classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator =
 [
     [ "AcceptCombatStrike", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a3a3fb03102c8f8cca984ea85f503db91", null ],
+    [ "ContributeCombat", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a20f9f69a5e5c451eb5b1f65a64c0c121", null ],
     [ "GetDescription", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a2183c31547c9d88a7bf2189c1e82f8ad", null ],
-    [ "OnAfterEquippedToHands", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a112daa17197d38d6d8f487e0e7ce41f2", null ],
-    [ "OnBeforeRemovedFromHands", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a4a12965cad51123b0f1251333ff91763", null ],
     [ "OnDrop", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a9feb3297228ce9428364d7df12b5abae", null ],
+    [ "OnEquippedToHands", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a14582ad3af1e4ce7fd9ad0b1d5b25182", null ],
     [ "OnPickup", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#ab7f14d879f10c9a84f6a2322ae3a2cfe", null ],
+    [ "OnRemovedFromHands", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a8f88539763fe9d9b5f913dffe727cb29", null ],
     [ "ResolveCoreWeapon", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a20d5be6d04a54ed896cd9374138d3f7e", null ],
     [ "TryEquipToLeft", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a6152df6c477876f92ff4368c7611b0ab", null ],
     [ "TryEquipToRight", "classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a8d9410b8fef19a17bddac447576436a8", null ],

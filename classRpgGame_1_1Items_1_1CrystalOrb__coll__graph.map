@@ -1,11 +1,11 @@
 <map id="RpgGame.Items.CrystalOrb" name="RpgGame.Items.CrystalOrb">
-<area shape="rect" id="Node000001" title="One&#45;handed focus weapon: magical category (damage scales with wisdom in combat)." alt="" coords="35,1196,237,1371"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Items_1_1Weapon.html" title="Represents an abstract base class for all equippable weapons." alt="" coords="5,568,267,1148"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,1162,139,1196,133,1196,133,1162"/>
-<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Items_1_1IWeapon.html" title="An equippable item that contributes a damage value (typically a weapon)." alt="" coords="5,391,267,520"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="139,534,139,568,133,568,133,534"/>
-<area shape="rect" id="Node000004" href="$interfaceRpgGame_1_1Items_1_1IEquippable.html" title="Represents an item that can be equipped by the player." alt="" coords="54,228,218,343"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="139,356,139,390,133,390,133,356"/>
+<area shape="rect" id="Node000001" title="One&#45;handed focus weapon: magical category (damage scales with wisdom in combat)." alt="" coords="35,1393,237,1568"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Items_1_1Weapon.html" title="Represents an abstract base class for all equippable weapons." alt="" coords="5,701,267,1345"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,1359,139,1393,133,1393,133,1359"/>
+<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Items_1_1IWeapon.html" title="An equippable item that contributes a damage value (typically a weapon)." alt="" coords="5,524,267,653"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="139,667,139,701,133,701,133,667"/>
+<area shape="rect" id="Node000004" href="$interfaceRpgGame_1_1Items_1_1IEquippable.html" title="Represents an item that can be equipped by the player." alt="" coords="5,228,267,476"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="139,489,139,523,133,523,133,489"/>
 <area shape="rect" id="Node000005" href="$interfaceRpgGame_1_1Items_1_1IItem.html" title="Defines the contract for all items that can exist within the game world." alt="" coords="29,5,243,180"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="139,194,139,228,133,228,133,194"/>
 </map>

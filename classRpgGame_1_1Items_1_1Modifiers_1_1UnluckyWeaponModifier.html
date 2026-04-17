@@ -92,7 +92,6 @@ $(document).ready(function(){initNavTree('classRpgGame_1_1Items_1_1Modifiers_1_1
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">RpgGame.Items.Modifiers.UnluckyWeaponModifier Class Reference<span class="mlabels"><span class="mlabel">sealed</span></span></div></div>
@@ -117,10 +116,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a85124c7cfe73296753ecb797f54e3084" id="r_a85124c7cfe73296753ecb797f54e3084"><td class="memItemLeft" align="right" valign="top"><a id="a85124c7cfe73296753ecb797f54e3084" name="a85124c7cfe73296753ecb797f54e3084"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>UnluckyWeaponModifier</b> (<a class="el" href="interfaceRpgGame_1_1Items_1_1IEquippable.html">IEquippable</a> inner)</td></tr>
 <tr class="separator:a85124c7cfe73296753ecb797f54e3084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16c6ccb15c40aaecf4e7929961c79d4d" id="r_a16c6ccb15c40aaecf4e7929961c79d4d"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html#a16c6ccb15c40aaecf4e7929961c79d4d">OnEquippedToHands</a> (<a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player)</td></tr>
+<tr class="memdesc:a16c6ccb15c40aaecf4e7929961c79d4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked after this stack has been stored in the player's hands.  <br /></td></tr>
+<tr class="separator:a16c6ccb15c40aaecf4e7929961c79d4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad611c4b1634f4c7df120cdde2836c456" id="r_ad611c4b1634f4c7df120cdde2836c456"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html#ad611c4b1634f4c7df120cdde2836c456">OnRemovedFromHands</a> (<a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player)</td></tr>
+<tr class="memdesc:ad611c4b1634f4c7df120cdde2836c456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked when the item is dropped to the ground; reverses equip-time stat changes.  <br /></td></tr>
+<tr class="separator:ad611c4b1634f4c7df120cdde2836c456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html">RpgGame.Items.Modifiers.WeaponModifierDecorator</a></td></tr>
 <tr class="memitem:a3a3fb03102c8f8cca984ea85f503db91 inherit pub_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator" id="r_a3a3fb03102c8f8cca984ea85f503db91"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a3a3fb03102c8f8cca984ea85f503db91">AcceptCombatStrike</a> (<a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatAttack.html">ICombatAttack</a> attack, <a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player, <a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatContribution.html">ICombatContribution</a> contribution)</td></tr>
 <tr class="memdesc:a3a3fb03102c8f8cca984ea85f503db91 inherit pub_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double dispatch: weapon category forwards to <em>attack</em> .  <br /></td></tr>
 <tr class="separator:a3a3fb03102c8f8cca984ea85f503db91 inherit pub_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f9f69a5e5c451eb5b1f65a64c0c121 inherit pub_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator" id="r_a20f9f69a5e5c451eb5b1f65a64c0c121"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a20f9f69a5e5c451eb5b1f65a64c0c121">ContributeCombat</a> (<a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatAttack.html">ICombatAttack</a> attack, <a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player, <a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatContribution.html">ICombatContribution</a> contribution)</td></tr>
+<tr class="memdesc:a20f9f69a5e5c451eb5b1f65a64c0c121 inherit pub_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contributes this equipped item to one combat exchange. Non-weapon equippables default to non-weapon attack handling.  <br /></td></tr>
+<tr class="separator:a20f9f69a5e5c451eb5b1f65a64c0c121 inherit pub_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2183c31547c9d88a7bf2189c1e82f8ad inherit pub_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator" id="r_a2183c31547c9d88a7bf2189c1e82f8ad"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a2183c31547c9d88a7bf2189c1e82f8ad">GetDescription</a> ()</td></tr>
 <tr class="memdesc:a2183c31547c9d88a7bf2189c1e82f8ad inherit pub_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a short textual description of the item.<dl class="section return"><dt>Returns</dt><dd>A human-readable description of the item.</dd></dl>
   <br /></td></tr>
@@ -167,23 +175,6 @@ Public Member Functions</h2></td></tr>
   <br /></td></tr>
 <tr class="separator:a8d9410b8fef19a17bddac447576436a8 inherit pub_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a357dfc114762bb21172a5de152e068ed" id="r_a357dfc114762bb21172a5de152e068ed"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html#a357dfc114762bb21172a5de152e068ed">OnAfterEquippedToHands</a> (<a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player)</td></tr>
-<tr class="memdesc:a357dfc114762bb21172a5de152e068ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked after this stack has been stored in the player's hands.  <br /></td></tr>
-<tr class="separator:a357dfc114762bb21172a5de152e068ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1dfd0a9df8d25fff8301f4654f3c929" id="r_aa1dfd0a9df8d25fff8301f4654f3c929"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html#aa1dfd0a9df8d25fff8301f4654f3c929">OnBeforeRemovedFromHands</a> (<a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player)</td></tr>
-<tr class="memdesc:aa1dfd0a9df8d25fff8301f4654f3c929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoked when the item is dropped to the ground; reverses equip-time stat changes.  <br /></td></tr>
-<tr class="separator:aa1dfd0a9df8d25fff8301f4654f3c929"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html">RpgGame.Items.Modifiers.WeaponModifierDecorator</a></td></tr>
-<tr class="memitem:af06a21737f38e0fae07b134017954b4f inherit pro_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator" id="r_af06a21737f38e0fae07b134017954b4f"><td class="memItemLeft" align="right" valign="top">
-&#160;</td><td class="memItemRight" valign="bottom"><b>WeaponModifierDecorator</b> (<a class="el" href="interfaceRpgGame_1_1Items_1_1IEquippable.html">IEquippable</a> inner)</td></tr>
-<tr class="separator:af06a21737f38e0fae07b134017954b4f inherit pro_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20d5be6d04a54ed896cd9374138d3f7e inherit pro_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator" id="r_a20d5be6d04a54ed896cd9374138d3f7e"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classRpgGame_1_1Items_1_1Weapon.html">Weapon</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ResolveCoreWeapon</b> ()</td></tr>
-<tr class="memdesc:a20d5be6d04a54ed896cd9374138d3f7e inherit pro_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Walks the decorator chain to the concrete Weapon that owns hand rules. <br /></td></tr>
-<tr class="separator:a20d5be6d04a54ed896cd9374138d3f7e inherit pro_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a9cf88a9a0fba0f7fb94e380342aa54ad" id="r_a9cf88a9a0fba0f7fb94e380342aa54ad"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html#a9cf88a9a0fba0f7fb94e380342aa54ad">Name</a><code> [get]</code></td></tr>
@@ -211,12 +202,23 @@ Properties</h2></td></tr>
 <tr class="separator:a3232a03aeaf9b6a56cb8cb259f2085ab inherit properties_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_interfaceRpgGame_1_1Items_1_1IWeapon"><td colspan="2" onclick="javascript:toggleInherit('properties_interfaceRpgGame_1_1Items_1_1IWeapon')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interfaceRpgGame_1_1Items_1_1IWeapon.html">RpgGame.Items.IWeapon</a></td></tr>
 <tr class="inherit_header properties_interfaceRpgGame_1_1Items_1_1IItem"><td colspan="2" onclick="javascript:toggleInherit('properties_interfaceRpgGame_1_1Items_1_1IItem')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interfaceRpgGame_1_1Items_1_1IItem.html">RpgGame.Items.IItem</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html">RpgGame.Items.Modifiers.WeaponModifierDecorator</a></td></tr>
+<tr class="memitem:af06a21737f38e0fae07b134017954b4f inherit pro_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator" id="r_af06a21737f38e0fae07b134017954b4f"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>WeaponModifierDecorator</b> (<a class="el" href="interfaceRpgGame_1_1Items_1_1IEquippable.html">IEquippable</a> inner)</td></tr>
+<tr class="separator:af06a21737f38e0fae07b134017954b4f inherit pro_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d5be6d04a54ed896cd9374138d3f7e inherit pro_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator" id="r_a20d5be6d04a54ed896cd9374138d3f7e"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classRpgGame_1_1Items_1_1Weapon.html">Weapon</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ResolveCoreWeapon</b> ()</td></tr>
+<tr class="memdesc:a20d5be6d04a54ed896cd9374138d3f7e inherit pro_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Walks the decorator chain to the concrete Weapon that owns hand rules. <br /></td></tr>
+<tr class="separator:a20d5be6d04a54ed896cd9374138d3f7e inherit pro_methods_classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Decorator that reduces the player's luck by 5 while this stack is equipped. Name gains an "(Unlucky)" suffix. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a357dfc114762bb21172a5de152e068ed" name="a357dfc114762bb21172a5de152e068ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a357dfc114762bb21172a5de152e068ed">&#9670;&#160;</a></span>OnAfterEquippedToHands()</h2>
+<a id="a16c6ccb15c40aaecf4e7929961c79d4d" name="a16c6ccb15c40aaecf4e7929961c79d4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16c6ccb15c40aaecf4e7929961c79d4d">&#9670;&#160;</a></span>OnEquippedToHands()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,7 +227,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">override void RpgGame.Items.Modifiers.UnluckyWeaponModifier.OnAfterEquippedToHands </td>
+          <td class="memname">override void RpgGame.Items.Modifiers.UnluckyWeaponModifier.OnEquippedToHands </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a>&#160;</td>
           <td class="paramname"><em>player</em></td><td>)</td>
@@ -234,19 +236,19 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Invoked after this stack has been stored in the player's hands. </p>
 
-<p>Reimplemented from <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a112daa17197d38d6d8f487e0e7ce41f2">RpgGame.Items.Modifiers.WeaponModifierDecorator</a>.</p>
+<p>Reimplemented from <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a14582ad3af1e4ce7fd9ad0b1d5b25182">RpgGame.Items.Modifiers.WeaponModifierDecorator</a>.</p>
 
 </div>
 </div>
-<a id="aa1dfd0a9df8d25fff8301f4654f3c929" name="aa1dfd0a9df8d25fff8301f4654f3c929"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1dfd0a9df8d25fff8301f4654f3c929">&#9670;&#160;</a></span>OnBeforeRemovedFromHands()</h2>
+<a id="ad611c4b1634f4c7df120cdde2836c456" name="ad611c4b1634f4c7df120cdde2836c456"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad611c4b1634f4c7df120cdde2836c456">&#9670;&#160;</a></span>OnRemovedFromHands()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,7 +257,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">override void RpgGame.Items.Modifiers.UnluckyWeaponModifier.OnBeforeRemovedFromHands </td>
+          <td class="memname">override void RpgGame.Items.Modifiers.UnluckyWeaponModifier.OnRemovedFromHands </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a>&#160;</td>
           <td class="paramname"><em>player</em></td><td>)</td>
@@ -264,14 +266,14 @@ Properties</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Invoked when the item is dropped to the ground; reverses equip-time stat changes. </p>
 
-<p>Reimplemented from <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a4a12965cad51123b0f1251333ff91763">RpgGame.Items.Modifiers.WeaponModifierDecorator</a>.</p>
+<p>Reimplemented from <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a8f88539763fe9d9b5f913dffe727cb29">RpgGame.Items.Modifiers.WeaponModifierDecorator</a>.</p>
 
 </div>
 </div>

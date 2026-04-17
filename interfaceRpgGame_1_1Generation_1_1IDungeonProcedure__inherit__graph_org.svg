@@ -92,21 +92,22 @@
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="classRpgGame_1_1Generation_1_1Procedures_1_1AddWeaponsProcedure.html" target="_top" xlink:title="Spawns weapons (swords and double swords) at random locations in the dungeon.">
-<polygon fill="white" stroke="transparent" points="564,-124.5 388,-124.5 388,-5.5 564,-5.5 564,-124.5"/>
-<text text-anchor="start" x="393" y="-112" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Generation.Procedures.</text>
-<text text-anchor="start" x="420" y="-101" font-family="Helvetica,sans-Serif" font-size="10.00">AddWeaponsProcedure</text>
-<text text-anchor="start" x="474" y="-86" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="394.5" y="-71" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="410" y="-71" font-family="Helvetica,sans-Serif" font-size="10.00">AddWeaponsProcedure</text>
-<text text-anchor="start" x="410" y="-60" font-family="Helvetica,sans-Serif" font-size="10.00">(int SwordCount=2, int</text>
-<text text-anchor="start" x="410" y="-49" font-family="Helvetica,sans-Serif" font-size="10.00"> DoubleSwordCount=1)</text>
-<text text-anchor="start" x="394.5" y="-34" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="410" y="-34" font-family="Helvetica,sans-Serif" font-size="10.00">async Task ApplyAsync</text>
-<text text-anchor="start" x="410" y="-23" font-family="Helvetica,sans-Serif" font-size="10.00">(Level level, DungeonContext</text>
-<text text-anchor="start" x="410" y="-12" font-family="Helvetica,sans-Serif" font-size="10.00"> context)</text>
-<polygon fill="#666666" stroke="#666666" points="388,-96 388,-96 564,-96 564,-96 388,-96"/>
-<polygon fill="#666666" stroke="#666666" points="388,-81 388,-81 564,-81 564,-81 388,-81"/>
-<polygon fill="none" stroke="#666666" points="388,-5.5 388,-124.5 564,-124.5 564,-5.5 388,-5.5"/>
+<polygon fill="white" stroke="transparent" points="564,-130 388,-130 388,0 564,0 564,-130"/>
+<text text-anchor="start" x="393" y="-118" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Generation.Procedures.</text>
+<text text-anchor="start" x="420" y="-107" font-family="Helvetica,sans-Serif" font-size="10.00">AddWeaponsProcedure</text>
+<text text-anchor="start" x="474" y="-92" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="394.5" y="-77" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="410" y="-77" font-family="Helvetica,sans-Serif" font-size="10.00">AddWeaponsProcedure</text>
+<text text-anchor="start" x="410" y="-66" font-family="Helvetica,sans-Serif" font-size="10.00">(int SwordCount=2, int</text>
+<text text-anchor="start" x="410" y="-55" font-family="Helvetica,sans-Serif" font-size="10.00"> DoubleSwordCount=1, int</text>
+<text text-anchor="start" x="410" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00"> CrystalOrbCount=1)</text>
+<text text-anchor="start" x="394.5" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="410" y="-29" font-family="Helvetica,sans-Serif" font-size="10.00">async Task ApplyAsync</text>
+<text text-anchor="start" x="410" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">(Level level, DungeonContext</text>
+<text text-anchor="start" x="410" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00"> context)</text>
+<polygon fill="#666666" stroke="#666666" points="388,-102 388,-102 564,-102 564,-102 388,-102"/>
+<polygon fill="#666666" stroke="#666666" points="388,-87 388,-87 564,-87 564,-87 388,-87"/>
+<polygon fill="none" stroke="#666666" points="388,0 388,-130 564,-130 564,0 388,0"/>
 </a>
 </g>
 </g>
@@ -114,7 +115,7 @@
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M674.57,-174.32C641.83,-161.92 605.15,-146.67 573,-130 569.69,-128.28 566.35,-126.48 563,-124.61"/>
+<path fill="none" stroke="#63b8ff" d="M674.57,-174.32C641.83,-161.92 605.15,-146.67 573,-130 570.04,-128.47 567.07,-126.87 564.08,-125.21"/>
 <polygon fill="none" stroke="#63b8ff" points="673.55,-177.68 684.14,-177.91 676.01,-171.12 673.55,-177.68"/>
 </a>
 </g>

@@ -107,7 +107,7 @@ Inheritance diagram for RpgGame.Items.IEquippable:</div>
 <div class="dynheader">
 Collaboration diagram for RpgGame.Items.IEquippable:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="interfaceRpgGame_1_1Items_1_1IEquippable__coll__graph.svg" width="226" height="348"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="interfaceRpgGame_1_1Items_1_1IEquippable__coll__graph.svg" width="272" height="482"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -118,6 +118,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af848669fb642e88ff29ad90b4fda0892" id="r_af848669fb642e88ff29ad90b4fda0892"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Items_1_1IEquippable.html#af848669fb642e88ff29ad90b4fda0892">TryEquipToRight</a> (<a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player)</td></tr>
 <tr class="memdesc:af848669fb642e88ff29ad90b4fda0892"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to equip the item in the player's right hand.  <br /></td></tr>
 <tr class="separator:af848669fb642e88ff29ad90b4fda0892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40a1a467a003c573e82f03a5603aa51d" id="r_a40a1a467a003c573e82f03a5603aa51d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Items_1_1IEquippable.html#a40a1a467a003c573e82f03a5603aa51d">ContributeCombat</a> (<a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatAttack.html">ICombatAttack</a> attack, <a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player, <a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatContribution.html">ICombatContribution</a> contribution)</td></tr>
+<tr class="memdesc:a40a1a467a003c573e82f03a5603aa51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contributes this equipped item to one combat exchange. Non-weapon equippables default to non-weapon attack handling.  <br /></td></tr>
+<tr class="separator:a40a1a467a003c573e82f03a5603aa51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa5f6384e6eb199b900b47946ca0bf83" id="r_afa5f6384e6eb199b900b47946ca0bf83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Items_1_1IEquippable.html#afa5f6384e6eb199b900b47946ca0bf83">OnEquippedToHands</a> (<a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player)</td></tr>
+<tr class="memdesc:afa5f6384e6eb199b900b47946ca0bf83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called after this item has been equipped into the player's hands.  <br /></td></tr>
+<tr class="separator:afa5f6384e6eb199b900b47946ca0bf83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ec0913e62dc29b44c8b597c2bb6991" id="r_a84ec0913e62dc29b44c8b597c2bb6991"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Items_1_1IEquippable.html#a84ec0913e62dc29b44c8b597c2bb6991">OnRemovedFromHands</a> (<a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player)</td></tr>
+<tr class="memdesc:a84ec0913e62dc29b44c8b597c2bb6991"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called right before this item is removed from the player's hands.  <br /></td></tr>
+<tr class="separator:a84ec0913e62dc29b44c8b597c2bb6991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interfaceRpgGame_1_1Items_1_1IItem"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interfaceRpgGame_1_1Items_1_1IItem')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="interfaceRpgGame_1_1Items_1_1IItem.html">RpgGame.Items.IItem</a></td></tr>
 <tr class="memitem:a3b24877987d7b60925468d57640a0b82 inherit pub_methods_interfaceRpgGame_1_1Items_1_1IItem" id="r_a3b24877987d7b60925468d57640a0b82"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Items_1_1IItem.html#a3b24877987d7b60925468d57640a0b82">GetDescription</a> ()</td></tr>
 <tr class="memdesc:a3b24877987d7b60925468d57640a0b82 inherit pub_methods_interfaceRpgGame_1_1Items_1_1IItem"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a short textual description of the item.  <br /></td></tr>
@@ -147,6 +156,104 @@ Additional Inherited Members</h2></td></tr>
 <p>The IEquippable interface extends IItem and defines behavior specific to items that can occupy the player's hands. </p>
 <p>Implementations determine whether equipping succeeds based on current equipment state and occupation rules. This abstraction enables polymorphic equipment handling without relying on type checks or enumerations. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a40a1a467a003c573e82f03a5603aa51d" name="a40a1a467a003c573e82f03a5603aa51d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40a1a467a003c573e82f03a5603aa51d">&#9670;&#160;</a></span>ContributeCombat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RpgGame.Items.IEquippable.ContributeCombat </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatAttack.html">ICombatAttack</a>&#160;</td>
+          <td class="paramname"><em>attack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a>&#160;</td>
+          <td class="paramname"><em>player</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatContribution.html">ICombatContribution</a>&#160;</td>
+          <td class="paramname"><em>contribution</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Contributes this equipped item to one combat exchange. Non-weapon equippables default to non-weapon attack handling. </p>
+
+<p>Implemented in <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a20f9f69a5e5c451eb5b1f65a64c0c121">RpgGame.Items.Modifiers.WeaponModifierDecorator</a>, and <a class="el" href="classRpgGame_1_1Items_1_1Weapon.html#aaeacf9a64f13674c37f334cdbd66979e">RpgGame.Items.Weapon</a>.</p>
+
+</div>
+</div>
+<a id="afa5f6384e6eb199b900b47946ca0bf83" name="afa5f6384e6eb199b900b47946ca0bf83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa5f6384e6eb199b900b47946ca0bf83">&#9670;&#160;</a></span>OnEquippedToHands()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RpgGame.Items.IEquippable.OnEquippedToHands </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a>&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called after this item has been equipped into the player's hands. </p>
+
+<p>Implemented in <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1ProtectiveWeaponModifier.html#a1a9b33b0de5cf072d89e50936e492b56">RpgGame.Items.Modifiers.ProtectiveWeaponModifier</a>, <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html#a16c6ccb15c40aaecf4e7929961c79d4d">RpgGame.Items.Modifiers.UnluckyWeaponModifier</a>, and <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a14582ad3af1e4ce7fd9ad0b1d5b25182">RpgGame.Items.Modifiers.WeaponModifierDecorator</a>.</p>
+
+</div>
+</div>
+<a id="a84ec0913e62dc29b44c8b597c2bb6991" name="a84ec0913e62dc29b44c8b597c2bb6991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84ec0913e62dc29b44c8b597c2bb6991">&#9670;&#160;</a></span>OnRemovedFromHands()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RpgGame.Items.IEquippable.OnRemovedFromHands </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a>&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called right before this item is removed from the player's hands. </p>
+
+<p>Implemented in <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1ProtectiveWeaponModifier.html#a176e656cb1cd40809b7bd6106a5fef88">RpgGame.Items.Modifiers.ProtectiveWeaponModifier</a>, <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html#ad611c4b1634f4c7df120cdde2836c456">RpgGame.Items.Modifiers.UnluckyWeaponModifier</a>, and <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a8f88539763fe9d9b5f913dffe727cb29">RpgGame.Items.Modifiers.WeaponModifierDecorator</a>.</p>
+
+</div>
+</div>
 <a id="ac70b51f3d7a159e61dacd524f1dc9dbf" name="ac70b51f3d7a159e61dacd524f1dc9dbf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac70b51f3d7a159e61dacd524f1dc9dbf">&#9670;&#160;</a></span>TryEquipToLeft()</h2>
 

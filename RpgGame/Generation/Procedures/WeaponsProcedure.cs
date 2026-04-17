@@ -19,11 +19,11 @@ public class AddWeaponsProcedure : IDungeonProcedure
     /// </summary>
     /// <param name="SwordCount">The number of one-handed swords to spawn. Defaults to 2.</param>
     /// <param name="DoubleSwordCount">The number of two-handed swords to spawn. Defaults to 1.</param>
-    public AddWeaponsProcedure(int SwordCount = 2, int DoubleSwordCount = 1, int CrystalOrbCount=1)
+    public AddWeaponsProcedure(int SwordCount = 2, int DoubleSwordCount = 1, int CrystalOrbCount = 1)
     {
         this.SwordCount = SwordCount;
         this.DoubleSwordCount = DoubleSwordCount;
-        this.CrystalOrbCount =CrystalOrbCount;
+        this.CrystalOrbCount = CrystalOrbCount;
     }
 
     /// <summary>

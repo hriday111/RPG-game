@@ -5,7 +5,7 @@ var searchData=
   ['taketoleft_2',['TakeToLeft',['../classRpgGame_1_1Core_1_1Inventory.html#a948c021afddac012e053aabbaaa1045d',1,'RpgGame::Core::Inventory']]],
   ['taketopitem_3',['TakeTopItem',['../classRpgGame_1_1Core_1_1Level.html#a0755988cf7c365fe2e38416a4f62272f',1,'RpgGame::Core::Level']]],
   ['taketoright_4',['TakeToRight',['../classRpgGame_1_1Core_1_1Inventory.html#ac6f47b993f9088ebe1c950f9d26cbe1d',1,'RpgGame::Core::Inventory']]],
-  ['targetfps_5',['TargetFPS',['../classRpgGame_1_1Core_1_1Config.html#aeb6e560379965a92fd2b67927867f1cc',1,'RpgGame::Core::Config']]],
+  ['targetfps_5',['TargetFPS',['../classRpgGame_1_1Core_1_1GameConfig.html#ad92dc4645405628f141686e74a2179ca',1,'RpgGame::Core::GameConfig']]],
   ['thorn_6',['Thorn',['../classRpgGame_1_1Items_1_1Thorn.html',1,'RpgGame::Items']]],
   ['tile_7',['Tile',['../classRpgGame_1_1Tiles_1_1Tile.html',1,'RpgGame::Tiles']]],
   ['togglehelpdisplay_8',['ToggleHelpDisplay',['../classRpgGame_1_1Renderer_1_1ConsoleRenderer.html#ae6d75b511d56c4635a14fe6b1fa8f6aa',1,'RpgGame::Renderer::ConsoleRenderer']]],

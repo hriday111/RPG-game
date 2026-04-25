@@ -10,6 +10,7 @@ var hierarchy =
     [ "RpgGame.Input.ControlDescriptor", "classRpgGame_1_1Input_1_1ControlDescriptor.html", null ],
     [ "RpgGame.Core.Directions", "classRpgGame_1_1Core_1_1Directions.html", null ],
     [ "RpgGame.Generation.DungeonContext", "classRpgGame_1_1Generation_1_1DungeonContext.html", null ],
+    [ "RpgGame.Core.GameConfig", "classRpgGame_1_1Core_1_1GameConfig.html", null ],
     [ "RpgGame.Items.HandOccupation", "classRpgGame_1_1Items_1_1HandOccupation.html", [
       [ "RpgGame.Items.OneHandOccupation", "classRpgGame_1_1Items_1_1OneHandOccupation.html", null ],
       [ "RpgGame.Items.TwoHandOccupation", "classRpgGame_1_1Items_1_1TwoHandOccupation.html", null ]
@@ -77,6 +78,7 @@ var hierarchy =
       [ "RpgGame.Generation.DungeonBuilder", "classRpgGame_1_1Generation_1_1DungeonBuilder.html", null ],
       [ "RpgGame.Generation.SimpleRoomGenerator", "classRpgGame_1_1Generation_1_1SimpleRoomGenerator.html", null ]
     ] ],
+    [ "RpgGame.Core.IniConfigLoader", "classRpgGame_1_1Core_1_1IniConfigLoader.html", null ],
     [ "RpgGame.Input.InputHandler", "classRpgGame_1_1Input_1_1InputHandler.html", null ],
     [ "RpgGame.Core.Inventory", "classRpgGame_1_1Core_1_1Inventory.html", null ],
     [ "RpgGame.Combat.IWeaponCategory", "interfaceRpgGame_1_1Combat_1_1IWeaponCategory.html", [

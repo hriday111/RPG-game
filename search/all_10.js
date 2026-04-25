@@ -7,7 +7,7 @@ var searchData=
   ['setselectedcombatattack_4',['SetSelectedCombatAttack',['../classRpgGame_1_1Character_1_1Player.html#ab2eee2fc87e408446d9d305ccb291064',1,'RpgGame::Character::Player']]],
   ['settile_5',['SetTile',['../classRpgGame_1_1Core_1_1Level.html#a15d9a500574d9e3fe241911cd88d93bb',1,'RpgGame::Core::Level']]],
   ['show_6',['Show',['../classRpgGame_1_1Renderer_1_1HelpOverlay.html#a781d124ad18f0a7734edc416e7725af8',1,'RpgGame::Renderer::HelpOverlay']]],
-  ['sidebarwidth_7',['SidebarWidth',['../classRpgGame_1_1Core_1_1Config.html#a7652695b7535c923d1fb41a96bfb6bc4',1,'RpgGame::Core::Config']]],
+  ['sidebarwidth_7',['SidebarWidth',['../classRpgGame_1_1Core_1_1GameConfig.html#a9e54af6efc28d47693bd5024c7be6ace',1,'RpgGame::Core::GameConfig']]],
   ['simpleroomgenerator_8',['SimpleRoomGenerator',['../classRpgGame_1_1Generation_1_1SimpleRoomGenerator.html',1,'RpgGame::Generation']]],
   ['size_9',['Size',['../classRpgGame_1_1Core_1_1Inventory.html#ae9585f0eb45a0dcb2cda63251150aa71',1,'RpgGame::Core::Inventory']]],
   ['spawncoinsasync_10',['SpawnCoinsAsync',['../classRpgGame_1_1Generation_1_1MapSpawnHelper.html#aef5f182d21ac6ed160d15450118a6032',1,'RpgGame::Generation::MapSpawnHelper']]],

@@ -7,6 +7,7 @@ using RpgGame.Generation.Strategies;
 using RpgGame.Input;
 using RpgGame.Renderer;
 namespace RpgGame;
+
 /// <summary>
 /// Entry point of the RPG game application.
 /// </summary>
@@ -27,6 +28,12 @@ class Program
     static async Task Main()
     {
         Console.CursorVisible = false;
+
+
+        string configPath = Path.Combine(AppContext.BaseDirectory, "config.ini");
+        GameConfig loadedConfig = IniConfigLoader.Load(configPath);
+        Config.Initialize(loadedConfig);
+
 
         var level = new Level(Config.WindowWidth, Config.WindowHeight);
         var player = new Character.Player(
@@ -63,7 +70,7 @@ class Program
     /// <param name="inventory">The player's inventory.</param>
     /// <param name="inputHandler">Handler responsible for converting console
     /// keystrokes into game commands.</param>
-    /// <param name="TargetFPS">Target frames per second.</param>
+    /// <param name="targetFPS">Target frames per second.</param>
     /// <remarks>
     /// The loop repeatedly:
     /// <list type="number">
@@ -79,7 +86,7 @@ class Program
         ConsoleRenderer renderer,
         Inventory inventory,
         InputHandler inputHandler,
-        int TargetFPS)
+        int targetFPS)
     {
         var isRunning = true;
 
@@ -105,7 +112,7 @@ class Program
             }
 
             renderer.Render(level, player, inventory);
-            Thread.Sleep(Decimal.ToInt32(1000 / TargetFPS));
+            Thread.Sleep(Decimal.ToInt32(1000 / targetFPS));
         }
     }
 

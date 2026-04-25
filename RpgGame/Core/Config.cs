@@ -12,48 +12,27 @@ namespace RpgGame.Core;
 /// </remarks>
 public static class Config
 {
-    #region Game Window Settings
-
-    /// <summary>
-    /// Width of the main game map in characters.
-    /// </summary>
-    public const int WindowWidth = 40;
-
-    /// <summary>
-    /// Height of the main game map in characters.
-    /// </summary>
-    public const int WindowHeight = 20;
-
-    /// <summary>
-    /// Target frames per second for the game loop.
-    /// </summary>
-    /// <remarks>
-    /// Used to approximate frame timing in the console loop.
-    /// </remarks>
-    public const int TargetFPS = 60;
-
-    #endregion
-
-    #region Player Settings
-
-    /// <summary>
-    /// Default horizontal spawn position for the player.
-    /// </summary>
-    public const int DefaultSpawnX = WindowWidth / 2;
-
-    /// <summary>
-    /// Default vertical spawn position for the player.
-    /// </summary>
-    public const int DefaultSpawnY = WindowHeight / 2;
-
-    #endregion
-
-    #region Sidebar Settings
-
-    /// <summary>
-    /// Width of the sidebar displaying player information and inventory.
-    /// </summary>
-    public const int SidebarWidth = 60;
-
-    #endregion
+    public static GameConfig Current { get; private set; } = new GameConfig
+    {
+        WindowWidth = 40,
+        WindowHeight = 20,
+        TargetFPS = 60,
+        DefaultSpawnX = 20,
+        DefaultSpawnY = 10,
+        SidebarWidth = 60,
+        PlayerName = "Hero",
+        LogDirectory = "./logs"
+    };
+    public static int WindowWidth => Current.WindowWidth;
+    public static int WindowHeight => Current.WindowHeight;
+    public static int TargetFPS => Current.TargetFPS;
+    public static int DefaultSpawnX => Current.DefaultSpawnX;
+    public static int DefaultSpawnY => Current.DefaultSpawnY;
+    public static int SidebarWidth => Current.SidebarWidth;
+    public static string PlayerName => Current.PlayerName;
+    public static string LogDirectory => Current.LogDirectory;
+    public static void Initialize(GameConfig config)
+    {
+        Current = config ?? throw new ArgumentNullException(nameof(config));
+    }
 }

@@ -1,0 +1,5 @@
+<map id="RpgGame.Logger.InMemoryLogSink" name="RpgGame.Logger.InMemoryLogSink">
+<area shape="rect" id="Node000001" title="Stores all log entries in memory for UI views (recent and full journal)." alt="" coords="5,228,252,403"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Logger_1_1ILogSink.html" title="Contract for log storage backends used by the game." alt="" coords="32,5,225,180"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,194,131,228,126,228,126,194"/>
+</map>

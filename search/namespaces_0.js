@@ -10,6 +10,7 @@ var searchData=
   ['rpggame_3a_3ainput_7',['Input',['../namespaceRpgGame_1_1Input.html',1,'RpgGame']]],
   ['rpggame_3a_3aitems_8',['Items',['../namespaceRpgGame_1_1Items.html',1,'RpgGame']]],
   ['rpggame_3a_3aitems_3a_3amodifiers_9',['Modifiers',['../namespaceRpgGame_1_1Items_1_1Modifiers.html',1,'RpgGame::Items']]],
-  ['rpggame_3a_3arenderer_10',['Renderer',['../namespaceRpgGame_1_1Renderer.html',1,'RpgGame']]],
-  ['rpggame_3a_3atiles_11',['Tiles',['../namespaceRpgGame_1_1Tiles.html',1,'RpgGame']]]
+  ['rpggame_3a_3alogger_10',['Logger',['../namespaceRpgGame_1_1Logger.html',1,'RpgGame']]],
+  ['rpggame_3a_3arenderer_11',['Renderer',['../namespaceRpgGame_1_1Renderer.html',1,'RpgGame']]],
+  ['rpggame_3a_3atiles_12',['Tiles',['../namespaceRpgGame_1_1Tiles.html',1,'RpgGame']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['golems_0',['Golems',['../classRpgGame_1_1Core_1_1Level.html#acb08cce1ea4d39ce5c4e30d16256dadf',1,'RpgGame::Core::Level']]]
+  ['filepath_0',['filepath',['../classRpgGame_1_1Logger_1_1BufferedJournalLogSink.html#a55ef546a571fe0f24a379ba3b8c5c5a1',1,'RpgGame.Logger.BufferedJournalLogSink.FilePath'],['../classRpgGame_1_1Logger_1_1FileLogSink.html#aab8d5761ac209ab254bddfacada27191',1,'RpgGame.Logger.FileLogSink.FilePath']]]
 ];

@@ -1,0 +1,9 @@
+<map id="RpgGame.Logger.ILogSink" name="RpgGame.Logger.ILogSink">
+<area shape="rect" id="Node000001" title="Contract for log storage backends used by the game." alt="" coords="293,5,487,180"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Logger_1_1BufferedJournalLogSink.html" title="Keeps all entries in memory and periodically flushes pending items to file." alt="" coords="5,228,247,501"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="298,192,249,242,245,238,294,188"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Logger_1_1FileLogSink.html" title="Persists log entries to a dedicated text file for the current game session." alt="" coords="271,235,509,494"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="393,194,393,235,387,235,387,194"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Logger_1_1InMemoryLogSink.html" title="Stores all log entries in memory for UI views (recent and full journal)." alt="" coords="532,277,779,452"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="486,188,572,275,568,279,483,192"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="RpgGame.Logger.BufferedJournalLogSink.Flush" name="RpgGame.Logger.BufferedJournalLogSink.Flush">
+<area shape="rect" id="Node000001" title="Persists any buffered data." alt="" coords="291,5,528,45"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Logger_1_1BufferedJournalLogSink.html#a8a1e24cc04bdea12e761b03c52c1d25d" title="Call once per rendered frame. Flushes to file every configured interval." alt="" coords="5,5,243,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="277,28,243,28,243,23,277,23"/>
+</map>

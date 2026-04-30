@@ -8,12 +8,15 @@ var searchData=
   ['targetfps_5',['TargetFPS',['../classRpgGame_1_1Core_1_1GameConfig.html#ad92dc4645405628f141686e74a2179ca',1,'RpgGame::Core::GameConfig']]],
   ['thorn_6',['Thorn',['../classRpgGame_1_1Items_1_1Thorn.html',1,'RpgGame::Items']]],
   ['tile_7',['Tile',['../classRpgGame_1_1Tiles_1_1Tile.html',1,'RpgGame::Tiles']]],
-  ['togglehelpdisplay_8',['ToggleHelpDisplay',['../classRpgGame_1_1Renderer_1_1ConsoleRenderer.html#ae6d75b511d56c4635a14fe6b1fa8f6aa',1,'RpgGame::Renderer::ConsoleRenderer']]],
-  ['totalitemsat_9',['TotalItemsAt',['../classRpgGame_1_1Core_1_1Level.html#a3f7bc3368d44ad1e29bbe628c0f93750',1,'RpgGame::Core::Level']]],
-  ['tryequiptoleft_10',['tryequiptoleft',['../interfaceRpgGame_1_1Items_1_1IEquippable.html#ac70b51f3d7a159e61dacd524f1dc9dbf',1,'RpgGame.Items.IEquippable.TryEquipToLeft()'],['../classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a6152df6c477876f92ff4368c7611b0ab',1,'RpgGame.Items.Modifiers.WeaponModifierDecorator.TryEquipToLeft()'],['../classRpgGame_1_1Items_1_1Weapon.html#a558ddd2b965991e682b34dd532729a17',1,'RpgGame.Items.Weapon.TryEquipToLeft()']]],
-  ['tryequiptoright_11',['tryequiptoright',['../interfaceRpgGame_1_1Items_1_1IEquippable.html#af848669fb642e88ff29ad90b4fda0892',1,'RpgGame.Items.IEquippable.TryEquipToRight()'],['../classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a8d9410b8fef19a17bddac447576436a8',1,'RpgGame.Items.Modifiers.WeaponModifierDecorator.TryEquipToRight()'],['../classRpgGame_1_1Items_1_1Weapon.html#a43cade26eb8c185300e3bfe1d06589a0',1,'RpgGame.Items.Weapon.TryEquipToRight()']]],
-  ['trygetgolemat_12',['TryGetGolemAt',['../classRpgGame_1_1Core_1_1Level.html#a81b95d5c2aa808c7e214c7b0ba037ef4',1,'RpgGame::Core::Level']]],
-  ['trymovecharacter_13',['TryMoveCharacter',['../classRpgGame_1_1Core_1_1Level.html#a069520f8d4f28477ce45023ad97fbd95',1,'RpgGame::Core::Level']]],
-  ['tryorthogonalstepormeleecombat_14',['TryOrthogonalStepOrMeleeCombat',['../classRpgGame_1_1Core_1_1Level.html#af523ef2f3444b888867305d0a2e6a512',1,'RpgGame::Core::Level']]],
-  ['twohandoccupation_15',['TwoHandOccupation',['../classRpgGame_1_1Items_1_1TwoHandOccupation.html',1,'RpgGame::Items']]]
+  ['timestamp_8',['timestamp',['../classRpgGame_1_1Logger_1_1GameLogEvent.html#afde6a3435b2eb555ac24d34d36bfd9b6',1,'RpgGame.Logger.GameLogEvent.Timestamp'],['../classRpgGame_1_1Logger_1_1LogEntry.html#ae7be81096fd95e630e9d67800be6c351',1,'RpgGame.Logger.LogEntry.Timestamp']]],
+  ['togglehelpdisplay_9',['ToggleHelpDisplay',['../classRpgGame_1_1Renderer_1_1ConsoleRenderer.html#ae6d75b511d56c4635a14fe6b1fa8f6aa',1,'RpgGame::Renderer::ConsoleRenderer']]],
+  ['tostring_10',['ToString',['../classRpgGame_1_1Logger_1_1LogEntry.html#af80cbf030301a880858fcb4f9ad3318f',1,'RpgGame::Logger::LogEntry']]],
+  ['totalitemsat_11',['TotalItemsAt',['../classRpgGame_1_1Core_1_1Level.html#a3f7bc3368d44ad1e29bbe628c0f93750',1,'RpgGame::Core::Level']]],
+  ['tryequiptoleft_12',['tryequiptoleft',['../interfaceRpgGame_1_1Items_1_1IEquippable.html#ac70b51f3d7a159e61dacd524f1dc9dbf',1,'RpgGame.Items.IEquippable.TryEquipToLeft()'],['../classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a6152df6c477876f92ff4368c7611b0ab',1,'RpgGame.Items.Modifiers.WeaponModifierDecorator.TryEquipToLeft()'],['../classRpgGame_1_1Items_1_1Weapon.html#a558ddd2b965991e682b34dd532729a17',1,'RpgGame.Items.Weapon.TryEquipToLeft()']]],
+  ['tryequiptoright_13',['tryequiptoright',['../interfaceRpgGame_1_1Items_1_1IEquippable.html#af848669fb642e88ff29ad90b4fda0892',1,'RpgGame.Items.IEquippable.TryEquipToRight()'],['../classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a8d9410b8fef19a17bddac447576436a8',1,'RpgGame.Items.Modifiers.WeaponModifierDecorator.TryEquipToRight()'],['../classRpgGame_1_1Items_1_1Weapon.html#a43cade26eb8c185300e3bfe1d06589a0',1,'RpgGame.Items.Weapon.TryEquipToRight()']]],
+  ['trygetgolemat_14',['TryGetGolemAt',['../classRpgGame_1_1Core_1_1Level.html#a81b95d5c2aa808c7e214c7b0ba037ef4',1,'RpgGame::Core::Level']]],
+  ['trymovecharacter_15',['TryMoveCharacter',['../classRpgGame_1_1Core_1_1Level.html#a069520f8d4f28477ce45023ad97fbd95',1,'RpgGame::Core::Level']]],
+  ['tryorthogonalstepormeleecombat_16',['TryOrthogonalStepOrMeleeCombat',['../classRpgGame_1_1Core_1_1Level.html#af523ef2f3444b888867305d0a2e6a512',1,'RpgGame::Core::Level']]],
+  ['twohandoccupation_17',['TwoHandOccupation',['../classRpgGame_1_1Items_1_1TwoHandOccupation.html',1,'RpgGame::Items']]],
+  ['type_18',['Type',['../classRpgGame_1_1Logger_1_1GameLogEvent.html#add139077b33feac2bd10fc8e1312819f',1,'RpgGame::Logger::GameLogEvent']]]
 ];

@@ -6,6 +6,7 @@ var namespaceRpgGame =
     [ "Generation", "namespaceRpgGame_1_1Generation.html", "namespaceRpgGame_1_1Generation" ],
     [ "Input", "namespaceRpgGame_1_1Input.html", "namespaceRpgGame_1_1Input" ],
     [ "Items", "namespaceRpgGame_1_1Items.html", "namespaceRpgGame_1_1Items" ],
+    [ "Logger", "namespaceRpgGame_1_1Logger.html", "namespaceRpgGame_1_1Logger" ],
     [ "Renderer", "namespaceRpgGame_1_1Renderer.html", "namespaceRpgGame_1_1Renderer" ],
     [ "Tiles", "namespaceRpgGame_1_1Tiles.html", "namespaceRpgGame_1_1Tiles" ],
     [ "Program", "classRpgGame_1_1Program.html", null ]

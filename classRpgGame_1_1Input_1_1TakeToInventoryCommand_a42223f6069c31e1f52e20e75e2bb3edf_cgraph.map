@@ -1,7 +1,9 @@
 <map id="RpgGame.Input.TakeToInventoryCommand.Execute" name="RpgGame.Input.TakeToInventoryCommand.Execute">
-<area shape="rect" id="Node000001" title="Executes the command using provided game objects.Usually InputResult.Ok to continue,..." alt="" coords="5,23,237,63"/>
+<area shape="rect" id="Node000001" title="Executes the command using provided game objects.Usually InputResult.Ok to continue,..." alt="" coords="5,47,237,87"/>
 <area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Level.html#a50c45cab6083fa428e8534c83d841f57" title="Retrieves the top item at a position without removing it." alt="" coords="288,5,527,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,30,274,27,275,32,238,36"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,45,319,30,320,36,238,50"/>
 <area shape="rect" id="Node000003" href="$classRpgGame_1_1Core_1_1Level.html#a0755988cf7c365fe2e38416a4f62272f" title="Removes and returns the top item at a given position." alt="" coords="285,55,529,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,50,272,53,271,59,237,56"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,65,272,65,272,70,238,70"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Logger_1_1GameLog.html#a263d0c775b47c91d01af93dc9c8641ef" title="Writes a message to the active sink." alt="" coords="288,104,527,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="238,85,320,99,319,104,237,90"/>
 </map>

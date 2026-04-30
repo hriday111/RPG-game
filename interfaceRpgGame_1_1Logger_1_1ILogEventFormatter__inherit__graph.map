@@ -1,0 +1,5 @@
+<map id="RpgGame.Logger.ILogEventFormatter" name="RpgGame.Logger.ILogEventFormatter">
+<area shape="rect" id="Node000001" title="Strategy contract for converting structured events into displayable messages." alt="" coords="5,5,255,85"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Logger_1_1DefaultLogEventFormatter.html" title="Default event&#45;to&#45;text formatter for the in&#45;game log." alt="" coords="5,133,255,213"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,99,133,133,127,133,127,99"/>
+</map>

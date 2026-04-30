@@ -1,0 +1,5 @@
+<map id="RpgGame.Logger.ILogSink.Log" name="RpgGame.Logger.ILogSink.Log">
+<area shape="rect" id="Node000001" title="Adds a new log entry." alt="" coords="292,5,511,31"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Logger_1_1GameLog.html#aa325a41dc7452bd9cc1e49b04119e9d2" title="Writes a structured event using the active formatter strategy." alt="" coords="5,5,244,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="278,21,244,21,244,15,278,15"/>
+</map>

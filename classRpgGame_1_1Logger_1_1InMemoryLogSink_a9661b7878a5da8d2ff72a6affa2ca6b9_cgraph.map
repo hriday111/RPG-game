@@ -1,0 +1,5 @@
+<map id="RpgGame.Logger.InMemoryLogSink.Log" name="RpgGame.Logger.InMemoryLogSink.Log">
+<area shape="rect" id="Node000001" title="Adds a message as a new log entry with current timestamp." alt="" coords="5,5,232,45"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Logger_1_1InMemoryLogSink.html#a4645712cad8c544d2232a1bafe34fb79" title="Adds a new log entry." alt="" coords="280,5,507,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,23,266,23,266,28,232,28"/>
+</map>

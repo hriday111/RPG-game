@@ -1,0 +1,5 @@
+<map id="RpgGame.Logger.FileLogSink.Log" name="RpgGame.Logger.FileLogSink.Log">
+<area shape="rect" id="Node000001" title="Adds a new log entry." alt="" coords="5,13,244,38"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Logger_1_1LogEntry.html#af80cbf030301a880858fcb4f9ad3318f" title="Returns the display form used in journal and file logs." alt="" coords="292,5,488,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,23,278,23,278,28,244,28"/>
+</map>

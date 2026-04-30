@@ -91,6 +91,17 @@ var annotated_dup =
         [ "TwoHandOccupation", "classRpgGame_1_1Items_1_1TwoHandOccupation.html", "classRpgGame_1_1Items_1_1TwoHandOccupation" ],
         [ "Weapon", "classRpgGame_1_1Items_1_1Weapon.html", "classRpgGame_1_1Items_1_1Weapon" ]
       ] ],
+      [ "Logger", "namespaceRpgGame_1_1Logger.html", [
+        [ "BufferedJournalLogSink", "classRpgGame_1_1Logger_1_1BufferedJournalLogSink.html", "classRpgGame_1_1Logger_1_1BufferedJournalLogSink" ],
+        [ "DefaultLogEventFormatter", "classRpgGame_1_1Logger_1_1DefaultLogEventFormatter.html", "classRpgGame_1_1Logger_1_1DefaultLogEventFormatter" ],
+        [ "FileLogSink", "classRpgGame_1_1Logger_1_1FileLogSink.html", "classRpgGame_1_1Logger_1_1FileLogSink" ],
+        [ "GameLog", "classRpgGame_1_1Logger_1_1GameLog.html", "classRpgGame_1_1Logger_1_1GameLog" ],
+        [ "GameLogEvent", "classRpgGame_1_1Logger_1_1GameLogEvent.html", "classRpgGame_1_1Logger_1_1GameLogEvent" ],
+        [ "ILogEventFormatter", "interfaceRpgGame_1_1Logger_1_1ILogEventFormatter.html", "interfaceRpgGame_1_1Logger_1_1ILogEventFormatter" ],
+        [ "ILogSink", "interfaceRpgGame_1_1Logger_1_1ILogSink.html", "interfaceRpgGame_1_1Logger_1_1ILogSink" ],
+        [ "InMemoryLogSink", "classRpgGame_1_1Logger_1_1InMemoryLogSink.html", "classRpgGame_1_1Logger_1_1InMemoryLogSink" ],
+        [ "LogEntry", "classRpgGame_1_1Logger_1_1LogEntry.html", "classRpgGame_1_1Logger_1_1LogEntry" ]
+      ] ],
       [ "Renderer", "namespaceRpgGame_1_1Renderer.html", [
         [ "ConsoleRenderer", "classRpgGame_1_1Renderer_1_1ConsoleRenderer.html", "classRpgGame_1_1Renderer_1_1ConsoleRenderer" ],
         [ "HelpEntry", "classRpgGame_1_1Renderer_1_1HelpEntry.html", null ],

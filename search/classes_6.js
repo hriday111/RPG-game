@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['handoccupation_0',['HandOccupation',['../classRpgGame_1_1Items_1_1HandOccupation.html',1,'RpgGame::Items']]],
-  ['heavyweaponcategory_1',['HeavyWeaponCategory',['../classRpgGame_1_1Combat_1_1HeavyWeaponCategory.html',1,'RpgGame::Combat']]],
-  ['helpcommand_2',['HelpCommand',['../classRpgGame_1_1Input_1_1HelpCommand.html',1,'RpgGame::Input']]],
-  ['helpentry_3',['HelpEntry',['../classRpgGame_1_1Renderer_1_1HelpEntry.html',1,'RpgGame::Renderer']]],
-  ['helpoverlay_4',['HelpOverlay',['../classRpgGame_1_1Renderer_1_1HelpOverlay.html',1,'RpgGame::Renderer']]]
+  ['gameconfig_0',['GameConfig',['../classRpgGame_1_1Core_1_1GameConfig.html',1,'RpgGame::Core']]],
+  ['gamelog_1',['GameLog',['../classRpgGame_1_1Logger_1_1GameLog.html',1,'RpgGame::Logger']]],
+  ['gamelogevent_2',['GameLogEvent',['../classRpgGame_1_1Logger_1_1GameLogEvent.html',1,'RpgGame::Logger']]],
+  ['gold_3',['Gold',['../classRpgGame_1_1Items_1_1Gold.html',1,'RpgGame::Items']]],
+  ['golem_4',['Golem',['../classRpgGame_1_1Character_1_1Golem.html',1,'RpgGame::Character']]]
 ];

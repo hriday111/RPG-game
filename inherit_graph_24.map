@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classRpgGame_1_1Renderer_1_1HelpEntry.html" title="Represents a single entry displayed in the help popup." alt="" coords="5,5,221,31"/>
+<area shape="rect" id="Node000000" href="$interfaceRpgGame_1_1Logger_1_1ILogEventFormatter.html" title="Strategy contract for converting structured events into displayable messages." alt="" coords="5,5,207,45"/>
+<area shape="rect" id="Node000001" href="$classRpgGame_1_1Logger_1_1DefaultLogEventFormatter.html" title="Default event&#45;to&#45;text formatter for the in&#45;game log." alt="" coords="255,5,463,45"/>
+<area shape="poly" id="edge51_Node000000_Node000001" title=" " alt="" coords="221,23,254,23,254,28,221,28"/>
 </map>

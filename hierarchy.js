@@ -11,6 +11,8 @@ var hierarchy =
     [ "RpgGame.Core.Directions", "classRpgGame_1_1Core_1_1Directions.html", null ],
     [ "RpgGame.Generation.DungeonContext", "classRpgGame_1_1Generation_1_1DungeonContext.html", null ],
     [ "RpgGame.Core.GameConfig", "classRpgGame_1_1Core_1_1GameConfig.html", null ],
+    [ "RpgGame.Logger.GameLog", "classRpgGame_1_1Logger_1_1GameLog.html", null ],
+    [ "RpgGame.Logger.GameLogEvent", "classRpgGame_1_1Logger_1_1GameLogEvent.html", null ],
     [ "RpgGame.Items.HandOccupation", "classRpgGame_1_1Items_1_1HandOccupation.html", [
       [ "RpgGame.Items.OneHandOccupation", "classRpgGame_1_1Items_1_1OneHandOccupation.html", null ],
       [ "RpgGame.Items.TwoHandOccupation", "classRpgGame_1_1Items_1_1TwoHandOccupation.html", null ]
@@ -74,6 +76,14 @@ var hierarchy =
       [ "RpgGame.Items.Potion", "classRpgGame_1_1Items_1_1Potion.html", null ],
       [ "RpgGame.Items.Thorn", "classRpgGame_1_1Items_1_1Thorn.html", null ]
     ] ],
+    [ "RpgGame.Logger.ILogEventFormatter", "interfaceRpgGame_1_1Logger_1_1ILogEventFormatter.html", [
+      [ "RpgGame.Logger.DefaultLogEventFormatter", "classRpgGame_1_1Logger_1_1DefaultLogEventFormatter.html", null ]
+    ] ],
+    [ "RpgGame.Logger.ILogSink", "interfaceRpgGame_1_1Logger_1_1ILogSink.html", [
+      [ "RpgGame.Logger.BufferedJournalLogSink", "classRpgGame_1_1Logger_1_1BufferedJournalLogSink.html", null ],
+      [ "RpgGame.Logger.FileLogSink", "classRpgGame_1_1Logger_1_1FileLogSink.html", null ],
+      [ "RpgGame.Logger.InMemoryLogSink", "classRpgGame_1_1Logger_1_1InMemoryLogSink.html", null ]
+    ] ],
     [ "RpgGame.Generation.IMapGenerator", "interfaceRpgGame_1_1Generation_1_1IMapGenerator.html", [
       [ "RpgGame.Generation.DungeonBuilder", "classRpgGame_1_1Generation_1_1DungeonBuilder.html", null ],
       [ "RpgGame.Generation.SimpleRoomGenerator", "classRpgGame_1_1Generation_1_1SimpleRoomGenerator.html", null ]
@@ -87,6 +97,7 @@ var hierarchy =
       [ "RpgGame.Combat.MagicalWeaponCategory", "classRpgGame_1_1Combat_1_1MagicalWeaponCategory.html", null ]
     ] ],
     [ "RpgGame.Core.Level", "classRpgGame_1_1Core_1_1Level.html", null ],
+    [ "RpgGame.Logger.LogEntry", "classRpgGame_1_1Logger_1_1LogEntry.html", null ],
     [ "RpgGame.Generation.MapSpawnHelper", "classRpgGame_1_1Generation_1_1MapSpawnHelper.html", null ],
     [ "RpgGame.Program", "classRpgGame_1_1Program.html", null ],
     [ "RpgGame.Generation.RectRoom", "classRpgGame_1_1Generation_1_1RectRoom.html", null ],

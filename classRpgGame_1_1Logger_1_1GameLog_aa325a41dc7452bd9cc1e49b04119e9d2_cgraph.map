@@ -1,0 +1,7 @@
+<map id="RpgGame.Logger.GameLog.Write" name="RpgGame.Logger.GameLog.Write">
+<area shape="rect" id="Node000001" title="Writes a structured event using the active formatter strategy." alt="" coords="5,42,244,67"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Logger_1_1ILogEventFormatter.html#ab28afb596be8fdf1f61aef45e381e3ee" title="Formats a structured log event into a single text line." alt="" coords="301,5,502,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,39,287,35,287,40,244,45"/>
+<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Logger_1_1ILogSink.html#a965787f7312bf6fc33fade6ec723587c" title="Adds a new log entry." alt="" coords="292,70,511,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,64,279,68,278,73,244,69"/>
+</map>

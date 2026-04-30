@@ -1,0 +1,5 @@
+<map id="RpgGame.Logger.BufferedJournalLogSink" name="RpgGame.Logger.BufferedJournalLogSink">
+<area shape="rect" id="Node000001" title="Keeps all entries in memory and periodically flushes pending items to file." alt="" coords="5,228,247,501"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Logger_1_1ILogSink.html" title="Contract for log storage backends used by the game." alt="" coords="29,5,223,180"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,194,129,228,123,228,123,194"/>
+</map>

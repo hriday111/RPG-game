@@ -51,7 +51,8 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "classRpgGame_1_1Generation_1_1Procedures_1_1ChambersProcedure.html#a8fcf1aefb0b543c1258305e1ca03c243",
-"classRpgGame_1_1Items_1_1Sword.html"
+"classRpgGame_1_1Items_1_1Sword.html",
+"interfaceRpgGame_1_1Items_1_1IEquippable.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

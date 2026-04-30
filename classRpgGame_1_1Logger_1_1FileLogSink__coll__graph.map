@@ -1,0 +1,5 @@
+<map id="RpgGame.Logger.FileLogSink" name="RpgGame.Logger.FileLogSink">
+<area shape="rect" id="Node000001" title="Persists log entries to a dedicated text file for the current game session." alt="" coords="5,228,243,487"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Logger_1_1ILogSink.html" title="Contract for log storage backends used by the game." alt="" coords="27,5,221,180"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,194,127,228,121,228,121,194"/>
+</map>

@@ -33,9 +33,9 @@ public static class IniConfigLoader
         int targetFPS = ReadInt(sections, "Window", "TargetFPS");
         int spawnX = ReadInt(sections, "Player", "DefaultSpawnX");
         int spawnY = ReadInt(sections, "Player", "DefaultSpawnY");
-        string playerName = ReadString(sections, "Player", "Name");
+        string playerName = ReadStringAny(sections, "Player", "Name", "PlayerName");
         int sidebarWidth = ReadInt(sections, "Sidebar", "Width");
-        string logDirectory = ReadString(sections, "Logging", "Directory");
+        string logDirectory = ReadStringAny(sections, "Logging", "Directory", "LogDirectory");
         Validate(windowWidth, windowHeight, targetFPS, spawnX, spawnY, sidebarWidth);
         return new GameConfig
         {
@@ -130,6 +130,33 @@ public static class IniConfigLoader
         if (!kv.TryGetValue(key, out string? value) || string.IsNullOrWhiteSpace(value))
         { throw new InvalidOperationException($"Missing key: [{section}] {key}"); }
         return value;
+    }
+
+    /// <summary>
+    /// Reads the first present non-empty value among multiple candidate keys.
+    /// </summary>
+    /// <param name="sections">Parsed section/key dictionary.</param>
+    /// <param name="section">Section name.</param>
+    /// <param name="keys">Candidate key names in priority order.</param>
+    /// <returns>The first matching non-empty value.</returns>
+    /// <exception cref="InvalidOperationException">
+    /// Thrown when section is missing or none of the provided keys exist with values.
+    /// </exception>
+    private static string ReadStringAny(
+        Dictionary<string, Dictionary<string, string>> sections,
+        string section,
+        params string[] keys)
+    {
+        if (!sections.TryGetValue(section, out var kv))
+            throw new InvalidOperationException($"Missing section: [{section}]");
+
+        foreach (string key in keys)
+        {
+            if (kv.TryGetValue(key, out string? value) && !string.IsNullOrWhiteSpace(value))
+                return value;
+        }
+
+        throw new InvalidOperationException($"Missing key in section [{section}]. Expected one of: {string.Join(", ", keys)}");
     }
 
     /// <summary>

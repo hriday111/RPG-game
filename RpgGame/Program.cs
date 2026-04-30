@@ -5,6 +5,7 @@ using RpgGame.Character;
 using RpgGame.Core;
 using RpgGame.Generation.Strategies;
 using RpgGame.Input;
+using RpgGame.Logger;
 using RpgGame.Renderer;
 namespace RpgGame;
 
@@ -49,6 +50,16 @@ class Program
         var renderer = new ConsoleRenderer();
         var inventory = new Inventory(player, 20);
         var inputHandler = new InputHandler();
+        var memorySink = new InMemoryLogSink();
+        var fileSink = new FileLogSink(Config.LogDirectory, Config.PlayerName, DateTime.Now);
+        var logSink = new BufferedJournalLogSink(memorySink, fileSink, flushEveryNFrames: 10);
+        GameLog.UseSink(logSink);
+        GameLog.Write(new GameLogEvent(
+            LogEventType.SessionStarted,
+            new Dictionary<string, object>
+            {
+                ["LogFilePath"] = fileSink.FilePath
+            }));
 
         // register all input bindings with the renderer so the help menu
         // can be built automatically.  Add the F1 key manually as well.
@@ -58,7 +69,8 @@ class Program
         }
 
         Console.Clear();
-        RunGameLoop(level, player, renderer, inventory, inputHandler, Config.TargetFPS);
+        RunGameLoop(level, player, renderer, inventory, inputHandler, Config.TargetFPS, logSink);
+        GameLog.Flush();
     }
 
     /// <summary>
@@ -71,6 +83,7 @@ class Program
     /// <param name="inputHandler">Handler responsible for converting console
     /// keystrokes into game commands.</param>
     /// <param name="targetFPS">Target frames per second.</param>
+    /// <param name="logSink">Buffered log sink that flushes entries by frame cadence.</param>
     /// <remarks>
     /// The loop repeatedly:
     /// <list type="number">
@@ -86,7 +99,8 @@ class Program
         ConsoleRenderer renderer,
         Inventory inventory,
         InputHandler inputHandler,
-        int targetFPS)
+        int targetFPS,
+        BufferedJournalLogSink logSink)
     {
         var isRunning = true;
 
@@ -112,6 +126,7 @@ class Program
             }
 
             renderer.Render(level, player, inventory);
+            logSink.AdvanceFrame();
             Thread.Sleep(Decimal.ToInt32(1000 / targetFPS));
         }
     }

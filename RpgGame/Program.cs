@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using RpgGame.Character;
 using RpgGame.Core;
 using RpgGame.Generation.Strategies;
+using RpgGame.Generation.Themes;
 using RpgGame.Input;
 using RpgGame.Logger;
 using RpgGame.Renderer;
@@ -40,7 +41,11 @@ class Program
         var player = new Character.Player(
             new Position(Config.DefaultSpawnX, Config.DefaultSpawnY));
 
-        var strategy = new DungeonGroundsStrategy();
+        DungeonThemeKind theme = DungeonThemePicker.Pick(Random.Shared);
+        DungeonThemeProfile profile = DungeonThemeCatalog.Profile(theme);
+        level.DungeonIntro = profile.IntroMessage;
+
+        IDungeonStrategy strategy = DungeonStrategyCatalog.Resolve(theme);
         var generator = strategy.Create();
 
         await generator.GenerateAsync(level);
@@ -54,12 +59,7 @@ class Program
         var fileSink = new FileLogSink(Config.LogDirectory, Config.PlayerName, DateTime.Now);
         var logSink = new BufferedJournalLogSink(memorySink, fileSink, flushEveryNFrames: 10);
         GameLog.UseSink(logSink);
-        GameLog.Write(new GameLogEvent(
-            LogEventType.SessionStarted,
-            new Dictionary<string, object>
-            {
-                ["LogFilePath"] = fileSink.FilePath
-            }));
+        GameLog.Write(new SessionStartedLogEvent(fileSink.FilePath));
 
         // register all input bindings with the renderer so the help menu
         // can be built automatically.  Add the F1 key manually as well.

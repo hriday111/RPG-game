@@ -2,6 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 using RpgGame.Character;
 using RpgGame.Combat;
 using RpgGame.Items;
+using RpgGame.Logger;
 using RpgGame.Tiles;
 
 namespace RpgGame.Core;
@@ -49,14 +50,29 @@ public class Level
     private readonly List<Golem> golems = new();
 
     /// <summary>
+    /// Mage enemies on this level.
+    /// </summary>
+    private readonly List<Mage> mages = new();
+
+    /// <summary>
     /// Gets the golems currently on the level.
     /// </summary>
     public IReadOnlyList<Golem> Golems => golems;
 
     /// <summary>
+    /// Gets the mages currently on the level.
+    /// </summary>
+    public IReadOnlyList<Mage> Mages => mages;
+
+    /// <summary>
     /// Text describing the last orthogonal melee exchange, for the UI.
     /// </summary>
     public string? LastCombatMessage { get; private set; }
+
+    /// <summary>
+    /// One-line thematic intro for this dungeon (from the active <c>DungeonThemeProfile</c>).
+    /// </summary>
+    public string? DungeonIntro { get; set; }
 
     /// <summary>
     /// Clears <see cref="LastCombatMessage"/> after a non-combat action.
@@ -197,8 +213,56 @@ public class Level
     }
 
     /// <summary>
+    /// Places a mage on the level and marks its tile occupied for movement checks.
+    /// </summary>
+    public void AddMage(Mage mage)
+    {
+        ArgumentNullException.ThrowIfNull(mage);
+        var tile = GetTile(mage.Pos.X, mage.Pos.Y);
+        if (!tile.IsWalkable)
+            throw new InvalidOperationException("Cannot place a mage on a non-walkable tile.");
+
+        tile.IsOccupied = true;
+        mages.Add(mage);
+    }
+
+    /// <summary>
+    /// Removes a mage from the level and frees its tile for movement.
+    /// </summary>
+    /// <returns>True if the mage was present and removed.</returns>
+    public bool RemoveMage(Mage mage)
+    {
+        ArgumentNullException.ThrowIfNull(mage);
+        if (!mages.Remove(mage))
+            return false;
+
+        if (IsInBounds(mage.Pos))
+            GetTile(mage.Pos.X, mage.Pos.Y).IsOccupied = false;
+
+        return true;
+    }
+
+    /// <summary>
+    /// When a mage occupies <paramref name="pos"/>, sets <paramref name="mage"/> and returns true.
+    /// </summary>
+    public bool TryGetMageAt(Position pos, [NotNullWhen(true)] out Mage? mage)
+    {
+        foreach (var m in mages)
+        {
+            if (m.Pos == pos)
+            {
+                mage = m;
+                return true;
+            }
+        }
+
+        mage = null;
+        return false;
+    }
+
+    /// <summary>
     /// One orthogonal step from the player (WASD): walk onto a free tile, or melee-attack
-    /// a golem on the target tile. Diagonal offsets are rejected (distance must be 1 on the grid).
+    /// a golem or mage on the target tile. Diagonal offsets are rejected (distance must be 1 on the grid).
     /// </summary>
     /// <returns>True if a move or combat exchange was attempted on a valid target tile.</returns>
     public bool TryOrthogonalStepOrMeleeCombat(Player player, Position targetPos)
@@ -220,8 +284,25 @@ public class Level
         {
             CombatRoundResult result = CombatRound.Resolve(player, golemAtTarget);
             LastCombatMessage = DescribeCombatRound(result, golemAtTarget);
+            GameLog.Write(new AttackDealtLogEvent(result.DamageAppliedToEnemy, $"{golemAtTarget.EquippedWeapon.Name} golem"));
             if (golemAtTarget.IsDead)
+            {
+                GameLog.Write(new EnemyDefeatedLogEvent($"{golemAtTarget.EquippedWeapon.Name} golem"));
                 RemoveGolem(golemAtTarget);
+            }
+            return true;
+        }
+
+        if (TryGetMageAt(targetPos, out Mage? mageAtTarget))
+        {
+            CombatRoundResult result = CombatRound.Resolve(player, mageAtTarget);
+            LastCombatMessage = DescribeCombatRound(result, mageAtTarget);
+            GameLog.Write(new AttackDealtLogEvent(result.DamageAppliedToEnemy, $"{mageAtTarget.EquippedWeapon.Name} mage"));
+            if (mageAtTarget.IsDead)
+            {
+                GameLog.Write(new EnemyDefeatedLogEvent($"{mageAtTarget.EquippedWeapon.Name} mage"));
+                RemoveMage(mageAtTarget);
+            }
             return true;
         }
 
@@ -241,6 +322,14 @@ public class Level
         if (result.EnemyDefeated)
             return $"You deal {result.DamageAppliedToEnemy} damage. {label} golem destroyed.";
         return $"You deal {result.DamageAppliedToEnemy} damage. {label} golem hits you for {result.DamageAppliedToPlayer}.";
+    }
+
+    private static string DescribeCombatRound(CombatRoundResult result, Mage mage)
+    {
+        string label = mage.EquippedWeapon.Name;
+        if (result.EnemyDefeated)
+            return $"You deal {result.DamageAppliedToEnemy} damage. {label} mage destroyed.";
+        return $"You deal {result.DamageAppliedToEnemy} damage. {label} mage hits you for {result.DamageAppliedToPlayer}.";
     }
 
     #endregion

@@ -32,4 +32,18 @@ public static class CombatRound
         player.TakeDamage(toPlayer);
         return new CombatRoundResult(false, raw, toEnemy, toPlayer);
     }
+
+    /// <summary>Same exchange as <see cref="Resolve(Player, Golem)"/> for a mage.</summary>
+    public static CombatRoundResult Resolve(Player player, Mage mage)
+    {
+        int raw = player.GetMeleeAttackPower();
+        int toEnemy = mage.ApplyDamage(raw);
+
+        if (mage.IsDead)
+            return new CombatRoundResult(true, raw, toEnemy, 0);
+
+        int toPlayer = Math.Max(0, mage.GetCounterAttackPower() - player.GetDefenseStrength());
+        player.TakeDamage(toPlayer);
+        return new CombatRoundResult(false, raw, toEnemy, toPlayer);
+    }
 }

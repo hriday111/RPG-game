@@ -23,8 +23,9 @@ We use **xUnit** for unit testing. To run tests locally:
 dotnet test
 ```
 Current tests cover:
-- Player health mechanics (damage, healing, and capping).
-- Currency and inventory logic.
+- Combat round resolution against golems and mages (damage, armor, defeat).
+- Level combat integration (enemy lookup, orthogonal melee messaging).
+- Player health mechanics where applicable alongside combat tests.
 
 ---
 
@@ -38,11 +39,12 @@ New Potions and Thorns have been added. Trying to pick up Thorns causes 50 damag
 
 This project implements a procedurally generated RPG world with:
 
-- Player movement
+- Player movement on themed dungeons
 - Item system
 - Equipment system
 - Inventory management
-- Sidebar UI rendering
+- Sidebar UI rendering (includes a short dungeon intro line when a theme defines one)
+
 
 ---
 
@@ -54,7 +56,7 @@ Using `dotnet run` in the `RpgGame` directory.
 
 ## How to Play
 
-The game is a console-based RPG where you explore a randomly generated room. You can collect items to inventory or currency. Items can also be equipped from the inventory.
+The game is a console-based RPG where you explore a randomly generated **dungeon**. Each run picks a **theme** (weighted random), which influences layout, loot, enemies, and a thematic intro shown in the sidebar. You collect items into inventory or as currency and equip gear from inventory.
 
 ### Controls
 - **WASD**: Move up, down, left, right
@@ -71,20 +73,28 @@ The game is a console-based RPG where you explore a randomly generated room. You
 - **Inventory**: Your inventory holds up to 20 items (can be changed in `Program.cs`). The sidebar shows the first 5 items.
 - **Equipment**: You can equip items to your left and right hands. Coins/Gold equipped don't take up inventory space
 - **Currency**: Collect coins and gold as you explore. These are displayed in the sidebar.
-- **Sidebar**: The right side of the screen shows your character's stats, equipped items, currency, the item on your current tile, and your inventory.
+- **Sidebar**: The right side of the screen shows your character's stats, a one-line dungeon intro (from the active theme), equipped items, currency, combat feedback, selected inventory slots, and item details.
 
 
 ---
 
 ## Level Generation
 
-The level generation system uses the **Strategy Pattern** combined with a **Builder Pattern** to create flexible, composable dungeon layouts:
+Generation combines the **Strategy** and **Builder** patterns with explicit **dungeon themes**:
 
-- **Procedures**: Each `IDungeonProcedure` implementation handles a specific dungeon feature (e.g., carving rooms, creating corridors, spawning items).
-- **DungeonBuilder**: Composes multiple procedures into a sequence that executes in order.
-- **Strategies**: `IDungeonStrategy` implementations define complete generation pipelines. For example, `DungeonGroundsStrategy` creates a typical dungeon with a central room, additional chambers, connecting corridors, and treasure.
+- **Themes**: Before the map is built, a `DungeonThemeKind` is drawn using `DungeonThemePicker` (**Basic** and **Treasure** at 40% each; **Library** and **Healing** at 10% each—see `RpgGame/Generation/Themes/DungeonThemePicker.cs`).
+- **`DungeonThemeProfile` / `DungeonThemeCatalog`**: For each theme, a profile holds the **intro line**, **item and weapon spawn counts**, a **guaranteed artifact** factory (`Func<IItem>`), and an ordered list of **`IEnemySpawnStep`** entries (spawn steps are composed in sequence; themes can combine multiple enemy types by adding multiple steps—see `RpgGame/Generation/Themes/DungeonThemeCatalog.cs` and `RpgGame/Generation/Enemies/`).
+- **Procedural steps**: Each `IDungeonProcedure` handles one concern (walls, rooms, paths, loot, weapons, artifact placement, enemies).
+- **`DungeonBuilder`**: Chains procedures and passes a `DungeonContext` carrying the chosen `DungeonThemeKind`.
+- **`DungeonStrategyCatalog`**: Maps theme kind to a concrete `IDungeonStrategy` **without switch statements** (`RpgGame/Generation/Strategies/DungeonStrategyCatalog.cs`). Strategies differ mainly in geometric parameters (central room size, chamber count):
+  - **`BasicDungeonStrategy`** — balanced “grounds-style” dungeon.
+  - **`TreasureDungeonStrategy`** — larger central vault and more chambers; profile favors coins/gold and mages as enemies.
+  - **`LibraryDungeonStrategy`** — narrower core and more chambers; profile favors crystal orbs plus a thematic artifact.
+  - **`HealingDungeonStrategy`** — calmer proportions; profile emphasizes potions plus a thematic artifact.
 
-All generation work is performed **asynchronously** using `Task.Run()`, ensuring the game remains responsive during map creation. This allows complex procedural generation without blocking the UI.
+**Sandbox**: `DungeonSandboxStrategy` still uses one large starter room but applies the same themed profile for loot, artifact, and enemy steps.
+
+Heavy placement work runs **asynchronously** via `Task.Run()` inside helpers such as `MapSpawnHelper`, so generation stays non-blocking.
 
 For detailed API documentation, see the [RpgGame.Generation namespace documentation](https://hriday111.github.io/RPG-game/namespaceRpgGame_1_1Generation.html).
 
@@ -92,8 +102,8 @@ For detailed API documentation, see the [RpgGame.Generation namespace documentat
 
 ## Project Structure
 
-- [`RpgGame/Core/`](https://hriday111.github.io/RPG-game/namespaceRpgGame_1_1Core.html) – Game state & configuration
-- [`RpgGame/Generation/`](https://hriday111.github.io/RPG-game/namespaceRpgGame_1_1Generation.html) – Map generation logic
+- [`RpgGame/Core/`](https://hriday111.github.io/RPG-game/namespaceRpgGame_1_1Core.html) – Game state & configuration (`Level`, including optional `DungeonIntro`)
+- [`RpgGame/Generation/`](https://hriday111.github.io/RPG-game/namespaceRpgGame_1_1Generation.html) – Map generation (procedures, builder, themed strategies & catalogs under `Themes/`, `Strategies/`, `Enemies/`)
 - [`RpgGame/Items/`](https://hriday111.github.io/RPG-game/namespaceRpgGame_1_1Items.html) – Item and equipment system
 - [`RpgGame/Character/`](https://hriday111.github.io/RPG-game/namespaceRpgGame_1_1Character.html) – Player & character logic
 - [`RpgGame/Renderer/`](https://hriday111.github.io/RPG-game/namespaceRpgGame_1_1Rendering.html) – Console renderer

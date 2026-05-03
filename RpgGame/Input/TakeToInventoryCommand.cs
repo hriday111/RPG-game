@@ -18,12 +18,7 @@ public class TakeToInventoryCommand : IInputCommand
         {
             if (item.OnPickup(player, inventory))
             {
-                GameLog.Write(new GameLogEvent(
-                    LogEventType.ItemPickedUp,
-                    new Dictionary<string, object>
-                    {
-                        ["ItemName"] = item.Name
-                    }));
+                GameLog.Write(new ItemPickedUpLogEvent(item.Name));
                 level.TakeTopItem(player.Pos);
             }
 

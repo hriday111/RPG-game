@@ -12,6 +12,7 @@ public class InventoryToLeftHandCommand : IInputCommand
     public InputResult Execute(Level level, Player player, Inventory inventory)
     {
         inventory.TakeToLeft();
+        
         return InputResult.Ok;
     }
 }

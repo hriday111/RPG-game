@@ -82,6 +82,20 @@ public class CombatRoundTests
     }
 
     [Fact]
+    public void Resolve_Mage_DefeatsBeforeCounter_NoDamageToPlayer()
+    {
+        var player = new Player(new Position(0, 0));
+        player.EquipLeft(new Sword());
+        var mage = new Mage(new Position(1, 0), new TunedBlade(40), health: 6, baseArmor: 0);
+
+        CombatRoundResult result = CombatRound.Resolve(player, mage);
+
+        Assert.True(result.EnemyDefeated);
+        Assert.Equal(0, result.DamageAppliedToPlayer);
+        Assert.True(mage.IsDead);
+    }
+
+    [Fact]
     public void Resolve_EnemyArmor_ReducesDamageToEnemy()
     {
         var player = new Player(new Position(0, 0));
@@ -192,5 +206,45 @@ public class LevelCombatTests
 
         Assert.False(string.IsNullOrEmpty(level.LastCombatMessage));
         Assert.Contains("damage", level.LastCombatMessage, StringComparison.OrdinalIgnoreCase);
+    }
+
+    [Fact]
+    public void TryGetMageAt_ReturnsTrueWhenMagePresent()
+    {
+        var level = new Level(8, 8);
+        for (int y = 0; y < 8; y++)
+        {
+            for (int x = 0; x < 8; x++)
+                level.SetTile(x, y, new FloorTile());
+        }
+
+        var mage = new Mage(new Position(4, 4), new Sword());
+        level.AddMage(mage);
+
+        bool found = level.TryGetMageAt(new Position(4, 4), out Mage? atPos);
+
+        Assert.True(found);
+        Assert.Same(mage, atPos);
+    }
+
+    [Fact]
+    public void TryOrthogonalStepOrMeleeCombat_Mage_SetsLastCombatMessage()
+    {
+        var level = new Level(6, 6);
+        for (int y = 0; y < 6; y++)
+        {
+            for (int x = 0; x < 6; x++)
+                level.SetTile(x, y, new FloorTile());
+        }
+
+        var player = new Player(new Position(2, 2));
+        level.GetTile(2, 2).IsOccupied = true;
+        player.EquipLeft(new Sword());
+        level.AddMage(new Mage(new Position(2, 1), new Sword(), health: 40, baseArmor: 0));
+
+        level.TryOrthogonalStepOrMeleeCombat(player, new Position(2, 1));
+
+        Assert.False(string.IsNullOrEmpty(level.LastCombatMessage));
+        Assert.Contains("mage", level.LastCombatMessage, StringComparison.OrdinalIgnoreCase);
     }
 }

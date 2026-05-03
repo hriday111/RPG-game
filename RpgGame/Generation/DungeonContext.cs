@@ -1,4 +1,5 @@
 using RpgGame.Core;
+using RpgGame.Generation.Themes;
 namespace RpgGame.Generation;
 
 /// <summary>
@@ -14,4 +15,10 @@ public class DungeonContext
     /// Gets the collection of rooms created during dungeon generation.
     /// </summary>
     public List<RectRoom> Rooms { get; } = new();
+
+    public DungeonThemeKind Theme {get;}
+    public DungeonContext(DungeonThemeKind theme)
+    {
+        Theme = theme;
+    }
 }

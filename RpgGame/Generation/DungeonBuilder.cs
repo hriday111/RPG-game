@@ -1,4 +1,5 @@
 using RpgGame.Core;
+using RpgGame.Generation.Themes;
 
 namespace RpgGame.Generation;
 
@@ -12,7 +13,7 @@ namespace RpgGame.Generation;
 public class DungeonBuilder : IMapGenerator
 {
     private readonly List<IDungeonProcedure> procedures = new();
-
+    private readonly DungeonThemeKind theme;
     /// <summary>
     /// Adds a generation procedure to the sequence.
     /// </summary>
@@ -31,11 +32,16 @@ public class DungeonBuilder : IMapGenerator
     /// <returns>A task that completes when all procedures have been applied.</returns>
     public async Task GenerateAsync(Level level)
     {
-        var context = new DungeonContext();
+        var context = new DungeonContext(theme);
 
         foreach (var procedure in procedures)
         {
             await procedure.ApplyAsync(level, context);
         }
+    }
+
+    public DungeonBuilder(DungeonThemeKind theme = DungeonThemeKind.Basic)
+    {
+        this.theme=theme;
     }
 }

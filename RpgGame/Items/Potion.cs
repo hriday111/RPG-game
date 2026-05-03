@@ -1,5 +1,6 @@
 using RpgGame.Character;
 using RpgGame.Core;
+using RpgGame.Logger;
 
 namespace RpgGame.Items;
 
@@ -8,6 +9,8 @@ namespace RpgGame.Items;
 /// </summary>
 public class Potion : IItem
 {
+    private const int HealAmount = 20;
+
     /// <summary>
     /// Gets the name of the potion.
     /// </summary>
@@ -37,7 +40,8 @@ public class Potion : IItem
     /// <returns>True, as the potion is consumed immediately.</returns>
     public bool OnPickup(Player player, Inventory inventory)
     {
-        player.RestoreHealth(20); // Restore 20 health points
+        player.RestoreHealth(HealAmount);
+        GameLog.Write(new PotionConsumedLogEvent(HealAmount));
         return true; // Potion is consumed immediately
     }
 

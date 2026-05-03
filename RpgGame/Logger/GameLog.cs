@@ -6,7 +6,6 @@ namespace RpgGame.Logger;
 public static class GameLog
 {
     private static ILogSink sink = new InMemoryLogSink();
-    private static ILogEventFormatter formatter = new DefaultLogEventFormatter();
 
     /// <summary>
     /// Replaces the active sink implementation.
@@ -15,15 +14,6 @@ public static class GameLog
     public static void UseSink(ILogSink newSink)
     {
         sink = newSink ?? throw new ArgumentNullException(nameof(newSink));
-    }
-
-    /// <summary>
-    /// Replaces the event formatter strategy.
-    /// </summary>
-    /// <param name="newFormatter">New formatter instance.</param>
-    public static void UseFormatter(ILogEventFormatter newFormatter)
-    {
-        formatter = newFormatter ?? throw new ArgumentNullException(nameof(newFormatter));
     }
 
     /// <summary>
@@ -36,13 +26,13 @@ public static class GameLog
     public static void Write(LogEntry entry) => sink.Log(entry);
 
     /// <summary>
-    /// Writes a structured event using the active formatter strategy.
+    /// Writes a polymorphic event.
     /// </summary>
-    /// <param name="evt">Structured event payload.</param>
-    public static void Write(GameLogEvent evt)
+    /// <param name="evt">Event instance with its own message rendering.</param>
+    public static void Write(ILogEvent evt)
     {
         ArgumentNullException.ThrowIfNull(evt);
-        sink.Log(new LogEntry(formatter.Format(evt), evt.Timestamp));
+        sink.Log(new LogEntry(evt.ToMessage(), evt.Timestamp));
     }
 
     /// <summary>

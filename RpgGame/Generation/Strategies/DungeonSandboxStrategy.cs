@@ -1,31 +1,35 @@
+using RpgGame.Generation;
 using RpgGame.Generation.Procedures;
+using RpgGame.Generation.Themes;
 
 namespace RpgGame.Generation.Strategies;
 
 /// <summary>
-/// A concrete dungeon generation strategy that creates an empty dungeon with on central room, and items.
+/// Sandbox: one large chamber and themed loot, artifact, enemies from <see cref="DungeonThemeCatalog"/>.
 /// </summary>
-/// <remarks>
-/// This strategy uses the following pipeline:
-/// 1. Fills the level with walls as a base
-/// 2. Carves a central room in the middle
-/// 3. Spawns coins and gold for the player to collect
-/// 4. Spawns weapons for the player to find
-/// 5. Spawns golem enemies
-/// </remarks>
 public class DungeonSandboxStrategy : IDungeonStrategy
 {
+    private readonly DungeonThemeKind theme;
+
+    public DungeonSandboxStrategy(DungeonThemeKind theme = DungeonThemeKind.Basic)
+    {
+        this.theme = theme;
+    }
+
     /// <summary>
     /// Creates and returns a configured dungeon builder with the strategy's procedures.
     /// </summary>
     /// <returns>A fully configured dungeon builder ready to generate levels.</returns>
     public DungeonBuilder Create()
     {
-        return new DungeonBuilder()
+        DungeonThemeProfile p = DungeonThemeCatalog.Profile(theme);
+
+        return new DungeonBuilder(theme)
             .Add(new FilledDungeonProcedure())
             .Add(new CentralRoomProcedure(20, 10))
-            .Add(new AddItemsProcedure(5, 2))
-            .Add(new AddWeaponsProcedure())
-            .Add(new AddEnemiesProcedure(1));
+            .Add(new AddItemsProcedure(p.Items.Coins, p.Items.Gold, p.Items.Potions, p.Items.Thorns))
+            .Add(new AddWeaponsProcedure(p.Weapons.Swords, p.Weapons.DoubleSwords, p.Weapons.CrystalOrbs))
+            .Add(new PlaceArtifactProcedure(p.CreateArtifact))
+            .Add(new AddEnemiesProcedure(p.EnemySpawnSteps));
     }
 }

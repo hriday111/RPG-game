@@ -1,7 +1,8 @@
 using RpgGame.Character;
 using RpgGame.Combat;
 using RpgGame.Core;
-
+using System.Linq;
+using System.Text;
 namespace RpgGame.Renderer;
 
 /// <summary>
@@ -72,6 +73,11 @@ public class ConsoleRenderer
                 {
                     Console.ResetColor();
                     Console.Write(golemHere.Symbol);
+                }
+                else if (level.TryGetMageAt(currentPos, out Mage? mageHere))
+                {
+                    Console.ResetColor();
+                    Console.Write(mageHere.Symbol);
                 }
                 else
                 {
@@ -144,11 +150,18 @@ public class ConsoleRenderer
             if (content.Length > innerWidth) content = content.Substring(0, innerWidth);
             return "│" + content.PadRight(innerWidth) + "│";
         }
-
+        string spacingForCentering=new string(' ', (innerWidth-8)/2);
         var lines = new List<string>
         {
             "┌" + new string('─', innerWidth) + "┐",
-            PadLine("      RPG GAME"),
+            PadLine(string.Concat(spacingForCentering,"RPG GAME",spacingForCentering)),
+        };
+
+        if (!string.IsNullOrWhiteSpace(level.DungeonIntro))
+            lines.Add(PadLine(" " + level.DungeonIntro.Trim()));
+
+        lines.AddRange(
+        [
             "├" + new string('─', innerWidth) + "┤",
             PadLine(" [F1] Help"),
             "├" + new string('─', innerWidth) + "┤",
@@ -170,7 +183,7 @@ public class ConsoleRenderer
             PadLine($" Coins: {player.Coins,-5} Gold: {player.Gold,-5}"),
             "├" + new string('─', innerWidth) + "┤",
             PadLine(" INVENTORY"),
-        };
+        ]);
 
         // First row (1-5)
         string row1 = " ";

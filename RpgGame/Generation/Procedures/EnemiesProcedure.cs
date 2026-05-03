@@ -1,20 +1,44 @@
+using System.Collections.Immutable;
 using RpgGame.Core;
-using RpgGame.Generation;
+using RpgGame.Generation.Enemies;
 
 namespace RpgGame.Generation.Procedures;
 
-
-public class AddEnemiesProcedure : IDungeonProcedure
+/// <summary>
+/// Spawns enemies from an ordered list provided at construction — no branching on dungeon theme here.
+/// </summary>
+public sealed class AddEnemiesProcedure : IDungeonProcedure
 {
-    private readonly int GolemCount = 1;
+    private readonly ImmutableArray<IEnemySpawnStep> enemySpawnSteps;
 
-    public AddEnemiesProcedure(int GolemCount = 1)
+    /// <summary>
+    /// Preferred when using <see cref="Themes.DungeonThemeProfile.EnemySpawnSteps"/>.
+    /// </summary>
+    public AddEnemiesProcedure(ImmutableArray<IEnemySpawnStep> enemySpawnSteps)
     {
-        this.GolemCount = GolemCount;
+        if (enemySpawnSteps.IsDefaultOrEmpty)
+            throw new ArgumentException("At least one enemy spawn step is required.", nameof(enemySpawnSteps));
+
+        this.enemySpawnSteps = enemySpawnSteps;
+    }
+
+    /// <summary>
+    /// Accepts any read-only list (e.g. from tests or dynamic composition).
+    /// </summary>
+    public AddEnemiesProcedure(IReadOnlyList<IEnemySpawnStep> steps)
+    {
+        ArgumentNullException.ThrowIfNull(steps);
+        if (steps.Count == 0)
+            throw new ArgumentException("At least one enemy spawn step is required.", nameof(steps));
+
+        enemySpawnSteps = ImmutableArray.CreateRange(steps);
     }
 
     public async Task ApplyAsync(Level level, DungeonContext context)
     {
-        await MapSpawnHelper.SpawnGolemAsync(level, GolemCount);
+        for (int i = 0; i < enemySpawnSteps.Length; i++)
+        {
+            await enemySpawnSteps[i].SpawnAsync(level);
+        }
     }
 }

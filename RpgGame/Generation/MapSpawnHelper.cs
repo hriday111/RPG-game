@@ -31,6 +31,26 @@ namespace RpgGame.Generation
             IEquippable wrapped = WrapWeaponWithRandomModifiers(core);
             return (IWeapon)wrapped;
         }
+
+        /// <summary>
+        /// Mages favor orbs; occasionally use a randomized blade like golems.
+        /// </summary>
+        private static IWeapon CreateRandomMageWeapon()
+        {
+            Weapon core = random.Next(3) == 0
+                ? (random.Next(2) == 0 ? new Sword() : new DoubleSword())
+                : new CrystalOrb();
+            IEquippable wrapped = WrapWeaponWithRandomModifiers(core);
+            return (IWeapon)wrapped;
+        }
+
+        private static void CollectEnemyOccupied(Level level, HashSet<(int X, int Y)> used)
+        {
+            foreach (var g in level.Golems)
+                used.Add((g.Pos.X, g.Pos.Y));
+            foreach (var m in level.Mages)
+                used.Add((m.Pos.X, m.Pos.Y));
+        }
         /// <summary>
         /// Wraps a weapon with zero or more stacked decorators at level generation time.
         /// </summary>
@@ -150,8 +170,7 @@ namespace RpgGame.Generation
             return Task.Run(() =>
             {
                 var used = new HashSet<(int X, int Y)>();
-                foreach (var g in level.Golems)
-                    used.Add((g.Pos.X, g.Pos.Y)); //basically skips these instructions when adding first golem
+                CollectEnemyOccupied(level, used);
 
                 int spawned = 0;
                 int attempts = 0;
@@ -175,6 +194,70 @@ namespace RpgGame.Generation
 
                     level.AddGolem(new Golem(new Position(x, y), CreateRandomGolemWeapon()));
                     spawned++;
+                }
+            });
+        }
+
+        /// <summary>
+        /// Spawns mages at random walkable, unoccupied positions, avoiding the default player spawn and existing enemies.
+        /// </summary>
+        public static Task SpawnMageAsync(Level level, int count)
+        {
+            return Task.Run(() =>
+            {
+                var used = new HashSet<(int X, int Y)>();
+                CollectEnemyOccupied(level, used);
+
+                int spawned = 0;
+                int attempts = 0;
+                const int maxAttemptsPerEnemy = 500;
+
+                while (spawned < count && attempts < count * maxAttemptsPerEnemy)
+                {
+                    attempts++;
+                    int x = random.Next(1, level.Width - 1);
+                    int y = random.Next(1, level.Height - 1);
+
+                    if (x == Config.DefaultSpawnX && y == Config.DefaultSpawnY)
+                        continue;
+
+                    var tile = level.GetTile(x, y);
+                    if (!tile.IsWalkable || tile.IsOccupied)
+                        continue;
+
+                    if (!used.Add((x, y)))
+                        continue;
+
+                    level.AddMage(new Mage(new Position(x, y), CreateRandomMageWeapon()));
+                    spawned++;
+                }
+            });
+        }
+
+        /// <summary>
+        /// Places a single item on a random walkable interior tile (avoids default player spawn).
+        /// </summary>
+        public static Task SpawnSingleItemAsync(Level level, IItem item)
+        {
+            ArgumentNullException.ThrowIfNull(level);
+            ArgumentNullException.ThrowIfNull(item);
+
+            return Task.Run(() =>
+            {
+                int maxAttempts = Math.Max(100, level.Width * level.Height * 2);
+                for (int attempt = 0; attempt < maxAttempts; attempt++)
+                {
+                    int x = random.Next(1, level.Width - 1);
+                    int y = random.Next(1, level.Height - 1);
+
+                    if (x == Config.DefaultSpawnX && y == Config.DefaultSpawnY)
+                        continue;
+
+                    if (!level.GetTile(x, y).IsWalkable)
+                        continue;
+
+                    level.AddItem(new Position(x, y), item);
+                    return;
                 }
             });
         }

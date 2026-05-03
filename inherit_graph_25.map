@@ -1,9 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$interfaceRpgGame_1_1Logger_1_1ILogSink.html" title="Contract for log storage backends used by the game." alt="" coords="5,70,197,95"/>
-<area shape="rect" id="Node000001" href="$classRpgGame_1_1Logger_1_1BufferedJournalLogSink.html" title="Keeps all entries in memory and periodically flushes pending items to file." alt="" coords="254,5,491,45"/>
-<area shape="poly" id="edge52_Node000000_Node000001" title=" " alt="" coords="175,65,277,43,278,48,176,70"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Logger_1_1FileLogSink.html" title="Persists log entries to a dedicated text file for the current game session." alt="" coords="267,70,478,95"/>
-<area shape="poly" id="edge53_Node000000_Node000002" title=" " alt="" coords="211,80,267,80,267,85,211,85"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Logger_1_1InMemoryLogSink.html" title="Stores all log entries in memory for UI views (recent and full journal)." alt="" coords="245,119,500,145"/>
-<area shape="poly" id="edge54_Node000000_Node000003" title=" " alt="" coords="186,95,302,117,301,122,185,100"/>
+<area shape="rect" id="Node000000" href="$classRpgGame_1_1Items_1_1HandOccupation.html" title="Defines the strategy for how an equippable item occupies the player&#39;s hands." alt="" coords="5,31,244,56"/>
+<area shape="rect" id="Node000001" href="$classRpgGame_1_1Items_1_1OneHandOccupation.html" title="Represents a hand occupation strategy for one&#45;handed equipment." alt="" coords="292,5,556,31"/>
+<area shape="poly" id="edge42_Node000000_Node000001" title=" " alt="" coords="257,29,292,27,292,32,258,35"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Items_1_1TwoHandOccupation.html" title="Represents a hand occupation strategy for two&#45;handed equipment." alt="" coords="293,55,555,80"/>
+<area shape="poly" id="edge43_Node000000_Node000002" title=" " alt="" coords="258,51,292,54,292,59,257,57"/>
 </map>

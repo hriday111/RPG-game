@@ -46,7 +46,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 388;
+var viewWidth = 590;
 var viewHeight = 794;
 var sectionId = 'dynsection-0';
 </script>
@@ -58,22 +58,22 @@ var sectionId = 'dynsection-0';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="Base abstract class for both playable and non&#45;playable characters.">
-<polygon fill="#999999" stroke="transparent" points="270,-786 112,-786 112,-685 270,-685 270,-786"/>
-<text text-anchor="start" x="117" y="-773.5" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Character.Character</text>
-<text text-anchor="start" x="126.5" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="150" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00">char Symbol</text>
-<text text-anchor="start" x="126.5" y="-743.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="150" y="-743.5" font-family="Helvetica,sans-Serif" font-size="10.00">Position Pos</text>
-<text text-anchor="start" x="126.5" y="-728.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="150" y="-728.5" font-family="Helvetica,sans-Serif" font-size="10.00">void Move(Position</text>
-<text text-anchor="start" x="150" y="-717.5" font-family="Helvetica,sans-Serif" font-size="10.00"> newPos)</text>
-<text text-anchor="start" x="126.5" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="150" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">Character(Position</text>
-<text text-anchor="start" x="150" y="-691.5" font-family="Helvetica,sans-Serif" font-size="10.00"> startPosition)</text>
-<polygon fill="#666666" stroke="#666666" points="112,-768.5 112,-768.5 270,-768.5 270,-768.5 112,-768.5"/>
-<polygon fill="#666666" stroke="#666666" points="112,-738.5 112,-738.5 148,-738.5 148,-738.5 112,-738.5"/>
-<polygon fill="#666666" stroke="#666666" points="148,-738.5 148,-738.5 270,-738.5 270,-738.5 148,-738.5"/>
-<polygon fill="none" stroke="#666666" points="112,-685 112,-786 270,-786 270,-685 112,-685"/>
+<polygon fill="#999999" stroke="transparent" points="373,-786 215,-786 215,-685 373,-685 373,-786"/>
+<text text-anchor="start" x="220" y="-773.5" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Character.Character</text>
+<text text-anchor="start" x="229.5" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="253" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00">char Symbol</text>
+<text text-anchor="start" x="229.5" y="-743.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="253" y="-743.5" font-family="Helvetica,sans-Serif" font-size="10.00">Position Pos</text>
+<text text-anchor="start" x="229.5" y="-728.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="253" y="-728.5" font-family="Helvetica,sans-Serif" font-size="10.00">void Move(Position</text>
+<text text-anchor="start" x="253" y="-717.5" font-family="Helvetica,sans-Serif" font-size="10.00"> newPos)</text>
+<text text-anchor="start" x="229.5" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="253" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">Character(Position</text>
+<text text-anchor="start" x="253" y="-691.5" font-family="Helvetica,sans-Serif" font-size="10.00"> startPosition)</text>
+<polygon fill="#666666" stroke="#666666" points="215,-768.5 215,-768.5 373,-768.5 373,-768.5 215,-768.5"/>
+<polygon fill="#666666" stroke="#666666" points="215,-738.5 215,-738.5 251,-738.5 251,-738.5 215,-738.5"/>
+<polygon fill="#666666" stroke="#666666" points="251,-738.5 251,-738.5 373,-738.5 373,-738.5 251,-738.5"/>
+<polygon fill="none" stroke="#666666" points="215,-685 215,-786 373,-786 373,-685 215,-685"/>
 </a>
 </g>
 </g>
@@ -113,98 +113,40 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M176.56,-674.84C159.73,-605.29 131.78,-489.83 112.65,-410.82"/>
-<polygon fill="none" stroke="#63b8ff" points="173.21,-675.86 178.96,-684.76 180.01,-674.21 173.21,-675.86"/>
+<path fill="none" stroke="#63b8ff" d="M217.22,-677.95C208.21,-669 199.81,-659.27 193,-649 144.8,-576.3 118.55,-479.31 105,-410.55"/>
+<polygon fill="none" stroke="#63b8ff" points="214.91,-680.59 224.56,-684.96 219.74,-675.52 214.91,-680.59"/>
 </a>
 </g>
 </g>
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classRpgGame_1_1Character_1_1Player.html" target="_top" xlink:title="Represents the player&#45;controlled character in the game.">
-<polygon fill="white" stroke="transparent" points="380,-649 202,-649 202,0 380,0 380,-649"/>
-<text text-anchor="start" x="225" y="-636.5" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Character.Player</text>
-<text text-anchor="start" x="206" y="-621.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-621.5" font-family="Helvetica,sans-Serif" font-size="10.00">override char Symbol</text>
-<text text-anchor="start" x="206" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Strength</text>
-<text text-anchor="start" x="206" y="-591.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-591.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Dexterity</text>
-<text text-anchor="start" x="206" y="-576.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-576.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Health</text>
-<text text-anchor="start" x="206" y="-561.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-561.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Luck</text>
-<text text-anchor="start" x="206" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Aggression</text>
-<text text-anchor="start" x="206" y="-531.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-531.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Wisdom</text>
-<text text-anchor="start" x="206" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">IEquippable? LeftHand</text>
-<text text-anchor="start" x="206" y="-501.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-501.5" font-family="Helvetica,sans-Serif" font-size="10.00">IEquippable? RightHand</text>
-<text text-anchor="start" x="206" y="-486.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-486.5" font-family="Helvetica,sans-Serif" font-size="10.00">ICombatAttack SelectedCombat</text>
-<text text-anchor="start" x="219" y="-475.5" font-family="Helvetica,sans-Serif" font-size="10.00">Attack</text>
-<text text-anchor="start" x="206" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Coins</text>
-<text text-anchor="start" x="206" y="-445.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-445.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Gold</text>
-<text text-anchor="start" x="206" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">void SetSelectedCombatAttack</text>
-<text text-anchor="start" x="219" y="-419.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ICombatAttack attack)</text>
-<text text-anchor="start" x="206" y="-404.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-404.5" font-family="Helvetica,sans-Serif" font-size="10.00">void RestoreHealth</text>
-<text text-anchor="start" x="219" y="-393.5" font-family="Helvetica,sans-Serif" font-size="10.00">(int amount)</text>
-<text text-anchor="start" x="206" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">void TakeDamage(int</text>
-<text text-anchor="start" x="219" y="-367.5" font-family="Helvetica,sans-Serif" font-size="10.00"> amount)</text>
-<text text-anchor="start" x="206" y="-352.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-352.5" font-family="Helvetica,sans-Serif" font-size="10.00">int GetDefenseStrength()</text>
-<text text-anchor="start" x="206" y="-337.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-337.5" font-family="Helvetica,sans-Serif" font-size="10.00">int GetMeleeAttackPower()</text>
-<text text-anchor="start" x="206" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00">int GetDefenseForAttack</text>
-<text text-anchor="start" x="219" y="-311.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ICombatAttack attack)</text>
-<text text-anchor="start" x="206" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">int GetOutgoingDamageFor</text>
-<text text-anchor="start" x="219" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">Attack(ICombatAttack attack)</text>
-<text text-anchor="start" x="206" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">void AddCoins(int amount)</text>
-<text text-anchor="start" x="206" y="-255.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-255.5" font-family="Helvetica,sans-Serif" font-size="10.00">void AddGold(int amount)</text>
-<text text-anchor="start" x="206" y="-240.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-240.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool EquipLeft(IEquippable</text>
-<text text-anchor="start" x="219" y="-229.5" font-family="Helvetica,sans-Serif" font-size="10.00"> item)</text>
-<text text-anchor="start" x="206" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool EquipRight(IEquippable</text>
-<text text-anchor="start" x="219" y="-203.5" font-family="Helvetica,sans-Serif" font-size="10.00"> item)</text>
-<text text-anchor="start" x="206" y="-188.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-188.5" font-family="Helvetica,sans-Serif" font-size="10.00">void DropLeft(Level</text>
-<text text-anchor="start" x="219" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00"> level)</text>
-<text text-anchor="start" x="206" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">void DropRight(Level</text>
-<text text-anchor="start" x="219" y="-151.5" font-family="Helvetica,sans-Serif" font-size="10.00"> level)</text>
-<text text-anchor="start" x="206" y="-136.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="219" y="-136.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player(Position startPosition)</text>
-<text text-anchor="start" x="206" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="219" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool InternalEquipLeft</text>
-<text text-anchor="start" x="219" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">(IEquippable item)</text>
-<text text-anchor="start" x="206" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="219" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool InternalEquipRight</text>
-<text text-anchor="start" x="219" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">(IEquippable item)</text>
-<text text-anchor="start" x="206" y="-69.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="219" y="-69.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool InternalEquipTwoHand</text>
-<text text-anchor="start" x="219" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">(IEquippable item)</text>
-<text text-anchor="start" x="206" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="219" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00">void ApplyLuckDelta</text>
-<text text-anchor="start" x="219" y="-32.5" font-family="Helvetica,sans-Serif" font-size="10.00">(int delta)</text>
-<text text-anchor="start" x="206" y="-17.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="219" y="-17.5" font-family="Helvetica,sans-Serif" font-size="10.00">void ApplyWisdomDelta</text>
-<text text-anchor="start" x="219" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">(int delta)</text>
-<polygon fill="#666666" stroke="#666666" points="202,-631.5 202,-631.5 380,-631.5 380,-631.5 202,-631.5"/>
-<polygon fill="#666666" stroke="#666666" points="202,-440.5 202,-440.5 217,-440.5 217,-440.5 202,-440.5"/>
-<polygon fill="#666666" stroke="#666666" points="217,-440.5 217,-440.5 380,-440.5 380,-440.5 217,-440.5"/>
-<polygon fill="none" stroke="#666666" points="202,0 202,-649 380,-649 380,0 202,0"/>
+<g id="a_Node000003"><a xlink:href="classRpgGame_1_1Character_1_1Mage.html" target="_top" xlink:title="Represents a mage enemy on the level. Uses the same melee/counter rules as Golem.">
+<polygon fill="white" stroke="transparent" points="386,-410.5 202,-410.5 202,-238.5 386,-238.5 386,-410.5"/>
+<text text-anchor="start" x="230" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Character.Mage</text>
+<text text-anchor="start" x="206" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">override char Symbol</text>
+<text text-anchor="start" x="206" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00">IWeapon EquippedWeapon</text>
+<text text-anchor="start" x="206" y="-353.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-353.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Health</text>
+<text text-anchor="start" x="206" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Armor</text>
+<text text-anchor="start" x="206" y="-323.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-323.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool IsDead</text>
+<text text-anchor="start" x="206" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">Mage(Position startPosition,</text>
+<text text-anchor="start" x="219" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00"> IWeapon equippedWeapon,</text>
+<text text-anchor="start" x="219" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00"> int health=24, int baseArmor=1)</text>
+<text text-anchor="start" x="206" y="-271.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-271.5" font-family="Helvetica,sans-Serif" font-size="10.00">int GetCounterAttackPower()</text>
+<text text-anchor="start" x="206" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="219" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">int ApplyDamage(int</text>
+<text text-anchor="start" x="219" y="-245.5" font-family="Helvetica,sans-Serif" font-size="10.00"> rawDamage)</text>
+<polygon fill="#666666" stroke="#666666" points="202,-393.5 202,-393.5 386,-393.5 386,-393.5 202,-393.5"/>
+<polygon fill="#666666" stroke="#666666" points="202,-318.5 202,-318.5 217,-318.5 217,-318.5 202,-318.5"/>
+<polygon fill="#666666" stroke="#666666" points="217,-318.5 217,-318.5 386,-318.5 386,-318.5 217,-318.5"/>
+<polygon fill="none" stroke="#666666" points="202,-238.5 202,-410.5 386,-410.5 386,-238.5 202,-238.5"/>
 </a>
 </g>
 </g>
@@ -212,8 +154,107 @@ var sectionId = 'dynsection-0';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M205.56,-674.93C207.53,-666.91 209.64,-658.27 211.87,-649.15"/>
-<polygon fill="none" stroke="#63b8ff" points="202.14,-674.21 203.16,-684.76 208.94,-675.87 202.14,-674.21"/>
+<path fill="none" stroke="#63b8ff" d="M294,-674.41C294,-604.82 294,-489.67 294,-410.82"/>
+<polygon fill="none" stroke="#63b8ff" points="290.5,-674.76 294,-684.76 297.5,-674.76 290.5,-674.76"/>
+</a>
+</g>
+</g>
+<!-- Node4 -->
+<g id="Node000004" class="node">
+<title>Node4</title>
+<g id="a_Node000004"><a xlink:href="classRpgGame_1_1Character_1_1Player.html" target="_top" xlink:title="Represents the player&#45;controlled character in the game.">
+<polygon fill="white" stroke="transparent" points="582,-649 404,-649 404,0 582,0 582,-649"/>
+<text text-anchor="start" x="427" y="-636.5" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Character.Player</text>
+<text text-anchor="start" x="408" y="-621.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-621.5" font-family="Helvetica,sans-Serif" font-size="10.00">override char Symbol</text>
+<text text-anchor="start" x="408" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Strength</text>
+<text text-anchor="start" x="408" y="-591.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-591.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Dexterity</text>
+<text text-anchor="start" x="408" y="-576.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-576.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Health</text>
+<text text-anchor="start" x="408" y="-561.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-561.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Luck</text>
+<text text-anchor="start" x="408" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Aggression</text>
+<text text-anchor="start" x="408" y="-531.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-531.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Wisdom</text>
+<text text-anchor="start" x="408" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00">IEquippable? LeftHand</text>
+<text text-anchor="start" x="408" y="-501.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-501.5" font-family="Helvetica,sans-Serif" font-size="10.00">IEquippable? RightHand</text>
+<text text-anchor="start" x="408" y="-486.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-486.5" font-family="Helvetica,sans-Serif" font-size="10.00">ICombatAttack SelectedCombat</text>
+<text text-anchor="start" x="421" y="-475.5" font-family="Helvetica,sans-Serif" font-size="10.00">Attack</text>
+<text text-anchor="start" x="408" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Coins</text>
+<text text-anchor="start" x="408" y="-445.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-445.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Gold</text>
+<text text-anchor="start" x="408" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">void SetSelectedCombatAttack</text>
+<text text-anchor="start" x="421" y="-419.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ICombatAttack attack)</text>
+<text text-anchor="start" x="408" y="-404.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-404.5" font-family="Helvetica,sans-Serif" font-size="10.00">void RestoreHealth</text>
+<text text-anchor="start" x="421" y="-393.5" font-family="Helvetica,sans-Serif" font-size="10.00">(int amount)</text>
+<text text-anchor="start" x="408" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">void TakeDamage(int</text>
+<text text-anchor="start" x="421" y="-367.5" font-family="Helvetica,sans-Serif" font-size="10.00"> amount)</text>
+<text text-anchor="start" x="408" y="-352.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-352.5" font-family="Helvetica,sans-Serif" font-size="10.00">int GetDefenseStrength()</text>
+<text text-anchor="start" x="408" y="-337.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-337.5" font-family="Helvetica,sans-Serif" font-size="10.00">int GetMeleeAttackPower()</text>
+<text text-anchor="start" x="408" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00">int GetDefenseForAttack</text>
+<text text-anchor="start" x="421" y="-311.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ICombatAttack attack)</text>
+<text text-anchor="start" x="408" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">int GetOutgoingDamageFor</text>
+<text text-anchor="start" x="421" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">Attack(ICombatAttack attack)</text>
+<text text-anchor="start" x="408" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">void AddCoins(int amount)</text>
+<text text-anchor="start" x="408" y="-255.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-255.5" font-family="Helvetica,sans-Serif" font-size="10.00">void AddGold(int amount)</text>
+<text text-anchor="start" x="408" y="-240.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-240.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool EquipLeft(IEquippable</text>
+<text text-anchor="start" x="421" y="-229.5" font-family="Helvetica,sans-Serif" font-size="10.00"> item)</text>
+<text text-anchor="start" x="408" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool EquipRight(IEquippable</text>
+<text text-anchor="start" x="421" y="-203.5" font-family="Helvetica,sans-Serif" font-size="10.00"> item)</text>
+<text text-anchor="start" x="408" y="-188.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-188.5" font-family="Helvetica,sans-Serif" font-size="10.00">void DropLeft(Level</text>
+<text text-anchor="start" x="421" y="-177.5" font-family="Helvetica,sans-Serif" font-size="10.00"> level)</text>
+<text text-anchor="start" x="408" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">void DropRight(Level</text>
+<text text-anchor="start" x="421" y="-151.5" font-family="Helvetica,sans-Serif" font-size="10.00"> level)</text>
+<text text-anchor="start" x="408" y="-136.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="421" y="-136.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player(Position startPosition)</text>
+<text text-anchor="start" x="408" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="421" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool InternalEquipLeft</text>
+<text text-anchor="start" x="421" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">(IEquippable item)</text>
+<text text-anchor="start" x="408" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="421" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool InternalEquipRight</text>
+<text text-anchor="start" x="421" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">(IEquippable item)</text>
+<text text-anchor="start" x="408" y="-69.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="421" y="-69.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool InternalEquipTwoHand</text>
+<text text-anchor="start" x="421" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">(IEquippable item)</text>
+<text text-anchor="start" x="408" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="421" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00">void ApplyLuckDelta</text>
+<text text-anchor="start" x="421" y="-32.5" font-family="Helvetica,sans-Serif" font-size="10.00">(int delta)</text>
+<text text-anchor="start" x="408" y="-17.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="421" y="-17.5" font-family="Helvetica,sans-Serif" font-size="10.00">void ApplyWisdomDelta</text>
+<text text-anchor="start" x="421" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">(int delta)</text>
+<polygon fill="#666666" stroke="#666666" points="404,-631.5 404,-631.5 582,-631.5 582,-631.5 404,-631.5"/>
+<polygon fill="#666666" stroke="#666666" points="404,-440.5 404,-440.5 419,-440.5 419,-440.5 404,-440.5"/>
+<polygon fill="#666666" stroke="#666666" points="419,-440.5 419,-440.5 582,-440.5 582,-440.5 419,-440.5"/>
+<polygon fill="none" stroke="#666666" points="404,0 404,-649 582,-649 582,0 404,0"/>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node4 -->
+<g id="edge3_Node000001_Node000004" class="edge">
+<title>Node1&#45;&gt;Node4</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M371.06,-677.81C379.99,-668.9 388.28,-659.23 395,-649 398.06,-644.34 401.03,-639.58 403.91,-634.74"/>
+<polygon fill="none" stroke="#63b8ff" points="368.58,-675.33 363.79,-684.78 373.43,-680.39 368.58,-675.33"/>
 </a>
 </g>
 </g>

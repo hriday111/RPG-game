@@ -1,0 +1,5 @@
+<map id="RpgGame.Generation.Strategies.BasicDungeonStrategy" name="RpgGame.Generation.Strategies.BasicDungeonStrategy">
+<area shape="rect" id="Node000001" title="Default complex dungeon: balanced central hall, several side chambers, standard loot profile." alt="" coords="5,119,233,199"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Generation_1_1Strategies_1_1IDungeonStrategy.html" title="Defines the contract for dungeon generation strategies." alt="" coords="25,5,214,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,85,122,118,117,118,117,85"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="RpgGame.Generation.Enemies.MageSpawnStep" name="RpgGame.Generation.Enemies.MageSpawnStep">
+<area shape="rect" id="Node000001" title="Spawns a fixed number of mages." alt="" coords="5,133,224,263"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Generation_1_1Enemies_1_1IEnemySpawnStep.html" title="One thematic enemy spawn contribution (one or several of the same enemy type via count)...." alt="" coords="23,5,207,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,99,117,133,112,133,112,99"/>
+</map>

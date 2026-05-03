@@ -1,6 +1,10 @@
 var namespaceRpgGame_1_1Generation_1_1Strategies =
 [
-    [ "DungeonGroundsStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1DungeonGroundsStrategy.html", "classRpgGame_1_1Generation_1_1Strategies_1_1DungeonGroundsStrategy" ],
+    [ "BasicDungeonStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1BasicDungeonStrategy.html", "classRpgGame_1_1Generation_1_1Strategies_1_1BasicDungeonStrategy" ],
     [ "DungeonSandboxStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1DungeonSandboxStrategy.html", "classRpgGame_1_1Generation_1_1Strategies_1_1DungeonSandboxStrategy" ],
-    [ "IDungeonStrategy", "interfaceRpgGame_1_1Generation_1_1Strategies_1_1IDungeonStrategy.html", "interfaceRpgGame_1_1Generation_1_1Strategies_1_1IDungeonStrategy" ]
+    [ "DungeonStrategyCatalog", "classRpgGame_1_1Generation_1_1Strategies_1_1DungeonStrategyCatalog.html", null ],
+    [ "HealingDungeonStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1HealingDungeonStrategy.html", "classRpgGame_1_1Generation_1_1Strategies_1_1HealingDungeonStrategy" ],
+    [ "IDungeonStrategy", "interfaceRpgGame_1_1Generation_1_1Strategies_1_1IDungeonStrategy.html", "interfaceRpgGame_1_1Generation_1_1Strategies_1_1IDungeonStrategy" ],
+    [ "LibraryDungeonStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1LibraryDungeonStrategy.html", "classRpgGame_1_1Generation_1_1Strategies_1_1LibraryDungeonStrategy" ],
+    [ "TreasureDungeonStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1TreasureDungeonStrategy.html", "classRpgGame_1_1Generation_1_1Strategies_1_1TreasureDungeonStrategy" ]
 ];

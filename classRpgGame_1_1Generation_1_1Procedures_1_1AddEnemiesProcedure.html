@@ -93,30 +93,40 @@ $(document).ready(function(){initNavTree('classRpgGame_1_1Generation_1_1Procedur
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">RpgGame.Generation.Procedures.AddEnemiesProcedure Class Reference</div></div>
+  <div class="headertitle"><div class="title">RpgGame.Generation.Procedures.AddEnemiesProcedure Class Reference<span class="mlabels"><span class="mlabel">sealed</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Spawns enemies from an ordered list provided at construction — no branching on dungeon theme here.  
+ <a href="classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for RpgGame.Generation.Procedures.AddEnemiesProcedure:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure__inherit__graph.svg" width="246" height="298"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure__inherit__graph.svg" width="258" height="362"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for RpgGame.Generation.Procedures.AddEnemiesProcedure:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure__coll__graph.svg" width="246" height="298"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure__coll__graph.svg" width="258" height="362"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a486a63dae8b1f3ea738ccb7f8f64fd81" id="r_a486a63dae8b1f3ea738ccb7f8f64fd81"><td class="memItemLeft" align="right" valign="top"><a id="a486a63dae8b1f3ea738ccb7f8f64fd81" name="a486a63dae8b1f3ea738ccb7f8f64fd81"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AddEnemiesProcedure</b> (int GolemCount=1)</td></tr>
-<tr class="separator:a486a63dae8b1f3ea738ccb7f8f64fd81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e99bcf0837007896f8b0ea44a6764a8" id="r_a6e99bcf0837007896f8b0ea44a6764a8"><td class="memItemLeft" align="right" valign="top"><a id="a6e99bcf0837007896f8b0ea44a6764a8" name="a6e99bcf0837007896f8b0ea44a6764a8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AddEnemiesProcedure</b> (ImmutableArray&lt; <a class="el" href="interfaceRpgGame_1_1Generation_1_1Enemies_1_1IEnemySpawnStep.html">IEnemySpawnStep</a> &gt; enemySpawnSteps)</td></tr>
+<tr class="memdesc:a6e99bcf0837007896f8b0ea44a6764a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preferred when using Themes.DungeonThemeProfile.EnemySpawnSteps. <br /></td></tr>
+<tr class="separator:a6e99bcf0837007896f8b0ea44a6764a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a105a8e178f5c9576dd00bed3236d8196" id="r_a105a8e178f5c9576dd00bed3236d8196"><td class="memItemLeft" align="right" valign="top"><a id="a105a8e178f5c9576dd00bed3236d8196" name="a105a8e178f5c9576dd00bed3236d8196"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AddEnemiesProcedure</b> (IReadOnlyList&lt; <a class="el" href="interfaceRpgGame_1_1Generation_1_1Enemies_1_1IEnemySpawnStep.html">IEnemySpawnStep</a> &gt; steps)</td></tr>
+<tr class="memdesc:a105a8e178f5c9576dd00bed3236d8196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts any read-only list (e.g. from tests or dynamic composition). <br /></td></tr>
+<tr class="separator:a105a8e178f5c9576dd00bed3236d8196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d12247ff2444089f35771a96d5ca050" id="r_a3d12247ff2444089f35771a96d5ca050"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure.html#a3d12247ff2444089f35771a96d5ca050">ApplyAsync</a> (<a class="el" href="classRpgGame_1_1Core_1_1Level.html">Level</a> level, <a class="el" href="classRpgGame_1_1Generation_1_1DungeonContext.html">DungeonContext</a> context)</td></tr>
 <tr class="memdesc:a3d12247ff2444089f35771a96d5ca050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronously applies this generation step to the level.  <br /></td></tr>
 <tr class="separator:a3d12247ff2444089f35771a96d5ca050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Spawns enemies from an ordered list provided at construction — no branching on dungeon theme here. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3d12247ff2444089f35771a96d5ca050" name="a3d12247ff2444089f35771a96d5ca050"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3d12247ff2444089f35771a96d5ca050">&#9670;&#160;</a></span>ApplyAsync()</h2>
 
@@ -162,11 +172,6 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>A task that completes when the procedure finishes.</dd></dl>
 
 <p>Implements <a class="el" href="interfaceRpgGame_1_1Generation_1_1IDungeonProcedure.html#a17fc77ea959d1620a1c0a23f4db31fe5">RpgGame.Generation.IDungeonProcedure</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure_a3d12247ff2444089f35771a96d5ca050_cgraph.svg" width="100%" height="421"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
 </div>
 </div>

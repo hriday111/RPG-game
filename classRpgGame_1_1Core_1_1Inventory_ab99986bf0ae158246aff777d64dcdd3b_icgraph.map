@@ -1,0 +1,5 @@
+<map id="RpgGame.Core.Inventory.GetSelectedItem" name="RpgGame.Core.Inventory.GetSelectedItem">
+<area shape="rect" id="Node000001" title="Gets the currently selected item without removing it." alt="" coords="265,5,476,45"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Input_1_1InventoryToRightHandCommand.html#a6d084514392735f09db7f969bc48ea51" title="Executes the command using provided game objects.Usually InputResult.Ok to continue,..." alt="" coords="5,5,217,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,28,218,28,218,23,252,23"/>
+</map>

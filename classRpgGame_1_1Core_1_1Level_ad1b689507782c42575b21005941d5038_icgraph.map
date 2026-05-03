@@ -1,6 +1,6 @@
 <map id="RpgGame.Core.Level.RemoveGolem" name="RpgGame.Core.Level.RemoveGolem">
 <area shape="rect" id="Node000001" title="Removes a golem from the level and frees its tile for movement." alt="" coords="627,101,844,141"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Level.html#af523ef2f3444b888867305d0a2e6a512" title="One orthogonal step from the player (WASD): walk onto a free tile, or melee&#45;attack a golem on the tar..." alt="" coords="324,101,579,141"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Level.html#af523ef2f3444b888867305d0a2e6a512" title="One orthogonal step from the player (WASD): walk onto a free tile, or melee&#45;attack a golem or mage on..." alt="" coords="324,101,579,141"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="613,124,579,124,579,119,613,119"/>
 <area shape="rect" id="Node000003" href="$classRpgGame_1_1Input_1_1MoveDownCommand.html#a0978e3de49ba534f9ebfaec59439394c" title="Executes the command using provided game objects.Usually InputResult.Ok to continue,..." alt="" coords="5,5,276,45"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,99,275,60,232,48,233,43,277,55,389,94"/>

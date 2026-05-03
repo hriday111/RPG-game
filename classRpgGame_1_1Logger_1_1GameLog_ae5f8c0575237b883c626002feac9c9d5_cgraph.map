@@ -1,0 +1,7 @@
+<map id="RpgGame.Logger.GameLog.Write" name="RpgGame.Logger.GameLog.Write">
+<area shape="rect" id="Node000001" title="Writes a polymorphic event." alt="" coords="5,35,244,60"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Logger_1_1ILogSink.html#a965787f7312bf6fc33fade6ec723587c" title="Adds a new log entry." alt="" coords="292,5,511,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,32,278,28,279,34,244,37"/>
+<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Logger_1_1ILogEvent.html#a553dbb0185e73758e3d12fa5a3e4a862" title="Creates the human&#45;readable message for this event." alt="" coords="299,55,504,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,57,285,61,285,66,244,62"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="RpgGame.Character.Mage" name="RpgGame.Character.Mage">
+<area shape="rect" id="Node000001" title="Represents a mage enemy on the level. Uses the same melee/counter rules as Golem." alt="" coords="5,188,251,417"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Character.html" title="Base abstract class for both playable and non&#45;playable characters." alt="" coords="51,5,205,140"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,154,131,188,125,188,125,154"/>
+</map>

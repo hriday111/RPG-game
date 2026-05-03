@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('classRpgGame_1_1Core_1_1Level.html',''
 <div class="dynheader">
 Collaboration diagram for RpgGame.Core.Level:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Core_1_1Level__coll__graph.svg" width="268" height="498"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Core_1_1Level__coll__graph.svg" width="268" height="552"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -141,8 +141,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddGolem</b> (<a clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryGetGolemAt</b> (Position pos, [NotNullWhen(true)] out <a class="el" href="classRpgGame_1_1Character_1_1Golem.html">Golem</a>? golem)</td></tr>
 <tr class="memdesc:a81b95d5c2aa808c7e214c7b0ba037ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">When a golem occupies <em>pos</em> , sets <em>golem</em>  and returns true. <br /></td></tr>
 <tr class="separator:a81b95d5c2aa808c7e214c7b0ba037ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f590cc0965490e889e5c09ec54f876" id="r_ad0f590cc0965490e889e5c09ec54f876"><td class="memItemLeft" align="right" valign="top"><a id="ad0f590cc0965490e889e5c09ec54f876" name="ad0f590cc0965490e889e5c09ec54f876"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddMage</b> (<a class="el" href="classRpgGame_1_1Character_1_1Mage.html">Mage</a> mage)</td></tr>
+<tr class="memdesc:ad0f590cc0965490e889e5c09ec54f876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Places a mage on the level and marks its tile occupied for movement checks. <br /></td></tr>
+<tr class="separator:ad0f590cc0965490e889e5c09ec54f876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0b1e3dd6b9f8aade6630f00c76beb4" id="r_a8e0b1e3dd6b9f8aade6630f00c76beb4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Core_1_1Level.html#a8e0b1e3dd6b9f8aade6630f00c76beb4">RemoveMage</a> (<a class="el" href="classRpgGame_1_1Character_1_1Mage.html">Mage</a> mage)</td></tr>
+<tr class="memdesc:a8e0b1e3dd6b9f8aade6630f00c76beb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a mage from the level and frees its tile for movement.  <br /></td></tr>
+<tr class="separator:a8e0b1e3dd6b9f8aade6630f00c76beb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8496bf7145eda32b23d08c744b2f8ac3" id="r_a8496bf7145eda32b23d08c744b2f8ac3"><td class="memItemLeft" align="right" valign="top"><a id="a8496bf7145eda32b23d08c744b2f8ac3" name="a8496bf7145eda32b23d08c744b2f8ac3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryGetMageAt</b> (Position pos, [NotNullWhen(true)] out <a class="el" href="classRpgGame_1_1Character_1_1Mage.html">Mage</a>? mage)</td></tr>
+<tr class="memdesc:a8496bf7145eda32b23d08c744b2f8ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">When a mage occupies <em>pos</em> , sets <em>mage</em>  and returns true. <br /></td></tr>
+<tr class="separator:a8496bf7145eda32b23d08c744b2f8ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af523ef2f3444b888867305d0a2e6a512" id="r_af523ef2f3444b888867305d0a2e6a512"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Core_1_1Level.html#af523ef2f3444b888867305d0a2e6a512">TryOrthogonalStepOrMeleeCombat</a> (<a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player, Position targetPos)</td></tr>
-<tr class="memdesc:af523ef2f3444b888867305d0a2e6a512"><td class="mdescLeft">&#160;</td><td class="mdescRight">One orthogonal step from the player (WASD): walk onto a free tile, or melee-attack a golem on the target tile. Diagonal offsets are rejected (distance must be 1 on the grid).  <br /></td></tr>
+<tr class="memdesc:af523ef2f3444b888867305d0a2e6a512"><td class="mdescLeft">&#160;</td><td class="mdescRight">One orthogonal step from the player (WASD): walk onto a free tile, or melee-attack a golem or mage on the target tile. Diagonal offsets are rejected (distance must be 1 on the grid).  <br /></td></tr>
 <tr class="separator:af523ef2f3444b888867305d0a2e6a512"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a377e083189e74d5d6ed5fd3234ebfa0f" id="r_a377e083189e74d5d6ed5fd3234ebfa0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Core_1_1Level.html#a377e083189e74d5d6ed5fd3234ebfa0f">AddItem</a> (Position pos, <a class="el" href="interfaceRpgGame_1_1Items_1_1IItem.html">IItem</a> item)</td></tr>
 <tr class="memdesc:a377e083189e74d5d6ed5fd3234ebfa0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an item to the specified position in the level.  <br /></td></tr>
@@ -177,10 +188,18 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>Height</b><code> [get]
 IReadOnlyList&lt; <a class="el" href="classRpgGame_1_1Character_1_1Golem.html">Golem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Golems</b><code> [get]</code></td></tr>
 <tr class="memdesc:acb08cce1ea4d39ce5c4e30d16256dadf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the golems currently on the level. <br /></td></tr>
 <tr class="separator:acb08cce1ea4d39ce5c4e30d16256dadf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d654f4720ba1054aa415af1db9da989" id="r_a9d654f4720ba1054aa415af1db9da989"><td class="memItemLeft" align="right" valign="top"><a id="a9d654f4720ba1054aa415af1db9da989" name="a9d654f4720ba1054aa415af1db9da989"></a>
+IReadOnlyList&lt; <a class="el" href="classRpgGame_1_1Character_1_1Mage.html">Mage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Mages</b><code> [get]</code></td></tr>
+<tr class="memdesc:a9d654f4720ba1054aa415af1db9da989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the mages currently on the level. <br /></td></tr>
+<tr class="separator:a9d654f4720ba1054aa415af1db9da989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed519c4db0cc865cb495da11e718d0b5" id="r_aed519c4db0cc865cb495da11e718d0b5"><td class="memItemLeft" align="right" valign="top"><a id="aed519c4db0cc865cb495da11e718d0b5" name="aed519c4db0cc865cb495da11e718d0b5"></a>
 string?&#160;</td><td class="memItemRight" valign="bottom"><b>LastCombatMessage</b><code> [get]</code></td></tr>
 <tr class="memdesc:aed519c4db0cc865cb495da11e718d0b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text describing the last orthogonal melee exchange, for the UI. <br /></td></tr>
 <tr class="separator:aed519c4db0cc865cb495da11e718d0b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e5d048a706eefc68d03c72c3c2a405d" id="r_a8e5d048a706eefc68d03c72c3c2a405d"><td class="memItemLeft" align="right" valign="top"><a id="a8e5d048a706eefc68d03c72c3c2a405d" name="a8e5d048a706eefc68d03c72c3c2a405d"></a>
+string?&#160;</td><td class="memItemRight" valign="bottom"><b>DungeonIntro</b><code> [get, set]</code></td></tr>
+<tr class="memdesc:a8e5d048a706eefc68d03c72c3c2a405d"><td class="mdescLeft">&#160;</td><td class="mdescRight">One-line thematic intro for this dungeon (from the active <code>DungeonThemeProfile</code>). <br /></td></tr>
+<tr class="separator:a8e5d048a706eefc68d03c72c3c2a405d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a single game level containing terrain tiles, item placements, and movement validation logic. </p>
@@ -282,7 +301,7 @@ string?&#160;</td><td class="memItemRight" valign="bottom"><b>LastCombatMessage<
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Core_1_1Level_a377e083189e74d5d6ed5fd3234ebfa0f_icgraph.svg" width="520" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Core_1_1Level_a377e083189e74d5d6ed5fd3234ebfa0f_icgraph.svg" width="520" height="244"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -368,7 +387,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Core_1_1Level_ad48a7c23cc285da72a157194198e553a_icgraph.svg" width="100%" height="589"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Core_1_1Level_ad48a7c23cc285da72a157194198e553a_icgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -483,7 +502,7 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Core_1_1Level_a29d79bf5cda2e96ca6e823f9d5772db0_icgraph.svg" width="100%" height="482"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Core_1_1Level_a29d79bf5cda2e96ca6e823f9d5772db0_icgraph.svg" width="100%" height="501"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -579,6 +598,45 @@ Here is the call graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Core_1_1Level_ad1b689507782c42575b21005941d5038_icgraph.svg" width="100%" height="482"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a8e0b1e3dd6b9f8aade6630f00c76beb4" name="a8e0b1e3dd6b9f8aade6630f00c76beb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0b1e3dd6b9f8aade6630f00c76beb4">&#9670;&#160;</a></span>RemoveMage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RpgGame.Core.Level.RemoveMage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRpgGame_1_1Character_1_1Mage.html">Mage</a>&#160;</td>
+          <td class="paramname"><em>mage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes a mage from the level and frees its tile for movement. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the mage was present and removed.</dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Core_1_1Level_a8e0b1e3dd6b9f8aade6630f00c76beb4_cgraph.svg" width="547" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Core_1_1Level_a8e0b1e3dd6b9f8aade6630f00c76beb4_icgraph.svg" width="100%" height="482"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -805,7 +863,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>One orthogonal step from the player (WASD): walk onto a free tile, or melee-attack a golem on the target tile. Diagonal offsets are rejected (distance must be 1 on the grid). </p>
+<p>One orthogonal step from the player (WASD): walk onto a free tile, or melee-attack a golem or mage on the target tile. Diagonal offsets are rejected (distance must be 1 on the grid). </p>
 <dl class="section return"><dt>Returns</dt><dd>True if a move or combat exchange was attempted on a valid target tile.</dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>

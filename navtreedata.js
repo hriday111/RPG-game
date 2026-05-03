@@ -39,7 +39,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
         [ "Properties", "functions_prop.html", null ]
       ] ]
@@ -50,9 +50,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classRpgGame_1_1Generation_1_1Procedures_1_1ChambersProcedure.html#a8fcf1aefb0b543c1258305e1ca03c243",
-"classRpgGame_1_1Items_1_1Sword.html",
-"interfaceRpgGame_1_1Items_1_1IEquippable.html"
+"classRpgGame_1_1Generation_1_1MapSpawnHelper.html#a3d4f8e59572c78841b18c605691225b8",
+"classRpgGame_1_1Items_1_1Modifiers_1_1StrongWeaponModifier.html",
+"classRpgGame_1_1Logger_1_1LogEventBase.html#ace78e0266034cd58e97ddd3c7061ca42"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

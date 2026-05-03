@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classRpgGame_1_1Core_1_1Level.html#af523ef2f3444b888867305d0a2e6a512" target="_top" xlink:title="One orthogonal step from the player (WASD): walk onto a free tile, or melee&#45;attack a golem on the tar...">
+<g id="a_Node000002"><a xlink:href="classRpgGame_1_1Core_1_1Level.html#af523ef2f3444b888867305d0a2e6a512" target="_top" xlink:title="One orthogonal step from the player (WASD): walk onto a free tile, or melee&#45;attack a golem or mage on...">
 <polygon fill="white" stroke="#666666" points="430,-102 239,-102 239,-72 430,-72 430,-102"/>
 <text text-anchor="start" x="247" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Core.Level.TryOrthogonal</text>
 <text text-anchor="middle" x="334.5" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00">StepOrMeleeCombat</text>

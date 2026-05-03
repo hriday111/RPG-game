@@ -1,7 +1,11 @@
 <map id="RpgGame.Core.Level.AddItem" name="RpgGame.Core.Level.AddItem">
-<area shape="rect" id="Node000001" title="Adds an item to the specified position in the level." alt="" coords="296,42,515,67"/>
+<area shape="rect" id="Node000001" title="Adds an item to the specified position in the level." alt="" coords="296,102,515,127"/>
 <area shape="rect" id="Node000002" href="$classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a9feb3297228ce9428364d7df12b5abae" title="Handles the drop interaction for the item." alt="" coords="5,5,248,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="282,44,248,41,249,35,282,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="359,100,247,60,207,48,208,43,249,55,360,95"/>
 <area shape="rect" id="Node000003" href="$classRpgGame_1_1Items_1_1Weapon.html#a339e37ae4e04120d793116e8ab6b48d7" title="Drops the weapon onto the current level at the player&#39;s position." alt="" coords="9,70,245,95"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="283,70,245,73,245,68,282,64"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="282,103,237,98,238,93,282,98"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Generation_1_1MapSpawnHelper.html#a1d4ada95af130a739159a6b306a5cf3b" title="Asynchronously places a number of items at random walkable locations on the given level." alt="" coords="8,119,245,174"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="282,131,246,136,245,130,282,126"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Generation_1_1MapSpawnHelper.html#a30fbadd31495be4130aeff2be7dc6583" title="Places a single item on a random walkable interior tile (avoids default player spawn)." alt="" coords="8,199,245,239"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="368,136,313,162,249,188,208,201,206,196,247,183,310,157,366,131"/>
 </map>

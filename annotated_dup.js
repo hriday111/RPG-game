@@ -4,6 +4,7 @@ var annotated_dup =
       [ "Character", "namespaceRpgGame_1_1Character.html", [
         [ "Character", "classRpgGame_1_1Character_1_1Character.html", "classRpgGame_1_1Character_1_1Character" ],
         [ "Golem", "classRpgGame_1_1Character_1_1Golem.html", "classRpgGame_1_1Character_1_1Golem" ],
+        [ "Mage", "classRpgGame_1_1Character_1_1Mage.html", "classRpgGame_1_1Character_1_1Mage" ],
         [ "Player", "classRpgGame_1_1Character_1_1Player.html", "classRpgGame_1_1Character_1_1Player" ]
       ] ],
       [ "Combat", "namespaceRpgGame_1_1Combat.html", [
@@ -28,6 +29,11 @@ var annotated_dup =
         [ "Level", "classRpgGame_1_1Core_1_1Level.html", "classRpgGame_1_1Core_1_1Level" ]
       ] ],
       [ "Generation", "namespaceRpgGame_1_1Generation.html", [
+        [ "Enemies", "namespaceRpgGame_1_1Generation_1_1Enemies.html", [
+          [ "GolemSpawnStep", "classRpgGame_1_1Generation_1_1Enemies_1_1GolemSpawnStep.html", "classRpgGame_1_1Generation_1_1Enemies_1_1GolemSpawnStep" ],
+          [ "IEnemySpawnStep", "interfaceRpgGame_1_1Generation_1_1Enemies_1_1IEnemySpawnStep.html", null ],
+          [ "MageSpawnStep", "classRpgGame_1_1Generation_1_1Enemies_1_1MageSpawnStep.html", "classRpgGame_1_1Generation_1_1Enemies_1_1MageSpawnStep" ]
+        ] ],
         [ "Procedures", "namespaceRpgGame_1_1Generation_1_1Procedures.html", [
           [ "AddEnemiesProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure" ],
           [ "AddItemsProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1AddItemsProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1AddItemsProcedure" ],
@@ -36,12 +42,22 @@ var annotated_dup =
           [ "ChambersProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1ChambersProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1ChambersProcedure" ],
           [ "EmptyDungeonProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1EmptyDungeonProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1EmptyDungeonProcedure" ],
           [ "FilledDungeonProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1FilledDungeonProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1FilledDungeonProcedure" ],
-          [ "PathsProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1PathsProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1PathsProcedure" ]
+          [ "PathsProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1PathsProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1PathsProcedure" ],
+          [ "PlaceArtifactProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1PlaceArtifactProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1PlaceArtifactProcedure" ]
         ] ],
         [ "Strategies", "namespaceRpgGame_1_1Generation_1_1Strategies.html", [
-          [ "DungeonGroundsStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1DungeonGroundsStrategy.html", "classRpgGame_1_1Generation_1_1Strategies_1_1DungeonGroundsStrategy" ],
+          [ "BasicDungeonStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1BasicDungeonStrategy.html", "classRpgGame_1_1Generation_1_1Strategies_1_1BasicDungeonStrategy" ],
           [ "DungeonSandboxStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1DungeonSandboxStrategy.html", "classRpgGame_1_1Generation_1_1Strategies_1_1DungeonSandboxStrategy" ],
-          [ "IDungeonStrategy", "interfaceRpgGame_1_1Generation_1_1Strategies_1_1IDungeonStrategy.html", "interfaceRpgGame_1_1Generation_1_1Strategies_1_1IDungeonStrategy" ]
+          [ "DungeonStrategyCatalog", "classRpgGame_1_1Generation_1_1Strategies_1_1DungeonStrategyCatalog.html", null ],
+          [ "HealingDungeonStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1HealingDungeonStrategy.html", "classRpgGame_1_1Generation_1_1Strategies_1_1HealingDungeonStrategy" ],
+          [ "IDungeonStrategy", "interfaceRpgGame_1_1Generation_1_1Strategies_1_1IDungeonStrategy.html", "interfaceRpgGame_1_1Generation_1_1Strategies_1_1IDungeonStrategy" ],
+          [ "LibraryDungeonStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1LibraryDungeonStrategy.html", "classRpgGame_1_1Generation_1_1Strategies_1_1LibraryDungeonStrategy" ],
+          [ "TreasureDungeonStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1TreasureDungeonStrategy.html", "classRpgGame_1_1Generation_1_1Strategies_1_1TreasureDungeonStrategy" ]
+        ] ],
+        [ "Themes", "namespaceRpgGame_1_1Generation_1_1Themes.html", [
+          [ "DungeonThemeCatalog", "classRpgGame_1_1Generation_1_1Themes_1_1DungeonThemeCatalog.html", null ],
+          [ "DungeonThemePicker", "classRpgGame_1_1Generation_1_1Themes_1_1DungeonThemePicker.html", null ],
+          [ "DungeonThemeProfile", "classRpgGame_1_1Generation_1_1Themes_1_1DungeonThemeProfile.html", null ]
         ] ],
         [ "DungeonBuilder", "classRpgGame_1_1Generation_1_1DungeonBuilder.html", "classRpgGame_1_1Generation_1_1DungeonBuilder" ],
         [ "DungeonContext", "classRpgGame_1_1Generation_1_1DungeonContext.html", "classRpgGame_1_1Generation_1_1DungeonContext" ],
@@ -92,15 +108,20 @@ var annotated_dup =
         [ "Weapon", "classRpgGame_1_1Items_1_1Weapon.html", "classRpgGame_1_1Items_1_1Weapon" ]
       ] ],
       [ "Logger", "namespaceRpgGame_1_1Logger.html", [
+        [ "AttackDealtLogEvent", "classRpgGame_1_1Logger_1_1AttackDealtLogEvent.html", "classRpgGame_1_1Logger_1_1AttackDealtLogEvent" ],
         [ "BufferedJournalLogSink", "classRpgGame_1_1Logger_1_1BufferedJournalLogSink.html", "classRpgGame_1_1Logger_1_1BufferedJournalLogSink" ],
-        [ "DefaultLogEventFormatter", "classRpgGame_1_1Logger_1_1DefaultLogEventFormatter.html", "classRpgGame_1_1Logger_1_1DefaultLogEventFormatter" ],
+        [ "EnemyDefeatedLogEvent", "classRpgGame_1_1Logger_1_1EnemyDefeatedLogEvent.html", "classRpgGame_1_1Logger_1_1EnemyDefeatedLogEvent" ],
         [ "FileLogSink", "classRpgGame_1_1Logger_1_1FileLogSink.html", "classRpgGame_1_1Logger_1_1FileLogSink" ],
         [ "GameLog", "classRpgGame_1_1Logger_1_1GameLog.html", "classRpgGame_1_1Logger_1_1GameLog" ],
-        [ "GameLogEvent", "classRpgGame_1_1Logger_1_1GameLogEvent.html", "classRpgGame_1_1Logger_1_1GameLogEvent" ],
-        [ "ILogEventFormatter", "interfaceRpgGame_1_1Logger_1_1ILogEventFormatter.html", "interfaceRpgGame_1_1Logger_1_1ILogEventFormatter" ],
+        [ "ILogEvent", "interfaceRpgGame_1_1Logger_1_1ILogEvent.html", "interfaceRpgGame_1_1Logger_1_1ILogEvent" ],
         [ "ILogSink", "interfaceRpgGame_1_1Logger_1_1ILogSink.html", "interfaceRpgGame_1_1Logger_1_1ILogSink" ],
         [ "InMemoryLogSink", "classRpgGame_1_1Logger_1_1InMemoryLogSink.html", "classRpgGame_1_1Logger_1_1InMemoryLogSink" ],
-        [ "LogEntry", "classRpgGame_1_1Logger_1_1LogEntry.html", "classRpgGame_1_1Logger_1_1LogEntry" ]
+        [ "ItemEquippedLogEvent", "classRpgGame_1_1Logger_1_1ItemEquippedLogEvent.html", "classRpgGame_1_1Logger_1_1ItemEquippedLogEvent" ],
+        [ "ItemPickedUpLogEvent", "classRpgGame_1_1Logger_1_1ItemPickedUpLogEvent.html", "classRpgGame_1_1Logger_1_1ItemPickedUpLogEvent" ],
+        [ "LogEntry", "classRpgGame_1_1Logger_1_1LogEntry.html", "classRpgGame_1_1Logger_1_1LogEntry" ],
+        [ "LogEventBase", "classRpgGame_1_1Logger_1_1LogEventBase.html", "classRpgGame_1_1Logger_1_1LogEventBase" ],
+        [ "PotionConsumedLogEvent", "classRpgGame_1_1Logger_1_1PotionConsumedLogEvent.html", "classRpgGame_1_1Logger_1_1PotionConsumedLogEvent" ],
+        [ "SessionStartedLogEvent", "classRpgGame_1_1Logger_1_1SessionStartedLogEvent.html", "classRpgGame_1_1Logger_1_1SessionStartedLogEvent" ]
       ] ],
       [ "Renderer", "namespaceRpgGame_1_1Renderer.html", [
         [ "ConsoleRenderer", "classRpgGame_1_1Renderer_1_1ConsoleRenderer.html", "classRpgGame_1_1Renderer_1_1ConsoleRenderer" ],

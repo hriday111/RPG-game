@@ -1,0 +1,7 @@
+<map id="RpgGame.Logger.PotionConsumedLogEvent" name="RpgGame.Logger.PotionConsumedLogEvent">
+<area shape="rect" id="Node000001" title="Event recorded when the player consumes a potion (health restored on pickup)." alt="" coords="5,287,244,401"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Logger_1_1LogEventBase.html" title="Base class for log events with shared timestamp handling." alt="" coords="30,119,219,239"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,252,127,286,122,286,122,252"/>
+<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Logger_1_1ILogEvent.html" title="Represents a polymorphic logging event that can render itself as text." alt="" coords="39,5,210,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="127,85,127,118,122,118,122,85"/>
+</map>

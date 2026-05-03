@@ -1,0 +1,7 @@
+<map id="RpgGame.Logger.SessionStartedLogEvent" name="RpgGame.Logger.SessionStartedLogEvent">
+<area shape="rect" id="Node000001" title="Event recorded when a game session starts." alt="" coords="5,287,232,401"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Logger_1_1LogEventBase.html" title="Base class for log events with shared timestamp handling." alt="" coords="24,119,213,239"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,252,121,286,116,286,116,252"/>
+<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Logger_1_1ILogEvent.html" title="Represents a polymorphic logging event that can render itself as text." alt="" coords="33,5,204,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="121,85,121,118,116,118,116,85"/>
+</map>

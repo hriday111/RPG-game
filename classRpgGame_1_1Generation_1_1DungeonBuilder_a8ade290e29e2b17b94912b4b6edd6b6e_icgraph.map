@@ -1,8 +1,14 @@
 <map id="RpgGame.Generation.DungeonBuilder.Add" name="RpgGame.Generation.DungeonBuilder.Add">
-<area shape="rect" id="Node000001" title="Adds a generation procedure to the sequence." alt="" coords="289,37,513,77"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="449,26,432,19,401,16,374,18,358,23,352,29,355,36,350,38,347,28,355,18,373,13,401,11,433,13,451,21"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1Strategies_1_1DungeonGroundsStrategy.html#ad7a63b7c9a9ce022c954a55c1cdb1a76" title="Creates and returns a configured dungeon builder with the strategy&#39;s procedures." alt="" coords="5,5,241,45"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="276,46,241,42,242,36,276,40"/>
+<area shape="rect" id="Node000001" title="Adds a generation procedure to the sequence." alt="" coords="289,133,513,173"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="449,122,432,115,401,112,374,114,358,119,352,125,355,132,350,134,347,124,355,114,373,109,401,107,433,109,451,117"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1Strategies_1_1BasicDungeonStrategy.html#ac852a6299a64043069e07d7c0420a469" title="Creates and returns a configured dungeon builder for this strategy." alt="" coords="5,5,241,45"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="359,128,304,93,240,60,208,48,210,43,242,55,307,88,362,123"/>
 <area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1Strategies_1_1DungeonSandboxStrategy.html#ab760752f5696bb3851159d4b813ef551" title="Creates and returns a configured dungeon builder with the strategy&#39;s procedures." alt="" coords="5,69,241,109"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="276,74,242,78,241,73,276,69"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="300,133,210,112,211,107,301,128"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Generation_1_1Strategies_1_1HealingDungeonStrategy.html#aaa663a6ed12fe45f0eaa02ba50c6410c" title="Creates and returns a configured dungeon builder for this strategy." alt="" coords="5,133,241,173"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="276,156,242,156,242,151,276,151"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Generation_1_1Strategies_1_1LibraryDungeonStrategy.html#aeef2286a281c77f27a08cd83a8e102f9" title="Creates and returns a configured dungeon builder for this strategy." alt="" coords="5,197,241,237"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="301,179,211,200,210,195,300,174"/>
+<area shape="rect" id="Node000006" href="$classRpgGame_1_1Generation_1_1Strategies_1_1TreasureDungeonStrategy.html#a0f495598836fc1241f4d43e6e2e55c7d" title="Creates and returns a configured dungeon builder for this strategy." alt="" coords="5,261,241,301"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="362,183,307,219,242,252,210,264,208,259,240,247,304,214,359,179"/>
 </map>

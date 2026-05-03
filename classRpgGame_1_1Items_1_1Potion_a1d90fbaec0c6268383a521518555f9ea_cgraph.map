@@ -1,5 +1,7 @@
 <map id="RpgGame.Items.Potion.OnPickup" name="RpgGame.Items.Potion.OnPickup">
-<area shape="rect" id="Node000001" title="Called when the player picks up the potion. Restores health immediately." alt="" coords="5,13,241,38"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Player.html#acbe997c5dad36a3935dc909b1b971644" title="Restores the player&#39;s health by the specified amount, capped at 100." alt="" coords="289,5,489,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,23,275,23,275,28,242,28"/>
+<area shape="rect" id="Node000001" title="Called when the player picks up the potion. Restores health immediately." alt="" coords="5,42,241,67"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Player.html#acbe997c5dad36a3935dc909b1b971644" title="Restores the player&#39;s health by the specified amount, capped at 100." alt="" coords="309,5,509,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,40,295,34,295,40,242,45"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Logger_1_1GameLog.html#a263d0c775b47c91d01af93dc9c8641ef" title="Writes a message to the active sink." alt="" coords="289,70,528,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,64,276,67,275,72,241,69"/>
 </map>

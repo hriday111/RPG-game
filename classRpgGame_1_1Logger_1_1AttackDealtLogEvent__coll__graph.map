@@ -1,0 +1,7 @@
+<map id="RpgGame.Logger.AttackDealtLogEvent" name="RpgGame.Logger.AttackDealtLogEvent">
+<area shape="rect" id="Node000001" title="Event recorded when the player deals damage." alt="" coords="5,287,215,421"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Logger_1_1LogEventBase.html" title="Base class for log events with shared timestamp handling." alt="" coords="15,119,205,239"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,252,113,286,107,286,107,252"/>
+<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Logger_1_1ILogEvent.html" title="Represents a polymorphic logging event that can render itself as text." alt="" coords="25,5,195,71"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,85,113,118,107,118,107,85"/>
+</map>

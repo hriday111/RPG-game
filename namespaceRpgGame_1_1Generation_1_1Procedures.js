@@ -7,5 +7,6 @@ var namespaceRpgGame_1_1Generation_1_1Procedures =
     [ "ChambersProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1ChambersProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1ChambersProcedure" ],
     [ "EmptyDungeonProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1EmptyDungeonProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1EmptyDungeonProcedure" ],
     [ "FilledDungeonProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1FilledDungeonProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1FilledDungeonProcedure" ],
-    [ "PathsProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1PathsProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1PathsProcedure" ]
+    [ "PathsProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1PathsProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1PathsProcedure" ],
+    [ "PlaceArtifactProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1PlaceArtifactProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1PlaceArtifactProcedure" ]
 ];

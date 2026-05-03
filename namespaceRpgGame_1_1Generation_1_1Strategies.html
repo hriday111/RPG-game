@@ -98,14 +98,26 @@ $(document).ready(function(){initNavTree('namespaceRpgGame_1_1Generation_1_1Stra
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Generation_1_1Strategies_1_1DungeonGroundsStrategy.html">DungeonGroundsStrategy</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A concrete dungeon generation strategy that creates a complex dungeon with rooms, corridors, and items.  <a href="classRpgGame_1_1Generation_1_1Strategies_1_1DungeonGroundsStrategy.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Generation_1_1Strategies_1_1BasicDungeonStrategy.html">BasicDungeonStrategy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default complex dungeon: balanced central hall, several side chambers, standard loot profile.  <a href="classRpgGame_1_1Generation_1_1Strategies_1_1BasicDungeonStrategy.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Generation_1_1Strategies_1_1DungeonSandboxStrategy.html">DungeonSandboxStrategy</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A concrete dungeon generation strategy that creates an empty dungeon with on central room, and items.  <a href="classRpgGame_1_1Generation_1_1Strategies_1_1DungeonSandboxStrategy.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sandbox: one large chamber and themed loot, artifact, enemies from DungeonThemeCatalog.  <a href="classRpgGame_1_1Generation_1_1Strategies_1_1DungeonSandboxStrategy.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Generation_1_1Strategies_1_1DungeonStrategyCatalog.html">DungeonStrategyCatalog</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves a concrete IDungeonStrategy for each DungeonThemeKind (<code>switch</code>-free lookup table).  <a href="classRpgGame_1_1Generation_1_1Strategies_1_1DungeonStrategyCatalog.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Generation_1_1Strategies_1_1HealingDungeonStrategy.html">HealingDungeonStrategy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calm layout with moderate chambers; loot profile emphasizes potions and a restorative artifact.  <a href="classRpgGame_1_1Generation_1_1Strategies_1_1HealingDungeonStrategy.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Generation_1_1Strategies_1_1IDungeonStrategy.html">IDungeonStrategy</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the contract for dungeon generation strategies.  <a href="interfaceRpgGame_1_1Generation_1_1Strategies_1_1IDungeonStrategy.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Generation_1_1Strategies_1_1LibraryDungeonStrategy.html">LibraryDungeonStrategy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Corridor-heavy scholastic ruin: smaller core, more chambers and paths, orb-weighted loot.  <a href="classRpgGame_1_1Generation_1_1Strategies_1_1LibraryDungeonStrategy.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Generation_1_1Strategies_1_1TreasureDungeonStrategy.html">TreasureDungeonStrategy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Treasury focus: large central vault, many side rooms, heavy coin/gold spawns, mages.  <a href="classRpgGame_1_1Generation_1_1Strategies_1_1TreasureDungeonStrategy.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

@@ -1,0 +1,3 @@
+<map id="RpgGame.Generation.Strategies.DungeonStrategyCatalog" name="RpgGame.Generation.Strategies.DungeonStrategyCatalog">
+<area shape="rect" id="Node000001" title="Resolves a concrete IDungeonStrategy for each DungeonThemeKind (switch&#45;free lookup table)." alt="" coords="5,5,233,115"/>
+</map>

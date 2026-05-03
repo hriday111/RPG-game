@@ -2,6 +2,7 @@ var hierarchy =
 [
     [ "RpgGame.Character.Character", "classRpgGame_1_1Character_1_1Character.html", [
       [ "RpgGame.Character.Golem", "classRpgGame_1_1Character_1_1Golem.html", null ],
+      [ "RpgGame.Character.Mage", "classRpgGame_1_1Character_1_1Mage.html", null ],
       [ "RpgGame.Character.Player", "classRpgGame_1_1Character_1_1Player.html", null ]
     ] ],
     [ "RpgGame.Combat.CombatRound", "classRpgGame_1_1Combat_1_1CombatRound.html", null ],
@@ -10,9 +11,12 @@ var hierarchy =
     [ "RpgGame.Input.ControlDescriptor", "classRpgGame_1_1Input_1_1ControlDescriptor.html", null ],
     [ "RpgGame.Core.Directions", "classRpgGame_1_1Core_1_1Directions.html", null ],
     [ "RpgGame.Generation.DungeonContext", "classRpgGame_1_1Generation_1_1DungeonContext.html", null ],
+    [ "RpgGame.Generation.Strategies.DungeonStrategyCatalog", "classRpgGame_1_1Generation_1_1Strategies_1_1DungeonStrategyCatalog.html", null ],
+    [ "RpgGame.Generation.Themes.DungeonThemeCatalog", "classRpgGame_1_1Generation_1_1Themes_1_1DungeonThemeCatalog.html", null ],
+    [ "RpgGame.Generation.Themes.DungeonThemePicker", "classRpgGame_1_1Generation_1_1Themes_1_1DungeonThemePicker.html", null ],
+    [ "RpgGame.Generation.Themes.DungeonThemeProfile", "classRpgGame_1_1Generation_1_1Themes_1_1DungeonThemeProfile.html", null ],
     [ "RpgGame.Core.GameConfig", "classRpgGame_1_1Core_1_1GameConfig.html", null ],
     [ "RpgGame.Logger.GameLog", "classRpgGame_1_1Logger_1_1GameLog.html", null ],
-    [ "RpgGame.Logger.GameLogEvent", "classRpgGame_1_1Logger_1_1GameLogEvent.html", null ],
     [ "RpgGame.Items.HandOccupation", "classRpgGame_1_1Items_1_1HandOccupation.html", [
       [ "RpgGame.Items.OneHandOccupation", "classRpgGame_1_1Items_1_1OneHandOccupation.html", null ],
       [ "RpgGame.Items.TwoHandOccupation", "classRpgGame_1_1Items_1_1TwoHandOccupation.html", null ]
@@ -35,11 +39,19 @@ var hierarchy =
       [ "RpgGame.Generation.Procedures.ChambersProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1ChambersProcedure.html", null ],
       [ "RpgGame.Generation.Procedures.EmptyDungeonProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1EmptyDungeonProcedure.html", null ],
       [ "RpgGame.Generation.Procedures.FilledDungeonProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1FilledDungeonProcedure.html", null ],
-      [ "RpgGame.Generation.Procedures.PathsProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1PathsProcedure.html", null ]
+      [ "RpgGame.Generation.Procedures.PathsProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1PathsProcedure.html", null ],
+      [ "RpgGame.Generation.Procedures.PlaceArtifactProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1PlaceArtifactProcedure.html", null ]
     ] ],
     [ "RpgGame.Generation.Strategies.IDungeonStrategy", "interfaceRpgGame_1_1Generation_1_1Strategies_1_1IDungeonStrategy.html", [
-      [ "RpgGame.Generation.Strategies.DungeonGroundsStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1DungeonGroundsStrategy.html", null ],
-      [ "RpgGame.Generation.Strategies.DungeonSandboxStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1DungeonSandboxStrategy.html", null ]
+      [ "RpgGame.Generation.Strategies.BasicDungeonStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1BasicDungeonStrategy.html", null ],
+      [ "RpgGame.Generation.Strategies.DungeonSandboxStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1DungeonSandboxStrategy.html", null ],
+      [ "RpgGame.Generation.Strategies.HealingDungeonStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1HealingDungeonStrategy.html", null ],
+      [ "RpgGame.Generation.Strategies.LibraryDungeonStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1LibraryDungeonStrategy.html", null ],
+      [ "RpgGame.Generation.Strategies.TreasureDungeonStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1TreasureDungeonStrategy.html", null ]
+    ] ],
+    [ "RpgGame.Generation.Enemies.IEnemySpawnStep", "interfaceRpgGame_1_1Generation_1_1Enemies_1_1IEnemySpawnStep.html", [
+      [ "RpgGame.Generation.Enemies.GolemSpawnStep", "classRpgGame_1_1Generation_1_1Enemies_1_1GolemSpawnStep.html", null ],
+      [ "RpgGame.Generation.Enemies.MageSpawnStep", "classRpgGame_1_1Generation_1_1Enemies_1_1MageSpawnStep.html", null ]
     ] ],
     [ "RpgGame.Input.IInputCommand", "interfaceRpgGame_1_1Input_1_1IInputCommand.html", [
       [ "RpgGame.Input.DropLeftCommand", "classRpgGame_1_1Input_1_1DropLeftCommand.html", null ],
@@ -76,8 +88,15 @@ var hierarchy =
       [ "RpgGame.Items.Potion", "classRpgGame_1_1Items_1_1Potion.html", null ],
       [ "RpgGame.Items.Thorn", "classRpgGame_1_1Items_1_1Thorn.html", null ]
     ] ],
-    [ "RpgGame.Logger.ILogEventFormatter", "interfaceRpgGame_1_1Logger_1_1ILogEventFormatter.html", [
-      [ "RpgGame.Logger.DefaultLogEventFormatter", "classRpgGame_1_1Logger_1_1DefaultLogEventFormatter.html", null ]
+    [ "RpgGame.Logger.ILogEvent", "interfaceRpgGame_1_1Logger_1_1ILogEvent.html", [
+      [ "RpgGame.Logger.LogEventBase", "classRpgGame_1_1Logger_1_1LogEventBase.html", [
+        [ "RpgGame.Logger.AttackDealtLogEvent", "classRpgGame_1_1Logger_1_1AttackDealtLogEvent.html", null ],
+        [ "RpgGame.Logger.EnemyDefeatedLogEvent", "classRpgGame_1_1Logger_1_1EnemyDefeatedLogEvent.html", null ],
+        [ "RpgGame.Logger.ItemEquippedLogEvent", "classRpgGame_1_1Logger_1_1ItemEquippedLogEvent.html", null ],
+        [ "RpgGame.Logger.ItemPickedUpLogEvent", "classRpgGame_1_1Logger_1_1ItemPickedUpLogEvent.html", null ],
+        [ "RpgGame.Logger.PotionConsumedLogEvent", "classRpgGame_1_1Logger_1_1PotionConsumedLogEvent.html", null ],
+        [ "RpgGame.Logger.SessionStartedLogEvent", "classRpgGame_1_1Logger_1_1SessionStartedLogEvent.html", null ]
+      ] ]
     ] ],
     [ "RpgGame.Logger.ILogSink", "interfaceRpgGame_1_1Logger_1_1ILogSink.html", [
       [ "RpgGame.Logger.BufferedJournalLogSink", "classRpgGame_1_1Logger_1_1BufferedJournalLogSink.html", null ],

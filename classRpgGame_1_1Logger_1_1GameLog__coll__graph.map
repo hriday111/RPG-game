@@ -1,3 +1,3 @@
 <map id="RpgGame.Logger.GameLog" name="RpgGame.Logger.GameLog">
-<area shape="rect" id="Node000001" title="Global logging facade so any module can record events." alt="" coords="5,5,267,328"/>
+<area shape="rect" id="Node000001" title="Global logging facade so any module can record events." alt="" coords="5,5,240,279"/>
 </map>

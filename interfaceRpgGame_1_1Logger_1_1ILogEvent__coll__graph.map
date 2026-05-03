@@ -1,0 +1,3 @@
+<map id="RpgGame.Logger.ILogEvent" name="RpgGame.Logger.ILogEvent">
+<area shape="rect" id="Node000001" title="Represents a polymorphic logging event that can render itself as text." alt="" coords="5,5,199,71"/>
+</map>

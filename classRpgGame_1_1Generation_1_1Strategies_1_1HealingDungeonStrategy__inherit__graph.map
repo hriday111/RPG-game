@@ -1,0 +1,5 @@
+<map id="RpgGame.Generation.Strategies.HealingDungeonStrategy" name="RpgGame.Generation.Strategies.HealingDungeonStrategy">
+<area shape="rect" id="Node000001" title="Calm layout with moderate chambers; loot profile emphasizes potions and a restorative artifact." alt="" coords="5,119,233,199"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Generation_1_1Strategies_1_1IDungeonStrategy.html" title="Defines the contract for dungeon generation strategies." alt="" coords="25,5,214,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,85,122,118,117,118,117,85"/>
+</map>

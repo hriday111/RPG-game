@@ -1,7 +1,9 @@
 <map id="RpgGame.Character.Character" name="RpgGame.Character.Character">
-<area shape="rect" id="Node000001" title="Base abstract class for both playable and non&#45;playable characters." alt="" coords="155,5,365,140"/>
+<area shape="rect" id="Node000001" title="Base abstract class for both playable and non&#45;playable characters." alt="" coords="292,5,503,140"/>
 <area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Golem.html" title="Represents a Golem enemy on the level. It carries a weapon that sets counter&#45;attack damage and contri..." alt="" coords="5,506,251,735"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,154,158,506,153,505,238,153"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Character_1_1Player.html" title="Represents the player&#45;controlled character in the game." alt="" coords="275,188,512,1053"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="282,153,290,187,285,188,277,154"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="297,151,265,190,222,267,189,350,165,432,148,507,143,505,160,431,184,348,217,265,260,186,293,148"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Character_1_1Mage.html" title="Represents a mage enemy on the level. Uses the same melee/counter rules as Golem." alt="" coords="275,506,520,735"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="400,154,400,506,395,506,395,154"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Character_1_1Player.html" title="Represents the player&#45;controlled character in the game." alt="" coords="544,188,781,1053"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="502,148,534,186,546,206,542,208,530,190,498,151"/>
 </map>

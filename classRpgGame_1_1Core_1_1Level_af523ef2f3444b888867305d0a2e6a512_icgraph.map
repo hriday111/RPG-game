@@ -1,5 +1,5 @@
 <map id="RpgGame.Core.Level.TryOrthogonalStepOrMeleeCombat" name="RpgGame.Core.Level.TryOrthogonalStepOrMeleeCombat">
-<area shape="rect" id="Node000001" title="One orthogonal step from the player (WASD): walk onto a free tile, or melee&#45;attack a golem on the tar..." alt="" coords="324,101,579,141"/>
+<area shape="rect" id="Node000001" title="One orthogonal step from the player (WASD): walk onto a free tile, or melee&#45;attack a golem or mage on..." alt="" coords="324,101,579,141"/>
 <area shape="rect" id="Node000002" href="$classRpgGame_1_1Input_1_1MoveDownCommand.html#a0978e3de49ba534f9ebfaec59439394c" title="Executes the command using provided game objects.Usually InputResult.Ok to continue,..." alt="" coords="5,5,276,45"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="387,99,275,60,232,48,233,43,277,55,389,94"/>
 <area shape="rect" id="Node000003" href="$classRpgGame_1_1Input_1_1MoveLeftCommand.html#a3433a0afcc421a77e0dc0d6d91bb7384" title="Executes the command using provided game objects.Usually InputResult.Ok to continue,..." alt="" coords="11,69,270,109"/>

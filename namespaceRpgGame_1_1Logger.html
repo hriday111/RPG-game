@@ -91,19 +91,21 @@ $(document).ready(function(){initNavTree('namespaceRpgGame_1_1Logger.html',''); 
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle"><div class="title">RpgGame.Logger Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Logger_1_1AttackDealtLogEvent.html">AttackDealtLogEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event recorded when the player deals damage.  <a href="classRpgGame_1_1Logger_1_1AttackDealtLogEvent.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Logger_1_1BufferedJournalLogSink.html">BufferedJournalLogSink</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Keeps all entries in memory and periodically flushes pending items to file.  <a href="classRpgGame_1_1Logger_1_1BufferedJournalLogSink.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Logger_1_1DefaultLogEventFormatter.html">DefaultLogEventFormatter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default event-to-text formatter for the in-game log.  <a href="classRpgGame_1_1Logger_1_1DefaultLogEventFormatter.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Logger_1_1EnemyDefeatedLogEvent.html">EnemyDefeatedLogEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event recorded when an enemy is defeated.  <a href="classRpgGame_1_1Logger_1_1EnemyDefeatedLogEvent.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Logger_1_1FileLogSink.html">FileLogSink</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persists log entries to a dedicated text file for the current game session.  <a href="classRpgGame_1_1Logger_1_1FileLogSink.html#details">More...</a><br /></td></tr>
@@ -111,11 +113,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Logger_1_1GameLog.html">GameLog</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global logging facade so any module can record events.  <a href="classRpgGame_1_1Logger_1_1GameLog.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Logger_1_1GameLogEvent.html">GameLogEvent</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a structured log event with a type and optional payload data.  <a href="classRpgGame_1_1Logger_1_1GameLogEvent.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Logger_1_1ILogEventFormatter.html">ILogEventFormatter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strategy contract for converting structured events into displayable messages.  <a href="interfaceRpgGame_1_1Logger_1_1ILogEventFormatter.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Logger_1_1ILogEvent.html">ILogEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a polymorphic logging event that can render itself as text.  <a href="interfaceRpgGame_1_1Logger_1_1ILogEvent.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Logger_1_1ILogSink.html">ILogSink</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contract for log storage backends used by the game.  <a href="interfaceRpgGame_1_1Logger_1_1ILogSink.html#details">More...</a><br /></td></tr>
@@ -123,24 +122,24 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Logger_1_1InMemoryLogSink.html">InMemoryLogSink</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores all log entries in memory for UI views (recent and full journal).  <a href="classRpgGame_1_1Logger_1_1InMemoryLogSink.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Logger_1_1ItemEquippedLogEvent.html">ItemEquippedLogEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event recorded when the player equips an item to a slot.  <a href="classRpgGame_1_1Logger_1_1ItemEquippedLogEvent.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Logger_1_1ItemPickedUpLogEvent.html">ItemPickedUpLogEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event recorded when the player picks up an item.  <a href="classRpgGame_1_1Logger_1_1ItemPickedUpLogEvent.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Logger_1_1LogEntry.html">LogEntry</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents one message in the game event log.  <a href="classRpgGame_1_1Logger_1_1LogEntry.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a5497e01b56b9abe4e70ed5b4cdbe596d" id="r_a5497e01b56b9abe4e70ed5b4cdbe596d"><td class="memItemLeft" align="right" valign="top"><a id="a5497e01b56b9abe4e70ed5b4cdbe596d" name="a5497e01b56b9abe4e70ed5b4cdbe596d"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>LogEventType</b> { <br />
-&#160;&#160;<b>SessionStarted</b>
-, <b>ItemPickedUp</b>
-, <b>ItemToEquipped</b>
-, <b>PlayerHealed</b>
-, <br />
-&#160;&#160;<b>PlayerDamaged</b>
-, <b>AttackDealt</b>
-, <b>EnemyDefeated</b>
-<br />
- }</td></tr>
-<tr class="separator:a5497e01b56b9abe4e70ed5b4cdbe596d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Logger_1_1LogEventBase.html">LogEventBase</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for log events with shared timestamp handling.  <a href="classRpgGame_1_1Logger_1_1LogEventBase.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Logger_1_1PotionConsumedLogEvent.html">PotionConsumedLogEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event recorded when the player consumes a potion (health restored on pickup).  <a href="classRpgGame_1_1Logger_1_1PotionConsumedLogEvent.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Logger_1_1SessionStartedLogEvent.html">SessionStartedLogEvent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event recorded when a game session starts.  <a href="classRpgGame_1_1Logger_1_1SessionStartedLogEvent.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

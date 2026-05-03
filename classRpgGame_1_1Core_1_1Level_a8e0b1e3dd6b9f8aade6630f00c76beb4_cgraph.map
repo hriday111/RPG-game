@@ -1,0 +1,7 @@
+<map id="RpgGame.Core.Level.RemoveMage" name="RpgGame.Core.Level.RemoveMage">
+<area shape="rect" id="Node000001" title="Removes a mage from the level and frees its tile for movement." alt="" coords="5,31,259,56"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Level.html#ad48a7c23cc285da72a157194198e553a" title="Retrieves the tile at the specified coordinates." alt="" coords="319,5,529,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,30,304,26,305,31,259,35"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Core_1_1Level.html#a29d79bf5cda2e96ca6e823f9d5772db0" title="Checks whether the specified position lies within the level boundaries." alt="" coords="307,55,541,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="259,51,293,54,292,59,259,56"/>
+</map>

@@ -1,7 +1,13 @@
 <map id="RpgGame.Generation.Strategies.IDungeonStrategy" name="RpgGame.Generation.Strategies.IDungeonStrategy">
-<area shape="rect" id="Node000001" title="Defines the contract for dungeon generation strategies." alt="" coords="131,5,359,85"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1Strategies_1_1DungeonGroundsStrategy.html" title="A concrete dungeon generation strategy that creates a complex dungeon with rooms, corridors,..." alt="" coords="5,133,233,213"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,97,160,135,156,131,194,94"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1Strategies_1_1DungeonSandboxStrategy.html" title="A concrete dungeon generation strategy that creates an empty dungeon with on central room,..." alt="" coords="257,133,485,213"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="295,93,334,131,330,135,292,97"/>
+<area shape="rect" id="Node000001" title="Defines the contract for dungeon generation strategies." alt="" coords="509,5,737,85"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1Strategies_1_1BasicDungeonStrategy.html" title="Default complex dungeon: balanced central hall, several side chambers, standard loot profile." alt="" coords="5,158,233,238"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="496,70,374,98,246,136,190,160,188,155,244,131,372,92,495,65"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1Strategies_1_1DungeonSandboxStrategy.html" title="Sandbox: one large chamber and themed loot, artifact, enemies from DungeonThemeCatalog." alt="" coords="257,133,485,263"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="547,95,479,135,477,131,545,90"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Generation_1_1Strategies_1_1HealingDungeonStrategy.html" title="Calm layout with moderate chambers; loot profile emphasizes potions and a restorative artifact." alt="" coords="509,158,737,238"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="626,99,626,158,621,158,621,99"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Generation_1_1Strategies_1_1LibraryDungeonStrategy.html" title="Corridor&#45;heavy scholastic ruin: smaller core, more chambers and paths, orb&#45;weighted loot." alt="" coords="761,158,989,238"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="702,90,811,156,809,160,699,95"/>
+<area shape="rect" id="Node000006" href="$classRpgGame_1_1Generation_1_1Strategies_1_1TreasureDungeonStrategy.html" title="Treasury focus: large central vault, many side rooms, heavy coin/gold spawns, mages." alt="" coords="1013,158,1241,238"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="751,65,874,92,1003,131,1059,155,1057,160,1001,136,873,98,750,70"/>
 </map>

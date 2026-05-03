@@ -1,0 +1,17 @@
+<map id="RpgGame.Logger.ILogEvent" name="RpgGame.Logger.ILogEvent">
+<area shape="rect" id="Node000001" title="Represents a polymorphic logging event that can render itself as text." alt="" coords="632,5,825,71"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Logger_1_1LogEventBase.html" title="Base class for log events with shared timestamp handling." alt="" coords="618,119,839,239"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="731,85,731,118,726,118,726,85"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Logger_1_1AttackDealtLogEvent.html" title="Event recorded when the player deals damage." alt="" coords="5,287,215,421"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="605,198,424,232,325,257,228,289,216,294,214,289,226,284,323,252,423,227,604,193"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Logger_1_1EnemyDefeatedLogEvent.html" title="Event recorded when an enemy is defeated." alt="" coords="239,297,474,411"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="606,235,487,289,467,299,464,294,485,284,604,230"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Logger_1_1ItemEquippedLogEvent.html" title="Event recorded when the player equips an item to a slot." alt="" coords="498,287,719,421"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="682,252,657,288,653,285,678,249"/>
+<area shape="rect" id="Node000006" href="$classRpgGame_1_1Logger_1_1ItemPickedUpLogEvent.html" title="Event recorded when the player picks up an item." alt="" coords="744,297,953,411"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="780,248,812,295,807,298,775,252"/>
+<area shape="rect" id="Node000007" href="$classRpgGame_1_1Logger_1_1PotionConsumedLogEvent.html" title="Event recorded when the player consumes a potion (health restored on pickup)." alt="" coords="977,297,1216,411"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="853,232,967,284,988,294,985,299,965,289,851,237"/>
+<area shape="rect" id="Node000008" href="$classRpgGame_1_1Logger_1_1SessionStartedLogEvent.html" title="Event recorded when a game session starts." alt="" coords="1241,297,1467,411"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="853,194,1033,228,1133,253,1230,284,1254,294,1252,299,1228,289,1131,258,1032,234,852,199"/>
+</map>

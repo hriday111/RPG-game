@@ -1,5 +1,5 @@
 <map id="RpgGame.Generation.DungeonBuilder" name="RpgGame.Generation.DungeonBuilder">
-<area shape="rect" id="Node000001" title="Implements the Builder Pattern to compose multiple dungeon generation procedures." alt="" coords="5,133,240,263"/>
-<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Generation_1_1IMapGenerator.html" title="Defines the contract for procedural level generation strategies." alt="" coords="42,5,203,85"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,99,125,133,120,133,120,99"/>
+<area shape="rect" id="Node000001" title="Implements the Builder Pattern to compose multiple dungeon generation procedures." alt="" coords="5,133,296,297"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Generation_1_1IMapGenerator.html" title="Defines the contract for procedural level generation strategies." alt="" coords="70,5,231,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,99,153,133,148,133,148,99"/>
 </map>

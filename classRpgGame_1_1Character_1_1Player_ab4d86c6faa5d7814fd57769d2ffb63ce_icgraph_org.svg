@@ -12,9 +12,9 @@
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="Reduces the player&#39;s health by the specified amount.">
-<polygon fill="#999999" stroke="#666666" points="833,-123 683,-123 683,-93 833,-93 833,-123"/>
-<text text-anchor="start" x="691" y="-111" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Character.Player.</text>
-<text text-anchor="middle" x="758" y="-100" font-family="Helvetica,sans-Serif" font-size="10.00">TakeDamage</text>
+<polygon fill="#999999" stroke="#666666" points="833,-102 683,-102 683,-72 833,-72 833,-102"/>
+<text text-anchor="start" x="691" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Character.Player.</text>
+<text text-anchor="middle" x="758" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00">TakeDamage</text>
 </a>
 </g>
 </g>
@@ -31,8 +31,8 @@
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M672.94,-117.27C663.21,-118.34 653.27,-119.44 643.51,-120.52"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="673.44,-120.74 683,-116.16 672.67,-113.78 673.44,-120.74"/>
+<path fill="none" stroke="#63b8ff" d="M678.33,-104.22C667.8,-106.51 657.14,-108.82 647,-111 632.56,-114.11 616.8,-117.47 602.58,-120.48"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="679.33,-107.58 688.36,-102.04 677.84,-100.74 679.33,-107.58"/>
 </a>
 </g>
 </g>
@@ -50,15 +50,34 @@
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M672.79,-99.14C664.35,-98.25 655.75,-97.34 647.26,-96.45"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="672.69,-102.64 683,-100.21 673.42,-95.68 672.69,-102.64"/>
+<path fill="none" stroke="#63b8ff" d="M672.79,-87C664.35,-87 655.75,-87 647.26,-87"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="673,-90.5 683,-87 673,-83.5 673,-90.5"/>
+</a>
+</g>
+</g>
+<!-- Node9 -->
+<g id="Node000009" class="node">
+<title>Node9</title>
+<g id="a_Node000009"><a xlink:href="classRpgGame_1_1Combat_1_1CombatRound.html#aaa3837d5e656d1c5d2488ec09739cd99" target="_top" xlink:title="Same exchange as Resolve(Player, Golem) for a mage.">
+<polygon fill="white" stroke="#666666" points="647,-54 466,-54 466,-24 647,-24 647,-54"/>
+<text text-anchor="start" x="474" y="-42" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Combat.CombatRound.</text>
+<text text-anchor="middle" x="556.5" y="-31" font-family="Helvetica,sans-Serif" font-size="10.00">Resolve</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node9 -->
+<g id="edge8_Node000001_Node000009" class="edge">
+<title>Node1&#45;&gt;Node9</title>
+<g id="a_edge8_Node000001_Node000009"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M684.51,-69.56C663.32,-64.46 640.35,-58.93 619.85,-54"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="683.88,-73.01 694.42,-71.94 685.52,-66.2 683.88,-73.01"/>
 </a>
 </g>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classRpgGame_1_1Core_1_1Level.html#af523ef2f3444b888867305d0a2e6a512" target="_top" xlink:title="One orthogonal step from the player (WASD): walk onto a free tile, or melee&#45;attack a golem on the tar...">
+<g id="a_Node000004"><a xlink:href="classRpgGame_1_1Core_1_1Level.html#af523ef2f3444b888867305d0a2e6a512" target="_top" xlink:title="One orthogonal step from the player (WASD): walk onto a free tile, or melee&#45;attack a golem or mage on...">
 <polygon fill="white" stroke="#666666" points="430,-102 239,-102 239,-72 430,-72 430,-102"/>
 <text text-anchor="start" x="247" y="-90" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Core.Level.TryOrthogonal</text>
 <text text-anchor="middle" x="334.5" y="-79" font-family="Helvetica,sans-Serif" font-size="10.00">StepOrMeleeCombat</text>

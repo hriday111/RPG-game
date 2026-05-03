@@ -1,34 +1,42 @@
 <map id="RpgGame.Input.MoveUpCommand.Execute" name="RpgGame.Input.MoveUpCommand.Execute">
-<area shape="rect" id="Node000001" title="Executes the command using provided game objects.Usually InputResult.Ok to continue,..." alt="" coords="5,203,257,243"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Level.html#af523ef2f3444b888867305d0a2e6a512" title="One orthogonal step from the player (WASD): walk onto a free tile, or melee&#45;attack a golem on the tar..." alt="" coords="305,203,560,243"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,220,291,220,291,225,258,225"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Core_1_1Level.html#a01e0d484533fd0b1efa844973448c3a7" title="Clears LastCombatMessage after a non&#45;combat action." alt="" coords="639,5,836,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="449,201,513,133,558,95,607,62,637,48,639,52,609,66,561,99,517,137,453,204"/>
-<area shape="rect" id="Node000004" href="$namespaceRpgGame_1_1Combat.html#a8aa48b6cd9366ede76fb62c66c08f61c" title="Outcome of one combat exchange: player strikes, then living enemies strike back." alt="" coords="915,208,1152,248"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="489,240,546,258,608,271,681,280,737,283,794,280,866,271,890,265,914,257,944,249,946,254,915,263,892,270,867,276,794,285,737,288,680,285,608,276,545,263,487,245"/>
-<area shape="rect" id="Node000005" href="$classRpgGame_1_1Core_1_1Level.html#ad48a7c23cc285da72a157194198e553a" title="Retrieves the tile at the specified coordinates." alt="" coords="928,74,1139,99"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="454,200,519,150,562,125,607,105,685,86,766,76,844,72,914,74,914,79,844,78,766,81,686,91,609,111,564,130,522,155,458,204"/>
-<area shape="rect" id="Node000006" href="$classRpgGame_1_1Core_1_1Level.html#a29d79bf5cda2e96ca6e823f9d5772db0" title="Checks whether the specified position lies within the level boundaries." alt="" coords="916,142,1151,167"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="560,206,906,166,907,172,560,211"/>
-<area shape="rect" id="Node000007" href="$classRpgGame_1_1Character_1_1Character.html#a20a9733d47e107044963881b844a7fec" title="Moves the character to a new position." alt="" coords="608,235,867,261"/>
-<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="561,231,595,233,594,239,560,236"/>
-<area shape="rect" id="Node000008" href="$classRpgGame_1_1Core_1_1Level.html#ad1b689507782c42575b21005941d5038" title="Removes a golem from the level and frees its tile for movement." alt="" coords="629,120,846,160"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="506,200,649,161,650,166,508,205"/>
-<area shape="rect" id="Node000009" href="$classRpgGame_1_1Combat_1_1CombatRound.html#a705af5dabe146c5a9a7e09bb9910f33a" title="Player attacks first. If the golem survives, it counter&#45;attacks once. Damage and defense use Player...." alt="" coords="617,336,858,376"/>
-<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="468,241,532,277,609,315,648,329,647,334,607,320,529,282,465,245"/>
-<area shape="rect" id="Node000015" href="$classRpgGame_1_1Core_1_1Level.html#a81b95d5c2aa808c7e214c7b0ba037ef4" title="When a golem occupies pos , sets golem &#160;and returns true." alt="" coords="635,400,840,440"/>
-<area shape="poly" id="edge17_Node000002_Node000015" title=" " alt="" coords="451,241,515,313,560,352,609,386,623,392,621,397,607,390,556,356,511,316,447,245"/>
-<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="846,118,948,99,949,104,847,123"/>
-<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="846,143,902,146,902,151,846,148"/>
-<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="828,334,865,315,880,301,888,287,897,272,913,258,924,252,927,256,916,262,901,276,893,290,884,305,868,320,830,338"/>
-<area shape="rect" id="Node000010" href="$classRpgGame_1_1Character_1_1Golem.html#ae94f2f8ccb28ab1b73edccbdea7cf8fa" title="Applies damage reduced by Armor. Returns hit points actually removed." alt="" coords="932,464,1135,504"/>
-<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="846,374,868,386,885,402,893,419,901,435,916,450,926,456,923,460,913,454,897,438,888,421,880,405,865,390,843,379"/>
-<area shape="rect" id="Node000011" href="$classRpgGame_1_1Character_1_1Golem.html#a0a276a42302a8b0b6a5e8f823d758ee2" title="Raw damage for one counter&#45;attack (before the player’s defense)." alt="" coords="932,528,1135,568"/>
-<area shape="poly" id="edge13_Node000009_Node000011" title=" " alt="" coords="851,374,868,386,882,402,890,419,893,452,897,484,904,499,917,514,922,519,918,523,913,518,899,502,892,485,888,452,884,420,878,405,865,390,848,378"/>
-<area shape="rect" id="Node000012" href="$classRpgGame_1_1Character_1_1Player.html#a011a02380a8eae15e749752b3d4329b7" title="Defense against the golem&#39;s counter&#45;attack for the current SelectedCombatAttack." alt="" coords="933,272,1133,312"/>
-<area shape="poly" id="edge14_Node000009_Node000012" title=" " alt="" coords="830,333,926,312,928,318,831,339"/>
-<area shape="rect" id="Node000013" href="$classRpgGame_1_1Character_1_1Player.html#a7b1ca41a39f3e32018fa6867efbd2325" title="Outgoing damage for the current SelectedCombatAttack." alt="" coords="933,336,1133,376"/>
-<area shape="poly" id="edge15_Node000009_Node000013" title=" " alt="" coords="858,353,920,353,920,359,858,359"/>
-<area shape="rect" id="Node000014" href="$classRpgGame_1_1Character_1_1Player.html#ab4d86c6faa5d7814fd57769d2ffb63ce" title="Reduces the player&#39;s health by the specified amount." alt="" coords="933,400,1133,440"/>
-<area shape="poly" id="edge16_Node000009_Node000014" title=" " alt="" coords="831,373,928,394,926,400,830,379"/>
+<area shape="rect" id="Node000001" title="Executes the command using provided game objects.Usually InputResult.Ok to continue,..." alt="" coords="5,383,257,423"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Level.html#af523ef2f3444b888867305d0a2e6a512" title="One orthogonal step from the player (WASD): walk onto a free tile, or melee&#45;attack a golem or mage on..." alt="" coords="305,383,560,423"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,400,291,400,291,405,258,405"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Core_1_1Level.html#a01e0d484533fd0b1efa844973448c3a7" title="Clears LastCombatMessage after a non&#45;combat action." alt="" coords="639,93,836,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="440,382,462,334,498,272,546,206,575,176,606,150,629,137,631,141,610,154,579,180,550,210,503,275,467,337,445,384"/>
+<area shape="rect" id="Node000004" href="$namespaceRpgGame_1_1Combat.html#a8aa48b6cd9366ede76fb62c66c08f61c" title="Outcome of one combat exchange: player strikes, then living enemies strike back." alt="" coords="915,5,1152,45"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="442,381,467,340,503,289,550,237,577,214,607,194,643,177,677,170,709,169,740,172,770,173,800,171,832,162,865,143,882,123,888,101,895,78,913,55,920,50,924,54,917,59,900,80,894,103,887,126,868,147,834,167,801,177,770,179,740,177,709,175,678,175,645,182,609,198,581,218,554,241,507,293,471,343,447,384"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Core_1_1Level.html#ad48a7c23cc285da72a157194198e553a" title="Retrieves the tile at the specified coordinates." alt="" coords="928,390,1139,415"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="464,380,528,346,567,329,607,317,681,300,740,290,769,289,799,293,831,302,868,318,885,331,894,346,902,361,916,375,931,383,929,387,913,380,897,365,889,349,881,334,865,322,829,308,798,299,768,295,741,295,682,305,609,323,569,334,530,351,466,385"/>
+<area shape="rect" id="Node000006" href="$classRpgGame_1_1Core_1_1Level.html#a29d79bf5cda2e96ca6e823f9d5772db0" title="Checks whether the specified position lies within the level boundaries." alt="" coords="916,439,1151,465"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="530,420,608,432,760,444,902,449,902,454,760,449,608,437,529,425"/>
+<area shape="rect" id="Node000007" href="$classRpgGame_1_1Character_1_1Character.html#a20a9733d47e107044963881b844a7fec" title="Moves the character to a new position." alt="" coords="608,498,867,523"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="476,420,538,449,609,476,664,492,662,497,607,481,536,453,474,425"/>
+<area shape="rect" id="Node000008" href="$classRpgGame_1_1Core_1_1Level.html#ad1b689507782c42575b21005941d5038" title="Removes a golem from the level and frees its tile for movement." alt="" coords="629,383,846,423"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="560,400,615,400,615,405,560,405"/>
+<area shape="rect" id="Node000009" href="$classRpgGame_1_1Core_1_1Level.html#a8e0b1e3dd6b9f8aade6630f00c76beb4" title="Removes a mage from the level and frees its tile for movement." alt="" coords="611,333,864,358"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="539,380,655,358,656,363,540,385"/>
+<area shape="rect" id="Node000010" href="$classRpgGame_1_1Combat_1_1CombatRound.html#a705af5dabe146c5a9a7e09bb9910f33a" title="Player attacks first. If the golem survives, it counter&#45;attacks once. Damage and defense use Player...." alt="" coords="617,208,858,248"/>
+<area shape="poly" id="edge13_Node000002_Node000010" title=" " alt="" coords="456,380,522,329,607,274,658,251,660,255,609,278,525,333,459,385"/>
+<area shape="rect" id="Node000016" href="$classRpgGame_1_1Core_1_1Level.html#a81b95d5c2aa808c7e214c7b0ba037ef4" title="When a golem occupies pos , sets golem &#160;and returns true." alt="" coords="635,548,840,588"/>
+<area shape="poly" id="edge20_Node000002_Node000016" title=" " alt="" coords="456,421,521,477,564,508,609,534,626,541,624,546,607,538,561,512,518,481,453,425"/>
+<area shape="rect" id="Node000017" href="$classRpgGame_1_1Core_1_1Level.html#a8496bf7145eda32b23d08c744b2f8ac3" title="When a mage occupies pos , sets mage &#160;and returns true." alt="" coords="635,612,840,652"/>
+<area shape="poly" id="edge21_Node000002_Node000017" title=" " alt="" coords="448,422,473,460,510,508,556,557,609,598,623,605,621,610,607,602,552,560,506,511,469,463,444,425"/>
+<area shape="rect" id="Node000018" href="$classRpgGame_1_1Logger_1_1GameLog.html#a263d0c775b47c91d01af93dc9c8641ef" title="Writes a message to the active sink." alt="" coords="618,677,857,702"/>
+<area shape="poly" id="edge22_Node000002_Node000018" title=" " alt="" coords="444,422,465,472,499,538,548,606,577,636,609,662,622,669,619,674,607,666,573,640,544,609,495,540,460,474,439,424"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="846,400,914,400,914,405,846,405"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="847,418,944,434,943,440,846,423"/>
+<area shape="poly" id="edge11_Node000009_Node000005" title=" " alt="" coords="804,355,954,385,953,390,803,361"/>
+<area shape="poly" id="edge12_Node000009_Node000006" title=" " alt="" coords="839,356,868,368,884,383,893,398,901,413,916,426,928,432,925,437,913,430,897,416,888,401,880,386,865,373,837,360"/>
+<area shape="poly" id="edge15_Node000010_Node000004" title=" " alt="" coords="838,206,865,187,878,172,884,156,888,123,892,89,899,72,913,55,918,51,922,55,917,59,904,75,897,90,893,123,889,157,882,174,868,191,841,210"/>
+<area shape="rect" id="Node000011" href="$classRpgGame_1_1Character_1_1Golem.html#ae94f2f8ccb28ab1b73edccbdea7cf8fa" title="Applies damage reduced by Armor. Returns hit points actually removed." alt="" coords="932,325,1135,365"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="805,246,868,274,892,293,916,311,932,318,929,323,913,316,889,297,865,278,802,250"/>
+<area shape="rect" id="Node000012" href="$classRpgGame_1_1Character_1_1Golem.html#a0a276a42302a8b0b6a5e8f823d758ee2" title="Raw damage for one counter&#45;attack (before the player’s defense)." alt="" coords="932,69,1135,109"/>
+<area shape="poly" id="edge16_Node000010_Node000012" title=" " alt="" coords="830,206,865,187,880,171,888,154,896,136,913,119,922,113,925,118,916,123,901,139,893,156,885,174,868,191,833,210"/>
+<area shape="rect" id="Node000013" href="$classRpgGame_1_1Character_1_1Player.html#a011a02380a8eae15e749752b3d4329b7" title="Defense against the golem&#39;s counter&#45;attack for the current SelectedCombatAttack." alt="" coords="933,133,1133,173"/>
+<area shape="poly" id="edge17_Node000010_Node000013" title=" " alt="" coords="817,205,939,174,941,179,818,211"/>
+<area shape="rect" id="Node000014" href="$classRpgGame_1_1Character_1_1Player.html#a7b1ca41a39f3e32018fa6867efbd2325" title="Outgoing damage for the current SelectedCombatAttack." alt="" coords="933,197,1133,237"/>
+<area shape="poly" id="edge18_Node000010_Node000014" title=" " alt="" coords="858,221,919,219,920,224,858,226"/>
+<area shape="rect" id="Node000015" href="$classRpgGame_1_1Character_1_1Player.html#ab4d86c6faa5d7814fd57769d2ffb63ce" title="Reduces the player&#39;s health by the specified amount." alt="" coords="933,261,1133,301"/>
+<area shape="poly" id="edge19_Node000010_Node000015" title=" " alt="" coords="849,245,920,258,919,263,848,251"/>
 </map>

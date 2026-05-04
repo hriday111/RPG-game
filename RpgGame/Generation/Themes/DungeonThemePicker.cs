@@ -2,7 +2,7 @@ namespace RpgGame.Generation.Themes;
 
 public static class DungeonThemePicker
 {
-    private static readonly DungeonThemeKind[] OrderedKinds=
+    private static readonly DungeonThemeKind[] OrderedKinds =
     [
         DungeonThemeKind.Basic,
         DungeonThemeKind.Treasure,
@@ -10,7 +10,7 @@ public static class DungeonThemePicker
         DungeonThemeKind.Healing,
     ];
 
-    private static ReadOnlySpan<int> Weights=>[40,40,10,10];
+    private static ReadOnlySpan<int> Weights => [40, 40, 10, 10];
     public static DungeonThemeKind Pick(Random random)
     {
         int roll = random.Next(100);

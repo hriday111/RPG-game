@@ -11,11 +11,11 @@ public class InventoryToRightHandCommand : IInputCommand
     /// <inheritdoc/>
     public InputResult Execute(Level level, Player player, Inventory inventory)
     {
-        
-        if(inventory.TakeToRight())
+
+        if (inventory.TakeToRight())
         {
-        GameLog.Write(new ItemPickedUpLogEvent(inventory.GetSelectedItem().Name));
-        return InputResult.Ok;
+            GameLog.Write(new ItemPickedUpLogEvent(inventory.GetSelectedItem().Name));
+            return InputResult.Ok;
         }
         else
         {

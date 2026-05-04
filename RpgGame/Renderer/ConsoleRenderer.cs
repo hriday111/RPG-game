@@ -1,8 +1,8 @@
+using System.Linq;
+using System.Text;
 using RpgGame.Character;
 using RpgGame.Combat;
 using RpgGame.Core;
-using System.Linq;
-using System.Text;
 namespace RpgGame.Renderer;
 
 /// <summary>
@@ -150,7 +150,7 @@ public class ConsoleRenderer
             if (content.Length > innerWidth) content = content.Substring(0, innerWidth);
             return "│" + content.PadRight(innerWidth) + "│";
         }
-        string spacingForCentering=new string(' ', (innerWidth-8)/2);
+        string spacingForCentering = new string(' ', (innerWidth - 8) / 2);
         var lines = new List<string>
         {
             "┌" + new string('─', innerWidth) + "┐",

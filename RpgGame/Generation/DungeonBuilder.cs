@@ -42,6 +42,6 @@ public class DungeonBuilder : IMapGenerator
 
     public DungeonBuilder(DungeonThemeKind theme = DungeonThemeKind.Basic)
     {
-        this.theme=theme;
+        this.theme = theme;
     }
 }

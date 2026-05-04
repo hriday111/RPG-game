@@ -16,7 +16,7 @@ public class DungeonContext
     /// </summary>
     public List<RectRoom> Rooms { get; } = new();
 
-    public DungeonThemeKind Theme {get;}
+    public DungeonThemeKind Theme { get; }
     public DungeonContext(DungeonThemeKind theme)
     {
         Theme = theme;

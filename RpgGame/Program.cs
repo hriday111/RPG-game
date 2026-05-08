@@ -124,6 +124,10 @@ class Program
             {
                 renderer.ToggleHelpDisplay();
             }
+            else if (result == InputResult.Journal)
+            {
+                renderer.ToggleJournalDisplay();
+            }
 
             renderer.Render(level, player, inventory);
             logSink.AdvanceFrame();

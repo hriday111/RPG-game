@@ -13,6 +13,7 @@ public enum InputResult
     Ok = 1,
     Quit = -1,
     Help = 2,
+    Journal = 3,
 }
 /// <summary>
 /// Maps console key combinations to their corresponding
@@ -63,6 +64,7 @@ public class InputHandler
         Register(ConsoleKey.F3, 0, new SelectCombatAttackCommand(StealthAttack.Instance), "Stealth attack (next melee)");
         Register(ConsoleKey.F4, 0, new SelectCombatAttackCommand(MagicalStrikeAttack.Instance), "Magical strike (next melee)");
         Register(ConsoleKey.F1, 0, new HelpCommand(), "Help Command");
+        Register(ConsoleKey.J, 0, new JournalCommand(), "Show live journal");
     }
 
     /// <summary>

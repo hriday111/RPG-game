@@ -3,6 +3,7 @@ using System.Text;
 using RpgGame.Character;
 using RpgGame.Combat;
 using RpgGame.Core;
+using RpgGame.Logger;
 namespace RpgGame.Renderer;
 
 /// <summary>
@@ -19,7 +20,9 @@ namespace RpgGame.Renderer;
 public class ConsoleRenderer
 {
     private readonly HelpOverlay help = new HelpOverlay();
+    private readonly JournalOverlay journal = new JournalOverlay();
     private bool showHelp;
+    private bool showJournal;
 
     /// <summary>
     /// Registers a control/help entry that will later be rendered when F1 is
@@ -41,6 +44,14 @@ public class ConsoleRenderer
     }
 
     /// <summary>
+    /// External callers can toggle the journal popup on or off (usually when J is detected).
+    /// </summary>
+    public void ToggleJournalDisplay()
+    {
+        showJournal = !showJournal;
+    }
+
+    /// <summary>
     /// Renders the current level state and player information to the console.
     /// If the help flag is set, a help overlay will be shown instead of the
     /// normal game view.
@@ -53,6 +64,11 @@ public class ConsoleRenderer
         {
             help.Show();
             showHelp = false; // hide and then fall through to redraw the map immediately
+        }
+        if (showJournal)
+        {
+            journal.Show();
+            showJournal = false; // hide and then fall through to redraw the map immediately
         }
 
         Console.SetCursorPosition(0, 0);
@@ -159,6 +175,11 @@ public class ConsoleRenderer
 
         if (!string.IsNullOrWhiteSpace(level.DungeonIntro))
             lines.Add(PadLine(" " + level.DungeonIntro.Trim()));
+
+        string latestLogMessage = GameLog.Recent(1).LastOrDefault()?.Message ?? "—";
+        if (latestLogMessage.Length > innerWidth - 12)
+            latestLogMessage = latestLogMessage[..(innerWidth - 15)] + "...";
+        lines.Add(PadLine($" Log: {latestLogMessage}"));
 
         lines.AddRange(
         [

@@ -3,7 +3,7 @@ var searchData=
   ['sessionstartedlogevent_0',['SessionStartedLogEvent',['../classRpgGame_1_1Logger_1_1SessionStartedLogEvent.html#ae5eb0cb5b1ca0c4a9a65b2643bda0611',1,'RpgGame::Logger::SessionStartedLogEvent']]],
   ['setselectedcombatattack_1',['SetSelectedCombatAttack',['../classRpgGame_1_1Character_1_1Player.html#ab2eee2fc87e408446d9d305ccb291064',1,'RpgGame::Character::Player']]],
   ['settile_2',['SetTile',['../classRpgGame_1_1Core_1_1Level.html#a15d9a500574d9e3fe241911cd88d93bb',1,'RpgGame::Core::Level']]],
-  ['show_3',['Show',['../classRpgGame_1_1Renderer_1_1HelpOverlay.html#a781d124ad18f0a7734edc416e7725af8',1,'RpgGame::Renderer::HelpOverlay']]],
+  ['show_3',['show',['../classRpgGame_1_1Renderer_1_1HelpOverlay.html#a781d124ad18f0a7734edc416e7725af8',1,'RpgGame.Renderer.HelpOverlay.Show()'],['../classRpgGame_1_1Renderer_1_1JournalOverlay.html#a64780c37076af3da7a618c356c636e18',1,'RpgGame.Renderer.JournalOverlay.Show()']]],
   ['spawnasync_4',['spawnasync',['../classRpgGame_1_1Generation_1_1Enemies_1_1GolemSpawnStep.html#a3eeb3586ca69159088fd70ca57dc6628',1,'RpgGame.Generation.Enemies.GolemSpawnStep.SpawnAsync()'],['../classRpgGame_1_1Generation_1_1Enemies_1_1MageSpawnStep.html#a8675d7a84b0ca51d7cd7c41773970cea',1,'RpgGame.Generation.Enemies.MageSpawnStep.SpawnAsync()']]],
   ['spawncoinsasync_5',['SpawnCoinsAsync',['../classRpgGame_1_1Generation_1_1MapSpawnHelper.html#aef5f182d21ac6ed160d15450118a6032',1,'RpgGame::Generation::MapSpawnHelper']]],
   ['spawndoubleswordasync_6',['SpawnDoubleSwordAsync',['../classRpgGame_1_1Generation_1_1MapSpawnHelper.html#ac40bb8e43fb5b06d21638ff12bde806b',1,'RpgGame::Generation::MapSpawnHelper']]],

@@ -59,6 +59,7 @@ var hierarchy =
       [ "RpgGame.Input.HelpCommand", "classRpgGame_1_1Input_1_1HelpCommand.html", null ],
       [ "RpgGame.Input.InventoryToLeftHandCommand", "classRpgGame_1_1Input_1_1InventoryToLeftHandCommand.html", null ],
       [ "RpgGame.Input.InventoryToRightHandCommand", "classRpgGame_1_1Input_1_1InventoryToRightHandCommand.html", null ],
+      [ "RpgGame.Input.JournalCommand", "classRpgGame_1_1Input_1_1JournalCommand.html", null ],
       [ "RpgGame.Input.MoveDownCommand", "classRpgGame_1_1Input_1_1MoveDownCommand.html", null ],
       [ "RpgGame.Input.MoveLeftCommand", "classRpgGame_1_1Input_1_1MoveLeftCommand.html", null ],
       [ "RpgGame.Input.MoveRightCommand", "classRpgGame_1_1Input_1_1MoveRightCommand.html", null ],
@@ -115,6 +116,7 @@ var hierarchy =
       [ "RpgGame.Combat.LightWeaponCategory", "classRpgGame_1_1Combat_1_1LightWeaponCategory.html", null ],
       [ "RpgGame.Combat.MagicalWeaponCategory", "classRpgGame_1_1Combat_1_1MagicalWeaponCategory.html", null ]
     ] ],
+    [ "RpgGame.Renderer.JournalOverlay", "classRpgGame_1_1Renderer_1_1JournalOverlay.html", null ],
     [ "RpgGame.Core.Level", "classRpgGame_1_1Core_1_1Level.html", null ],
     [ "RpgGame.Logger.LogEntry", "classRpgGame_1_1Logger_1_1LogEntry.html", null ],
     [ "RpgGame.Generation.MapSpawnHelper", "classRpgGame_1_1Generation_1_1MapSpawnHelper.html", null ],

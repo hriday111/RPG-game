@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y_0',['Y',['../classRpgGame_1_1Generation_1_1RectRoom.html#a40dcbc2fee8aa1c4543806b33aa006c7',1,'RpgGame::Generation::RectRoom']]]
+  ['x_0',['X',['../classRpgGame_1_1Generation_1_1RectRoom.html#a190e55e3357da66c49ff78eb1c71d663',1,'RpgGame::Generation::RectRoom']]]
 ];

@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['mage_0',['mage',['../classRpgGame_1_1Character_1_1Mage.html',1,'RpgGame.Character.Mage'],['../classRpgGame_1_1Character_1_1Mage.html#a87837c9608d51c9c08b248f9c2c8c87c',1,'RpgGame.Character.Mage.Mage()']]],
-  ['mages_1',['Mages',['../classRpgGame_1_1Core_1_1Level.html#a9d654f4720ba1054aa415af1db9da989',1,'RpgGame::Core::Level']]],
-  ['magespawnstep_2',['MageSpawnStep',['../classRpgGame_1_1Generation_1_1Enemies_1_1MageSpawnStep.html',1,'RpgGame::Generation::Enemies']]],
-  ['magicalstrikeattack_3',['MagicalStrikeAttack',['../classRpgGame_1_1Combat_1_1MagicalStrikeAttack.html',1,'RpgGame::Combat']]],
-  ['magicalweaponcategory_4',['MagicalWeaponCategory',['../classRpgGame_1_1Combat_1_1MagicalWeaponCategory.html',1,'RpgGame::Combat']]],
-  ['mapspawnhelper_5',['MapSpawnHelper',['../classRpgGame_1_1Generation_1_1MapSpawnHelper.html',1,'RpgGame::Generation']]],
-  ['message_6',['Message',['../classRpgGame_1_1Logger_1_1LogEntry.html#a14149c55eefdefc65b853423f54d448d',1,'RpgGame::Logger::LogEntry']]],
-  ['move_7',['Move',['../classRpgGame_1_1Character_1_1Character.html#a20a9733d47e107044963881b844a7fec',1,'RpgGame::Character::Character']]],
-  ['movedowncommand_8',['MoveDownCommand',['../classRpgGame_1_1Input_1_1MoveDownCommand.html',1,'RpgGame::Input']]],
-  ['moveleftcommand_9',['MoveLeftCommand',['../classRpgGame_1_1Input_1_1MoveLeftCommand.html',1,'RpgGame::Input']]],
-  ['moverightcommand_10',['MoveRightCommand',['../classRpgGame_1_1Input_1_1MoveRightCommand.html',1,'RpgGame::Input']]],
-  ['moveupcommand_11',['MoveUpCommand',['../classRpgGame_1_1Input_1_1MoveUpCommand.html',1,'RpgGame::Input']]]
+  ['lastcombatmessage_0',['LastCombatMessage',['../classRpgGame_1_1Core_1_1Level.html#aed519c4db0cc865cb495da11e718d0b5',1,'RpgGame::Core::Level']]],
+  ['lefthand_1',['LeftHand',['../classRpgGame_1_1Character_1_1Player.html#a1974606bd9cdde05cc4547acb0e13733',1,'RpgGame::Character::Player']]],
+  ['level_2',['level',['../classRpgGame_1_1Core_1_1Level.html#a657c68da4b8ef9587fbcb57a25a702bb',1,'RpgGame.Core.Level.Level()'],['../classRpgGame_1_1Core_1_1Level.html',1,'RpgGame.Core.Level']]],
+  ['librarydungeonstrategy_3',['LibraryDungeonStrategy',['../classRpgGame_1_1Generation_1_1Strategies_1_1LibraryDungeonStrategy.html',1,'RpgGame::Generation::Strategies']]],
+  ['lightweaponcategory_4',['LightWeaponCategory',['../classRpgGame_1_1Combat_1_1LightWeaponCategory.html',1,'RpgGame::Combat']]],
+  ['load_5',['Load',['../classRpgGame_1_1Core_1_1IniConfigLoader.html#a36ba44c72cae30bf0e5a8756c550e9cb',1,'RpgGame::Core::IniConfigLoader']]],
+  ['log_6',['log',['../classRpgGame_1_1Logger_1_1FileLogSink.html#a4c18ea6c8da97369a2301550baf63dd8',1,'RpgGame.Logger.FileLogSink.Log()'],['../classRpgGame_1_1Logger_1_1InMemoryLogSink.html#a9661b7878a5da8d2ff72a6affa2ca6b9',1,'RpgGame.Logger.InMemoryLogSink.Log(string message)'],['../classRpgGame_1_1Logger_1_1InMemoryLogSink.html#a4645712cad8c544d2232a1bafe34fb79',1,'RpgGame.Logger.InMemoryLogSink.Log(LogEntry entry)'],['../interfaceRpgGame_1_1Logger_1_1ILogSink.html#ab3833abf130e01b36358af32d11ef299',1,'RpgGame.Logger.ILogSink.Log(string message)'],['../interfaceRpgGame_1_1Logger_1_1ILogSink.html#a965787f7312bf6fc33fade6ec723587c',1,'RpgGame.Logger.ILogSink.Log(LogEntry entry)'],['../classRpgGame_1_1Logger_1_1FileLogSink.html#a1cbe04e3a95f61c0b38b23fa1380acc9',1,'RpgGame.Logger.FileLogSink.Log()'],['../classRpgGame_1_1Logger_1_1BufferedJournalLogSink.html#aca823f2befce54a685720783805aaf75',1,'RpgGame.Logger.BufferedJournalLogSink.Log(string message)'],['../classRpgGame_1_1Logger_1_1BufferedJournalLogSink.html#af5f236d5d481b15a2a1c793603d30cab',1,'RpgGame.Logger.BufferedJournalLogSink.Log(LogEntry entry)']]],
+  ['logdirectory_7',['LogDirectory',['../classRpgGame_1_1Core_1_1GameConfig.html#a65e0fd830560513cb9b407e50241066c',1,'RpgGame::Core::GameConfig']]],
+  ['logentry_8',['logentry',['../classRpgGame_1_1Logger_1_1LogEntry.html',1,'RpgGame.Logger.LogEntry'],['../classRpgGame_1_1Logger_1_1LogEntry.html#a2ee19628233b507e91080a100537eea9',1,'RpgGame.Logger.LogEntry.LogEntry(string message)'],['../classRpgGame_1_1Logger_1_1LogEntry.html#a45c0aa161402f01babbc8a3bb1ff4675',1,'RpgGame.Logger.LogEntry.LogEntry(string message, DateTime timestamp)']]],
+  ['logeventbase_9',['logeventbase',['../classRpgGame_1_1Logger_1_1LogEventBase.html',1,'RpgGame.Logger.LogEventBase'],['../classRpgGame_1_1Logger_1_1LogEventBase.html#ace78e0266034cd58e97ddd3c7061ca42',1,'RpgGame.Logger.LogEventBase.LogEventBase()'],['../classRpgGame_1_1Logger_1_1LogEventBase.html#a38a5aea61064291b93fd85335f38946e',1,'RpgGame.Logger.LogEventBase.LogEventBase(DateTime timestamp)']]],
+  ['logfilepath_10',['LogFilePath',['../classRpgGame_1_1Logger_1_1SessionStartedLogEvent.html#ae699a2eb3e55b16341b7d94683182754',1,'RpgGame::Logger::SessionStartedLogEvent']]],
+  ['luck_11',['Luck',['../classRpgGame_1_1Character_1_1Player.html#a81cee1bf3a9b1b853bd172f845c0654f',1,'RpgGame::Character::Player']]]
 ];

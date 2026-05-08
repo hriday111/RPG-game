@@ -8,6 +8,7 @@ var namespaceRpgGame_1_1Input =
     [ "InputHandler", "classRpgGame_1_1Input_1_1InputHandler.html", "classRpgGame_1_1Input_1_1InputHandler" ],
     [ "InventoryToLeftHandCommand", "classRpgGame_1_1Input_1_1InventoryToLeftHandCommand.html", "classRpgGame_1_1Input_1_1InventoryToLeftHandCommand" ],
     [ "InventoryToRightHandCommand", "classRpgGame_1_1Input_1_1InventoryToRightHandCommand.html", "classRpgGame_1_1Input_1_1InventoryToRightHandCommand" ],
+    [ "JournalCommand", "classRpgGame_1_1Input_1_1JournalCommand.html", "classRpgGame_1_1Input_1_1JournalCommand" ],
     [ "MoveDownCommand", "classRpgGame_1_1Input_1_1MoveDownCommand.html", "classRpgGame_1_1Input_1_1MoveDownCommand" ],
     [ "MoveLeftCommand", "classRpgGame_1_1Input_1_1MoveLeftCommand.html", "classRpgGame_1_1Input_1_1MoveLeftCommand" ],
     [ "MoveRightCommand", "classRpgGame_1_1Input_1_1MoveRightCommand.html", "classRpgGame_1_1Input_1_1MoveRightCommand" ],
@@ -20,6 +21,7 @@ var namespaceRpgGame_1_1Input =
       [ "None", "namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49faa6adf97f83acf6453d4a6a4b1070f3754", null ],
       [ "Ok", "namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49faaa60852f204ed8028c1c58808b746d115", null ],
       [ "Quit", "namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49faa0d82790b0612935992bd564a17ce37d6", null ],
-      [ "Help", "namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49faa6a26f548831e6a8c26bfbbd9f6ec61e0", null ]
+      [ "Help", "namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49faa6a26f548831e6a8c26bfbbd9f6ec61e0", null ],
+      [ "Journal", "namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49faa6b2b5614a23abed4834b7cb7b91c6887", null ]
     ] ]
 ];

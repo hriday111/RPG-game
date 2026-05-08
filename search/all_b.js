@@ -1,6 +1,15 @@
 var searchData=
 [
-  ['name_0',['name',['../classRpgGame_1_1Items_1_1Coin.html#a3f6f6be14ce5ea76add2b43fa60e7c07',1,'RpgGame.Items.Coin.Name'],['../classRpgGame_1_1Items_1_1CrystalOrb.html#a8cfd2fc444b372d1becd1000675a7867',1,'RpgGame.Items.CrystalOrb.Name'],['../classRpgGame_1_1Items_1_1DoubleSword.html#abf93507091d389237347aa9a10bef7b8',1,'RpgGame.Items.DoubleSword.Name'],['../classRpgGame_1_1Items_1_1Gold.html#ade60cf8761352585e25cf1791213f8c5',1,'RpgGame.Items.Gold.Name'],['../interfaceRpgGame_1_1Items_1_1IItem.html#a00cea1d78c63d2696400d164660d8641',1,'RpgGame.Items.IItem.Name'],['../classRpgGame_1_1Items_1_1Modifiers_1_1ProtectiveWeaponModifier.html#a40bb3c037375e54b7d854cdd9a9b5517',1,'RpgGame.Items.Modifiers.ProtectiveWeaponModifier.Name'],['../classRpgGame_1_1Items_1_1Modifiers_1_1StrongWeaponModifier.html#a1ad4e9d64bc157379c98114a48114d4e',1,'RpgGame.Items.Modifiers.StrongWeaponModifier.Name'],['../classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html#a9cf88a9a0fba0f7fb94e380342aa54ad',1,'RpgGame.Items.Modifiers.UnluckyWeaponModifier.Name'],['../classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a98e163ea7ce61ab326496bbd503273e6',1,'RpgGame.Items.Modifiers.WeaponModifierDecorator.Name'],['../classRpgGame_1_1Items_1_1Potion.html#a2575c9bc2edafe1bc62c05f03ef56355',1,'RpgGame.Items.Potion.Name'],['../classRpgGame_1_1Items_1_1Sword.html#a7d283c5c4e9b1c3d7db17282bad15511',1,'RpgGame.Items.Sword.Name'],['../classRpgGame_1_1Items_1_1Thorn.html#afd4c596a06ce803b0fcfa404bb867447',1,'RpgGame.Items.Thorn.Name'],['../classRpgGame_1_1Items_1_1Weapon.html#ae749ab7a361ef77770b05b11737e3a85',1,'RpgGame.Items.Weapon.Name']]],
-  ['none_1',['None',['../namespaceRpgGame_1_1Input.html#ac0add8582d6c497e13d4a411db6f49faa6adf97f83acf6453d4a6a4b1070f3754',1,'RpgGame::Input']]],
-  ['normalattack_2',['NormalAttack',['../classRpgGame_1_1Combat_1_1NormalAttack.html',1,'RpgGame::Combat']]]
+  ['mage_0',['mage',['../classRpgGame_1_1Character_1_1Mage.html',1,'RpgGame.Character.Mage'],['../classRpgGame_1_1Character_1_1Mage.html#a87837c9608d51c9c08b248f9c2c8c87c',1,'RpgGame.Character.Mage.Mage()']]],
+  ['mages_1',['Mages',['../classRpgGame_1_1Core_1_1Level.html#a9d654f4720ba1054aa415af1db9da989',1,'RpgGame::Core::Level']]],
+  ['magespawnstep_2',['MageSpawnStep',['../classRpgGame_1_1Generation_1_1Enemies_1_1MageSpawnStep.html',1,'RpgGame::Generation::Enemies']]],
+  ['magicalstrikeattack_3',['MagicalStrikeAttack',['../classRpgGame_1_1Combat_1_1MagicalStrikeAttack.html',1,'RpgGame::Combat']]],
+  ['magicalweaponcategory_4',['MagicalWeaponCategory',['../classRpgGame_1_1Combat_1_1MagicalWeaponCategory.html',1,'RpgGame::Combat']]],
+  ['mapspawnhelper_5',['MapSpawnHelper',['../classRpgGame_1_1Generation_1_1MapSpawnHelper.html',1,'RpgGame::Generation']]],
+  ['message_6',['Message',['../classRpgGame_1_1Logger_1_1LogEntry.html#a14149c55eefdefc65b853423f54d448d',1,'RpgGame::Logger::LogEntry']]],
+  ['move_7',['Move',['../classRpgGame_1_1Character_1_1Character.html#a20a9733d47e107044963881b844a7fec',1,'RpgGame::Character::Character']]],
+  ['movedowncommand_8',['MoveDownCommand',['../classRpgGame_1_1Input_1_1MoveDownCommand.html',1,'RpgGame::Input']]],
+  ['moveleftcommand_9',['MoveLeftCommand',['../classRpgGame_1_1Input_1_1MoveLeftCommand.html',1,'RpgGame::Input']]],
+  ['moverightcommand_10',['MoveRightCommand',['../classRpgGame_1_1Input_1_1MoveRightCommand.html',1,'RpgGame::Input']]],
+  ['moveupcommand_11',['MoveUpCommand',['../classRpgGame_1_1Input_1_1MoveUpCommand.html',1,'RpgGame::Input']]]
 ];

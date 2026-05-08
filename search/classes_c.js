@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['onehandoccupation_0',['OneHandOccupation',['../classRpgGame_1_1Items_1_1OneHandOccupation.html',1,'RpgGame::Items']]]
+  ['normalattack_0',['NormalAttack',['../classRpgGame_1_1Combat_1_1NormalAttack.html',1,'RpgGame::Combat']]]
 ];

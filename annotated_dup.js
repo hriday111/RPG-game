@@ -76,6 +76,7 @@ var annotated_dup =
         [ "InputHandler", "classRpgGame_1_1Input_1_1InputHandler.html", "classRpgGame_1_1Input_1_1InputHandler" ],
         [ "InventoryToLeftHandCommand", "classRpgGame_1_1Input_1_1InventoryToLeftHandCommand.html", "classRpgGame_1_1Input_1_1InventoryToLeftHandCommand" ],
         [ "InventoryToRightHandCommand", "classRpgGame_1_1Input_1_1InventoryToRightHandCommand.html", "classRpgGame_1_1Input_1_1InventoryToRightHandCommand" ],
+        [ "JournalCommand", "classRpgGame_1_1Input_1_1JournalCommand.html", "classRpgGame_1_1Input_1_1JournalCommand" ],
         [ "MoveDownCommand", "classRpgGame_1_1Input_1_1MoveDownCommand.html", "classRpgGame_1_1Input_1_1MoveDownCommand" ],
         [ "MoveLeftCommand", "classRpgGame_1_1Input_1_1MoveLeftCommand.html", "classRpgGame_1_1Input_1_1MoveLeftCommand" ],
         [ "MoveRightCommand", "classRpgGame_1_1Input_1_1MoveRightCommand.html", "classRpgGame_1_1Input_1_1MoveRightCommand" ],
@@ -126,7 +127,8 @@ var annotated_dup =
       [ "Renderer", "namespaceRpgGame_1_1Renderer.html", [
         [ "ConsoleRenderer", "classRpgGame_1_1Renderer_1_1ConsoleRenderer.html", "classRpgGame_1_1Renderer_1_1ConsoleRenderer" ],
         [ "HelpEntry", "classRpgGame_1_1Renderer_1_1HelpEntry.html", null ],
-        [ "HelpOverlay", "classRpgGame_1_1Renderer_1_1HelpOverlay.html", "classRpgGame_1_1Renderer_1_1HelpOverlay" ]
+        [ "HelpOverlay", "classRpgGame_1_1Renderer_1_1HelpOverlay.html", "classRpgGame_1_1Renderer_1_1HelpOverlay" ],
+        [ "JournalOverlay", "classRpgGame_1_1Renderer_1_1JournalOverlay.html", "classRpgGame_1_1Renderer_1_1JournalOverlay" ]
       ] ],
       [ "Tiles", "namespaceRpgGame_1_1Tiles.html", [
         [ "FloorTile", "classRpgGame_1_1Tiles_1_1FloorTile.html", "classRpgGame_1_1Tiles_1_1FloorTile" ],

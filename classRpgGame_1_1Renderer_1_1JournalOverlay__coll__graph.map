@@ -1,0 +1,3 @@
+<map id="RpgGame.Renderer.JournalOverlay" name="RpgGame.Renderer.JournalOverlay">
+<area shape="rect" id="Node000001" title="Renders a journal popup using entries from the in&#45;memory sink (via GameLog)." alt="" coords="5,5,195,85"/>
+</map>

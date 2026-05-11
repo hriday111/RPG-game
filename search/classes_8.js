@@ -17,8 +17,9 @@ var searchData=
   ['inventory_14',['Inventory',['../classRpgGame_1_1Core_1_1Inventory.html',1,'RpgGame::Core']]],
   ['inventorytolefthandcommand_15',['InventoryToLeftHandCommand',['../classRpgGame_1_1Input_1_1InventoryToLeftHandCommand.html',1,'RpgGame::Input']]],
   ['inventorytorighthandcommand_16',['InventoryToRightHandCommand',['../classRpgGame_1_1Input_1_1InventoryToRightHandCommand.html',1,'RpgGame::Input']]],
-  ['itemequippedlogevent_17',['ItemEquippedLogEvent',['../classRpgGame_1_1Logger_1_1ItemEquippedLogEvent.html',1,'RpgGame::Logger']]],
-  ['itempickeduplogevent_18',['ItemPickedUpLogEvent',['../classRpgGame_1_1Logger_1_1ItemPickedUpLogEvent.html',1,'RpgGame::Logger']]],
-  ['iweapon_19',['IWeapon',['../interfaceRpgGame_1_1Items_1_1IWeapon.html',1,'RpgGame::Items']]],
-  ['iweaponcategory_20',['IWeaponCategory',['../interfaceRpgGame_1_1Combat_1_1IWeaponCategory.html',1,'RpgGame::Combat']]]
+  ['ispeciesmember_17',['ISpeciesMember',['../interfaceRpgGame_1_1Character_1_1Behavior_1_1ISpeciesMember.html',1,'RpgGame::Character::Behavior']]],
+  ['itemequippedlogevent_18',['ItemEquippedLogEvent',['../classRpgGame_1_1Logger_1_1ItemEquippedLogEvent.html',1,'RpgGame::Logger']]],
+  ['itempickeduplogevent_19',['ItemPickedUpLogEvent',['../classRpgGame_1_1Logger_1_1ItemPickedUpLogEvent.html',1,'RpgGame::Logger']]],
+  ['iweapon_20',['IWeapon',['../interfaceRpgGame_1_1Items_1_1IWeapon.html',1,'RpgGame::Items']]],
+  ['iweaponcategory_21',['IWeaponCategory',['../interfaceRpgGame_1_1Combat_1_1IWeaponCategory.html',1,'RpgGame::Combat']]]
 ];

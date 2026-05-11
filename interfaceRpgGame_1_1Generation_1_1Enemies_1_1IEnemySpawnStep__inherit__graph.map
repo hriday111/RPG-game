@@ -1,7 +1,11 @@
 <map id="RpgGame.Generation.Enemies.IEnemySpawnStep" name="RpgGame.Generation.Enemies.IEnemySpawnStep">
-<area shape="rect" id="Node000001" title="One thematic enemy spawn contribution (one or several of the same enemy type via count)...." alt="" coords="127,5,345,100"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1Enemies_1_1GolemSpawnStep.html" title="Spawns a fixed number of golems." alt="" coords="5,148,224,277"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,113,166,149,162,146,190,109"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1Enemies_1_1MageSpawnStep.html" title="Spawns a fixed number of mages." alt="" coords="248,148,467,277"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="282,109,310,146,306,149,278,113"/>
+<area shape="rect" id="Node000001" title="One thematic enemy spawn contribution (one or several of the same enemy type via count)...." alt="" coords="369,5,588,100"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1Enemies_1_1GoblinSpawnStep.html" title=" " alt="" coords="5,148,224,277"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="357,101,237,150,225,156,223,151,235,146,355,96"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1Enemies_1_1GolemSpawnStep.html" title="Spawns a fixed number of golems." alt="" coords="248,148,467,277"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="437,113,408,149,404,146,433,109"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Generation_1_1Enemies_1_1MageSpawnStep.html" title="Spawns a fixed number of mages." alt="" coords="491,148,709,277"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="525,109,553,146,549,149,521,113"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Generation_1_1Enemies_1_1SkeletonSpawnStep.html" title=" " alt="" coords="733,148,952,277"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="602,96,722,146,734,151,732,156,720,150,600,101"/>
 </map>

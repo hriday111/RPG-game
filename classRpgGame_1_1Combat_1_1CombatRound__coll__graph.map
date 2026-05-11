@@ -1,3 +1,3 @@
 <map id="RpgGame.Combat.CombatRound" name="RpgGame.Combat.CombatRound">
-<area shape="rect" id="Node000001" title="Resolves a single turn of melee combat between the player and one golem." alt="" coords="5,5,235,149"/>
+<area shape="rect" id="Node000001" title="Resolves a single turn of melee combat between the player and one golem." alt="" coords="5,5,235,248"/>
 </map>

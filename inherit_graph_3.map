@@ -1,5 +1,16 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$interfaceRpgGame_1_1Combat_1_1ICombatContribution.html" title="Collects per&#45;hand damage and defense contributions for one combat exchange." alt="" coords="5,13,285,38"/>
-<area shape="rect" id="Node000001" href="$classRpgGame_1_1Combat_1_1CombatContributionAccumulator.html" title="Mutable accumulator used while visiting equipped items for a single strike." alt="" coords="333,5,609,45"/>
-<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="299,23,333,23,333,28,299,28"/>
+<area shape="rect" id="Node000000" href="$classRpgGame_1_1Character_1_1Character.html" title="Base abstract class for both playable and non&#45;playable characters." alt="" coords="5,104,224,129"/>
+<area shape="rect" id="Node000001" href="$classRpgGame_1_1Character_1_1Goblin.html" title="Cowardly species: gets weaker when allies die." alt="" coords="279,55,477,80"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="196,99,309,77,310,83,197,104"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Character_1_1Golem.html" title="Represents a Golem enemy on the level. It carries a weapon that sets counter&#45;attack damage and contri..." alt="" coords="279,104,477,129"/>
+<area shape="poly" id="edge2_Node000000_Node000004" title=" " alt="" coords="238,114,278,114,278,119,238,119"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Character_1_1Mage.html" title="Represents a mage enemy on the level. Uses the same melee/counter rules as Golem." alt="" coords="282,153,474,179"/>
+<area shape="poly" id="edge3_Node000000_Node000005" title=" " alt="" coords="197,129,310,151,309,156,196,135"/>
+<area shape="rect" id="Node000006" href="$classRpgGame_1_1Character_1_1Player.html" title="Represents the player&#45;controlled character in the game." alt="" coords="279,203,477,228"/>
+<area shape="poly" id="edge4_Node000000_Node000006" title=" " alt="" coords="152,133,208,162,273,189,311,200,310,205,271,194,205,167,149,138"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Character_1_1Skeleton.html" title="Aggressive species: gets stronger when allies die." alt="" coords="272,5,484,31"/>
+<area shape="poly" id="edge5_Node000000_Node000003" title=" " alt="" coords="161,96,223,69,246,54,271,41,310,28,312,33,273,46,249,59,225,74,163,101"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Character_1_1Behavior_1_1ISpeciesMember.html" title=" " alt="" coords="6,19,223,59"/>
+<area shape="poly" id="edge6_Node000002_Node000001" title=" " alt="" coords="237,50,279,54,278,59,237,55"/>
+<area shape="poly" id="edge7_Node000002_Node000003" title=" " alt="" coords="237,27,272,24,272,29,237,32"/>
 </map>

@@ -1,9 +1,11 @@
 var hierarchy =
 [
     [ "RpgGame.Character.Character", "classRpgGame_1_1Character_1_1Character.html", [
+      [ "RpgGame.Character.Goblin", "classRpgGame_1_1Character_1_1Goblin.html", null ],
       [ "RpgGame.Character.Golem", "classRpgGame_1_1Character_1_1Golem.html", null ],
       [ "RpgGame.Character.Mage", "classRpgGame_1_1Character_1_1Mage.html", null ],
-      [ "RpgGame.Character.Player", "classRpgGame_1_1Character_1_1Player.html", null ]
+      [ "RpgGame.Character.Player", "classRpgGame_1_1Character_1_1Player.html", null ],
+      [ "RpgGame.Character.Skeleton", "classRpgGame_1_1Character_1_1Skeleton.html", null ]
     ] ],
     [ "RpgGame.Combat.CombatRound", "classRpgGame_1_1Combat_1_1CombatRound.html", null ],
     [ "RpgGame.Core.Config", "classRpgGame_1_1Core_1_1Config.html", null ],
@@ -50,8 +52,10 @@ var hierarchy =
       [ "RpgGame.Generation.Strategies.TreasureDungeonStrategy", "classRpgGame_1_1Generation_1_1Strategies_1_1TreasureDungeonStrategy.html", null ]
     ] ],
     [ "RpgGame.Generation.Enemies.IEnemySpawnStep", "interfaceRpgGame_1_1Generation_1_1Enemies_1_1IEnemySpawnStep.html", [
+      [ "RpgGame.Generation.Enemies.GoblinSpawnStep", "classRpgGame_1_1Generation_1_1Enemies_1_1GoblinSpawnStep.html", null ],
       [ "RpgGame.Generation.Enemies.GolemSpawnStep", "classRpgGame_1_1Generation_1_1Enemies_1_1GolemSpawnStep.html", null ],
-      [ "RpgGame.Generation.Enemies.MageSpawnStep", "classRpgGame_1_1Generation_1_1Enemies_1_1MageSpawnStep.html", null ]
+      [ "RpgGame.Generation.Enemies.MageSpawnStep", "classRpgGame_1_1Generation_1_1Enemies_1_1MageSpawnStep.html", null ],
+      [ "RpgGame.Generation.Enemies.SkeletonSpawnStep", "classRpgGame_1_1Generation_1_1Enemies_1_1SkeletonSpawnStep.html", null ]
     ] ],
     [ "RpgGame.Input.IInputCommand", "interfaceRpgGame_1_1Input_1_1IInputCommand.html", [
       [ "RpgGame.Input.DropLeftCommand", "classRpgGame_1_1Input_1_1DropLeftCommand.html", null ],
@@ -111,6 +115,10 @@ var hierarchy =
     [ "RpgGame.Core.IniConfigLoader", "classRpgGame_1_1Core_1_1IniConfigLoader.html", null ],
     [ "RpgGame.Input.InputHandler", "classRpgGame_1_1Input_1_1InputHandler.html", null ],
     [ "RpgGame.Core.Inventory", "classRpgGame_1_1Core_1_1Inventory.html", null ],
+    [ "RpgGame.Character.Behavior.ISpeciesMember", "interfaceRpgGame_1_1Character_1_1Behavior_1_1ISpeciesMember.html", [
+      [ "RpgGame.Character.Goblin", "classRpgGame_1_1Character_1_1Goblin.html", null ],
+      [ "RpgGame.Character.Skeleton", "classRpgGame_1_1Character_1_1Skeleton.html", null ]
+    ] ],
     [ "RpgGame.Combat.IWeaponCategory", "interfaceRpgGame_1_1Combat_1_1IWeaponCategory.html", [
       [ "RpgGame.Combat.HeavyWeaponCategory", "classRpgGame_1_1Combat_1_1HeavyWeaponCategory.html", null ],
       [ "RpgGame.Combat.LightWeaponCategory", "classRpgGame_1_1Combat_1_1LightWeaponCategory.html", null ],
@@ -122,6 +130,9 @@ var hierarchy =
     [ "RpgGame.Generation.MapSpawnHelper", "classRpgGame_1_1Generation_1_1MapSpawnHelper.html", null ],
     [ "RpgGame.Program", "classRpgGame_1_1Program.html", null ],
     [ "RpgGame.Generation.RectRoom", "classRpgGame_1_1Generation_1_1RectRoom.html", null ],
+    [ "RpgGame.Character.Behavior.SpeciesGroup< TMember >", "classRpgGame_1_1Character_1_1Behavior_1_1SpeciesGroup.html", null ],
+    [ "RpgGame.Character.Behavior.SpeciesGroup< Goblin >", "classRpgGame_1_1Character_1_1Behavior_1_1SpeciesGroup.html", null ],
+    [ "RpgGame.Character.Behavior.SpeciesGroup< Skeleton >", "classRpgGame_1_1Character_1_1Behavior_1_1SpeciesGroup.html", null ],
     [ "RpgGame.Tiles.Tile", "classRpgGame_1_1Tiles_1_1Tile.html", [
       [ "RpgGame.Tiles.FloorTile", "classRpgGame_1_1Tiles_1_1FloorTile.html", null ],
       [ "RpgGame.Tiles.WallTile", "classRpgGame_1_1Tiles_1_1WallTile.html", null ]

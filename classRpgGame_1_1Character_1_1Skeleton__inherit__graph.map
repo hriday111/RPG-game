@@ -1,0 +1,7 @@
+<map id="RpgGame.Character.Skeleton" name="RpgGame.Character.Skeleton">
+<area shape="rect" id="Node000001" title="Aggressive species: gets stronger when allies die." alt="" coords="74,188,306,452"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Character.html" title="Base abstract class for both playable and non&#45;playable characters." alt="" coords="5,5,159,140"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,152,135,187,130,189,114,154"/>
+<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Character_1_1Behavior_1_1ISpeciesMember.html" title=" " alt="" coords="183,40,415,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="282,119,251,189,246,186,277,117"/>
+</map>

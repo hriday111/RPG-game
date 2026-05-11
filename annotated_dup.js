@@ -2,10 +2,16 @@ var annotated_dup =
 [
     [ "RpgGame", "namespaceRpgGame.html", [
       [ "Character", "namespaceRpgGame_1_1Character.html", [
+        [ "Behavior", "namespaceRpgGame_1_1Character_1_1Behavior.html", [
+          [ "ISpeciesMember", "interfaceRpgGame_1_1Character_1_1Behavior_1_1ISpeciesMember.html", null ],
+          [ "SpeciesGroup", "classRpgGame_1_1Character_1_1Behavior_1_1SpeciesGroup.html", null ]
+        ] ],
         [ "Character", "classRpgGame_1_1Character_1_1Character.html", "classRpgGame_1_1Character_1_1Character" ],
+        [ "Goblin", "classRpgGame_1_1Character_1_1Goblin.html", null ],
         [ "Golem", "classRpgGame_1_1Character_1_1Golem.html", "classRpgGame_1_1Character_1_1Golem" ],
         [ "Mage", "classRpgGame_1_1Character_1_1Mage.html", "classRpgGame_1_1Character_1_1Mage" ],
-        [ "Player", "classRpgGame_1_1Character_1_1Player.html", "classRpgGame_1_1Character_1_1Player" ]
+        [ "Player", "classRpgGame_1_1Character_1_1Player.html", "classRpgGame_1_1Character_1_1Player" ],
+        [ "Skeleton", "classRpgGame_1_1Character_1_1Skeleton.html", null ]
       ] ],
       [ "Combat", "namespaceRpgGame_1_1Combat.html", [
         [ "CombatContributionAccumulator", "classRpgGame_1_1Combat_1_1CombatContributionAccumulator.html", null ],
@@ -30,9 +36,11 @@ var annotated_dup =
       ] ],
       [ "Generation", "namespaceRpgGame_1_1Generation.html", [
         [ "Enemies", "namespaceRpgGame_1_1Generation_1_1Enemies.html", [
+          [ "GoblinSpawnStep", "classRpgGame_1_1Generation_1_1Enemies_1_1GoblinSpawnStep.html", null ],
           [ "GolemSpawnStep", "classRpgGame_1_1Generation_1_1Enemies_1_1GolemSpawnStep.html", "classRpgGame_1_1Generation_1_1Enemies_1_1GolemSpawnStep" ],
           [ "IEnemySpawnStep", "interfaceRpgGame_1_1Generation_1_1Enemies_1_1IEnemySpawnStep.html", null ],
-          [ "MageSpawnStep", "classRpgGame_1_1Generation_1_1Enemies_1_1MageSpawnStep.html", "classRpgGame_1_1Generation_1_1Enemies_1_1MageSpawnStep" ]
+          [ "MageSpawnStep", "classRpgGame_1_1Generation_1_1Enemies_1_1MageSpawnStep.html", "classRpgGame_1_1Generation_1_1Enemies_1_1MageSpawnStep" ],
+          [ "SkeletonSpawnStep", "classRpgGame_1_1Generation_1_1Enemies_1_1SkeletonSpawnStep.html", null ]
         ] ],
         [ "Procedures", "namespaceRpgGame_1_1Generation_1_1Procedures.html", [
           [ "AddEnemiesProcedure", "classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure.html", "classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure" ],

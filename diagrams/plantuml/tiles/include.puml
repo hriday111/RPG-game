@@ -1,5 +1,0 @@
-@startuml
-!include ./FloorTile.puml
-!include ./Tiles.puml
-!include ./WallTile.puml
-@enduml

@@ -1,7 +1,0 @@
-@startuml
-class SelectInventoryCommand {
-    + SelectInventoryCommand(slotIndex:int)
-    + Execute(level:Level, player:Player, inventory:Inventory) : InputResult
-}
-IInputCommand <|-- SelectInventoryCommand
-@enduml

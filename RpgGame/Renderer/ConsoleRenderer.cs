@@ -15,7 +15,7 @@ namespace RpgGame.Renderer;
 /// - The player position
 /// - Items on the ground
 /// - The sidebar with character and inventory information
-/// 
+///
 /// </remarks>
 public class ConsoleRenderer
 {
@@ -94,6 +94,16 @@ public class ConsoleRenderer
                 {
                     Console.ResetColor();
                     Console.Write(mageHere.Symbol);
+                }
+                else if (level.TryGetGoblinAt(currentPos, out Goblin? goblinHere))
+                {
+                    Console.ResetColor();
+                    Console.Write(goblinHere.Symbol);
+                }
+                else if (level.TryGetSkeletonAt(currentPos, out Skeleton? skeletonHere))
+                {
+                    Console.ResetColor();
+                    Console.Write(skeletonHere.Symbol);
                 }
                 else
                 {

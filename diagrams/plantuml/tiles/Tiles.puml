@@ -1,9 +1,0 @@
-@startuml
-abstract class Tile {
-    + {abstract} Symbol : char <<get>>
-    + {abstract} color : ConsoleColor <<get>>
-    + {abstract} IsWalkable : bool <<get>>
-    + IsOccupied : bool <<get>> <<set>>
-    + PosList : List<Tile>
-}
-@enduml

@@ -1,7 +1,0 @@
-@startuml
-class TwoHandOccupation <<sealed>> {
-    + <<override>> EquipLeft(player:Player, item:IEquippable) : bool
-    + <<override>> EquipRight(player:Player, item:IEquippable) : bool
-}
-HandOccupation <|-- TwoHandOccupation
-@enduml

@@ -1,6 +1,0 @@
-@startuml
-abstract class HandOccupation {
-    + {abstract} EquipLeft(player:Player, item:IEquippable) : bool
-    + {abstract} EquipRight(player:Player, item:IEquippable) : bool
-}
-@enduml

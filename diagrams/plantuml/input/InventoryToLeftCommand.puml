@@ -1,6 +1,0 @@
-@startuml
-class InventoryToLeftHandCommand {
-    + Execute(level:Level, player:Player, inventory:Inventory) : InputResult
-}
-IInputCommand <|-- InventoryToLeftHandCommand
-@enduml

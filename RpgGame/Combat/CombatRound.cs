@@ -28,6 +28,7 @@ public static class CombatRound
         if (golem.IsDead)
             return new CombatRoundResult(true, raw, toEnemy, 0);
 
+
         int toPlayer = Math.Max(0, golem.GetCounterAttackPower() - player.GetDefenseStrength());
         player.TakeDamage(toPlayer);
         return new CombatRoundResult(false, raw, toEnemy, toPlayer);
@@ -43,6 +44,26 @@ public static class CombatRound
             return new CombatRoundResult(true, raw, toEnemy, 0);
 
         int toPlayer = Math.Max(0, mage.GetCounterAttackPower() - player.GetDefenseStrength());
+        player.TakeDamage(toPlayer);
+        return new CombatRoundResult(false, raw, toEnemy, toPlayer);
+    }
+    public static CombatRoundResult Resolve(Player player, Goblin goblin)
+    {
+        int raw = player.GetMeleeAttackPower();
+        int toEnemy = goblin.ApplyDamage(raw);
+        if (goblin.IsDead)
+            return new CombatRoundResult(true, raw, toEnemy, 0);
+        int toPlayer = Math.Max(0, goblin.GetCounterAttackPower() - player.GetDefenseStrength());
+        player.TakeDamage(toPlayer);
+        return new CombatRoundResult(false, raw, toEnemy, toPlayer);
+    }
+    public static CombatRoundResult Resolve(Player player, Skeleton skeleton)
+    {
+        int raw = player.GetMeleeAttackPower();
+        int toEnemy = skeleton.ApplyDamage(raw);
+        if (skeleton.IsDead)
+            return new CombatRoundResult(true, raw, toEnemy, 0);
+        int toPlayer = Math.Max(0, skeleton.GetCounterAttackPower() - player.GetDefenseStrength());
         player.TakeDamage(toPlayer);
         return new CombatRoundResult(false, raw, toEnemy, toPlayer);
     }

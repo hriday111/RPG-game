@@ -1,7 +1,0 @@
-@startuml
-class DungeonBuilder {
-    + Add(procedure:IDungeonProcedure) : DungeonBuilder
-    + <<async>> GenerateAsync(level:Level) : Task
-}
-IMapGenerator <|-- DungeonBuilder
-@enduml

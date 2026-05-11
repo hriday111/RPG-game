@@ -31,7 +31,19 @@ namespace RpgGame.Generation
             IEquippable wrapped = WrapWeaponWithRandomModifiers(core);
             return (IWeapon)wrapped;
         }
+        private static IWeapon CreateRandomGoblinWeapon()
+        {
+            Weapon core = random.Next(2) == 0 ? new Sword() : new DoubleSword();
+            IEquippable wrapped = WrapWeaponWithRandomModifiers(core);
+            return (IWeapon)wrapped;
+        }
 
+        private static IWeapon CreateRandomSkeletonWeapon()
+        {
+            Weapon core = random.Next(2) == 0 ? new CrystalOrb() : new Sword();
+            IEquippable wrapped = WrapWeaponWithRandomModifiers(core);
+            return (IWeapon)wrapped;
+        }
         /// <summary>
         /// Mages favor orbs; occasionally use a randomized blade like golems.
         /// </summary>
@@ -50,6 +62,10 @@ namespace RpgGame.Generation
                 used.Add((g.Pos.X, g.Pos.Y));
             foreach (var m in level.Mages)
                 used.Add((m.Pos.X, m.Pos.Y));
+            foreach (var g in level.Goblins)
+                used.Add((g.Pos.X, g.Pos.Y));
+            foreach (var s in level.Skeletons)
+                used.Add((s.Pos.X, s.Pos.Y));
         }
         /// <summary>
         /// Wraps a weapon with zero or more stacked decorators at level generation time.
@@ -65,7 +81,71 @@ namespace RpgGame.Generation
                 item = new ProtectiveWeaponModifier(item);
             return item;
         }
+        public static Task SpawnGoblinAsync(Level level, int count)
+        {
+            return Task.Run(() =>
+            {
+                var used = new HashSet<(int X, int Y)>();
+                CollectEnemyOccupied(level, used);
 
+                int spawned = 0;
+                int attempts = 0;
+                const int maxAttemptsPerEnemy = 500;
+
+                while (spawned < count && attempts < count * maxAttemptsPerEnemy)
+                {
+                    attempts++;
+                    int x = random.Next(1, level.Width - 1);
+                    int y = random.Next(1, level.Height - 1);
+
+                    if (x == Config.DefaultSpawnX && y == Config.DefaultSpawnY)
+                        continue;
+
+                    var tile = level.GetTile(x, y);
+                    if (!tile.IsWalkable || tile.IsOccupied)
+                        continue;
+
+                    if (!used.Add((x, y)))
+                        continue;
+
+                    level.AddGoblin(new Goblin(new Position(x, y), CreateRandomGoblinWeapon()));
+                    spawned++;
+                }
+            });
+        }
+
+        public static Task SpawnSkeletonAsync(Level level, int count)
+        {
+            return Task.Run(() =>
+            {
+                var used = new HashSet<(int X, int Y)>();
+                CollectEnemyOccupied(level, used);
+
+                int spawned = 0;
+                int attempts = 0;
+                const int maxAttemptsPerEnemy = 500;
+
+                while (spawned < count && attempts < count * maxAttemptsPerEnemy)
+                {
+                    attempts++;
+                    int x = random.Next(1, level.Width - 1);
+                    int y = random.Next(1, level.Height - 1);
+
+                    if (x == Config.DefaultSpawnX && y == Config.DefaultSpawnY)
+                        continue;
+
+                    var tile = level.GetTile(x, y);
+                    if (!tile.IsWalkable || tile.IsOccupied)
+                        continue;
+
+                    if (!used.Add((x, y)))
+                        continue;
+
+                    level.AddSkeleton(new Skeleton(new Position(x, y), CreateRandomSkeletonWeapon()));
+                    spawned++;
+                }
+            });
+        }
         /// <summary>
         /// Asynchronously places a number of items at random walkable locations
         /// on the given level.

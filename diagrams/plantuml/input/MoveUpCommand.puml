@@ -1,6 +1,0 @@
-@startuml
-class MoveUpCommand {
-    + Execute(level:Level, player:Player, inventory:Inventory) : InputResult
-}
-IInputCommand <|-- MoveUpCommand
-@enduml

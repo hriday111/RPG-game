@@ -40,7 +40,9 @@ public static class DungeonThemeCatalog
             Items = new ThemeItemCounts(5, 2, 2, 1),
             Weapons = new ThemeWeaponCounts(2, 1, 1),
             CreateArtifact = () => new Sword(),
-            EnemySpawnSteps = ImmutableArray.Create<IEnemySpawnStep>(new GolemSpawnStep(1)),
+            EnemySpawnSteps = ImmutableArray.Create<IEnemySpawnStep>(
+                new GoblinSpawnStep(2),
+                new SkeletonSpawnStep(2)),
         });
 
         b.Add(DungeonThemeKind.Treasure, new DungeonThemeProfile

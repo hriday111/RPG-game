@@ -128,6 +128,10 @@ class Program
             {
                 renderer.ToggleJournalDisplay();
             }
+            else if (result == InputResult.Ok)
+            {
+                level.AdvanceReactiveEnemiesTurn();
+            }
 
             renderer.Render(level, player, inventory);
             logSink.AdvanceFrame();

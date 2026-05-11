@@ -1,6 +1,0 @@
-@startuml
-class FilledDungeonProcedure {
-    + ApplyAsync(level:Level, context:DungeonContext) : Task
-}
-IDungeonProcedure <|-- FilledDungeonProcedure
-@enduml

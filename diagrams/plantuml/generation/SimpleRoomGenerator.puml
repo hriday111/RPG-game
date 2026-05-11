@@ -1,6 +1,0 @@
-@startuml
-class SimpleRoomGenerator {
-    + <<async>> GenerateAsync(level:Level) : Task
-}
-IMapGenerator <|-- SimpleRoomGenerator
-@enduml

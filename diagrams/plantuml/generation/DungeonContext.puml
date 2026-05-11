@@ -1,5 +1,0 @@
-@startuml
-class DungeonContext {
-    + Rooms : List<RectRoom> <<get>>
-}
-@enduml

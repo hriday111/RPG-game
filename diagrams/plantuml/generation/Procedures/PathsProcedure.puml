@@ -1,6 +1,0 @@
-@startuml
-class PathsProcedure {
-    + ApplyAsync(level:Level, context:DungeonContext) : Task
-}
-IDungeonProcedure <|-- PathsProcedure
-@enduml

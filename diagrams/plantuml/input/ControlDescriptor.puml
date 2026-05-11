@@ -1,9 +1,0 @@
-@startuml
-class ControlDescriptor <<sealed>> {
-    + Key : ConsoleKey <<get>>
-    + Modifiers : ConsoleModifiers <<get>>
-    + Description : string <<get>>
-    + ControlDescriptor(key:ConsoleKey, modifiers:ConsoleModifiers, description:string)
-    + DisplayText : string <<get>>
-}
-@enduml

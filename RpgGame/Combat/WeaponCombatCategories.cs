@@ -11,6 +11,9 @@ public sealed class HeavyWeaponCategory : IWeaponCategory
 
     public void DispatchCombat(ICombatAttack attack, IWeapon weapon, Player player, ICombatContribution contribution)
         => attack.VisitHeavy(weapon, player, contribution);
+
+    public int DispatchPickupNoiseHearingRange(INoiseHearingRangeVisitor visitor)
+        => visitor.HeavyWeaponPickupHearingSteps();
 }
 
 public sealed class LightWeaponCategory : IWeaponCategory
@@ -21,6 +24,9 @@ public sealed class LightWeaponCategory : IWeaponCategory
 
     public void DispatchCombat(ICombatAttack attack, IWeapon weapon, Player player, ICombatContribution contribution)
         => attack.VisitLight(weapon, player, contribution);
+
+    public int DispatchPickupNoiseHearingRange(INoiseHearingRangeVisitor visitor)
+        => visitor.LightWeaponPickupHearingSteps();
 }
 
 public sealed class MagicalWeaponCategory : IWeaponCategory
@@ -31,4 +37,7 @@ public sealed class MagicalWeaponCategory : IWeaponCategory
 
     public void DispatchCombat(ICombatAttack attack, IWeapon weapon, Player player, ICombatContribution contribution)
         => attack.VisitMagical(weapon, player, contribution);
+
+    public int DispatchPickupNoiseHearingRange(INoiseHearingRangeVisitor visitor)
+        => visitor.MagicalWeaponPickupHearingSteps();
 }

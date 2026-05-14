@@ -1,4 +1,6 @@
+using RpgGame.Core;
 using RpgGame.Items;
+using RpgGame.Logger;
 
 namespace RpgGame.Character;
 
@@ -6,7 +8,7 @@ namespace RpgGame.Character;
 /// Represents a Golem enemy on the level. It carries a weapon that sets
 /// counter-attack damage and contributes to armor.
 /// </summary>
-public class Golem : Character
+public class Golem : Character, INoiseListener
 {
     public override char Symbol => 'ඞ';
 
@@ -46,5 +48,14 @@ public class Golem : Character
         if (Health < 0)
             Health = 0;
         return dealt;
+    }
+
+    /// <inheritdoc />
+    public Position ListenerTile => Pos;
+
+    /// <inheritdoc />
+    public void OnWeaponPickupNoise(Position soundSource, int graphDistanceSteps)
+    {
+        GameLog.Write(new EnemyHeardWeaponPickupNoiseLogEvent(Symbol, Pos, soundSource, graphDistanceSteps));
     }
 }

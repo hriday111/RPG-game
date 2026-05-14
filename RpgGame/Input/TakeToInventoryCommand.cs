@@ -20,6 +20,7 @@ public class TakeToInventoryCommand : IInputCommand
             {
                 GameLog.Write(new ItemPickedUpLogEvent(item.Name));
                 level.TakeTopItem(player.Pos);
+                item.EmitInventoryWeaponNoise(level, player.Pos);
             }
 
         }

@@ -21,6 +21,7 @@ public class InventoryToRightHandCommand : IInputCommand
         if (inventory.TakeToRight())
         {
             GameLog.Write(new ItemPickedUpLogEvent(equippedName));
+            selected.EmitInventoryWeaponNoise(level, player.Pos);
             return InputResult.Ok;
         }
 

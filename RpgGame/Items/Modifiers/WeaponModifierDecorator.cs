@@ -37,6 +37,17 @@ public abstract class WeaponModifierDecorator : IWeapon
     public virtual int Defense => ((IWeapon)Inner).Defense;
 
     /// <inheritdoc />
+    public virtual int PickupNoiseHearingSteps()
+        => ResolveCoreWeapon().PickupNoiseHearingSteps();
+
+    /// <inheritdoc />
+    public virtual void EmitInventoryWeaponNoise(Level level, Position pickupTile)
+    {
+        ArgumentNullException.ThrowIfNull(level);
+        level.BroadcastWeaponPickupNoise(pickupTile, this);
+    }
+
+    /// <inheritdoc />
     public virtual void AcceptCombatStrike(ICombatAttack attack, Player player, ICombatContribution contribution)
         => ResolveCoreWeapon().DispatchCombatUsingSurface(attack, this, player, contribution);
 

@@ -68,6 +68,17 @@ public abstract class Weapon : IWeapon
         => DispatchCombatUsingSurface(attack, this, player, contribution);
 
     /// <inheritdoc />
+    public int PickupNoiseHearingSteps()
+        => CombatCategory.DispatchPickupNoiseHearingRange(WeaponPickupNoiseHearingRanges.Default);
+
+    /// <inheritdoc />
+    public void EmitInventoryWeaponNoise(Level level, Position pickupTile)
+    {
+        ArgumentNullException.ThrowIfNull(level);
+        level.BroadcastWeaponPickupNoise(pickupTile, this);
+    }
+
+    /// <inheritdoc />
     public virtual void ContributeCombat(ICombatAttack attack, Player player, ICombatContribution contribution)
         => AcceptCombatStrike(attack, player, contribution);
 

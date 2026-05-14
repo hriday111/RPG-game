@@ -1,13 +1,17 @@
 using RpgGame.Character.Behavior;
+using RpgGame.Core;
 using RpgGame.Items;
+using RpgGame.Logger;
 
 namespace RpgGame.Character;
 
 /// <summary>
 /// Aggressive species: gets stronger when allies die.
 /// </summary>
-public sealed class Skeleton : Character, ISpeciesMember
+public sealed class Skeleton : Character, ISpeciesMember, INoiseListener
 {
+    public SpeciesKind Kind => SpeciesKind.Skeleton;
+
     public override char Symbol => 's';
     public IWeapon EquippedWeapon { get; }
 
@@ -46,5 +50,14 @@ public sealed class Skeleton : Character, ISpeciesMember
     public void OnSpeciesMemberDeath()
     {
         rageStacks++;
+    }
+
+    /// <inheritdoc />
+    public Position ListenerTile => Pos;
+
+    /// <inheritdoc />
+    public void OnWeaponPickupNoise(Position soundSource, int graphDistanceSteps)
+    {
+        GameLog.Write(new EnemyHeardWeaponPickupNoiseLogEvent(Symbol, Pos, soundSource, graphDistanceSteps));
     }
 }

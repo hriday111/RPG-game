@@ -1,13 +1,17 @@
 using RpgGame.Character.Behavior;
+using RpgGame.Core;
 using RpgGame.Items;
+using RpgGame.Logger;
 
 namespace RpgGame.Character;
 
 /// <summary>
 /// Cowardly species: gets weaker when allies die.
 /// </summary>
-public sealed class Goblin : Character, ISpeciesMember
+public sealed class Goblin : Character, ISpeciesMember, INoiseListener
 {
+    public SpeciesKind Kind => SpeciesKind.Goblin;
+
     public override char Symbol => 'g';
     public IWeapon EquippedWeapon { get; }
 
@@ -46,5 +50,14 @@ public sealed class Goblin : Character, ISpeciesMember
     public void OnSpeciesMemberDeath()
     {
         panicStacks++;
+    }
+
+    /// <inheritdoc />
+    public Position ListenerTile => Pos;
+
+    /// <inheritdoc />
+    public void OnWeaponPickupNoise(Position soundSource, int graphDistanceSteps)
+    {
+        GameLog.Write(new EnemyHeardWeaponPickupNoiseLogEvent(Symbol, Pos, soundSource, graphDistanceSteps));
     }
 }

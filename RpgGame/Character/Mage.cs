@@ -1,11 +1,13 @@
+using RpgGame.Core;
 using RpgGame.Items;
+using RpgGame.Logger;
 
 namespace RpgGame.Character;
 
 /// <summary>
 /// Represents a mage enemy on the level. Uses the same melee/counter rules as <see cref="Golem"/>.
 /// </summary>
-public class Mage : Character
+public class Mage : Character, INoiseListener
 {
     public override char Symbol => 'A';
 
@@ -45,5 +47,14 @@ public class Mage : Character
         if (Health < 0)
             Health = 0;
         return dealt;
+    }
+
+    /// <inheritdoc />
+    public Position ListenerTile => Pos;
+
+    /// <inheritdoc />
+    public void OnWeaponPickupNoise(Position soundSource, int graphDistanceSteps)
+    {
+        GameLog.Write(new EnemyHeardWeaponPickupNoiseLogEvent(Symbol, Pos, soundSource, graphDistanceSteps));
     }
 }

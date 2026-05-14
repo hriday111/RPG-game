@@ -56,8 +56,14 @@ public class Level
     private readonly List<Mage> mages = new();
     private readonly List<Goblin> goblins = new();
     private readonly List<Skeleton> skeletons = new();
-    private readonly SpeciesGroup<Goblin> goblinSpecies = new();
-    private readonly SpeciesGroup<Skeleton> skeletonSpecies = new();
+
+    /// <summary>
+    /// Same-species members for collective death reactions, keyed like <see cref="items"/> but by <see cref="SpeciesKind"/>.
+    /// </summary>
+    private readonly Dictionary<SpeciesKind, List<ISpeciesMember>> speciesMembersByKind = new();
+
+    private readonly List<INoiseListener> noiseListeners = new();
+
     private static readonly Random random = new();
     public IReadOnlyList<Goblin> Goblins => goblins;
     public IReadOnlyList<Skeleton> Skeletons => skeletons;
@@ -179,7 +185,8 @@ public class Level
 
         tile.IsOccupied = true;
         goblins.Add(goblin);
-        goblinSpecies.Register(goblin);
+        RegisterSpeciesMember(goblin);
+        RegisterNoiseListener(goblin);
     }
 
     public bool RemoveGoblin(Goblin goblin)
@@ -188,7 +195,8 @@ public class Level
         if (!goblins.Remove(goblin))
             return false;
 
-        goblinSpecies.Unregister(goblin);
+        UnregisterSpeciesMember(goblin);
+        UnregisterNoiseListener(goblin);
 
         if (IsInBounds(goblin.Pos))
             GetTile(goblin.Pos.X, goblin.Pos.Y).IsOccupied = false;
@@ -220,7 +228,8 @@ public class Level
 
         tile.IsOccupied = true;
         skeletons.Add(skeleton);
-        skeletonSpecies.Register(skeleton);
+        RegisterSpeciesMember(skeleton);
+        RegisterNoiseListener(skeleton);
     }
 
     public bool RemoveSkeleton(Skeleton skeleton)
@@ -229,7 +238,8 @@ public class Level
         if (!skeletons.Remove(skeleton))
             return false;
 
-        skeletonSpecies.Unregister(skeleton);
+        UnregisterSpeciesMember(skeleton);
+        UnregisterNoiseListener(skeleton);
 
         if (IsInBounds(skeleton.Pos))
             GetTile(skeleton.Pos.X, skeleton.Pos.Y).IsOccupied = false;
@@ -251,6 +261,51 @@ public class Level
         skeleton = null;
         return false;
     }
+
+    private List<ISpeciesMember> GetOrCreateSpeciesMemberList(SpeciesKind kind)
+    {
+        if (!speciesMembersByKind.TryGetValue(kind, out var list))
+        {
+            list = new List<ISpeciesMember>();
+            speciesMembersByKind[kind] = list;
+        }
+
+        return list;
+    }
+
+    private void RegisterSpeciesMember(ISpeciesMember member)
+    {
+        ArgumentNullException.ThrowIfNull(member);
+        var list = GetOrCreateSpeciesMemberList(member.Kind);
+        if (!list.Contains(member))
+            list.Add(member);
+    }
+
+    private void UnregisterSpeciesMember(ISpeciesMember member)
+    {
+        ArgumentNullException.ThrowIfNull(member);
+        if (speciesMembersByKind.TryGetValue(member.Kind, out var list))
+            list.Remove(member);
+    }
+
+    /// <summary>
+    /// Notifies all registered same-kind members except <paramref name="fallen"/>.
+    /// Caller should remove <paramref name="fallen"/> from the level afterward.
+    /// </summary>
+    private void NotifySpeciesMemberDeath(ISpeciesMember fallen)
+    {
+        ArgumentNullException.ThrowIfNull(fallen);
+        if (!speciesMembersByKind.TryGetValue(fallen.Kind, out var list))
+            return;
+
+        var snapshot = list.ToArray();
+        foreach (var member in snapshot)
+        {
+            if (!ReferenceEquals(member, fallen))
+                member.OnSpeciesMemberDeath();
+        }
+    }
+
     /// <summary>
     /// Places a golem on the level and marks its tile occupied for movement checks.
     /// </summary>
@@ -264,6 +319,7 @@ public class Level
 
         tile.IsOccupied = true;
         golems.Add(golem);
+        RegisterNoiseListener(golem);
     }
 
     /// <summary>
@@ -275,6 +331,8 @@ public class Level
         ArgumentNullException.ThrowIfNull(golem);
         if (!golems.Remove(golem))
             return false;
+
+        UnregisterNoiseListener(golem);
 
         if (IsInBounds(golem.Pos))
             GetTile(golem.Pos.X, golem.Pos.Y).IsOccupied = false;
@@ -312,6 +370,7 @@ public class Level
 
         tile.IsOccupied = true;
         mages.Add(mage);
+        RegisterNoiseListener(mage);
     }
 
     /// <summary>
@@ -323,6 +382,8 @@ public class Level
         ArgumentNullException.ThrowIfNull(mage);
         if (!mages.Remove(mage))
             return false;
+
+        UnregisterNoiseListener(mage);
 
         if (IsInBounds(mage.Pos))
             GetTile(mage.Pos.X, mage.Pos.Y).IsOccupied = false;
@@ -402,7 +463,7 @@ public class Level
             if (goblinAtTarget.IsDead)
             {
                 // Broadcast to species BEFORE removing from board.
-                goblinSpecies.NotifyMemberDeath(goblinAtTarget);
+                NotifySpeciesMemberDeath(goblinAtTarget);
                 GameLog.Write(new EnemyDefeatedLogEvent($"{goblinAtTarget.EquippedWeapon.Name} goblin"));
                 RemoveGoblin(goblinAtTarget);
             }
@@ -418,7 +479,7 @@ public class Level
 
             if (skeletonAtTarget.IsDead)
             {
-                skeletonSpecies.NotifyMemberDeath(skeletonAtTarget);
+                NotifySpeciesMemberDeath(skeletonAtTarget);
                 GameLog.Write(new EnemyDefeatedLogEvent($"{skeletonAtTarget.EquippedWeapon.Name} skeleton"));
                 RemoveSkeleton(skeletonAtTarget);
             }
@@ -562,6 +623,41 @@ public class Level
     }
 
     #endregion
+
+    #region Weapon pickup noise
+
+    private void RegisterNoiseListener(INoiseListener listener)
+    {
+        ArgumentNullException.ThrowIfNull(listener);
+        if (!noiseListeners.Contains(listener))
+            noiseListeners.Add(listener);
+    }
+
+    private void UnregisterNoiseListener(INoiseListener listener)
+    {
+        ArgumentNullException.ThrowIfNull(listener);
+        noiseListeners.Remove(listener);
+    }
+
+    /// <summary>
+    /// Broadcasts weapon-handling noise from <paramref name="soundSource"/>; each registered
+    /// <see cref="INoiseListener"/> on a tile within walkable graph distance decides whether to log/react.
+    /// </summary>
+    public void BroadcastWeaponPickupNoise(Position soundSource, IWeapon weapon)
+    {
+        ArgumentNullException.ThrowIfNull(weapon);
+        int maxSteps = weapon.PickupNoiseHearingSteps();
+        Dictionary<Position, int> reach = WalkableNoiseReach.DistancesWithin(this, soundSource, maxSteps);
+        INoiseListener[] snapshot = noiseListeners.ToArray();
+        foreach (INoiseListener listener in snapshot)
+        {
+            if (reach.TryGetValue(listener.ListenerTile, out int dist))
+                listener.OnWeaponPickupNoise(soundSource, dist);
+        }
+    }
+
+    #endregion
+
     /// <summary>
     /// After each successful player command, all enemies take one random orthogonal step
     /// onto an unoccupied walkable tile (same turn cadence as the player).

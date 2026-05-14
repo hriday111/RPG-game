@@ -62,4 +62,12 @@ public interface IItem
     /// <param name="level">The current level.</param>
     /// <param name="player">The player dropping the item.</param>
     void OnDrop(Level level, Player player);
+
+    /// <summary>
+    /// After a successful inventory pickup, weapons may broadcast acoustic effects through the level.
+    /// Non-weapons use the default no-op.
+    /// </summary>
+    void EmitInventoryWeaponNoise(Level level, Position pickupTile)
+    {
+    }
 }

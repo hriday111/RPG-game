@@ -1,3 +1,5 @@
+using RpgGame.Character;
+
 namespace RpgGame.Logger;
 
 /// <summary>
@@ -149,6 +151,34 @@ public sealed class EnemyDefeatedLogEvent : LogEventBase
 
     /// <inheritdoc />
     public override string ToMessage() => $"{EnemyName} was defeated.";
+}
+
+/// <summary>
+/// Event recorded when an enemy hears weapon pickup/handling noise along a walkable path.
+/// </summary>
+public sealed class EnemyHeardWeaponPickupNoiseLogEvent : LogEventBase
+{
+    public char EnemyGlyph { get; }
+
+    public Position ListenerPosition { get; }
+
+    public Position SoundSource { get; }
+
+    public int GraphDistanceSteps { get; }
+
+    public EnemyHeardWeaponPickupNoiseLogEvent(char enemyGlyph, Position listenerPosition, Position soundSource, int graphDistanceSteps)
+    {
+        EnemyGlyph = enemyGlyph;
+        ListenerPosition = listenerPosition;
+        SoundSource = soundSource;
+        if (graphDistanceSteps < 0)
+            throw new ArgumentOutOfRangeException(nameof(graphDistanceSteps));
+        GraphDistanceSteps = graphDistanceSteps;
+    }
+
+    /// <inheritdoc />
+    public override string ToMessage() =>
+        $"Enemy '{EnemyGlyph}' at ({ListenerPosition.X},{ListenerPosition.Y}) heard weapon noise from source ({SoundSource.X},{SoundSource.Y}); graph distance {GraphDistanceSteps} step(s).";
 }
 
 /// <summary>

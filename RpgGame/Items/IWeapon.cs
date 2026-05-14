@@ -26,4 +26,9 @@ public interface IWeapon : IEquippable
     /// Double dispatch: weapon category forwards to <paramref name="attack"/>.
     /// </summary>
     void AcceptCombatStrike(ICombatAttack attack, Player player, ICombatContribution contribution);
+
+    /// <summary>
+    /// Max orthogonal graph distance (walkable tiles only) at which weapon-handling noise is still heard.
+    /// </summary>
+    int PickupNoiseHearingSteps();
 }

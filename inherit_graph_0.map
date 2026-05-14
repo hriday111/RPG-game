@@ -1,3 +1,21 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classRpgGame_1_1Character_1_1Behavior_1_1SpeciesGroup.html" title=" " alt="" coords="5,5,223,45"/>
+<area shape="rect" id="Node000000" href="$classRpgGame_1_1Character_1_1Character.html" title="Base abstract class for both playable and non&#45;playable characters." alt="" coords="5,96,224,121"/>
+<area shape="rect" id="Node000001" href="$classRpgGame_1_1Character_1_1Goblin.html" title="Cowardly species: gets weaker when allies die." alt="" coords="279,203,477,228"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="214,124,226,130,242,145,250,161,259,176,273,189,297,200,294,205,271,194,254,179,246,163,237,148,222,135,212,129"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Character_1_1Golem.html" title="Represents a Golem enemy on the level. It carries a weapon that sets counter&#45;attack damage and contri..." alt="" coords="279,104,477,129"/>
+<area shape="poly" id="edge2_Node000000_Node000003" title=" " alt="" coords="238,110,278,111,278,116,238,115"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Character_1_1Mage.html" title="Represents a mage enemy on the level. Uses the same melee/counter rules as Golem." alt="" coords="282,55,474,80"/>
+<area shape="poly" id="edge3_Node000000_Node000004" title=" " alt="" coords="209,91,296,77,297,83,210,97"/>
+<area shape="rect" id="Node000007" href="$classRpgGame_1_1Character_1_1Player.html" title="Represents the player&#45;controlled character in the game." alt="" coords="279,5,477,31"/>
+<area shape="poly" id="edge4_Node000000_Node000007" title=" " alt="" coords="153,88,208,63,271,39,312,28,314,33,273,45,210,68,155,92"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Character_1_1Skeleton.html" title="Aggressive species: gets stronger when allies die." alt="" coords="272,153,484,179"/>
+<area shape="poly" id="edge5_Node000000_Node000005" title=" " alt="" coords="187,122,320,151,318,156,186,127"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Core_1_1INoiseListener.html" title="Observer participant: an enemy that may react when weapon&#45;handling noise reaches its tile." alt="" coords="6,145,223,171"/>
+<area shape="poly" id="edge6_Node000002_Node000001" title=" " alt="" coords="187,171,320,200,318,205,186,176"/>
+<area shape="poly" id="edge7_Node000002_Node000003" title=" " alt="" coords="209,141,296,127,297,132,210,146"/>
+<area shape="poly" id="edge8_Node000002_Node000004" title=" " alt="" coords="203,139,223,130,237,121,246,110,256,99,271,89,300,78,302,83,273,94,259,103,250,114,240,125,225,135,206,143"/>
+<area shape="poly" id="edge9_Node000002_Node000005" title=" " alt="" coords="237,159,272,160,272,165,237,164"/>
+<area shape="rect" id="Node000006" href="$interfaceRpgGame_1_1Character_1_1Behavior_1_1ISpeciesMember.html" title="Enemies that share collective reactions within a SpeciesKind." alt="" coords="6,195,223,235"/>
+<area shape="poly" id="edge10_Node000006_Node000001" title=" " alt="" coords="237,213,279,213,279,218,237,218"/>
+<area shape="poly" id="edge11_Node000006_Node000005" title=" " alt="" coords="235,190,309,176,310,181,236,195"/>
 </map>

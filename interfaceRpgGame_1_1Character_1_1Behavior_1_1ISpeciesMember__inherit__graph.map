@@ -1,7 +1,7 @@
 <map id="RpgGame.Character.Behavior.ISpeciesMember" name="RpgGame.Character.Behavior.ISpeciesMember">
-<area shape="rect" id="Node000001" title=" " alt="" coords="133,5,365,85"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Goblin.html" title="Cowardly species: gets weaker when allies die." alt="" coords="5,141,237,390"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,98,197,142,192,139,217,96"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Character_1_1Skeleton.html" title="Aggressive species: gets stronger when allies die." alt="" coords="261,133,493,397"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="281,96,302,132,298,134,277,98"/>
+<area shape="rect" id="Node000001" title="Enemies that share collective reactions within a SpeciesKind." alt="" coords="133,5,365,85"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Goblin.html" title="Cowardly species: gets weaker when allies die." alt="" coords="5,141,237,479"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="227,99,206,141,201,139,222,97"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Character_1_1Skeleton.html" title="Aggressive species: gets stronger when allies die." alt="" coords="261,133,493,487"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="277,97,294,132,289,134,272,99"/>
 </map>

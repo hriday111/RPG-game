@@ -1,9 +1,13 @@
 <map id="RpgGame.Input.InventoryToLeftHandCommand.Execute" name="RpgGame.Input.InventoryToLeftHandCommand.Execute">
-<area shape="rect" id="Node000001" title="Executes the command using provided game objects.Usually InputResult.Ok to continue,..." alt="" coords="5,5,208,45"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Inventory.html#a948c021afddac012e053aabbaaa1045d" title="Equips the selected item in the inventory to the player&#39;s left hand and removes it from inventory." alt="" coords="256,5,473,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,23,242,23,242,28,208,28"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Character_1_1Player.html#a8fbd9664d432e62eaba416e06ea76d3f" title="Attempts to equip an item into the left hand." alt="" coords="521,5,721,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="473,23,507,23,507,28,473,28"/>
-<area shape="rect" id="Node000004" href="$interfaceRpgGame_1_1Items_1_1IEquippable.html#ac70b51f3d7a159e61dacd524f1dc9dbf" title="Attempts to equip the item in the player&#39;s left hand." alt="" coords="769,5,980,45"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="721,23,756,23,756,28,721,28"/>
+<area shape="rect" id="Node000001" title="Executes the command using provided game objects.Usually InputResult.Ok to continue,..." alt="" coords="5,69,208,109"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Items_1_1IItem.html#af240917a4fb1945f1c426fb02fc303e8" title="After a successful inventory pickup, weapons may broadcast acoustic effects through the level...." alt="" coords="265,5,464,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,67,270,46,271,51,189,72"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Core_1_1Inventory.html#ab99986bf0ae158246aff777d64dcdd3b" title="Gets the currently selected item without removing it." alt="" coords="259,69,470,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,87,246,87,246,92,208,92"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Core_1_1Inventory.html#a948c021afddac012e053aabbaaa1045d" title="Equips the selected item in the inventory to the player&#39;s left hand and removes it from inventory." alt="" coords="256,133,473,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="189,107,271,127,270,133,187,112"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Character_1_1Player.html#a8fbd9664d432e62eaba416e06ea76d3f" title="Attempts to equip an item into the left hand." alt="" coords="521,133,721,173"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="473,151,507,151,507,156,473,156"/>
+<area shape="rect" id="Node000006" href="$interfaceRpgGame_1_1Items_1_1IEquippable.html#ac70b51f3d7a159e61dacd524f1dc9dbf" title="Attempts to equip the item in the player&#39;s left hand." alt="" coords="769,133,980,173"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="721,151,756,151,756,156,721,156"/>
 </map>

@@ -97,6 +97,7 @@ var hierarchy =
       [ "RpgGame.Logger.LogEventBase", "classRpgGame_1_1Logger_1_1LogEventBase.html", [
         [ "RpgGame.Logger.AttackDealtLogEvent", "classRpgGame_1_1Logger_1_1AttackDealtLogEvent.html", null ],
         [ "RpgGame.Logger.EnemyDefeatedLogEvent", "classRpgGame_1_1Logger_1_1EnemyDefeatedLogEvent.html", null ],
+        [ "RpgGame.Logger.EnemyHeardWeaponPickupNoiseLogEvent", "classRpgGame_1_1Logger_1_1EnemyHeardWeaponPickupNoiseLogEvent.html", null ],
         [ "RpgGame.Logger.ItemEquippedLogEvent", "classRpgGame_1_1Logger_1_1ItemEquippedLogEvent.html", null ],
         [ "RpgGame.Logger.ItemPickedUpLogEvent", "classRpgGame_1_1Logger_1_1ItemPickedUpLogEvent.html", null ],
         [ "RpgGame.Logger.PotionConsumedLogEvent", "classRpgGame_1_1Logger_1_1PotionConsumedLogEvent.html", null ],
@@ -113,6 +114,13 @@ var hierarchy =
       [ "RpgGame.Generation.SimpleRoomGenerator", "classRpgGame_1_1Generation_1_1SimpleRoomGenerator.html", null ]
     ] ],
     [ "RpgGame.Core.IniConfigLoader", "classRpgGame_1_1Core_1_1IniConfigLoader.html", null ],
+    [ "RpgGame.Combat.INoiseHearingRangeVisitor", "interfaceRpgGame_1_1Combat_1_1INoiseHearingRangeVisitor.html", null ],
+    [ "RpgGame.Core.INoiseListener", "interfaceRpgGame_1_1Core_1_1INoiseListener.html", [
+      [ "RpgGame.Character.Goblin", "classRpgGame_1_1Character_1_1Goblin.html", null ],
+      [ "RpgGame.Character.Golem", "classRpgGame_1_1Character_1_1Golem.html", null ],
+      [ "RpgGame.Character.Mage", "classRpgGame_1_1Character_1_1Mage.html", null ],
+      [ "RpgGame.Character.Skeleton", "classRpgGame_1_1Character_1_1Skeleton.html", null ]
+    ] ],
     [ "RpgGame.Input.InputHandler", "classRpgGame_1_1Input_1_1InputHandler.html", null ],
     [ "RpgGame.Core.Inventory", "classRpgGame_1_1Core_1_1Inventory.html", null ],
     [ "RpgGame.Character.Behavior.ISpeciesMember", "interfaceRpgGame_1_1Character_1_1Behavior_1_1ISpeciesMember.html", [
@@ -130,11 +138,9 @@ var hierarchy =
     [ "RpgGame.Generation.MapSpawnHelper", "classRpgGame_1_1Generation_1_1MapSpawnHelper.html", null ],
     [ "RpgGame.Program", "classRpgGame_1_1Program.html", null ],
     [ "RpgGame.Generation.RectRoom", "classRpgGame_1_1Generation_1_1RectRoom.html", null ],
-    [ "RpgGame.Character.Behavior.SpeciesGroup< TMember >", "classRpgGame_1_1Character_1_1Behavior_1_1SpeciesGroup.html", null ],
-    [ "RpgGame.Character.Behavior.SpeciesGroup< Goblin >", "classRpgGame_1_1Character_1_1Behavior_1_1SpeciesGroup.html", null ],
-    [ "RpgGame.Character.Behavior.SpeciesGroup< Skeleton >", "classRpgGame_1_1Character_1_1Behavior_1_1SpeciesGroup.html", null ],
     [ "RpgGame.Tiles.Tile", "classRpgGame_1_1Tiles_1_1Tile.html", [
       [ "RpgGame.Tiles.FloorTile", "classRpgGame_1_1Tiles_1_1FloorTile.html", null ],
       [ "RpgGame.Tiles.WallTile", "classRpgGame_1_1Tiles_1_1WallTile.html", null ]
-    ] ]
+    ] ],
+    [ "RpgGame.Combat.WeaponPickupNoiseHearingRanges", "classRpgGame_1_1Combat_1_1WeaponPickupNoiseHearingRanges.html", null ]
 ];

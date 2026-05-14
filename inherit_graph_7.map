@@ -1,9 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$interfaceRpgGame_1_1Combat_1_1IWeaponCategory.html" title="Weapon classification for combat: dispatches to the active ICombatAttack without type tags (each conc..." alt="" coords="5,77,265,102"/>
-<area shape="rect" id="Node000001" href="$classRpgGame_1_1Combat_1_1HeavyWeaponCategory.html" title=" " alt="" coords="318,5,557,45"/>
-<area shape="poly" id="edge12_Node000000_Node000001" title=" " alt="" coords="209,71,342,43,343,48,210,76"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Combat_1_1LightWeaponCategory.html" title=" " alt="" coords="323,69,552,109"/>
-<area shape="poly" id="edge13_Node000000_Node000002" title=" " alt="" coords="279,87,323,87,323,92,279,92"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Combat_1_1MagicalWeaponCategory.html" title=" " alt="" coords="313,133,561,173"/>
-<area shape="poly" id="edge14_Node000000_Node000003" title=" " alt="" coords="210,102,343,131,342,136,209,107"/>
+<area shape="rect" id="Node000000" href="$classRpgGame_1_1Core_1_1Config.html" title="Provides global configuration values for the game." alt="" coords="5,5,171,31"/>
 </map>

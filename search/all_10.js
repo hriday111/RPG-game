@@ -1,30 +1,4 @@
 var searchData=
 [
-  ['recent_0',['Recent',['../classRpgGame_1_1Logger_1_1GameLog.html#a2e714ee39c1035ca6364e4cf42a867bf',1,'RpgGame::Logger::GameLog']]],
-  ['rectroom_1',['rectroom',['../classRpgGame_1_1Generation_1_1RectRoom.html',1,'RpgGame.Generation.RectRoom'],['../classRpgGame_1_1Generation_1_1RectRoom.html#a03b9dcb1df03f309eae206e2871a5223',1,'RpgGame.Generation.RectRoom.RectRoom()']]],
-  ['registerhelpentry_2',['RegisterHelpEntry',['../classRpgGame_1_1Renderer_1_1ConsoleRenderer.html#a791c1ddc05423914f5402be4391d7b06',1,'RpgGame::Renderer::ConsoleRenderer']]],
-  ['removegolem_3',['RemoveGolem',['../classRpgGame_1_1Core_1_1Level.html#ad1b689507782c42575b21005941d5038',1,'RpgGame::Core::Level']]],
-  ['removemage_4',['RemoveMage',['../classRpgGame_1_1Core_1_1Level.html#a8e0b1e3dd6b9f8aade6630f00c76beb4',1,'RpgGame::Core::Level']]],
-  ['render_5',['Render',['../classRpgGame_1_1Renderer_1_1ConsoleRenderer.html#a8165e28216b39fd3fbd460f3541ddcf3',1,'RpgGame::Renderer::ConsoleRenderer']]],
-  ['resolve_6',['resolve',['../classRpgGame_1_1Combat_1_1CombatRound.html#aaa3837d5e656d1c5d2488ec09739cd99',1,'RpgGame.Combat.CombatRound.Resolve(Player player, Mage mage)'],['../classRpgGame_1_1Combat_1_1CombatRound.html#a705af5dabe146c5a9a7e09bb9910f33a',1,'RpgGame.Combat.CombatRound.Resolve(Player player, Golem golem)']]],
-  ['resolvecoreweapon_7',['ResolveCoreWeapon',['../classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a20d5be6d04a54ed896cd9374138d3f7e',1,'RpgGame::Items::Modifiers::WeaponModifierDecorator']]],
-  ['restorehealth_8',['RestoreHealth',['../classRpgGame_1_1Character_1_1Player.html#acbe997c5dad36a3935dc909b1b971644',1,'RpgGame::Character::Player']]],
-  ['righthand_9',['RightHand',['../classRpgGame_1_1Character_1_1Player.html#a570825b83fafe341f3ba8915dc63ca12',1,'RpgGame::Character::Player']]],
-  ['rooms_10',['Rooms',['../classRpgGame_1_1Generation_1_1DungeonContext.html#a2083655319abdf83d8bfbfd7fac551c3',1,'RpgGame::Generation::DungeonContext']]],
-  ['rpggame_11',['RpgGame',['../namespaceRpgGame.html',1,'']]],
-  ['rpggame_3a_3acharacter_12',['Character',['../namespaceRpgGame_1_1Character.html',1,'RpgGame']]],
-  ['rpggame_3a_3acharacter_3a_3abehavior_13',['Behavior',['../namespaceRpgGame_1_1Character_1_1Behavior.html',1,'RpgGame::Character']]],
-  ['rpggame_3a_3acombat_14',['Combat',['../namespaceRpgGame_1_1Combat.html',1,'RpgGame']]],
-  ['rpggame_3a_3acore_15',['Core',['../namespaceRpgGame_1_1Core.html',1,'RpgGame']]],
-  ['rpggame_3a_3ageneration_16',['Generation',['../namespaceRpgGame_1_1Generation.html',1,'RpgGame']]],
-  ['rpggame_3a_3ageneration_3a_3aenemies_17',['Enemies',['../namespaceRpgGame_1_1Generation_1_1Enemies.html',1,'RpgGame::Generation']]],
-  ['rpggame_3a_3ageneration_3a_3aprocedures_18',['Procedures',['../namespaceRpgGame_1_1Generation_1_1Procedures.html',1,'RpgGame::Generation']]],
-  ['rpggame_3a_3ageneration_3a_3astrategies_19',['Strategies',['../namespaceRpgGame_1_1Generation_1_1Strategies.html',1,'RpgGame::Generation']]],
-  ['rpggame_3a_3ageneration_3a_3athemes_20',['Themes',['../namespaceRpgGame_1_1Generation_1_1Themes.html',1,'RpgGame::Generation']]],
-  ['rpggame_3a_3ainput_21',['Input',['../namespaceRpgGame_1_1Input.html',1,'RpgGame']]],
-  ['rpggame_3a_3aitems_22',['Items',['../namespaceRpgGame_1_1Items.html',1,'RpgGame']]],
-  ['rpggame_3a_3aitems_3a_3amodifiers_23',['Modifiers',['../namespaceRpgGame_1_1Items_1_1Modifiers.html',1,'RpgGame::Items']]],
-  ['rpggame_3a_3alogger_24',['Logger',['../namespaceRpgGame_1_1Logger.html',1,'RpgGame']]],
-  ['rpggame_3a_3arenderer_25',['Renderer',['../namespaceRpgGame_1_1Renderer.html',1,'RpgGame']]],
-  ['rpggame_3a_3atiles_26',['Tiles',['../namespaceRpgGame_1_1Tiles.html',1,'RpgGame']]]
+  ['quitgamecommand_0',['QuitGameCommand',['../classRpgGame_1_1Input_1_1QuitGameCommand.html',1,'RpgGame::Input']]]
 ];

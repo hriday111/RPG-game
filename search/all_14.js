@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['visitbarefists_0',['visitbarefists',['../interfaceRpgGame_1_1Combat_1_1ICombatAttack.html#a6db3e69dac112caf918c1e49b507fe55',1,'RpgGame.Combat.ICombatAttack.VisitBareFists()'],['../classRpgGame_1_1Combat_1_1MagicalStrikeAttack.html#a9bb2b15f19fbd64a1f630932f8542499',1,'RpgGame.Combat.MagicalStrikeAttack.VisitBareFists()'],['../classRpgGame_1_1Combat_1_1NormalAttack.html#a4d6b0129b959cabd25e57d09ee1ce78f',1,'RpgGame.Combat.NormalAttack.VisitBareFists()'],['../classRpgGame_1_1Combat_1_1StealthAttack.html#ab85694cd3c21ca83a869eef53546c899',1,'RpgGame.Combat.StealthAttack.VisitBareFists()']]],
-  ['visitequippednonweapon_1',['visitequippednonweapon',['../interfaceRpgGame_1_1Combat_1_1ICombatAttack.html#a5a6e5513f2e6c664037a53ab87b3b4ad',1,'RpgGame.Combat.ICombatAttack.VisitEquippedNonWeapon()'],['../classRpgGame_1_1Combat_1_1MagicalStrikeAttack.html#a42b577fa06631254b949f67d2872d68c',1,'RpgGame.Combat.MagicalStrikeAttack.VisitEquippedNonWeapon()'],['../classRpgGame_1_1Combat_1_1NormalAttack.html#a41b6d0e66a2ce5966012b5d205be5935',1,'RpgGame.Combat.NormalAttack.VisitEquippedNonWeapon()'],['../classRpgGame_1_1Combat_1_1StealthAttack.html#a7f20bc3936f4989ea47b2d1f46a1ed22',1,'RpgGame.Combat.StealthAttack.VisitEquippedNonWeapon()']]]
+  ['unluckyweaponmodifier_0',['UnluckyWeaponModifier',['../classRpgGame_1_1Items_1_1Modifiers_1_1UnluckyWeaponModifier.html',1,'RpgGame::Items::Modifiers']]],
+  ['usesink_1',['UseSink',['../classRpgGame_1_1Logger_1_1GameLog.html#aa86cbe840f05c0532c73ae9b958f59cc',1,'RpgGame::Logger::GameLog']]]
 ];

@@ -1,11 +1,21 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$interfaceRpgGame_1_1Generation_1_1Enemies_1_1IEnemySpawnStep.html" title="One thematic enemy spawn contribution (one or several of the same enemy type via count)...." alt="" coords="5,101,232,141"/>
-<area shape="rect" id="Node000001" href="$classRpgGame_1_1Generation_1_1Enemies_1_1GoblinSpawnStep.html" title=" " alt="" coords="280,5,507,45"/>
-<area shape="poly" id="edge15_Node000000_Node000001" title=" " alt="" coords="178,94,279,55,317,43,318,48,281,60,180,99"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1Enemies_1_1GolemSpawnStep.html" title="Spawns a fixed number of golems." alt="" coords="280,69,507,109"/>
-<area shape="poly" id="edge16_Node000000_Node000002" title=" " alt="" coords="245,104,279,100,280,105,246,109"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1Enemies_1_1MageSpawnStep.html" title="Spawns a fixed number of mages." alt="" coords="280,133,507,173"/>
-<area shape="poly" id="edge17_Node000000_Node000003" title=" " alt="" coords="246,133,280,137,279,143,245,139"/>
-<area shape="rect" id="Node000004" href="$classRpgGame_1_1Generation_1_1Enemies_1_1SkeletonSpawnStep.html" title=" " alt="" coords="280,197,507,237"/>
-<area shape="poly" id="edge18_Node000000_Node000004" title=" " alt="" coords="180,144,281,183,318,195,317,200,279,188,178,149"/>
+<area shape="rect" id="Node000000" href="$interfaceRpgGame_1_1Generation_1_1IDungeonProcedure.html" title="Defines a procedural step in dungeon generation." alt="" coords="5,261,233,301"/>
+<area shape="rect" id="Node000001" href="$classRpgGame_1_1Generation_1_1Procedures_1_1AddEnemiesProcedure.html" title="Spawns enemies from an ordered list provided at construction — no branching on dungeon theme here." alt="" coords="281,5,524,45"/>
+<area shape="poly" id="edge23_Node000000_Node000001" title=" " alt="" coords="133,247,156,203,188,151,230,99,280,55,301,43,304,48,283,60,234,103,192,154,160,206,138,250"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1Procedures_1_1AddItemsProcedure.html" title="Spawns treasure items (coins and gold) at random locations in the dungeon." alt="" coords="281,69,524,109"/>
+<area shape="poly" id="edge24_Node000000_Node000002" title=" " alt="" coords="141,249,199,183,238,148,280,119,305,107,308,112,283,124,241,153,203,187,145,252"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1Procedures_1_1AddWeaponsProcedure.html" title="Spawns weapons (swords and double swords) at random locations in the dungeon." alt="" coords="281,133,524,173"/>
+<area shape="poly" id="edge25_Node000000_Node000003" title=" " alt="" coords="159,251,215,216,280,183,314,171,315,176,282,188,218,221,162,256"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Generation_1_1Procedures_1_1CentralRoomProcedure.html" title="Generates a central room in the dungeon." alt="" coords="281,197,524,237"/>
+<area shape="poly" id="edge26_Node000000_Node000004" title=" " alt="" coords="221,256,313,235,314,240,222,261"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Generation_1_1Procedures_1_1ChambersProcedure.html" title="Generates multiple random chamber rooms in the dungeon." alt="" coords="281,261,524,301"/>
+<area shape="poly" id="edge27_Node000000_Node000005" title=" " alt="" coords="247,279,281,279,281,284,247,284"/>
+<area shape="rect" id="Node000006" href="$classRpgGame_1_1Generation_1_1Procedures_1_1EmptyDungeonProcedure.html" title="Fills the entire dungeon with floor tiles, creating an empty open space." alt="" coords="281,325,524,365"/>
+<area shape="poly" id="edge28_Node000000_Node000006" title=" " alt="" coords="222,302,314,323,313,328,221,307"/>
+<area shape="rect" id="Node000007" href="$classRpgGame_1_1Generation_1_1Procedures_1_1FilledDungeonProcedure.html" title="Fills the entire dungeon with wall tiles, creating a solid base for carving." alt="" coords="281,389,524,429"/>
+<area shape="poly" id="edge29_Node000000_Node000007" title=" " alt="" coords="162,307,218,342,282,375,315,387,314,392,280,380,215,347,159,312"/>
+<area shape="rect" id="Node000008" href="$classRpgGame_1_1Generation_1_1Procedures_1_1PathsProcedure.html" title="Generates corridors connecting all rooms to a central room." alt="" coords="281,453,524,493"/>
+<area shape="poly" id="edge30_Node000000_Node000008" title=" " alt="" coords="145,311,203,376,241,410,283,439,308,451,305,456,280,444,238,414,199,380,141,314"/>
+<area shape="rect" id="Node000009" href="$classRpgGame_1_1Generation_1_1Procedures_1_1PlaceArtifactProcedure.html" title="Places exactly one thematic artifact on a random walkable tile (factory supplied by the active theme ..." alt="" coords="281,517,524,557"/>
+<area shape="poly" id="edge31_Node000000_Node000009" title=" " alt="" coords="138,313,160,357,192,408,234,460,283,503,304,515,301,519,280,508,230,463,188,411,156,359,133,316"/>
 </map>

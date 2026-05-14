@@ -116,6 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afac22cf73e5bf9519a43576821b95d05" id="r_afac22cf73e5bf9519a43576821b95d05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Items_1_1IWeapon.html#afac22cf73e5bf9519a43576821b95d05">AcceptCombatStrike</a> (<a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatAttack.html">ICombatAttack</a> attack, <a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player, <a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatContribution.html">ICombatContribution</a> contribution)</td></tr>
 <tr class="memdesc:afac22cf73e5bf9519a43576821b95d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double dispatch: weapon category forwards to <em>attack</em> .  <br /></td></tr>
 <tr class="separator:afac22cf73e5bf9519a43576821b95d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f775ebab02af9ee34ce2559119652d" id="r_a12f775ebab02af9ee34ce2559119652d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Items_1_1IWeapon.html#a12f775ebab02af9ee34ce2559119652d">PickupNoiseHearingSteps</a> ()</td></tr>
+<tr class="memdesc:a12f775ebab02af9ee34ce2559119652d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max orthogonal graph distance (walkable tiles only) at which weapon-handling noise is still heard.  <br /></td></tr>
+<tr class="separator:a12f775ebab02af9ee34ce2559119652d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interfaceRpgGame_1_1Items_1_1IEquippable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interfaceRpgGame_1_1Items_1_1IEquippable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="interfaceRpgGame_1_1Items_1_1IEquippable.html">RpgGame.Items.IEquippable</a></td></tr>
 <tr class="memitem:ac70b51f3d7a159e61dacd524f1dc9dbf inherit pub_methods_interfaceRpgGame_1_1Items_1_1IEquippable" id="r_ac70b51f3d7a159e61dacd524f1dc9dbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Items_1_1IEquippable.html#ac70b51f3d7a159e61dacd524f1dc9dbf">TryEquipToLeft</a> (<a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player)</td></tr>
 <tr class="memdesc:ac70b51f3d7a159e61dacd524f1dc9dbf inherit pub_methods_interfaceRpgGame_1_1Items_1_1IEquippable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to equip the item in the player's left hand.  <br /></td></tr>
@@ -142,6 +145,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1e48af01bc37df78332c728a7b096af2 inherit pub_methods_interfaceRpgGame_1_1Items_1_1IItem" id="r_a1e48af01bc37df78332c728a7b096af2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Items_1_1IItem.html#a1e48af01bc37df78332c728a7b096af2">OnDrop</a> (<a class="el" href="classRpgGame_1_1Core_1_1Level.html">Level</a> level, <a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player)</td></tr>
 <tr class="memdesc:a1e48af01bc37df78332c728a7b096af2 inherit pub_methods_interfaceRpgGame_1_1Items_1_1IItem"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the drop interaction for the item.  <br /></td></tr>
 <tr class="separator:a1e48af01bc37df78332c728a7b096af2 inherit pub_methods_interfaceRpgGame_1_1Items_1_1IItem"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af240917a4fb1945f1c426fb02fc303e8 inherit pub_methods_interfaceRpgGame_1_1Items_1_1IItem" id="r_af240917a4fb1945f1c426fb02fc303e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfaceRpgGame_1_1Items_1_1IItem.html#af240917a4fb1945f1c426fb02fc303e8">EmitInventoryWeaponNoise</a> (<a class="el" href="classRpgGame_1_1Core_1_1Level.html">Level</a> level, Position pickupTile)</td></tr>
+<tr class="memdesc:af240917a4fb1945f1c426fb02fc303e8 inherit pub_methods_interfaceRpgGame_1_1Items_1_1IItem"><td class="mdescLeft">&#160;</td><td class="mdescRight">After a successful inventory pickup, weapons may broadcast acoustic effects through the level. Non-weapons use the default no-op.  <br /></td></tr>
+<tr class="separator:af240917a4fb1945f1c426fb02fc303e8 inherit pub_methods_interfaceRpgGame_1_1Items_1_1IItem"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
@@ -201,6 +207,32 @@ Properties</h2></td></tr>
 <p>Double dispatch: weapon category forwards to <em>attack</em> . </p>
 
 <p>Implemented in <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a3a3fb03102c8f8cca984ea85f503db91">RpgGame.Items.Modifiers.WeaponModifierDecorator</a>, and <a class="el" href="classRpgGame_1_1Items_1_1Weapon.html#acc8a9b656cc3e659ecbfd2f06c498804">RpgGame.Items.Weapon</a>.</p>
+
+</div>
+</div>
+<a id="a12f775ebab02af9ee34ce2559119652d" name="a12f775ebab02af9ee34ce2559119652d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12f775ebab02af9ee34ce2559119652d">&#9670;&#160;</a></span>PickupNoiseHearingSteps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RpgGame.Items.IWeapon.PickupNoiseHearingSteps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Max orthogonal graph distance (walkable tiles only) at which weapon-handling noise is still heard. </p>
+
+<p>Implemented in <a class="el" href="classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#a74e7a5a15cf80ab72ba97f2dc36280dc">RpgGame.Items.Modifiers.WeaponModifierDecorator</a>, and <a class="el" href="classRpgGame_1_1Items_1_1Weapon.html#a26342e7cf1c92129e7bf66cb3318c288">RpgGame.Items.Weapon</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="interfaceRpgGame_1_1Items_1_1IWeapon_a12f775ebab02af9ee34ce2559119652d_icgraph.svg" width="100%" height="398"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
 
 </div>
 </div>

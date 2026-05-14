@@ -1,31 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$interfaceRpgGame_1_1Input_1_1IInputCommand.html" title="Represents a user input command that manipulates the game state (level, player, inventory) and return..." alt="" coords="5,357,236,383"/>
-<area shape="rect" id="Node000001" href="$classRpgGame_1_1Input_1_1DropLeftCommand.html" title="Instructs the player to drop the item in their left hand onto the level." alt="" coords="293,5,542,31"/>
-<area shape="poly" id="edge35_Node000000_Node000001" title=" " alt="" coords="124,343,140,280,169,197,190,154,216,112,246,73,282,40,301,29,304,33,286,44,250,77,220,115,195,156,174,199,145,282,129,344"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Input_1_1DropRightCommand.html" title="Instructs the player to drop the item in their right hand onto the level." alt="" coords="288,55,547,80"/>
-<area shape="poly" id="edge36_Node000000_Node000002" title=" " alt="" coords="127,343,145,289,176,219,197,183,222,148,250,116,282,89,303,78,306,83,286,94,254,120,226,152,202,186,181,222,150,291,132,345"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Input_1_1HelpCommand.html" title="Command that causes the game loop to exit." alt="" coords="305,104,529,129"/>
-<area shape="poly" id="edge37_Node000000_Node000003" title=" " alt="" coords="130,343,151,298,184,243,228,186,254,161,283,140,309,127,311,132,285,144,257,165,232,190,189,246,156,301,135,346"/>
-<area shape="rect" id="Node000004" href="$classRpgGame_1_1Input_1_1InventoryToLeftHandCommand.html" title="Transfers the currently selected inventory item to the player&#39;s left hand." alt="" coords="316,154,519,194"/>
-<area shape="poly" id="edge38_Node000000_Node000004" title=" " alt="" coords="137,344,196,274,237,236,283,204,315,190,317,194,285,208,240,240,199,278,141,348"/>
-<area shape="rect" id="Node000005" href="$classRpgGame_1_1Input_1_1InventoryToRightHandCommand.html" title="Transfers the currently selected inventory item to the player&#39;s right hand." alt="" coords="316,218,519,258"/>
-<area shape="poly" id="edge39_Node000000_Node000005" title=" " alt="" coords="148,347,208,307,283,268,317,256,319,261,285,272,211,311,151,352"/>
-<area shape="rect" id="Node000006" href="$classRpgGame_1_1Input_1_1JournalCommand.html" title="Command that opens the journal overlay." alt="" coords="298,283,537,308"/>
-<area shape="poly" id="edge40_Node000000_Node000006" title=" " alt="" coords="171,350,283,317,337,305,338,311,285,322,172,355"/>
-<area shape="rect" id="Node000007" href="$classRpgGame_1_1Input_1_1MoveDownCommand.html" title="Moves the player one tile down (south) on the level." alt="" coords="284,332,551,357"/>
-<area shape="poly" id="edge41_Node000000_Node000007" title=" " alt="" coords="249,356,284,353,284,359,250,362"/>
-<area shape="rect" id="Node000008" href="$classRpgGame_1_1Input_1_1MoveLeftCommand.html" title="Moves the player one tile left (west) on the level." alt="" coords="290,381,545,407"/>
-<area shape="poly" id="edge42_Node000000_Node000008" title=" " alt="" coords="250,378,290,381,290,386,249,383"/>
-<area shape="rect" id="Node000009" href="$classRpgGame_1_1Input_1_1MoveRightCommand.html" title="Moves the player one tile right (east) on the level." alt="" coords="285,431,549,456"/>
-<area shape="poly" id="edge43_Node000000_Node000009" title=" " alt="" coords="175,384,285,415,343,428,342,433,283,421,173,389"/>
-<area shape="rect" id="Node000010" href="$classRpgGame_1_1Input_1_1MoveUpCommand.html" title="Moves the player one tile up (north) on the level." alt="" coords="293,480,541,505"/>
-<area shape="poly" id="edge44_Node000000_Node000010" title=" " alt="" coords="151,389,211,428,285,465,328,477,326,483,283,470,208,433,148,393"/>
-<area shape="rect" id="Node000011" href="$classRpgGame_1_1Input_1_1QuitGameCommand.html" title="Command that causes the game loop to exit." alt="" coords="287,529,547,555"/>
-<area shape="poly" id="edge45_Node000000_Node000011" title=" " alt="" coords="142,391,201,454,241,487,285,514,318,527,316,532,283,519,238,491,198,458,138,395"/>
-<area shape="rect" id="Node000012" href="$classRpgGame_1_1Input_1_1SelectCombatAttackCommand.html" title="Sets the player&#39;s next melee attack style (normal, stealth, or magical strike)." alt="" coords="308,579,527,619"/>
-<area shape="poly" id="edge46_Node000000_Node000012" title=" " alt="" coords="138,394,161,432,195,478,236,525,285,564,312,577,309,582,283,568,233,528,190,481,157,435,133,396"/>
-<area shape="rect" id="Node000013" href="$classRpgGame_1_1Input_1_1SelectInventoryCommand.html" title="Selects a specific inventory slot." alt="" coords="303,643,532,683"/>
-<area shape="poly" id="edge47_Node000000_Node000013" title=" " alt="" coords="133,394,153,445,184,509,229,574,256,604,286,629,306,641,303,645,282,634,252,608,225,578,180,511,148,447,128,396"/>
-<area shape="rect" id="Node000014" href="$classRpgGame_1_1Input_1_1TakeToInventoryCommand.html" title="Picks up the item resting on the player&#39;s current tile and places it into the inventory if possible." alt="" coords="301,707,533,747"/>
-<area shape="poly" id="edge48_Node000000_Node000014" title=" " alt="" coords="130,395,146,457,176,538,196,581,221,622,251,660,286,693,304,705,301,709,282,697,247,664,217,625,192,583,171,540,141,459,125,397"/>
+<area shape="rect" id="Node000000" href="$classRpgGame_1_1Input_1_1InputHandler.html" title="Maps console key combinations to their corresponding IInputCommand implementations and invokes them w..." alt="" coords="5,5,216,31"/>
 </map>

@@ -1,3 +1,19 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classRpgGame_1_1Logger_1_1GameLog.html" title="Global logging facade so any module can record events." alt="" coords="5,5,204,31"/>
+<area shape="rect" id="Node000000" href="$interfaceRpgGame_1_1Logger_1_1ILogEvent.html" title="Represents a polymorphic logging event that can render itself as text." alt="" coords="5,205,207,230"/>
+<area shape="rect" id="Node000001" href="$classRpgGame_1_1Logger_1_1LogEventBase.html" title="Base class for log events with shared timestamp handling." alt="" coords="255,205,484,230"/>
+<area shape="poly" id="edge69_Node000000_Node000001" title=" " alt="" coords="221,215,254,215,254,220,221,220"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Logger_1_1AttackDealtLogEvent.html" title="Event recorded when the player deals damage." alt="" coords="548,5,763,45"/>
+<area shape="poly" id="edge70_Node000001_Node000002" title=" " alt="" coords="386,191,445,123,486,86,531,55,556,43,559,48,533,60,489,91,449,127,390,195"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Logger_1_1EnemyDefeatedLogEvent.html" title="Event recorded when an enemy is defeated." alt="" coords="534,69,777,109"/>
+<area shape="poly" id="edge71_Node000001_Node000003" title=" " alt="" coords="398,195,458,156,531,119,564,107,566,112,533,124,460,161,401,199"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Logger_1_1EnemyHeardWeaponPickupNoiseLogEvent.html" title="Event recorded when an enemy hears weapon pickup/handling noise along a walkable path." alt="" coords="545,133,766,173"/>
+<area shape="poly" id="edge72_Node000001_Node000004" title=" " alt="" coords="440,199,565,171,566,176,441,204"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Logger_1_1ItemEquippedLogEvent.html" title="Event recorded when the player equips an item to a slot." alt="" coords="542,197,769,237"/>
+<area shape="poly" id="edge73_Node000001_Node000005" title=" " alt="" coords="498,215,542,215,542,220,498,220"/>
+<area shape="rect" id="Node000006" href="$classRpgGame_1_1Logger_1_1ItemPickedUpLogEvent.html" title="Event recorded when the player picks up an item." alt="" coords="551,261,760,301"/>
+<area shape="poly" id="edge74_Node000001_Node000006" title=" " alt="" coords="441,230,566,259,565,264,440,236"/>
+<area shape="rect" id="Node000007" href="$classRpgGame_1_1Logger_1_1PotionConsumedLogEvent.html" title="Event recorded when the player consumes a potion (health restored on pickup)." alt="" coords="532,325,779,365"/>
+<area shape="poly" id="edge75_Node000001_Node000007" title=" " alt="" coords="401,236,460,274,533,311,566,323,564,328,531,316,458,278,398,240"/>
+<area shape="rect" id="Node000008" href="$classRpgGame_1_1Logger_1_1SessionStartedLogEvent.html" title="Event recorded when a game session starts." alt="" coords="538,389,773,429"/>
+<area shape="poly" id="edge76_Node000001_Node000008" title=" " alt="" coords="390,240,449,308,489,344,533,375,559,387,556,392,531,380,486,348,445,311,386,243"/>
 </map>

@@ -6,10 +6,7 @@ var searchData=
   ['simpleroomgenerator_3',['SimpleRoomGenerator',['../classRpgGame_1_1Generation_1_1SimpleRoomGenerator.html',1,'RpgGame::Generation']]],
   ['skeleton_4',['Skeleton',['../classRpgGame_1_1Character_1_1Skeleton.html',1,'RpgGame::Character']]],
   ['skeletonspawnstep_5',['SkeletonSpawnStep',['../classRpgGame_1_1Generation_1_1Enemies_1_1SkeletonSpawnStep.html',1,'RpgGame::Generation::Enemies']]],
-  ['speciesgroup_6',['SpeciesGroup',['../classRpgGame_1_1Character_1_1Behavior_1_1SpeciesGroup.html',1,'RpgGame::Character::Behavior']]],
-  ['speciesgroup_3c_20goblin_20_3e_7',['SpeciesGroup&lt; Goblin &gt;',['../classRpgGame_1_1Character_1_1Behavior_1_1SpeciesGroup.html',1,'RpgGame::Character::Behavior']]],
-  ['speciesgroup_3c_20skeleton_20_3e_8',['SpeciesGroup&lt; Skeleton &gt;',['../classRpgGame_1_1Character_1_1Behavior_1_1SpeciesGroup.html',1,'RpgGame::Character::Behavior']]],
-  ['stealthattack_9',['StealthAttack',['../classRpgGame_1_1Combat_1_1StealthAttack.html',1,'RpgGame::Combat']]],
-  ['strongweaponmodifier_10',['StrongWeaponModifier',['../classRpgGame_1_1Items_1_1Modifiers_1_1StrongWeaponModifier.html',1,'RpgGame::Items::Modifiers']]],
-  ['sword_11',['Sword',['../classRpgGame_1_1Items_1_1Sword.html',1,'RpgGame::Items']]]
+  ['stealthattack_6',['StealthAttack',['../classRpgGame_1_1Combat_1_1StealthAttack.html',1,'RpgGame::Combat']]],
+  ['strongweaponmodifier_7',['StrongWeaponModifier',['../classRpgGame_1_1Items_1_1Modifiers_1_1StrongWeaponModifier.html',1,'RpgGame::Items::Modifiers']]],
+  ['sword_8',['Sword',['../classRpgGame_1_1Items_1_1Sword.html',1,'RpgGame::Items']]]
 ];

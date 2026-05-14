@@ -3,6 +3,7 @@ var namespaceRpgGame_1_1Logger =
     [ "AttackDealtLogEvent", "classRpgGame_1_1Logger_1_1AttackDealtLogEvent.html", "classRpgGame_1_1Logger_1_1AttackDealtLogEvent" ],
     [ "BufferedJournalLogSink", "classRpgGame_1_1Logger_1_1BufferedJournalLogSink.html", "classRpgGame_1_1Logger_1_1BufferedJournalLogSink" ],
     [ "EnemyDefeatedLogEvent", "classRpgGame_1_1Logger_1_1EnemyDefeatedLogEvent.html", "classRpgGame_1_1Logger_1_1EnemyDefeatedLogEvent" ],
+    [ "EnemyHeardWeaponPickupNoiseLogEvent", "classRpgGame_1_1Logger_1_1EnemyHeardWeaponPickupNoiseLogEvent.html", "classRpgGame_1_1Logger_1_1EnemyHeardWeaponPickupNoiseLogEvent" ],
     [ "FileLogSink", "classRpgGame_1_1Logger_1_1FileLogSink.html", "classRpgGame_1_1Logger_1_1FileLogSink" ],
     [ "GameLog", "classRpgGame_1_1Logger_1_1GameLog.html", "classRpgGame_1_1Logger_1_1GameLog" ],
     [ "ILogEvent", "interfaceRpgGame_1_1Logger_1_1ILogEvent.html", "interfaceRpgGame_1_1Logger_1_1ILogEvent" ],

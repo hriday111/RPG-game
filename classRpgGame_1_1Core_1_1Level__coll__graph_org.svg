@@ -64,7 +64,7 @@
 <text text-anchor="start" x="17.5" y="-44" font-family="Helvetica,sans-Serif" font-size="10.00">bool TryGetGoblinAt</text>
 <text text-anchor="start" x="17.5" y="-33" font-family="Helvetica,sans-Serif" font-size="10.00">(Position pos, out Goblin</text>
 <text text-anchor="start" x="17.5" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">? goblin)</text>
-<text text-anchor="start" x="17.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">and 17 more...</text>
+<text text-anchor="start" x="17.5" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">and 18 more...</text>
 <polygon fill="#666666" stroke="#666666" points="0.5,-441 0.5,-441 193.5,-441 193.5,-441 0.5,-441"/>
 <polygon fill="#666666" stroke="#666666" points="0.5,-277 0.5,-277 15.5,-277 15.5,-277 0.5,-277"/>
 <polygon fill="#666666" stroke="#666666" points="15.5,-277 15.5,-277 193.5,-277 193.5,-277 15.5,-277"/>

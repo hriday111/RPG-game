@@ -1,0 +1,9 @@
+<map id="RpgGame.Items.Weapon.EmitInventoryWeaponNoise" name="RpgGame.Items.Weapon.EmitInventoryWeaponNoise">
+<area shape="rect" id="Node000001" title="After a successful inventory pickup, weapons may broadcast acoustic effects through the level...." alt="" coords="5,37,223,77"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Level.html#a3228d49ef882a4e7120df5e53cdf42ec" title="Broadcasts weapon&#45;handling noise from soundSource ; each registered INoiseListener on a tile within w..." alt="" coords="271,37,499,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,55,257,55,257,60,223,60"/>
+<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Core_1_1INoiseListener.html#a496db645259c337d8b7dc75bcf714964" title="Invoked when a weapon pickup/equip noise reaches this listener along walkable tiles only." alt="" coords="553,5,773,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="499,42,539,37,540,42,499,47"/>
+<area shape="rect" id="Node000004" href="$interfaceRpgGame_1_1Items_1_1IWeapon.html#a12f775ebab02af9ee34ce2559119652d" title="Max orthogonal graph distance (walkable tiles only) at which weapon&#45;handling noise is still heard." alt="" coords="547,69,780,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="499,68,533,72,533,77,499,73"/>
+</map>

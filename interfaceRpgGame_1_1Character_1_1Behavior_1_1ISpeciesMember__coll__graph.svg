@@ -21,15 +21,17 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Enemies that share collective reactions within a SpeciesKind.">
 <polygon fill="#999999" stroke="transparent" points="174,-60 0,-60 0,0 174,0 174,-60"/>
 <text text-anchor="start" x="13.5" y="-48" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Character.Behavior.</text>
 <text text-anchor="start" x="46" y="-37" font-family="Helvetica,sans-Serif" font-size="10.00">ISpeciesMember</text>
-<text text-anchor="start" x="85" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="4" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-22" font-family="Helvetica,sans-Serif" font-size="10.00">SpeciesKind Kind</text>
 <text text-anchor="start" x="4" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="17" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">void OnSpeciesMemberDeath()</text>
 <polygon fill="#666666" stroke="#666666" points="0,-32 0,-32 174,-32 174,-32 0,-32"/>
-<polygon fill="#666666" stroke="#666666" points="0,-17 0,-17 174,-17 174,-17 0,-17"/>
+<polygon fill="#666666" stroke="#666666" points="0,-17 0,-17 15,-17 15,-17 0,-17"/>
+<polygon fill="#666666" stroke="#666666" points="15,-17 15,-17 174,-17 174,-17 15,-17"/>
 <polygon fill="none" stroke="#666666" points="0,0 0,-60 174,-60 174,0 0,0"/>
 </a>
 </g>

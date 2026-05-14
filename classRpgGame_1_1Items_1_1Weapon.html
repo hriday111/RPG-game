@@ -117,6 +117,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acc8a9b656cc3e659ecbfd2f06c498804" id="r_acc8a9b656cc3e659ecbfd2f06c498804"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Weapon.html#acc8a9b656cc3e659ecbfd2f06c498804">AcceptCombatStrike</a> (<a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatAttack.html">ICombatAttack</a> attack, <a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player, <a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatContribution.html">ICombatContribution</a> contribution)</td></tr>
 <tr class="memdesc:acc8a9b656cc3e659ecbfd2f06c498804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Double dispatch: weapon category forwards to <em>attack</em> .  <br /></td></tr>
 <tr class="separator:acc8a9b656cc3e659ecbfd2f06c498804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26342e7cf1c92129e7bf66cb3318c288" id="r_a26342e7cf1c92129e7bf66cb3318c288"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Weapon.html#a26342e7cf1c92129e7bf66cb3318c288">PickupNoiseHearingSteps</a> ()</td></tr>
+<tr class="memdesc:a26342e7cf1c92129e7bf66cb3318c288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max orthogonal graph distance (walkable tiles only) at which weapon-handling noise is still heard.  <br /></td></tr>
+<tr class="separator:a26342e7cf1c92129e7bf66cb3318c288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7509032d21bee1d9a09ade5b3780ae4" id="r_ab7509032d21bee1d9a09ade5b3780ae4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Weapon.html#ab7509032d21bee1d9a09ade5b3780ae4">EmitInventoryWeaponNoise</a> (<a class="el" href="classRpgGame_1_1Core_1_1Level.html">Level</a> level, Position pickupTile)</td></tr>
+<tr class="memdesc:ab7509032d21bee1d9a09ade5b3780ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">After a successful inventory pickup, weapons may broadcast acoustic effects through the level. Non-weapons use the default no-op.  <br /></td></tr>
+<tr class="separator:ab7509032d21bee1d9a09ade5b3780ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeacf9a64f13674c37f334cdbd66979e" id="r_aaeacf9a64f13674c37f334cdbd66979e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRpgGame_1_1Items_1_1Weapon.html#aaeacf9a64f13674c37f334cdbd66979e">ContributeCombat</a> (<a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatAttack.html">ICombatAttack</a> attack, <a class="el" href="classRpgGame_1_1Character_1_1Player.html">Player</a> player, <a class="el" href="interfaceRpgGame_1_1Combat_1_1ICombatContribution.html">ICombatContribution</a> contribution)</td></tr>
 <tr class="memdesc:aaeacf9a64f13674c37f334cdbd66979e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contributes this equipped item to one combat exchange. Non-weapon equippables default to non-weapon attack handling.  <br /></td></tr>
 <tr class="separator:aaeacf9a64f13674c37f334cdbd66979e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,6 +303,51 @@ Properties</h2></td></tr>
 
 </div>
 </div>
+<a id="ab7509032d21bee1d9a09ade5b3780ae4" name="ab7509032d21bee1d9a09ade5b3780ae4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7509032d21bee1d9a09ade5b3780ae4">&#9670;&#160;</a></span>EmitInventoryWeaponNoise()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RpgGame.Items.Weapon.EmitInventoryWeaponNoise </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classRpgGame_1_1Core_1_1Level.html">Level</a>&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Position&#160;</td>
+          <td class="paramname"><em>pickupTile</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>After a successful inventory pickup, weapons may broadcast acoustic effects through the level. Non-weapons use the default no-op. </p>
+
+<p>Implements <a class="el" href="interfaceRpgGame_1_1Items_1_1IItem.html#af240917a4fb1945f1c426fb02fc303e8">RpgGame.Items.IItem</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Items_1_1Weapon_ab7509032d21bee1d9a09ade5b3780ae4_cgraph.svg" width="100%" height="386"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
 <a id="a5537bb1668ccdca9663735e0cf94c5e9" name="a5537bb1668ccdca9663735e0cf94c5e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5537bb1668ccdca9663735e0cf94c5e9">&#9670;&#160;</a></span>GetDescription()</h2>
 
@@ -429,6 +480,27 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classRpgGame_1_1Items_1_1Weapon_adedf8425394852452425b7951b834120_cgraph.svg" width="519" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<a id="a26342e7cf1c92129e7bf66cb3318c288" name="a26342e7cf1c92129e7bf66cb3318c288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26342e7cf1c92129e7bf66cb3318c288">&#9670;&#160;</a></span>PickupNoiseHearingSteps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RpgGame.Items.Weapon.PickupNoiseHearingSteps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Max orthogonal graph distance (walkable tiles only) at which weapon-handling noise is still heard. </p>
+
+<p>Implements <a class="el" href="interfaceRpgGame_1_1Items_1_1IWeapon.html#a12f775ebab02af9ee34ce2559119652d">RpgGame.Items.IWeapon</a>.</p>
 
 </div>
 </div>

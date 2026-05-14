@@ -81,33 +81,41 @@ var sectionId = 'dynsection-0';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classRpgGame_1_1Character_1_1Goblin.html" target="_top" xlink:title="Cowardly species: gets weaker when allies die.">
-<polygon fill="white" stroke="transparent" points="174,-418 0,-418 0,-231 174,-231 174,-418"/>
-<text text-anchor="start" x="20.5" y="-405.5" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Character.Goblin</text>
-<text text-anchor="start" x="4" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00">override char Symbol</text>
-<text text-anchor="start" x="4" y="-375.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-375.5" font-family="Helvetica,sans-Serif" font-size="10.00">IWeapon EquippedWeapon</text>
-<text text-anchor="start" x="4" y="-360.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-360.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Health</text>
-<text text-anchor="start" x="4" y="-345.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-345.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Armor</text>
-<text text-anchor="start" x="4" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool IsDead</text>
-<text text-anchor="start" x="4" y="-315.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-315.5" font-family="Helvetica,sans-Serif" font-size="10.00">Goblin(Position startPosition,</text>
-<text text-anchor="start" x="17" y="-304.5" font-family="Helvetica,sans-Serif" font-size="10.00"> IWeapon equippedWeapon, int</text>
-<text text-anchor="start" x="17" y="-293.5" font-family="Helvetica,sans-Serif" font-size="10.00"> health=22, int baseArmor=1)</text>
-<text text-anchor="start" x="4" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">int GetCounterAttackPower()</text>
-<text text-anchor="start" x="4" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00">int ApplyDamage(int</text>
-<text text-anchor="start" x="17" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00"> rawDamage)</text>
-<text text-anchor="start" x="4" y="-237.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="17" y="-237.5" font-family="Helvetica,sans-Serif" font-size="10.00">void OnSpeciesMemberDeath()</text>
-<polygon fill="#666666" stroke="#666666" points="0,-400.5 0,-400.5 174,-400.5 174,-400.5 0,-400.5"/>
-<polygon fill="#666666" stroke="#666666" points="0,-325.5 0,-325.5 15,-325.5 15,-325.5 0,-325.5"/>
-<polygon fill="#666666" stroke="#666666" points="15,-325.5 15,-325.5 174,-325.5 174,-325.5 15,-325.5"/>
-<polygon fill="none" stroke="#666666" points="0,-231 0,-418 174,-418 174,-231 0,-231"/>
+<polygon fill="white" stroke="transparent" points="174,-451.5 0,-451.5 0,-197.5 174,-197.5 174,-451.5"/>
+<text text-anchor="start" x="20.5" y="-439.5" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Character.Goblin</text>
+<text text-anchor="start" x="4" y="-424.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-424.5" font-family="Helvetica,sans-Serif" font-size="10.00">SpeciesKind Kind</text>
+<text text-anchor="start" x="4" y="-409.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-409.5" font-family="Helvetica,sans-Serif" font-size="10.00">override char Symbol</text>
+<text text-anchor="start" x="4" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">IWeapon EquippedWeapon</text>
+<text text-anchor="start" x="4" y="-379.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-379.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Health</text>
+<text text-anchor="start" x="4" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Armor</text>
+<text text-anchor="start" x="4" y="-349.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-349.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool IsDead</text>
+<text text-anchor="start" x="4" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">Position ListenerTile</text>
+<text text-anchor="start" x="4" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00">Goblin(Position startPosition,</text>
+<text text-anchor="start" x="17" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00"> IWeapon equippedWeapon, int</text>
+<text text-anchor="start" x="17" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00"> health=22, int baseArmor=1)</text>
+<text text-anchor="start" x="4" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">int GetCounterAttackPower()</text>
+<text text-anchor="start" x="4" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">int ApplyDamage(int</text>
+<text text-anchor="start" x="17" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00"> rawDamage)</text>
+<text text-anchor="start" x="4" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00">void OnSpeciesMemberDeath()</text>
+<text text-anchor="start" x="4" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="17" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00">void OnWeaponPickupNoise</text>
+<text text-anchor="start" x="17" y="-215.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Position soundSource,</text>
+<text text-anchor="start" x="17" y="-204.5" font-family="Helvetica,sans-Serif" font-size="10.00"> int graphDistanceSteps)</text>
+<polygon fill="#666666" stroke="#666666" points="0,-434.5 0,-434.5 174,-434.5 174,-434.5 0,-434.5"/>
+<polygon fill="#666666" stroke="#666666" points="0,-329.5 0,-329.5 15,-329.5 15,-329.5 0,-329.5"/>
+<polygon fill="#666666" stroke="#666666" points="15,-329.5 15,-329.5 174,-329.5 174,-329.5 15,-329.5"/>
+<polygon fill="none" stroke="#666666" points="0,-197.5 0,-451.5 174,-451.5 174,-197.5 0,-197.5"/>
 </a>
 </g>
 </g>
@@ -115,7 +123,7 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M396.73,-731.65C329.49,-724.78 239.53,-704.78 183,-649 121.59,-588.41 99.07,-490.49 91.01,-418.24"/>
+<path fill="none" stroke="#63b8ff" d="M396.73,-731.65C329.49,-724.78 239.53,-704.78 183,-649 130.66,-597.36 106.57,-518.61 95.61,-451.73"/>
 <polygon fill="none" stroke="#63b8ff" points="396.61,-735.16 406.9,-732.61 397.27,-728.19 396.61,-735.16"/>
 </a>
 </g>
@@ -124,31 +132,37 @@ var sectionId = 'dynsection-0';
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="classRpgGame_1_1Character_1_1Golem.html" target="_top" xlink:title="Represents a Golem enemy on the level. It carries a weapon that sets counter&#45;attack damage and contri...">
-<polygon fill="white" stroke="transparent" points="376,-410.5 192,-410.5 192,-238.5 376,-238.5 376,-410.5"/>
-<text text-anchor="start" x="217.5" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Character.Golem</text>
-<text text-anchor="start" x="196" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="209" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">override char Symbol</text>
-<text text-anchor="start" x="196" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="209" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00">IWeapon EquippedWeapon</text>
-<text text-anchor="start" x="196" y="-353.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="209" y="-353.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Health</text>
-<text text-anchor="start" x="196" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="209" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Armor</text>
-<text text-anchor="start" x="196" y="-323.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="209" y="-323.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool IsDead</text>
-<text text-anchor="start" x="196" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="209" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">Golem(Position startPosition,</text>
-<text text-anchor="start" x="209" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00"> IWeapon equippedWeapon,</text>
-<text text-anchor="start" x="209" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00"> int health=30, int baseArmor=2)</text>
-<text text-anchor="start" x="196" y="-271.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="209" y="-271.5" font-family="Helvetica,sans-Serif" font-size="10.00">int GetCounterAttackPower()</text>
-<text text-anchor="start" x="196" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="209" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">int ApplyDamage(int</text>
-<text text-anchor="start" x="209" y="-245.5" font-family="Helvetica,sans-Serif" font-size="10.00"> rawDamage)</text>
-<polygon fill="#666666" stroke="#666666" points="192,-393.5 192,-393.5 376,-393.5 376,-393.5 192,-393.5"/>
-<polygon fill="#666666" stroke="#666666" points="192,-318.5 192,-318.5 207,-318.5 207,-318.5 192,-318.5"/>
-<polygon fill="#666666" stroke="#666666" points="207,-318.5 207,-318.5 376,-318.5 376,-318.5 207,-318.5"/>
-<polygon fill="none" stroke="#666666" points="192,-238.5 192,-410.5 376,-410.5 376,-238.5 192,-238.5"/>
+<polygon fill="white" stroke="transparent" points="376,-436.5 192,-436.5 192,-212.5 376,-212.5 376,-436.5"/>
+<text text-anchor="start" x="217.5" y="-424.5" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Character.Golem</text>
+<text text-anchor="start" x="196" y="-409.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="209" y="-409.5" font-family="Helvetica,sans-Serif" font-size="10.00">override char Symbol</text>
+<text text-anchor="start" x="196" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="209" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">IWeapon EquippedWeapon</text>
+<text text-anchor="start" x="196" y="-379.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="209" y="-379.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Health</text>
+<text text-anchor="start" x="196" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="209" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Armor</text>
+<text text-anchor="start" x="196" y="-349.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="209" y="-349.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool IsDead</text>
+<text text-anchor="start" x="196" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="209" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">Position ListenerTile</text>
+<text text-anchor="start" x="196" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="209" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00">Golem(Position startPosition,</text>
+<text text-anchor="start" x="209" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00"> IWeapon equippedWeapon,</text>
+<text text-anchor="start" x="209" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00"> int health=30, int baseArmor=2)</text>
+<text text-anchor="start" x="196" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="209" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">int GetCounterAttackPower()</text>
+<text text-anchor="start" x="196" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="209" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">int ApplyDamage(int</text>
+<text text-anchor="start" x="209" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00"> rawDamage)</text>
+<text text-anchor="start" x="196" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="209" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00">void OnWeaponPickupNoise</text>
+<text text-anchor="start" x="209" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Position soundSource,</text>
+<text text-anchor="start" x="209" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00"> int graphDistanceSteps)</text>
+<polygon fill="#666666" stroke="#666666" points="192,-419.5 192,-419.5 376,-419.5 376,-419.5 192,-419.5"/>
+<polygon fill="#666666" stroke="#666666" points="192,-329.5 192,-329.5 207,-329.5 207,-329.5 192,-329.5"/>
+<polygon fill="#666666" stroke="#666666" points="207,-329.5 207,-329.5 376,-329.5 376,-329.5 207,-329.5"/>
+<polygon fill="none" stroke="#666666" points="192,-212.5 192,-436.5 376,-436.5 376,-212.5 192,-212.5"/>
 </a>
 </g>
 </g>
@@ -156,7 +170,7 @@ var sectionId = 'dynsection-0';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M409.22,-677.95C400.21,-669 391.81,-659.27 385,-649 336.8,-576.3 310.55,-479.31 297,-410.55"/>
+<path fill="none" stroke="#63b8ff" d="M409.22,-677.95C400.21,-669 391.81,-659.27 385,-649 342.65,-585.13 317.25,-502.51 302.51,-436.75"/>
 <polygon fill="none" stroke="#63b8ff" points="406.91,-680.59 416.56,-684.96 411.74,-675.52 406.91,-680.59"/>
 </a>
 </g>
@@ -165,31 +179,37 @@ var sectionId = 'dynsection-0';
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="classRpgGame_1_1Character_1_1Mage.html" target="_top" xlink:title="Represents a mage enemy on the level. Uses the same melee/counter rules as Golem.">
-<polygon fill="white" stroke="transparent" points="578,-410.5 394,-410.5 394,-238.5 578,-238.5 578,-410.5"/>
-<text text-anchor="start" x="422" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Character.Mage</text>
-<text text-anchor="start" x="398" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="411" y="-383.5" font-family="Helvetica,sans-Serif" font-size="10.00">override char Symbol</text>
-<text text-anchor="start" x="398" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="411" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00">IWeapon EquippedWeapon</text>
-<text text-anchor="start" x="398" y="-353.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="411" y="-353.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Health</text>
-<text text-anchor="start" x="398" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="411" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Armor</text>
-<text text-anchor="start" x="398" y="-323.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="411" y="-323.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool IsDead</text>
-<text text-anchor="start" x="398" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="411" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">Mage(Position startPosition,</text>
-<text text-anchor="start" x="411" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00"> IWeapon equippedWeapon,</text>
-<text text-anchor="start" x="411" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00"> int health=24, int baseArmor=1)</text>
-<text text-anchor="start" x="398" y="-271.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="411" y="-271.5" font-family="Helvetica,sans-Serif" font-size="10.00">int GetCounterAttackPower()</text>
-<text text-anchor="start" x="398" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="411" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">int ApplyDamage(int</text>
-<text text-anchor="start" x="411" y="-245.5" font-family="Helvetica,sans-Serif" font-size="10.00"> rawDamage)</text>
-<polygon fill="#666666" stroke="#666666" points="394,-393.5 394,-393.5 578,-393.5 578,-393.5 394,-393.5"/>
-<polygon fill="#666666" stroke="#666666" points="394,-318.5 394,-318.5 409,-318.5 409,-318.5 394,-318.5"/>
-<polygon fill="#666666" stroke="#666666" points="409,-318.5 409,-318.5 578,-318.5 578,-318.5 409,-318.5"/>
-<polygon fill="none" stroke="#666666" points="394,-238.5 394,-410.5 578,-410.5 578,-238.5 394,-238.5"/>
+<polygon fill="white" stroke="transparent" points="578,-436.5 394,-436.5 394,-212.5 578,-212.5 578,-436.5"/>
+<text text-anchor="start" x="422" y="-424.5" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Character.Mage</text>
+<text text-anchor="start" x="398" y="-409.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="411" y="-409.5" font-family="Helvetica,sans-Serif" font-size="10.00">override char Symbol</text>
+<text text-anchor="start" x="398" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="411" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">IWeapon EquippedWeapon</text>
+<text text-anchor="start" x="398" y="-379.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="411" y="-379.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Health</text>
+<text text-anchor="start" x="398" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="411" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Armor</text>
+<text text-anchor="start" x="398" y="-349.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="411" y="-349.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool IsDead</text>
+<text text-anchor="start" x="398" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="411" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">Position ListenerTile</text>
+<text text-anchor="start" x="398" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="411" y="-319.5" font-family="Helvetica,sans-Serif" font-size="10.00">Mage(Position startPosition,</text>
+<text text-anchor="start" x="411" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00"> IWeapon equippedWeapon,</text>
+<text text-anchor="start" x="411" y="-297.5" font-family="Helvetica,sans-Serif" font-size="10.00"> int health=24, int baseArmor=1)</text>
+<text text-anchor="start" x="398" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="411" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">int GetCounterAttackPower()</text>
+<text text-anchor="start" x="398" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="411" y="-267.5" font-family="Helvetica,sans-Serif" font-size="10.00">int ApplyDamage(int</text>
+<text text-anchor="start" x="411" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00"> rawDamage)</text>
+<text text-anchor="start" x="398" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="411" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00">void OnWeaponPickupNoise</text>
+<text text-anchor="start" x="411" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Position soundSource,</text>
+<text text-anchor="start" x="411" y="-219.5" font-family="Helvetica,sans-Serif" font-size="10.00"> int graphDistanceSteps)</text>
+<polygon fill="#666666" stroke="#666666" points="394,-419.5 394,-419.5 578,-419.5 578,-419.5 394,-419.5"/>
+<polygon fill="#666666" stroke="#666666" points="394,-329.5 394,-329.5 409,-329.5 409,-329.5 394,-329.5"/>
+<polygon fill="#666666" stroke="#666666" points="409,-329.5 409,-329.5 578,-329.5 578,-329.5 409,-329.5"/>
+<polygon fill="none" stroke="#666666" points="394,-212.5 394,-436.5 578,-436.5 578,-212.5 394,-212.5"/>
 </a>
 </g>
 </g>
@@ -197,7 +217,7 @@ var sectionId = 'dynsection-0';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M486,-674.41C486,-604.82 486,-489.67 486,-410.82"/>
+<path fill="none" stroke="#63b8ff" d="M486,-674.71C486,-612.47 486,-513.54 486,-436.84"/>
 <polygon fill="none" stroke="#63b8ff" points="482.5,-674.76 486,-684.76 489.5,-674.76 482.5,-674.76"/>
 </a>
 </g>
@@ -305,34 +325,42 @@ var sectionId = 'dynsection-0';
 <g id="Node000006" class="node">
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:href="classRpgGame_1_1Character_1_1Skeleton.html" target="_top" xlink:title="Aggressive species: gets stronger when allies die.">
-<polygon fill="white" stroke="transparent" points="966,-423.5 792,-423.5 792,-225.5 966,-225.5 966,-423.5"/>
-<text text-anchor="start" x="807.5" y="-411.5" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Character.Skeleton</text>
-<text text-anchor="start" x="796" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="809" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00">override char Symbol</text>
-<text text-anchor="start" x="796" y="-381.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="809" y="-381.5" font-family="Helvetica,sans-Serif" font-size="10.00">IWeapon EquippedWeapon</text>
-<text text-anchor="start" x="796" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="809" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Health</text>
-<text text-anchor="start" x="796" y="-351.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="809" y="-351.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Armor</text>
-<text text-anchor="start" x="796" y="-336.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="809" y="-336.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool IsDead</text>
-<text text-anchor="start" x="796" y="-321.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="809" y="-321.5" font-family="Helvetica,sans-Serif" font-size="10.00">Skeleton(Position</text>
-<text text-anchor="start" x="809" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00"> startPosition, IWeapon</text>
-<text text-anchor="start" x="809" y="-299.5" font-family="Helvetica,sans-Serif" font-size="10.00"> equippedWeapon, int health</text>
-<text text-anchor="start" x="809" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">=26, int baseArmor=1)</text>
-<text text-anchor="start" x="796" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="809" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">int GetCounterAttackPower()</text>
-<text text-anchor="start" x="796" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="809" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">int ApplyDamage(int</text>
-<text text-anchor="start" x="809" y="-247.5" font-family="Helvetica,sans-Serif" font-size="10.00"> rawDamage)</text>
-<text text-anchor="start" x="796" y="-232.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="809" y="-232.5" font-family="Helvetica,sans-Serif" font-size="10.00">void OnSpeciesMemberDeath()</text>
-<polygon fill="#666666" stroke="#666666" points="792,-406.5 792,-406.5 966,-406.5 966,-406.5 792,-406.5"/>
-<polygon fill="#666666" stroke="#666666" points="792,-331.5 792,-331.5 807,-331.5 807,-331.5 792,-331.5"/>
-<polygon fill="#666666" stroke="#666666" points="807,-331.5 807,-331.5 966,-331.5 966,-331.5 807,-331.5"/>
-<polygon fill="none" stroke="#666666" points="792,-225.5 792,-423.5 966,-423.5 966,-225.5 792,-225.5"/>
+<polygon fill="white" stroke="transparent" points="966,-457 792,-457 792,-192 966,-192 966,-457"/>
+<text text-anchor="start" x="807.5" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">RpgGame.Character.Skeleton</text>
+<text text-anchor="start" x="796" y="-429.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="809" y="-429.5" font-family="Helvetica,sans-Serif" font-size="10.00">SpeciesKind Kind</text>
+<text text-anchor="start" x="796" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="809" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">override char Symbol</text>
+<text text-anchor="start" x="796" y="-399.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="809" y="-399.5" font-family="Helvetica,sans-Serif" font-size="10.00">IWeapon EquippedWeapon</text>
+<text text-anchor="start" x="796" y="-384.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="809" y="-384.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Health</text>
+<text text-anchor="start" x="796" y="-369.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="809" y="-369.5" font-family="Helvetica,sans-Serif" font-size="10.00">int Armor</text>
+<text text-anchor="start" x="796" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="809" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">bool IsDead</text>
+<text text-anchor="start" x="796" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="809" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00">Position ListenerTile</text>
+<text text-anchor="start" x="796" y="-324.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="809" y="-324.5" font-family="Helvetica,sans-Serif" font-size="10.00">Skeleton(Position</text>
+<text text-anchor="start" x="809" y="-313.5" font-family="Helvetica,sans-Serif" font-size="10.00"> startPosition, IWeapon</text>
+<text text-anchor="start" x="809" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00"> equippedWeapon, int health</text>
+<text text-anchor="start" x="809" y="-291.5" font-family="Helvetica,sans-Serif" font-size="10.00">=26, int baseArmor=1)</text>
+<text text-anchor="start" x="796" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="809" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00">int GetCounterAttackPower()</text>
+<text text-anchor="start" x="796" y="-261.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="809" y="-261.5" font-family="Helvetica,sans-Serif" font-size="10.00">int ApplyDamage(int</text>
+<text text-anchor="start" x="809" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00"> rawDamage)</text>
+<text text-anchor="start" x="796" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="809" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">void OnSpeciesMemberDeath()</text>
+<text text-anchor="start" x="796" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="809" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">void OnWeaponPickupNoise</text>
+<text text-anchor="start" x="809" y="-209.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Position soundSource,</text>
+<text text-anchor="start" x="809" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00"> int graphDistanceSteps)</text>
+<polygon fill="#666666" stroke="#666666" points="792,-439.5 792,-439.5 966,-439.5 966,-439.5 792,-439.5"/>
+<polygon fill="#666666" stroke="#666666" points="792,-334.5 792,-334.5 807,-334.5 807,-334.5 792,-334.5"/>
+<polygon fill="#666666" stroke="#666666" points="807,-334.5 807,-334.5 966,-334.5 966,-334.5 807,-334.5"/>
+<polygon fill="none" stroke="#666666" points="792,-192 792,-457 966,-457 966,-192 792,-192"/>
 </a>
 </g>
 </g>
@@ -340,7 +368,7 @@ var sectionId = 'dynsection-0';
 <g id="edge5_Node000001_Node000006" class="edge">
 <title>Node1&#45;&gt;Node6</title>
 <g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M575.16,-730.98C640.9,-723.69 728.1,-703.45 783,-649 842.69,-589.8 865.62,-495.32 874.26,-423.71"/>
+<path fill="none" stroke="#63b8ff" d="M575.16,-730.98C640.9,-723.69 728.1,-703.45 783,-649 833.74,-598.67 857.93,-522.84 869.34,-457.24"/>
 <polygon fill="none" stroke="#63b8ff" points="574.8,-727.5 565.21,-732.01 575.52,-734.46 574.8,-727.5"/>
 </a>
 </g>

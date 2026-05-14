@@ -3,34 +3,36 @@ var annotated_dup =
     [ "RpgGame", "namespaceRpgGame.html", [
       [ "Character", "namespaceRpgGame_1_1Character.html", [
         [ "Behavior", "namespaceRpgGame_1_1Character_1_1Behavior.html", [
-          [ "ISpeciesMember", "interfaceRpgGame_1_1Character_1_1Behavior_1_1ISpeciesMember.html", null ],
-          [ "SpeciesGroup", "classRpgGame_1_1Character_1_1Behavior_1_1SpeciesGroup.html", null ]
+          [ "ISpeciesMember", "interfaceRpgGame_1_1Character_1_1Behavior_1_1ISpeciesMember.html", "interfaceRpgGame_1_1Character_1_1Behavior_1_1ISpeciesMember" ]
         ] ],
         [ "Character", "classRpgGame_1_1Character_1_1Character.html", "classRpgGame_1_1Character_1_1Character" ],
-        [ "Goblin", "classRpgGame_1_1Character_1_1Goblin.html", null ],
+        [ "Goblin", "classRpgGame_1_1Character_1_1Goblin.html", "classRpgGame_1_1Character_1_1Goblin" ],
         [ "Golem", "classRpgGame_1_1Character_1_1Golem.html", "classRpgGame_1_1Character_1_1Golem" ],
         [ "Mage", "classRpgGame_1_1Character_1_1Mage.html", "classRpgGame_1_1Character_1_1Mage" ],
         [ "Player", "classRpgGame_1_1Character_1_1Player.html", "classRpgGame_1_1Character_1_1Player" ],
-        [ "Skeleton", "classRpgGame_1_1Character_1_1Skeleton.html", null ]
+        [ "Skeleton", "classRpgGame_1_1Character_1_1Skeleton.html", "classRpgGame_1_1Character_1_1Skeleton" ]
       ] ],
       [ "Combat", "namespaceRpgGame_1_1Combat.html", [
         [ "CombatContributionAccumulator", "classRpgGame_1_1Combat_1_1CombatContributionAccumulator.html", null ],
         [ "CombatRound", "classRpgGame_1_1Combat_1_1CombatRound.html", "classRpgGame_1_1Combat_1_1CombatRound" ],
-        [ "HeavyWeaponCategory", "classRpgGame_1_1Combat_1_1HeavyWeaponCategory.html", null ],
+        [ "HeavyWeaponCategory", "classRpgGame_1_1Combat_1_1HeavyWeaponCategory.html", "classRpgGame_1_1Combat_1_1HeavyWeaponCategory" ],
         [ "ICombatAttack", "interfaceRpgGame_1_1Combat_1_1ICombatAttack.html", "interfaceRpgGame_1_1Combat_1_1ICombatAttack" ],
         [ "ICombatContribution", "interfaceRpgGame_1_1Combat_1_1ICombatContribution.html", null ],
-        [ "IWeaponCategory", "interfaceRpgGame_1_1Combat_1_1IWeaponCategory.html", null ],
-        [ "LightWeaponCategory", "classRpgGame_1_1Combat_1_1LightWeaponCategory.html", null ],
+        [ "INoiseHearingRangeVisitor", "interfaceRpgGame_1_1Combat_1_1INoiseHearingRangeVisitor.html", null ],
+        [ "IWeaponCategory", "interfaceRpgGame_1_1Combat_1_1IWeaponCategory.html", "interfaceRpgGame_1_1Combat_1_1IWeaponCategory" ],
+        [ "LightWeaponCategory", "classRpgGame_1_1Combat_1_1LightWeaponCategory.html", "classRpgGame_1_1Combat_1_1LightWeaponCategory" ],
         [ "MagicalStrikeAttack", "classRpgGame_1_1Combat_1_1MagicalStrikeAttack.html", "classRpgGame_1_1Combat_1_1MagicalStrikeAttack" ],
-        [ "MagicalWeaponCategory", "classRpgGame_1_1Combat_1_1MagicalWeaponCategory.html", null ],
+        [ "MagicalWeaponCategory", "classRpgGame_1_1Combat_1_1MagicalWeaponCategory.html", "classRpgGame_1_1Combat_1_1MagicalWeaponCategory" ],
         [ "NormalAttack", "classRpgGame_1_1Combat_1_1NormalAttack.html", "classRpgGame_1_1Combat_1_1NormalAttack" ],
-        [ "StealthAttack", "classRpgGame_1_1Combat_1_1StealthAttack.html", "classRpgGame_1_1Combat_1_1StealthAttack" ]
+        [ "StealthAttack", "classRpgGame_1_1Combat_1_1StealthAttack.html", "classRpgGame_1_1Combat_1_1StealthAttack" ],
+        [ "WeaponPickupNoiseHearingRanges", "classRpgGame_1_1Combat_1_1WeaponPickupNoiseHearingRanges.html", null ]
       ] ],
       [ "Core", "namespaceRpgGame_1_1Core.html", [
         [ "Config", "classRpgGame_1_1Core_1_1Config.html", null ],
         [ "Directions", "classRpgGame_1_1Core_1_1Directions.html", null ],
         [ "GameConfig", "classRpgGame_1_1Core_1_1GameConfig.html", "classRpgGame_1_1Core_1_1GameConfig" ],
         [ "IniConfigLoader", "classRpgGame_1_1Core_1_1IniConfigLoader.html", "classRpgGame_1_1Core_1_1IniConfigLoader" ],
+        [ "INoiseListener", "interfaceRpgGame_1_1Core_1_1INoiseListener.html", "interfaceRpgGame_1_1Core_1_1INoiseListener" ],
         [ "Inventory", "classRpgGame_1_1Core_1_1Inventory.html", "classRpgGame_1_1Core_1_1Inventory" ],
         [ "Level", "classRpgGame_1_1Core_1_1Level.html", "classRpgGame_1_1Core_1_1Level" ]
       ] ],
@@ -120,6 +122,7 @@ var annotated_dup =
         [ "AttackDealtLogEvent", "classRpgGame_1_1Logger_1_1AttackDealtLogEvent.html", "classRpgGame_1_1Logger_1_1AttackDealtLogEvent" ],
         [ "BufferedJournalLogSink", "classRpgGame_1_1Logger_1_1BufferedJournalLogSink.html", "classRpgGame_1_1Logger_1_1BufferedJournalLogSink" ],
         [ "EnemyDefeatedLogEvent", "classRpgGame_1_1Logger_1_1EnemyDefeatedLogEvent.html", "classRpgGame_1_1Logger_1_1EnemyDefeatedLogEvent" ],
+        [ "EnemyHeardWeaponPickupNoiseLogEvent", "classRpgGame_1_1Logger_1_1EnemyHeardWeaponPickupNoiseLogEvent.html", "classRpgGame_1_1Logger_1_1EnemyHeardWeaponPickupNoiseLogEvent" ],
         [ "FileLogSink", "classRpgGame_1_1Logger_1_1FileLogSink.html", "classRpgGame_1_1Logger_1_1FileLogSink" ],
         [ "GameLog", "classRpgGame_1_1Logger_1_1GameLog.html", "classRpgGame_1_1Logger_1_1GameLog" ],
         [ "ILogEvent", "interfaceRpgGame_1_1Logger_1_1ILogEvent.html", "interfaceRpgGame_1_1Logger_1_1ILogEvent" ],

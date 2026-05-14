@@ -5,6 +5,7 @@ var classRpgGame_1_1Core_1_1Level =
     [ "AddItem", "classRpgGame_1_1Core_1_1Level.html#a377e083189e74d5d6ed5fd3234ebfa0f", null ],
     [ "AddMage", "classRpgGame_1_1Core_1_1Level.html#ad0f590cc0965490e889e5c09ec54f876", null ],
     [ "AdvanceReactiveEnemiesTurn", "classRpgGame_1_1Core_1_1Level.html#ad2fd1791ad436f8110565ac0e19872a2", null ],
+    [ "BroadcastWeaponPickupNoise", "classRpgGame_1_1Core_1_1Level.html#a3228d49ef882a4e7120df5e53cdf42ec", null ],
     [ "ClearCombatFeedback", "classRpgGame_1_1Core_1_1Level.html#a01e0d484533fd0b1efa844973448c3a7", null ],
     [ "GetItemsAt", "classRpgGame_1_1Core_1_1Level.html#a8dc5a0a4583fa3f25b481b2302ac296a", null ],
     [ "GetTile", "classRpgGame_1_1Core_1_1Level.html#ad48a7c23cc285da72a157194198e553a", null ],

@@ -1,0 +1,7 @@
+<map id="RpgGame.Items.IItem.EmitInventoryWeaponNoise" name="RpgGame.Items.IItem.EmitInventoryWeaponNoise">
+<area shape="rect" id="Node000001" title="After a successful inventory pickup, weapons may broadcast acoustic effects through the level...." alt="" coords="265,37,464,77"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Input_1_1InventoryToLeftHandCommand.html#a48f0c33e4983e4c2e986c36723e46735" title="Executes the command using provided game objects.Usually InputResult.Ok to continue,..." alt="" coords="10,5,213,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,46,212,41,213,35,252,40"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Input_1_1InventoryToRightHandCommand.html#a6d084514392735f09db7f969bc48ea51" title="Executes the command using provided game objects.Usually InputResult.Ok to continue,..." alt="" coords="5,69,217,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="252,74,218,79,217,73,251,69"/>
+</map>

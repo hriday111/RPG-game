@@ -1,5 +1,6 @@
 var interfaceRpgGame_1_1Items_1_1IItem =
 [
+    [ "EmitInventoryWeaponNoise", "interfaceRpgGame_1_1Items_1_1IItem.html#af240917a4fb1945f1c426fb02fc303e8", null ],
     [ "GetDescription", "interfaceRpgGame_1_1Items_1_1IItem.html#a3b24877987d7b60925468d57640a0b82", null ],
     [ "OnDrop", "interfaceRpgGame_1_1Items_1_1IItem.html#a1e48af01bc37df78332c728a7b096af2", null ],
     [ "OnPickup", "interfaceRpgGame_1_1Items_1_1IItem.html#adbdf0e32345d5fa5703cb76610f78f88", null ],

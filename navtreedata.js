@@ -50,9 +50,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classRpgGame_1_1Generation_1_1Enemies_1_1MageSpawnStep.html",
-"classRpgGame_1_1Items_1_1HandOccupation.html",
-"classRpgGame_1_1Logger_1_1LogEntry.html#a14149c55eefdefc65b853423f54d448d"
+"classRpgGame_1_1Core_1_1Level.html#ad1b689507782c42575b21005941d5038",
+"classRpgGame_1_1Items_1_1DoubleSword.html#a1ce72d8b114aae012f78881dd598282b",
+"classRpgGame_1_1Logger_1_1GameLog.html#aa86cbe840f05c0532c73ae9b958f59cc",
+"interfaceRpgGame_1_1Logger_1_1ILogEvent.html#a00d15fd6d57070ba5af0b91f4369dff0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

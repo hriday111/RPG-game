@@ -1,5 +1,5 @@
 <map id="RpgGame.Combat.HeavyWeaponCategory" name="RpgGame.Combat.HeavyWeaponCategory">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,177,236,331"/>
-<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Combat_1_1IWeaponCategory.html" title="Weapon classification for combat: dispatches to the active ICombatAttack without type tags (each conc..." alt="" coords="12,5,229,129"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,143,123,177,118,177,118,143"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,227,255,429"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Combat_1_1IWeaponCategory.html" title="Weapon classification for combat: dispatches to the active ICombatAttack without type tags (each conc..." alt="" coords="5,5,255,179"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,192,133,226,127,226,127,192"/>
 </map>

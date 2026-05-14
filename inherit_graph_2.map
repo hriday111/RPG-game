@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classRpgGame_1_1Character_1_1Behavior_1_1SpeciesGroup.html" title=" " alt="" coords="5,5,223,45"/>
+<area shape="rect" id="Node000000" href="$interfaceRpgGame_1_1Combat_1_1ICombatAttack.html" title="Visitor for combat resolution: each concrete attack implements how damage and defense combine with he..." alt="" coords="5,70,248,95"/>
+<area shape="rect" id="Node000001" href="$classRpgGame_1_1Combat_1_1MagicalStrikeAttack.html" title="Magical strike: magical weapons use full category damage; other weapons deal 1." alt="" coords="297,5,530,45"/>
+<area shape="poly" id="edge12_Node000000_Node000001" title=" " alt="" coords="204,65,312,43,313,48,205,70"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Combat_1_1NormalAttack.html" title="Standard strike: heavy/light use full category damage; magical weapons deal 1." alt="" coords="296,70,531,95"/>
+<area shape="poly" id="edge13_Node000000_Node000002" title=" " alt="" coords="261,80,296,80,296,85,261,85"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Combat_1_1StealthAttack.html" title="Stealth strike: light damage doubled, heavy halved, magical weapon damage 1." alt="" coords="297,119,530,145"/>
+<area shape="poly" id="edge14_Node000000_Node000003" title=" " alt="" coords="215,95,339,117,338,122,214,100"/>
 </map>

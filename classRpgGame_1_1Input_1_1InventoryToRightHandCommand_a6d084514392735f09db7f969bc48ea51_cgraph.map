@@ -1,13 +1,15 @@
 <map id="RpgGame.Input.InventoryToRightHandCommand.Execute" name="RpgGame.Input.InventoryToRightHandCommand.Execute">
-<area shape="rect" id="Node000001" title="Executes the command using provided game objects.Usually InputResult.Ok to continue,..." alt="" coords="5,69,217,109"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Inventory.html#ab99986bf0ae158246aff777d64dcdd3b" title="Gets the currently selected item without removing it." alt="" coords="279,5,490,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,67,285,46,286,51,198,72"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Core_1_1Inventory.html#ac6f47b993f9088ebe1c950f9d26cbe1d" title="Equips the selected item in the inventory to the player&#39;s right hand and removes it from inventory." alt="" coords="276,69,493,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,87,262,87,262,92,218,92"/>
-<area shape="rect" id="Node000006" href="$classRpgGame_1_1Logger_1_1GameLog.html#a263d0c775b47c91d01af93dc9c8641ef" title="Writes a message to the active sink." alt="" coords="265,134,504,159"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="208,107,311,129,310,134,207,112"/>
-<area shape="rect" id="Node000004" href="$classRpgGame_1_1Character_1_1Player.html#ab5c26000021438899c9d3e4d36e8d2b7" title="Attempts to equip an item into the right hand." alt="" coords="552,69,752,109"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="494,87,538,87,538,92,494,92"/>
-<area shape="rect" id="Node000005" href="$interfaceRpgGame_1_1Items_1_1IEquippable.html#af848669fb642e88ff29ad90b4fda0892" title="Attempts to equip the item in the player&#39;s right hand." alt="" coords="800,69,1011,109"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="752,87,786,87,786,92,752,92"/>
+<area shape="rect" id="Node000001" title="Executes the command using provided game objects.Usually InputResult.Ok to continue,..." alt="" coords="5,101,217,141"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Items_1_1IItem.html#af240917a4fb1945f1c426fb02fc303e8" title="After a successful inventory pickup, weapons may broadcast acoustic effects through the level...." alt="" coords="285,5,484,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,99,264,55,289,47,291,52,266,60,157,104"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Core_1_1Inventory.html#ab99986bf0ae158246aff777d64dcdd3b" title="Gets the currently selected item without removing it." alt="" coords="279,69,490,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="217,106,266,101,266,106,218,112"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Core_1_1Inventory.html#ac6f47b993f9088ebe1c950f9d26cbe1d" title="Equips the selected item in the inventory to the player&#39;s right hand and removes it from inventory." alt="" coords="276,133,493,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="218,131,262,136,262,142,217,136"/>
+<area shape="rect" id="Node000007" href="$classRpgGame_1_1Logger_1_1GameLog.html#a263d0c775b47c91d01af93dc9c8641ef" title="Writes a message to the active sink." alt="" coords="265,198,504,223"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="156,139,208,162,266,183,301,192,300,197,265,188,206,167,154,144"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Character_1_1Player.html#ab5c26000021438899c9d3e4d36e8d2b7" title="Attempts to equip an item into the right hand." alt="" coords="552,133,752,173"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="494,151,538,151,538,156,494,156"/>
+<area shape="rect" id="Node000006" href="$interfaceRpgGame_1_1Items_1_1IEquippable.html#af848669fb642e88ff29ad90b4fda0892" title="Attempts to equip the item in the player&#39;s right hand." alt="" coords="800,133,1011,173"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="752,151,786,151,786,156,752,156"/>
 </map>

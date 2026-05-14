@@ -1,0 +1,9 @@
+<map id="RpgGame.Core.INoiseListener.OnWeaponPickupNoise" name="RpgGame.Core.INoiseListener.OnWeaponPickupNoise">
+<area shape="rect" id="Node000001" title="Invoked when a weapon pickup/equip noise reaches this listener along walkable tiles only." alt="" coords="553,49,773,89"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Core_1_1Level.html#a3228d49ef882a4e7120df5e53cdf42ec" title="Broadcasts weapon&#45;handling noise from soundSource ; each registered INoiseListener on a tile within w..." alt="" coords="277,49,505,89"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="540,71,505,71,505,66,540,66"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Items_1_1Modifiers_1_1WeaponModifierDecorator.html#aad1d485571b3cdf15eef86326faffa71" title="After a successful inventory pickup, weapons may broadcast acoustic effects through the level...." alt="" coords="5,5,229,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="264,55,229,50,230,45,264,49"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Items_1_1Weapon.html#ab7509032d21bee1d9a09ade5b3780ae4" title="After a successful inventory pickup, weapons may broadcast acoustic effects through the level...." alt="" coords="9,85,226,125"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="264,88,227,93,226,88,263,83"/>
+</map>

@@ -1,9 +1,9 @@
 <map id="RpgGame.Combat.IWeaponCategory" name="RpgGame.Combat.IWeaponCategory">
-<area shape="rect" id="Node000001" title="Weapon classification for combat: dispatches to the active ICombatAttack without type tags (each conc..." alt="" coords="245,5,497,129"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Combat_1_1HeavyWeaponCategory.html" title=" " alt="" coords="5,177,236,331"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="279,140,225,179,222,175,276,135"/>
-<area shape="rect" id="Node000003" href="$classRpgGame_1_1Combat_1_1LightWeaponCategory.html" title=" " alt="" coords="261,177,482,331"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="374,143,374,177,369,177,369,143"/>
-<area shape="rect" id="Node000004" href="$classRpgGame_1_1Combat_1_1MagicalWeaponCategory.html" title=" " alt="" coords="506,177,746,331"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="468,135,523,175,520,179,465,140"/>
+<area shape="rect" id="Node000001" title="Weapon classification for combat: dispatches to the active ICombatAttack without type tags (each conc..." alt="" coords="277,5,529,179"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Combat_1_1HeavyWeaponCategory.html" title=" " alt="" coords="5,227,255,429"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,190,249,229,246,224,291,186"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Combat_1_1LightWeaponCategory.html" title=" " alt="" coords="279,227,528,429"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="406,192,406,226,401,226,401,192"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Combat_1_1MagicalWeaponCategory.html" title=" " alt="" coords="552,227,801,429"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="516,186,561,224,558,229,512,190"/>
 </map>

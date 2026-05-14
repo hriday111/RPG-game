@@ -1,15 +1,15 @@
 <map id="RpgGame.Items.Weapon" name="RpgGame.Items.Weapon">
-<area shape="rect" id="Node000001" title="Represents an abstract base class for all equippable weapons." alt="" coords="205,701,466,1345"/>
-<area shape="rect" id="Node000005" href="$classRpgGame_1_1Items_1_1CrystalOrb.html" title="One&#45;handed focus weapon: magical category (damage scales with wisdom in combat)." alt="" coords="5,1403,207,1578"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="201,1303,151,1404,146,1402,196,1300"/>
-<area shape="rect" id="Node000006" href="$classRpgGame_1_1Items_1_1DoubleSword.html" title="Represents a powerful two&#45;handed sword weapon." alt="" coords="231,1393,440,1588"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="338,1359,338,1393,333,1393,333,1359"/>
-<area shape="rect" id="Node000007" href="$classRpgGame_1_1Items_1_1Sword.html" title="Represents a standard one&#45;handed sword weapon." alt="" coords="464,1403,665,1578"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="474,1300,525,1402,520,1404,470,1303"/>
-<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Items_1_1IWeapon.html" title="An equippable item that contributes a damage value (typically a weapon)." alt="" coords="205,524,466,653"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="338,667,338,701,333,701,333,667"/>
-<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Items_1_1IEquippable.html" title="Represents an item that can be equipped by the player." alt="" coords="205,228,466,476"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="338,489,338,523,333,523,333,489"/>
-<area shape="rect" id="Node000004" href="$interfaceRpgGame_1_1Items_1_1IItem.html" title="Defines the contract for all items that can exist within the game world." alt="" coords="228,5,443,180"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="338,194,338,228,333,228,333,194"/>
+<area shape="rect" id="Node000001" title="Represents an abstract base class for all equippable weapons." alt="" coords="205,771,466,1484"/>
+<area shape="rect" id="Node000005" href="$classRpgGame_1_1Items_1_1CrystalOrb.html" title="One&#45;handed focus weapon: magical category (damage scales with wisdom in combat)." alt="" coords="5,1542,207,1717"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="201,1427,148,1543,143,1540,196,1425"/>
+<area shape="rect" id="Node000006" href="$classRpgGame_1_1Items_1_1DoubleSword.html" title="Represents a powerful two&#45;handed sword weapon." alt="" coords="231,1532,440,1727"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="338,1498,338,1532,333,1532,333,1498"/>
+<area shape="rect" id="Node000007" href="$classRpgGame_1_1Items_1_1Sword.html" title="Represents a standard one&#45;handed sword weapon." alt="" coords="464,1542,665,1717"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="474,1425,527,1540,523,1543,469,1427"/>
+<area shape="rect" id="Node000002" href="$interfaceRpgGame_1_1Items_1_1IWeapon.html" title="An equippable item that contributes a damage value (typically a weapon)." alt="" coords="205,573,466,723"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="338,736,338,771,333,771,333,736"/>
+<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Items_1_1IEquippable.html" title="Represents an item that can be equipped by the player." alt="" coords="205,277,466,525"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="338,539,338,573,333,573,333,539"/>
+<area shape="rect" id="Node000004" href="$interfaceRpgGame_1_1Items_1_1IItem.html" title="Defines the contract for all items that can exist within the game world." alt="" coords="228,5,443,229"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="338,243,338,277,333,277,333,243"/>
 </map>

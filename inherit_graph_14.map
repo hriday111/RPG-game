@@ -1,3 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classRpgGame_1_1Generation_1_1DungeonContext.html" title="Provides shared state for dungeon generation procedures." alt="" coords="5,5,229,45"/>
+<area shape="rect" id="Node000000" href="$interfaceRpgGame_1_1Generation_1_1Enemies_1_1IEnemySpawnStep.html" title="One thematic enemy spawn contribution (one or several of the same enemy type via count)...." alt="" coords="5,101,232,141"/>
+<area shape="rect" id="Node000001" href="$classRpgGame_1_1Generation_1_1Enemies_1_1GoblinSpawnStep.html" title=" " alt="" coords="280,5,507,45"/>
+<area shape="poly" id="edge19_Node000000_Node000001" title=" " alt="" coords="178,94,279,55,317,43,318,48,281,60,180,99"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Generation_1_1Enemies_1_1GolemSpawnStep.html" title="Spawns a fixed number of golems." alt="" coords="280,69,507,109"/>
+<area shape="poly" id="edge20_Node000000_Node000002" title=" " alt="" coords="245,104,279,100,280,105,246,109"/>
+<area shape="rect" id="Node000003" href="$classRpgGame_1_1Generation_1_1Enemies_1_1MageSpawnStep.html" title="Spawns a fixed number of mages." alt="" coords="280,133,507,173"/>
+<area shape="poly" id="edge21_Node000000_Node000003" title=" " alt="" coords="246,133,280,137,279,143,245,139"/>
+<area shape="rect" id="Node000004" href="$classRpgGame_1_1Generation_1_1Enemies_1_1SkeletonSpawnStep.html" title=" " alt="" coords="280,197,507,237"/>
+<area shape="poly" id="edge22_Node000000_Node000004" title=" " alt="" coords="180,144,281,183,318,195,317,200,279,188,178,149"/>
 </map>

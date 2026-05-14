@@ -1,5 +1,7 @@
 <map id="RpgGame.Character.Mage" name="RpgGame.Character.Mage">
-<area shape="rect" id="Node000001" title="Represents a mage enemy on the level. Uses the same melee/counter rules as Golem." alt="" coords="5,188,251,417"/>
-<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Character.html" title="Base abstract class for both playable and non&#45;playable characters." alt="" coords="51,5,205,140"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,154,131,188,125,188,125,154"/>
+<area shape="rect" id="Node000001" title="Represents a mage enemy on the level. Uses the same melee/counter rules as Golem." alt="" coords="62,188,307,487"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Character_1_1Character.html" title="Base abstract class for both playable and non&#45;playable characters." alt="" coords="5,5,159,140"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,152,129,187,124,188,110,154"/>
+<area shape="rect" id="Node000003" href="$interfaceRpgGame_1_1Core_1_1INoiseListener.html" title="Observer participant: an enemy that may react when weapon&#45;handling noise reaches its tile." alt="" coords="183,25,392,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,134,245,189,240,187,262,132"/>
 </map>

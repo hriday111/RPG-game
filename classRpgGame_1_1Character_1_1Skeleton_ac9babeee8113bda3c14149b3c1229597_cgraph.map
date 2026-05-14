@@ -1,0 +1,5 @@
+<map id="RpgGame.Character.Skeleton.OnWeaponPickupNoise" name="RpgGame.Character.Skeleton.OnWeaponPickupNoise">
+<area shape="rect" id="Node000001" title="Invoked when a weapon pickup/equip noise reaches this listener along walkable tiles only." alt="" coords="5,5,221,45"/>
+<area shape="rect" id="Node000002" href="$classRpgGame_1_1Logger_1_1GameLog.html#a263d0c775b47c91d01af93dc9c8641ef" title="Writes a message to the active sink." alt="" coords="269,13,508,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,23,255,23,255,28,222,28"/>
+</map>
